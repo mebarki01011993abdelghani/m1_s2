@@ -1,0 +1,17 @@
+/* propriétés des balises p, ul, ol et li */
+p,ul,ol,li {
+    font-family: Arial;
+    font-size: medium;
+    }
+
+/* propriétés de la classe "centrer" */
+.centrer {
+    text-align: center;
+    }
+
+div.centrer {
+    text-align: center;
+    border: solid 1px blue;
+    padding: 5px;
+    margin: 5px;
+    }

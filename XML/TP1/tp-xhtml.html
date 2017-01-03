@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <script src=
+  "https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"
+  type="text/javascript">
+</script>
+  <link rel="stylesheet" type="text/css" media="screen" href=
+  "../htex-ress/basic-screen.css" />
+  <link rel="stylesheet" type="text/css" media="printer" href=
+  "../htex-ress/basic-printer.css" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=iso-8859-1" />
+
+  <title>TP&#160;: XHTML et les feuilles de style CSS</title>
+  <link rel="stylesheet" type="text/css" href=
+  "../blue10.screen.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../blue10.print.css"
+  media="print" />
+</head>
+
+<body>
+  <div id="allPage">
+    <div id="header">
+      <span class="header-item" id="header-accueil"><a href=
+      "../index.html">Accueil</a></span><span class="header-item"
+      id="m26-java"><a href="../jee/index.html">Architecture
+      JEE</a></span><span class="header-item" id=
+      "m28-unix"><a href="../admunix/index.html">Administrer
+      UNIX</a></span><span class="header-item" id=
+      "m27-xml"><a href="../xml/index.html">XML</a></span><span class="header-item"
+      id="info13"><a href=
+      "../systeme/index.html">Système</a></span><span class=
+      "header-item" id="header-docs"><a href=
+      "../docs/index.html">Docs</a></span><span class="header-item"
+      id="xdosicalu"><a href=
+      "../dosicalu/index.html">DOSICALU</a></span><span class=
+      "header-item" id="header-dil"><a href=
+      "http://dii.univ-mrs.fr">Département
+      d'informatique</a></span><a href="../chercher.html" id=
+      "header-search" name="header-search"></a>
+    </div>
+
+    <div id="leftFrame">
+      <div id="menu">
+        <a class="menu1 menu-normal" href="index.html"><span>Cours
+        :</span></a><a class="menu2 menu-normal" href=
+        "01-intro.html"><span>&gt;&#160;Introduction</span></a><a class="menu2 menu-normal"
+        href="02-xml.html"><span>&gt;&#160;XML</span></a><a class=
+        "menu1 menu-normal" href="#"><span>TPs
+        :</span></a><a class="menu2 menu-active" href=
+        "tp-xhtml.html"><span>1. XHTML et CSS</span></a><a class=
+        "menu1 menu-normal" href="#"><span>Docs
+        :</span></a><a class="menu2 menu-normal" href=
+        "xhtml1-strict.html"><span>La DTD XHTML 1.0</span></a>
+      </div>
+
+      <div id="printable">
+        <a href="tp-xhtml.pdf">Version PDF</a>
+      </div>
+    </div>
+
+    <div id="content">
+      <h1 id="idhtex-h1-1">TP&#160;: XHTML et les feuilles de style
+      CSS</h1>
+
+      <div id="table-of-contents">
+        <div class="table-of-contents-title">
+          &#160;Sommaire
+        </div>
+
+        <div class="table-of-contents-level1">
+          &gt;&#160;<a href="#idhtex-h2-1">Quelques liens
+          utiles</a>
+        </div>
+
+        <div class="table-of-contents-level1">
+          &gt;&#160;<a href="#idhtex-h2-2">XHTML</a>
+        </div>
+
+        <div class="table-of-contents-level2">
+          &gt;&#160;<a href="#idhtex-h3-1">Validation XHTML</a>
+        </div>
+
+        <div class="table-of-contents-level2">
+          &gt;&#160;<a href="#idhtex-h3-2">La DTD XHTML en version
+          stricte</a>
+        </div>
+
+        <div class="table-of-contents-level1">
+          &gt;&#160;<a href="#idhtex-h2-3">XHTML &amp; CSS</a>
+        </div>
+
+        <div class="table-of-contents-level2">
+          &gt;&#160;<a href="#idhtex-h3-3">Le principe des CSS</a>
+        </div>
+
+        <div class="table-of-contents-level2">
+          &gt;&#160;<a href="#idhtex-h3-4">Mise en page en CSS</a>
+        </div>
+      </div>
+
+      <h2 id="idhtex-h2-1">Quelques liens utiles</h2>
+
+      <dl>
+        <dt><b>Normes du W3C</b></dt>
+
+        <dd><a target="_blank" href="http://www.w3.org/TR/REC-CSS1"
+        shape="rect">CSS1</a> [<a target="_blank" href=
+        "http://www.dil.univ-mrs.fr/~massat/docs/css1-fr/" shape=
+        "rect">en français</a>] et <a target="_blank" href=
+        "http://www.w3.org/TR/REC-CSS2" shape="rect">CSS2</a>
+        [<a target="_blank" href=
+        "http://www.dil.univ-mrs.fr/~massat/docs/css2-fr/" shape=
+        "rect">en français</a>].<br clear="none" />
+        <a id="html" name="html" shape="rect"></a><a target=
+        "_blank" href="http://www.w3.org/TR/html4/" shape="rect">La
+        norme HTML 4.01 du W3C</a> (<a target="_blank" href=
+        "http://www.la-grange.net/w3c/html4.01/" shape=
+        "rect">version en français</a>).<br clear="none" />
+        <a id="xhtml" name="xhtml" shape="rect"></a><a target=
+        "_blank" href="http://www.w3.org/TR/xhtml1/" shape=
+        "rect">La norme XHTML 1.0 du W3C</a> (<a target="_blank"
+        href="http://www.la-grange.net/w3c/xhtml1/" shape=
+        "rect">version en français</a>).</dd>
+
+        <dt><b>Tutoriels CSS</b></dt>
+
+        <dd><a target="_blank" href=
+        "http://www.alsacreations.com/articles/" shape=
+        "rect"><i>Alsa Créations</i></a>, <a target="_blank" href=
+        "http://www.w3schools.com/css/" shape="rect">W3schools</a>
+        ou <a target="_blank" href="http://www.csszengarden.com/"
+        shape="rect">CSS Zen Garden</a>.</dd>
+      </dl>
+
+      <h2 id="idhtex-h2-2">XHTML</h2>
+
+      <p>Le langage <a href="http://www.w3.org/TR/xhtml1/" shape=
+      "rect">XHTML</a> est la forme XML des anciennes pages HTML.
+      L'objet de cette séance est de comprendre ce format afin de
+      pouvoir facilement produire des documents qui respectent la
+      norme XHTML&#160;:</p>
+
+      <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&gt;&gt;&gt;
+      <a target="_blank" href="http://www.w3.org/TR/xhtml1/" shape=
+      "rect">La norme XHTML 1.0 du W3C</a> (<a target="_blank"
+      href="http://www.la-grange.net/w3c/xhtml1/" shape=
+      "rect">version en français</a>).</p>
+
+      <h3 id="idhtex-h3-1">Validation XHTML</h3>
+
+      <p>Commencez par écrire un petit document HTML&#160;:</p>
+
+      <div class="code">
+        <pre xml:space="preserve">
+&lt;html&gt;
+&lt;body&gt;
+&lt;p&gt;Éclipse&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+
+      <p>En fait, ce document ne respecte ni la norme XHTML, ni la
+      norme HTML. Corrigez le avec la commande <span class=
+      "htex-ttt">tidy</span> (<a target="_blank" href=
+      "http://www.w3.org/People/Raggett/tidy/" shape="rect">le
+      validateur HTML/XHTML du W3C</a>) pour obtenir un document
+      qui respecte <a target="_blank" href=
+      "http://www.w3.org/TR/html4/" shape="rect">la norme HTML du
+      W3C</a> (<a target="_blank" href=
+      "http://www.la-grange.net/w3c/html4.01/" shape="rect">version
+      en français</a>)&#160;:</p>
+
+      <div class="code">
+        <pre xml:space="preserve">
+tidy -im votre-fichier.html
+</pre>
+      </div>
+
+      <p>Produisez ensuite sa version <a target="_blank" href=
+      "http://www.w3.org/TR/xhtml1/" shape=
+      "rect">XHTML&#160;1.0</a> (<a target="_blank" href=
+      "http://www.la-grange.net/w3c/xhtml1/" shape="rect">version
+      en français</a>) avec la même commande&#160;:</p>
+
+      <div class="code">
+        <pre xml:space="preserve">
+tidy -im -asxhtml -indent votre-fichier.html
+</pre>
+      </div>
+
+      <p>On peut, <span class="htex-IMP">sommairement</span>,
+      définir le langage XHTML par les points suivants&#160;:</p>
+
+      <div class="clist">
+        <ul>
+          <li>un document XHTML est un document XML 1.0,
+
+            <div class="clist">
+              <ul>
+                <li>les éléments sont correctement fermés,</li>
+
+                <li>les valeurs des attributs sont quotés,</li>
+
+                <li>un document XHTML est un seul arbre,</li>
+              </ul>
+            </div>
+          </li>
+
+          <li>un document XHTML valide respecte l'un de ces
+          DTD&#160;:
+
+            <ul>
+              <li>
+                <span class="htex-IMP">Strict</span> (pour les
+                pages basées sur les CSS et débarrassées des
+                éléments de présentation)
+
+                <div class="code">
+                  <pre xml:space="preserve">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</pre>
+                </div>
+              </li>
+
+              <li>
+                <span class="htex-IMP">Transitional</span> (pour
+                les pages intégrants des éléments de présentation
+                <tt>font</tt>, etc.)
+
+                <div class="code">
+                  <pre xml:space="preserve">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+</pre>
+                </div>
+              </li>
+
+              <li>
+                <span class="htex-IMP">Frameset</span> (pour la
+                définition des <i>frames</i>)
+
+                <div class="code">
+                  <pre xml:space="preserve">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+</pre>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li>les éléments XHTML sont inspirés des éléments HTML,
+          mais
+
+            <div class="clist">
+              <ul>
+                <li>les éléments sont en minuscules (<span class=
+                "htex-ttt">&lt;h1&gt;hello&lt;/h1&gt;</span>),</li>
+
+                <li>les attributs sont en minuscules (<span class=
+                "htex-ttt">&lt;img src="..." /&gt;</span>),</li>
+
+                <li>les attributs ont toujours une valeur
+                (<span class="htex-ttt">&lt;input
+                readonly="readonly" /&gt;</span>),</li>
+
+                <li>l'attribut <span class="htex-ttt">name</span>
+                est remplacé par l'attribut <span class=
+                "htex-ttt">id</span>,</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <p>Retrouvez une description plus détaillée sur le site
+      <a target="_blank" href=
+      "http://www.w3schools.com/html/html_xhtml.asp" shape=
+      "rect">W3 Schools</a>.</p>
+
+      <h3 id="idhtex-h3-2">La DTD XHTML en version stricte</h3>
+
+      <p>À partir de maintenant nous utiliserons le XHTML (de
+      préférence en version stricte) pour coder nos documents
+      HTML.</p>
+
+      <ul>
+        <li>Étudiez, dans la <a target="_blank" href=
+        "xhtml1-strict.html" shape="rect">DTD du
+        XHTML&#160;1.0</a>, les éléments que l'on peut placer comme
+        fils de l'élément <span class="htex-ttt">body</span>. Vous
+        trouverez dans la DTD des formes <span class=
+        "htex-ttt">%nom;</span>. Ce sont des <span class=
+        "htex-IMP">entités paramètres</span>, c'est-à-dire des
+        macros dont la définition est donnée dans la DTD sous la
+        forme&#160;:
+
+          <div class="code">
+            <pre xml:space="preserve">
+&lt;!ENTITY  % nom  "texte de la macro" &gt;
+</pre>
+          </div>
+        </li>
+
+        <li>Essayez de modifier ce petit document en ajoutant des
+        élements (liste <span class="htex-ttt">ul</span> non
+        numérotée, tableaux, paragraphes). À chaque modification
+        vous devez valider le document à l'aide de <span class=
+        "htex-IMP">tidy</span> et le visualiser dans un navigateur.
+        Vous pouvez également ajouter à <span class=
+        "htex-ttt">firefox</span> un <a href=
+        "http://users.skynet.be/mgueury/mozilla/" shape=
+        "rect">plugin de validation</a>.</li>
+
+        <li>Dans un deuxième temps, utilisez l'attribut
+          <span class="htex-ttt">id</span> pour placer un
+          identifiant et faites y référence dans un lien (en
+          utilisant la syntaxe ci-dessous).
+
+          <div class="code">
+            <pre xml:space="preserve">
+&lt;a href="nom-de-page.html#identifiant"&gt;Lien à suivre&lt;/a&gt;
+</pre>
+          </div>
+        </li>
+
+        <li>Dans un troisième temps, essayez d'utiliser une
+        <span class="htex-IMP">section littérale</span> dans votre
+        document XHTML (voir le cours sur XML).</li>
+
+        <li>Dans un quatrième temps, faites en sorte que votre
+        document soit accessible via le serveur WEB du
+        département&#160;:
+
+          <div class="code">
+            <pre xml:space="preserve">
+mkdir -p "$HOME/public_html/tp-xml"
+cp votre-fichier.html "$HOME/public_html/tp-xml/index.html"
+chmod -R u=rwx,go=rX "$HOME/public_html/tp-xml"
+chmod u=rwx,go=rx "$HOME/public_html"
+chmod o+x "$HOME"
+</pre>
+          </div>avec l'adresse&#160;:
+
+          <div class="code">
+            <tt>http://<b><tt>prenom</tt></b>.<b><tt>nom</tt></b>.etu.perso.luminy.univ-amu.fr/tp-xml/</tt>
+          </div><span class="htex-IMP">Attention</span>&#160;:
+          depuis <span class="htex-REM">2015</span>, vous devez
+          demander <a target="_blank" href=
+          "http://dud.univ-amu.fr/content/mon-compte-utilisateur-et-ses-services-associes-sur-le-campus-de-luminy#Ma_page_web_personnelle"
+          shape="rect">l'activation de vos pages personnelles</a>.
+        </li>
+
+        <li>Dans un cinquième temps, utilisez <span class=
+        "htex-ttt">tidy</span> pour modifier l'encodage de votre
+        document (choisissez <span class="htex-ttt">UTF-8</span>).
+        Prenez soin de placer des caractères accentués dans votre
+        document pour que le test soit intéressant. Si vous
+        utilisez l'adresse ci-dessus, la page est-elle correctement
+        rendue&#160;?</li>
+      </ul>
+
+      <h2 id="idhtex-h2-3">XHTML &amp; CSS</h2>
+
+      <p>Nous allons maintenant améliorer l'aspect des pages XHTML
+      produites en utilisant une feuille de style CSS. Pour ce
+      faire, chaque page XHTML doit impérativement contenir dans
+      son entête une référence vers la feuille de style
+      CSS&#160;:</p>
+
+      <div class="code">
+        <pre xml:space="preserve">
+&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
+  &lt;head&gt;
+    &lt;title&gt;Bienvenue au Département d'Informatique&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="monStyle.css"/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  ... contenu de la page ..
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+
+      <h3 id="idhtex-h3-3">Le principe des CSS</h3>
+
+      <p>Pour améliorer l'aspect de vos pages, nous allons utiliser
+      les articles qui présentent les CSS sur le site de <a target=
+      "_blank" href="http://www.alsacreations.com/articles/" shape=
+      "rect"><i>Alsa Créations</i></a>. Partons du code XHTML
+      suivant&#160;:</p>
+
+      <div class="code">
+        <pre xml:space="preserve">
+&lt;p class="centrer"&gt;paragraphe centré&lt;/p&gt;
+
+&lt;div class="boite"&gt;&lt;p&gt;Dans une boite&lt;/p&gt;&lt;/div&gt;
+</pre>
+      </div>
+
+      <p>A l'aide d'une feuille CSS nous pouvons associer un
+      ensemble d'attributs graphiques à une famille d'éléments XML
+      (ou HTML). Une règle CSS est composée d'un sélecteur et d'un
+      ensemble d'attributs. Le sélecteur permet de spécifier les
+      éléments XML dont l'affichage va être modifié. Je vous
+      encourage à lire la <a target="_blank" href=
+      "http://www.w3.org/TR/REC-CSS2/selector.html" shape=
+      "rect">spécification</a> CSS des sélecteurs de la norme
+      <a target="_blank" href="http://www.w3.org/TR/REC-CSS2"
+      shape="rect">CSS2</a>. Vous trouverez sur le site <a target=
+      "_blank" href="http://www.w3schools.com/cssref/default.asp"
+      shape="rect">w3schools</a> une liste exhaustive des
+      propriétés.</p>
+
+      <div class="code">
+        <pre xml:space="preserve">
+/* propriétés des balises p, ul, ol et li */
+p,ul,ol,li {
+    font-family: Arial;
+    font-size: medium;
+    }
+
+/* propriétés de la classe "centrer" */
+.centrer {
+    text-align: center;
+    }
+
+div.centrer {
+    text-align: center;
+    border: solid 1px blue;
+    padding: 5px;
+    margin: 5px;
+    }
+</pre>
+      </div>
+
+      <p>Pour compléter cette (rapide) présentation vous pouvez
+      lire cette <a href=
+      "http://www.dil.univ-mrs.fr/~massat/docs/css2-fr/intro.html"
+      shape="rect">petite introduction sur CSS2</a> avec notamment
+      un tutoriel pour XML.</p>
+
+      <p><span class="htex-IMP">À faire</span>&#160;: tester
+      l'exemple de mise en page XML/CSS proposé.</p>
+
+      <h3 id="idhtex-h3-4">Mise en page en CSS</h3>
+
+      <p>Vous pouvez suivre le cours ci-dessous pour construire un
+      exemple complet&#160;:</p>
+
+      <p>&#160;&#160;&#160;&#160;&#160;&#160;
+      <b>&gt;&gt;&gt;&gt;</b> <a target="_blank" href=
+      "http://www.alsacreations.com/tuto/lire/555-design-css-complet-5-etapes.html"
+      shape="rect">Réaliser un design complet XHTML/CSS en
+      5&#160;étapes</a></p>
+
+      <p>Vous pourrez ensuite choisir un modèle de mise en page
+      (aussi appelé gabarit) avec au moins une entête, un menu et
+      une zone centrale en lisant le cours ci-dessous&#160;:</p>
+
+      <p>&#160;&#160;&#160;&#160;&#160;&#160;
+      <b>&gt;&gt;&gt;&gt;</b> <a target="_blank" href=
+      "http://www.alsacreations.com/static/gabarits/" shape=
+      "rect">Les modèles de mise en page en CSS</a></p>
+
+      <p>Terminez votre travail en changeant ou en améliorant le
+      menu mis en place à l'étape précédente avec le cours
+      ci-dessous&#160;:</p>
+
+      <p>&#160;&#160;&#160;&#160;&#160;&#160;
+      <b>&gt;&gt;&gt;&gt;</b> <a target="_blank" href=
+      "http://www.alsacreations.com/tuto/lire/574-Creer-des-menus-simples-en-CSS.html"
+      shape="rect">Créer des menus simples en CSS</a></p>
+    </div>
+  </div>
+</body>
+</html>
