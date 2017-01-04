@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{shorttoc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=2cm]{geometry}
+\title{IAA - TD (1)}
+\author{David GUERROUDJ}
+\date{\today}
+ 
+\rfoot{Page \thepage \hspace{1pt} sur \pageref{LastPage}}
+ 
+\begin{document}
+
+\maketitle % Page de garde.
+
+\tableofcontents % Table des matières
+\vfill\eject
+
+\section{Exercice 3}
+
+\includegraphics{
+\end{document}	

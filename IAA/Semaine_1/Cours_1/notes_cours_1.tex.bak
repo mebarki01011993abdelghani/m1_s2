@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{shorttoc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=2cm]{geometry}
+\title{IAA - Notes de cours (1)}
+\author{David GUERROUDJ}
+\date{\today}
+ 
+\rfoot{Page \thepage \hspace{1pt} sur \pageref{LastPage}}
+ 
+\begin{document}
+
+\maketitle % Page de garde.
+
+\tableofcontents % Table des matières
+
+\section{Introduction}
+On cherche avec cette matière à créer des algorithmes intelligents qui s'adaptent automatiquement aux besoins. 
+
+\section{Définitions} 
+\begin{enumerate}
+\item Machine learning is the study of computer algorithms that improve automatically through experience.
+\item Extract important patterns and trends , and understand « what the data says »
+\item ML is programming computers to optimize a performance criterion using example data or past experience. Programmer des ordinateurs capable d'optimiser leurs performances et d'analyser leur expériences pour s'améliorer.
+\item Develop methods that can automatically detect patterns in data, and then to use the uncovered patternds to predict future data ir ither outcomes of interest.
+\end{enumerate}
+
+Tenir en compte de l'experience passée pour améliorer les performances dans le futur.
+
+\textbf{Idée générale :} générer l'algorithme à partir de données.
+
+\section{•}
+
+\end{document}	
