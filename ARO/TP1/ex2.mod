@@ -1,28 +1,31 @@
 /*AGRICOLE*/
 set R;
 set M;
-set T;
 
 /* Ensemble */
-param trajets{t in T};
+param production{r in R};
 param distances{r in R, m in M};
 param capacite{m in M};
-param regionUne{t in T};
-param regionDeux{t in T};
-param regionTrois{t in T};
 
-maximize obj: r1 sum{t in T} 0.1 / (trajets[t] * );
+
+/*RECHERCHE DES QUANTITEES POUR L APPROVISIONEMENT*/
+var quantitees{r in R, m in M}>= 0;
+
+
+/*Calcul du cout*/
+param cost{r in R, m in M} := 0.1 *distances[r,m];
+
+
+minimize prix: sum{r in R, m in M} cost[r,m]*quantitees[r,m];
 
 /*CONTRAINTES*/
-s.t. sommesTotalTrajets:sum{t in T} trajets[t] = sum{r in R} capacite[R];
-s.t. sommesRegionUne: sum{t in T} trajets[t] * regionUne[t] = capacite[0];
-s.t. sommesRegionDeux: sum{t in T} trajets[t] * regionDeux[t] = capacite[1];
-s.t. sommesRegionTrois: sum{t in T} trajets[t] * regionTrois[t] = capacite[2];
-
+s.t. sommesTotalTrajets:sum{r in R, m in M} quantitees[r,m] = sum{r in R} production[r];
+s.t. sommesRegions {r in R} : sum{m in M} quantitees[r,m] <= production[r];
+s.t. limitesMinotories {r in R,m in M} : quantitees[r,m] <= capacite[m];
 
 /*DECLARATIONS*/
 solve;
-
+display quantitees;
 /*DONEES*/
 
 data;
@@ -30,9 +33,6 @@ data;
 set R := r1 r2 r3;
 /*Ensemble des minotories*/
 set M := m1 m2 m3;
-/*Ensembles des trajets*/
-set T := t1 t2 t3 t4 t5 t6 t7 t8 t9;
-
 
 
 /* Distances des  région agricoles  et les minoteries*/
@@ -55,41 +55,6 @@ param production :=
   r3 300
 ;
 
-param regionUne :=
- a = 1
- b = 1
- c = 1
- d = 0
- e = 0
- f = 0
- g = 0
- h = 0
- i =0
-;
-
-param regionDeux :=
- a = 0
- b = 0
- c = 0
- d = 1
- e = 1
- f = 1
- g = 0
- h = 0
- i =0
-;
-
-param regionTrois :=
- a = 0
- b = 0
- c = 0
- d = 0
- e = 0
- f = 0
- g = 1
- h = 1
- i = 1
-;
 
 end;
 

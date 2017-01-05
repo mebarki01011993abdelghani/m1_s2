@@ -32,7 +32,6 @@ s.t. horaireSix:sum{h in H} hf[h]*planning[h] >= 12;
 solve;
 display planning;
 
-
 /*DONEES*/
 /***************************************************************************/
 data;
