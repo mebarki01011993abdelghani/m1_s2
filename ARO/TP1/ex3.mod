@@ -1,5 +1,5 @@
 
-/*AGRICOLE*/
+/*POLICIERS*/
 
 set H;
 
@@ -29,11 +29,11 @@ s.t. horaireQuatre:sum{h in H} hd[h]*planning[h] >= 30;
 s.t. horaireCinq:sum{h in H} he[h]*planning[h] >= 30;
 s.t. horaireSix:sum{h in H} hf[h]*planning[h] >= 12;
 
-/*DECLARATIONS*/
 solve;
 display planning;
-/*DONEES*/
 
+
+/*DONEES*/
 /***************************************************************************/
 data;
 
