@@ -4,10 +4,11 @@
 /*ENSEMBLE PRODCTION*/
 set P;
 
+
 /*PRODUCTIONS / MOIS*/
 var productions{p in P} >= 0;
 
-var coutP;
+
 /*QUANTITEES MOIS*/
 
 param cout{p in P};
@@ -17,15 +18,15 @@ param capacite{p in P};
 param minStock;
 param stockActuel;
 param maxStock;
+param coutStock;
 /**/
 
-maximize defplan: sum{p in P} productions[p];
+minimize defplan: sum {p in P} (productions[p] - demande[p] + stockActuel * 1.5 * cout[p]);
 
 
 /*CONTRAINTES*/
 s.t. cminStock{p in P}: (productions[p] - demande[p] + stockActuel) >= minStock;
 s.t. cmaxStock{p in P}: (productions[p] - demande[p] + stockActuel) <= maxStock;
-s.t. ccout{p in P} : productions[p] - demande[p] + stockActuel* 1.5 * cout[p+1];
 
 
 /*SOLVING*/
@@ -43,7 +44,6 @@ param stockActuel := 2750;
 /*Ensemble des mélanges disponibles*/
 
 set P := p1 p2 p3 p4 p5 p6;
-
 
 param cout :=
   p1 240
