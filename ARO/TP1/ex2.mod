@@ -4,7 +4,7 @@ set M;
 set T;
 
 /* Ensemble */
-var trajets{t in T};
+param trajets{t in T};
 param distances{r in R, m in M};
 param capacite{m in M};
 param regionUne{t in T};
@@ -92,5 +92,19 @@ param regionTrois :=
 ;
 
 end;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
