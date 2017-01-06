@@ -21,7 +21,7 @@ param hall{h in H};
 minimize defplan: plan;
 
 /*CONTRAINTES*/
-s.t. defPlan:plan = sum{h in H} hall[h]*planning[h];
+s.t. defPlan:plan = sum{h in H} planning[h];
 s.t. horaireUne:sum{h in H} ha[h]*planning[h] >= 21;
 s.t. horaireDeux:sum{h in H} hb[h]*planning[h] >= 25;
 s.t. horaireTrois:sum{h in H} hc[h]*planning[h] >= 25;
@@ -40,15 +40,6 @@ data;
 
 set H := t1 t2 t3 t4 t5 t6;
 
-
-param hall :=
-  t1 1
-  t2 1
-  t3 1
-  t4 1
-  t5 1
-  t6 1
-;
 	
 
 param ha :=
