@@ -6,7 +6,7 @@
 \usepackage{lastpage}
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=3cm,bottom=2cm]{geometry}
-\title{IAA - TD (1)}
+\title{Programmation Parralèlle - Cours (1)}
 \author{David GUERROUDJ}
 \date{\today}
  
@@ -19,7 +19,7 @@
 \tableofcontents % Table des matières
 \vfill\eject
 
-\section{Exercice 3}
+\section{Motivation}
 
-\includegraphics{
 \end{document}	
+&&

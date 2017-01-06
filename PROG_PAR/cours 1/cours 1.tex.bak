@@ -19,7 +19,13 @@
 \tableofcontents % Table des matières
 \vfill\eject
 
-\section{Motivation}
+\section{Qu'est-ce qu'un thread ?}
+C'est un objet qui va effectuer une tache. Il existe deux moyens de créer un thread:
+\begin{enumerate}
+\item  en créant une classe qui hérite de Thread :
+Elle doit alors implémenther une méthode run qui permet de lancer l'objet.
+\item En créant une classe qui implémente l'inferface Runnable : L'héritage multiple étant interdit, cela permet d'hériter d'une autre classe.
+\end{enumerate}
 
 \end{document}	
 &&
