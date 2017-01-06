@@ -18,7 +18,7 @@ param he{h in H};
 param hf{h in H};
 param hall{h in H};
 
-maximize defplan: plan;
+minimize defplan: plan;
 
 /*CONTRAINTES*/
 s.t. defPlan:plan = sum{h in H} hall[h];
