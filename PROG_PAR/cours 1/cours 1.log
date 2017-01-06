@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.4)  6 JAN 2017 09:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.4)  6 JAN 2017 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**TD1.tex
-(./TD1.tex
+**"cours 1.tex"
+(./cours 1.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -322,8 +322,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks17
-) (./TD1.aux)
-\openout1 = `TD1.aux'.
+) (./cours 1.aux)
+\openout1 = `"cours 1.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -344,8 +344,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
 (lastpage)             ! on input line 15.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count91
 \scratchdimen=\dimen113
@@ -442,39 +441,45 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 17.
-(./TD1.toc)
+(./cours 1.toc)
 \tf@toc=\write3
-\openout3 = `TD1.toc'.
+\openout3 = `"cours 1.toc"'.
 
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 33.
 
-Package lastpage Warning: Rerun to get the references right on input line 24.
-
+<images/1.jpg, id=11, 389.455pt x 296.10625pt>
+File: images/1.jpg Graphic file (type jpg)
+ <use images/1.jpg>
+Package pdftex.def Info: images/1.jpg used on input line 52.
+(pdftex.def)             Requested size: 389.45404pt x 296.10551pt.
+ [2]
 
 AED: lastpage setting LastPage
-[2] (./TD1.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[3 <./images/1.jpg>] (./cours 1.aux) ) 
 Here is how much of TeX's memory you used:
- 2564 strings out of 494985
- 34005 string characters out of 6180357
- 94086 words of memory out of 5000000
- 5745 multiletter control sequences out of 15000+600000
- 10214 words of font info for 28 fonts, out of 8000000 for 9000
+ 2575 strings out of 494985
+ 34184 string characters out of 6180357
+ 98098 words of memory out of 5000000
+ 5752 multiletter control sequences out of 15000+600000
+ 10990 words of font info for 29 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,6n,43p,275b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/david/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/d
-avid/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/david/.texmf
--var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/david/.texmf-var/fonts/
-pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on TD1.pdf (2 pages, 18488 bytes).
+ 38i,6n,43p,281b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/david/.texmf-var/fonts/pk/ljfour/
+jknappen/ec/ecrm1000.600pk> </home/david/.texmf-var/fonts/pk/ljfour/jknappen/ec
+/ecbx1000.600pk> </home/david/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.6
+00pk> </home/david/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </hom
+e/david/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "cours 1.pdf" (3 pages, 75119 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 198 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
