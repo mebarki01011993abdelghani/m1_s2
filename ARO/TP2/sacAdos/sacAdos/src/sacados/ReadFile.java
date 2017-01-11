@@ -28,7 +28,7 @@ public class ReadFile {
     }
 
     /* 
-     * Decoupe un String à chaque retour à la ligne 
+     * Decoupe un String à chaque espace
      */
     private String[] decoupeEspace(String strFile) {
         return strFile.split(" ");
