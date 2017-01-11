@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!ENTITY  titreXml  "Bienvenue" >
+<!ENTITY  %  statut
+             "statut (public|privé) #IMPLIED">
+
+<!ELEMENT ue    ((nom,identifiant,nombreCredit,resume,plan,lieu)*)>
+<!ELEMENT nom 			 (#PCDATA)>
+<!ELEMENT identifiant	 (#PCDATA)>
+<!ELEMENT nombreCredit   (#PCDATA)>
+<!ELEMENT resume		 (#PCDATA)>
+<!ELEMENT plan			 (#PCDATA)>
+<!ELEMENT lieu			 (#PCDATA)>
+
+<!ELEMENT intervenants ((identifiant,nom,adresseElectronique,adresseWeb)*)>
+
+<!ELEMENT adresseElectronique	(#PCDATA)>
+<!ELEMENT adresseWeb			(#PCDATA)>

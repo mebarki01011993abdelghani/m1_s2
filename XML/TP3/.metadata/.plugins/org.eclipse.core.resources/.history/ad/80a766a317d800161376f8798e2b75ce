@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!ENTITY  site1  "Luminy" 		>
+<!ENTITY  site2  "St Jerome"	>
+<!ENTITY  site3  "St Charles" 	>
+<!ENTITY  %  statut
+             "statut (public|privé) #IMPLIED">
+
+<!ELEMENT ue    ((nom,identifiant,nombreCredit,resume,plan,lieu)*)>
+<!ELEMENT intervenants ((identifiant,nom,adresseElectronique,adresseWeb)*)>
+<!ELEMENT nom 					(#PCDATA)>
+<!ELEMENT identifiant			(#PCDATA)>
+<!ELEMENT nombreCredit  		(3|6)	 >
+<!ELEMENT resume				(#PCDATA)>
+<!ELEMENT plan					(#PCDATA)>
+<!ELEMENT lieu					(#PCDATA)>
+<!ELEMENT adresseElectronique	(#PCDATA)>
+<!ELEMENT adresseWeb			(#PCDATA)>
+

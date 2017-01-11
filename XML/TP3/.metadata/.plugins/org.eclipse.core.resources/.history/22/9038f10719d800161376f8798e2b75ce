@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!ENTITY  site1  "Luminy" 		>
+<!ENTITY  site2  "St Jerome"	>
+<!ENTITY  site3  "St Charles" 	>
+
+<!ELEMENT ue    ((nom,identifiant,nombreCredit,resume,plan,lieu)*)>
+<!ELEMENT intervenants ((identifiant,nom,adresseElectronique,adresseWeb)*)>
+<!ATTLIST intervenants
+    identifiant
+    nom
+    adresseElectronique
+    adresseWeb 
+>
+<!ELEMENT nom 					(#PCDATA) #REQUIRED >
+<!ELEMENT identifiant			(#PCDATA) #REQUIRED >
+<!ELEMENT nombreCredit  		(3|6)	  #REQUIRED >
+<!ELEMENT resume				(#PCDATA) #REQUIRED >
+<!ELEMENT plan					(#PCDATA) #REQUIRED >
+<!ELEMENT lieu					(#PCDATA) #REQUIRED >
+<!ELEMENT adresseElectronique	(#PCDATA) #REQUIRED >
+<!ELEMENT adresseWeb			(#PCDATA) #REQUIRED >

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!ENTITY  titreXml  "Bienvenue" >
+<!ENTITY  %  statut
+             "statut (public|privé) #IMPLIED">
+
+<!ELEMENT ue    ((nom,identifiant,nombreCredit,resume,plan,lieu)*)>
+<!ELEMENT produit  (nom,prix?,quantite?)>
+<!ELEMENT nom      (#PCDATA)>
+<!ELEMENT fournisseur      (nom,description)>
+<!ELEMENT description     (adresse,telephone,rue?)>
+<!ELEMENT prix     (#PCDATA)>
+<!ELEMENT quantite     (#PCDATA)>
+<!ELEMENT adresse      (#PCDATA)>
+<!ELEMENT telephone      (#PCDATA)>
+<!ELEMENT rue      (#PCDATA)>
+<!ATTLIST prix
+    monnaie (Euros|Francs) #IMPLIED 
+	%statut;
+    >
+<!ELEMENT nature (#PCDATA) >
+<!ATTLIST  nature  type (Final|Intermerdiaire)  #IMPLIED >
+    

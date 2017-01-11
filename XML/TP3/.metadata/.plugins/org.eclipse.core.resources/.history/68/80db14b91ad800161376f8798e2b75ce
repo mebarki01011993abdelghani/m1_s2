@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="master.xls"?>
+
+<Master >
+	<Intervenant id="massat">
+		<Identifiant>JLM</Identifiant>
+		<Nom>Jean-Luc Massat</Nom>
+		<SiteWeb>http://jean-luc.massat&sadresseSitePerso;</SiteWeb>
+		<Mail></Mail>
+	</Intervenant>
+
+	<Enseignements>
+		<Nom></Nom>
+		<Identifiant></Identifiant>
+		<NombreCredit></NombreCredit>
+		<Resume></Resume>
+		<Plan></Plan>
+		<Lieu></Lieu>
+	</Enseignements>
+
+	<Specialite>	
+		<Nom></Nom>
+	</Specialite>
+	
+	<Parcours>
+		<Nom></Nom>
+		<Responsable></Responsable>
+		<debouches></debouches>
+		<description></description>
+	</Parcours>
+	<Semestres>
+		<Ue>
+			<Enseignements></Enseignements>
+			<Role></Role>
+		</Ue>			
+	</Semestres>
+</Master>	
