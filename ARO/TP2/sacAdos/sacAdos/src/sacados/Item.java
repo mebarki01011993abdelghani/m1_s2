@@ -19,12 +19,13 @@ public class Item implements Comparable<Item> {
     private int poid;
     private boolean etat;
 
-    public Item(boolean etat, Item obj, int valeur, int poid) {
+    public Item(Item obj, int valeur, int poid) {
         this.indice = obj;
         this.valeur = valeur;
         this.poid = poid;
-        this.etat = etat;
+        this.etat = false;
     }
+    
 
     public static ArrayList<Item> tableToArrayList(int[][] table) {
         ArrayList<Item> items = new ArrayList<Item>();
@@ -35,7 +36,7 @@ public class Item implements Comparable<Item> {
             // val poid
             int val = table[i][0];
             int poid = table[i][1];
-            Item Obj = new Item(false, null, val, poid);
+            Item Obj = new Item(null, val, poid);
             items.add(Obj);
         }
         return items;
@@ -45,7 +46,9 @@ public class Item implements Comparable<Item> {
         int nbObjets = objetsDesordre.size();
 
         for (int i = 0; i < nbObjets; i++) {
+            //Croissant
             Collections.sort(objetsDesordre);
+            //Décroissant
             Collections.reverse(objetsDesordre);
         }
         return objetsDesordre;
