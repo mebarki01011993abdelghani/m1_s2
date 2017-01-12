@@ -15,27 +15,26 @@ import java.util.Collections;
 public class Item implements Comparable<Item> {
 
     private Item indice;
-    private int valeur;
-    private int poid;
+    private float valeur;
+    private float poid;
     private boolean etat;
 
-    public Item(Item obj, int valeur, int poid) {
+    public Item(Item obj, float valeur, float poid) {
         this.indice = obj;
         this.valeur = valeur;
         this.poid = poid;
         this.etat = false;
     }
-    
 
-    public static ArrayList<Item> tableToArrayList(int[][] table) {
+    public static ArrayList<Item> tableToArrayList(float[][] table) {
         ArrayList<Item> items = new ArrayList<Item>();
 
-        int tailleTable = table.length;
+        float tailleTable = table.length;
 
         for (int i = 0; i < tailleTable; i++) {
-            // val poid
-            int val = table[i][0];
-            int poid = table[i][1];
+            // poid val
+            float val = table[i][1];
+            float poid = table[i][0];
             Item Obj = new Item(null, val, poid);
             items.add(Obj);
         }
@@ -43,21 +42,23 @@ public class Item implements Comparable<Item> {
     }
 
     public static ArrayList<Item> trierObjetPoid(ArrayList<Item> objetsDesordre) {
-        int nbObjets = objetsDesordre.size();
+        float nbObjets = objetsDesordre.size();
 
-        for (int i = 0; i < nbObjets; i++) {
+        for (float i = 0; i < nbObjets; i++) {
             //Croissant
             Collections.sort(objetsDesordre);
+
             //Décroissant
             Collections.reverse(objetsDesordre);
         }
+
         return objetsDesordre;
     }
 
     @Override
     public int compareTo(Item a) {
-        Double ratioA = (double) a.getValeur() / (double) a.getPoid();
-        Double ratioB = (double) this.getValeur() / (double) this.getPoid();
+        Float ratioA = a.getValeur() / a.getPoid();
+        Float ratioB = this.getValeur() / this.getPoid();
 
         return ratioB.compareTo(ratioA);
 
@@ -66,20 +67,21 @@ public class Item implements Comparable<Item> {
 
     public static Item initialiserObjets(ArrayList<Item> objets) {
 
-        int nombreObjets = objets.size();
+        float nombreObjets = objets.size();
 
         // On sauvegarde notre premier objet
         Item firstObj = objets.get(0);
 
         // save de l'objet
-        Item save = firstObj;
+        Item save ;
+        Item ocur = firstObj;
 
         // Génération de la liste chainée
         for (int i = 1; i < nombreObjets; i++) {
-            save.setIndice(save);
             save = objets.get(i);
+            ocur.setIndice(save);
+            ocur = save;
         }
-
         return firstObj;
     }
 
@@ -91,19 +93,19 @@ public class Item implements Comparable<Item> {
         this.indice = indice;
     }
 
-    public int getValeur() {
+    public float getValeur() {
         return valeur;
     }
 
-    public void setValeur(int valeur) {
+    public void setValeur(float valeur) {
         this.valeur = valeur;
     }
 
-    public int getPoid() {
+    public float getPoid() {
         return poid;
     }
 
-    public void setPoid(int poid) {
+    public void setPoid(float poid) {
         this.poid = poid;
     }
 

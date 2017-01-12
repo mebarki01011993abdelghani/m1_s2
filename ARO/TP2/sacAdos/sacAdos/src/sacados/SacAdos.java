@@ -1,32 +1,39 @@
 package sacados;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class SacAdos {
 
-    static final int poidSac = 1000;
+    static int poidSac;
+    static final String chemin = "src/sacados/sac1.txt";
 
     static double algorithmGreedy(Item firstItem) {
-        double valeurTotal = 0;
-        double poidTotal = 0;
+        int poidTotal = 0, verifPoid = 0, i = 0;
+        float val, depassement, valeurTotal = 0;
 
-
-        int i = 0;
         Item obj = firstItem;
-        double val ;
-        double verif;
-        
+
         while (poidTotal < poidSac) {
-            verif = poidTotal + obj.getPoid();
-            if (verif > valeurTotal) {
-                poidTotal = poidTotal + (poidSac - poidTotal);
-                val = (poidSac - poidTotal)/obj.getPoid();
-                val = obj.getValeur()*val;
+            verifPoid = poidTotal + (int) obj.getPoid();
+            if (verifPoid > poidSac) {
+                //On calcul le dépassement
+                depassement = verifPoid - poidSac;
+                //On calcul le "découpement" de l'objet
+                val = (obj.getPoid() - depassement) / obj.getPoid();
+                //On calcul sa valeur fractionnaire
+                val = obj.getValeur() * val;
+                // On l'ajouter à la valeur total
                 valeurTotal = valeurTotal + val;
+                poidTotal = poidSac;
+                obj.setEtat(true);
+
             } else {
-                valeurTotal = verif;
-                poidTotal = poidTotal + obj.getPoid();
+                valeurTotal = valeurTotal + obj.getValeur();
+                poidTotal = verifPoid;
+                obj.setEtat(true);
             }
+
             // on récupere l'objet suivant
             obj = obj.getIndice();
         }
@@ -34,24 +41,18 @@ public class SacAdos {
         return valeurTotal;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         ArrayList<Item> objets = new ArrayList<Item>();
-        int[][] objs = new int[5][2];
-        objs[0][1] = 3;
-        objs[1][0] = 2;
-        objs[1][1] = 5;
-        objs[2][0] = 9;
-        objs[2][1] = 11;
-        objs[3][0] = 9;
-        objs[3][1] = 554;
-        objs[4][0] = 8;
-        objs[4][1] = 5;
+        float[][] objs;
 
-        /*Créer objet*/
+        /* Initialisation */
+        objs = ReadFile.getTable(chemin);
+        /*Créer objets*/
         objets = Item.tableToArrayList(objs);
         objets = Item.trierObjetPoid(objets);
+
         Item firstObj = Item.initialiserObjets(objets);
-        algorithmGreedy(firstObj);
+        System.out.println(algorithmGreedy(firstObj));
 
     }
 

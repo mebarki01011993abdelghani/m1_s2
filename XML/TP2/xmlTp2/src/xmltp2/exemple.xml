@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
 <?xml-stylesheet type="text/xsl" href="exemple.xls"?>
 <!DOCTYPE stock SYSTEM "exemple.dtd"
-
    [
       <!ENTITY  produits  SYSTEM  "produit2.xml.inc">
    ]
    >
 
 <stock>
-<produit><!-- Debut Produit -->
-    <nom> TITRE </nom>
-    <prix monnaie="Euros" statut="privé" > 50 </prix>
-    <quantite>5</quantite>
-  </produit>
-  &produits;  <!-- Fin Produit --></stock>
+    <produit><!-- Debut Produit -->
+        <nom> TITRE </nom>
+        <prix monnaie="Euros" statut="privé" > 50 </prix>
+        <quantite>5</quantite>
+    </produit>
+  &produits;  <!-- Fin Produit -->
+</stock>
