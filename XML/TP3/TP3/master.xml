@@ -2,67 +2,67 @@
 <!DOCTYPE master SYSTEM "master.dtd">
 
 
-<Master >
-	<Intervenant id="massat">
-		<Identifiant>JLM</Identifiant>
-		<Nom>Jean-Luc Massat</Nom>
-		<SiteWeb>&http;jean-luc.massat&adresseSitePerso;</SiteWeb>
-		<Mail>jean-luc.massat@&dom.dil;</Mail>
-	</Intervenant>
-	<Intervenant id="Santocanale">
-		<Identifiant>LS</Identifiant>
-		<Nom>Luigi Santocanale</Nom>
-		<SiteWeb>&http;luigi.santocanale&adresseSitePerso;</SiteWeb>
-		<Mail>luigi.santocanale@&dom.dil;</Mail>
-	</Intervenant>
+<master>
+	<intervenant id="massat">
+		<identifiant>JLM</identifiant>
+		<nom>Jean-Luc Massat</nom>
+		<mail>jean-luc.massat@&dom.dil;</mail>
+		<siteWeb>&http;jean-luc.massat&adresseSitePerso;</siteWeb>
+	</intervenant>
+	<intervenant id="Santocanale">
+		<identifiant>LS</identifiant>
+		<nom>Luigi Santocanale</nom>
+		<mail>luigi.santocanale@&dom.dil;</mail>
+		<siteWeb>&http;luigi.santocanale&adresseSitePerso;</siteWeb>
+	</intervenant>
 
-	<Enseignement id="ENSINBU4">
-		<Nom>XML</Nom>
-		<Identifiant>ENSINBU4</Identifiant>
-		<NombreCredit>3</NombreCredit>
-		<Resume>XML et les outils associés permettent de représenter et de manipuler des documents semi-structurés. Nous nous attachons, dans ce cours, à présenter les avantages d'XML dans le cadre du WEB et de la transmission des données en insistant sur la portabilité des documents et des applications.</Resume>
-		<Plan>
+	<enseignement id="ENSINBU4">
+		<nom>XML</nom>
+		<identifiant>ENSINBU4</identifiant>
+		<nombreCredit>3</nombreCredit>
+		<resume>XML et les outils associés permettent de représenter et de manipuler des documents semi-structurés. Nous nous attachons, dans ce cours, à présenter les avantages d'XML dans le cadre du WEB et de la transmission des données en insistant sur la portabilité des documents et des applications.</resume>
+		<plan>
 			<p>
 				le langage XML et les DTD, les requêtes XPATH et le langage de transformation XSLT, l'utilisation de documents XML en Java, le langage des schémas XML.
 			</p>
-		</Plan>
-		<Lieu>&site1; &site2;</Lieu>
-	</Enseignement>
+		</plan>
+		<lieu>&site1; &site2;</lieu>
+	</enseignement>
 
-	<Specialite id="GL">	
-		<Nom>Génie logiciel</Nom>
-		<Identifiant>GL</Identifiant>
-		<Code>GL</Code>
-		<Finalite>Pro.</Finalite>
-		<Lieux>	&site3;</Lieux>
-	</Specialite>
-	<Specialite id="ID">	
-		<Nom>Informatique décisionnelle</Nom>
-		<Identifiant>ID</Identifiant>
-		<Code>FED</Code>
-		<Finalite>Pro.</Finalite>
-		<Lieux>	&site1;</Lieux>
-	</Specialite>
+	<specialite id="GL">	
+		<nom>Génie logiciel</nom>
+		<identifiant>GL</identifiant>
+		<code>GL</code>
+		<finalite>Pro.</finalite>
+		<lieu>&site3;</lieu>
+	</specialite>
+	<specialite id="ID">	
+		<nom>Informatique décisionnelle</nom>
+		<identifiant>ID</identifiant>
+		<code>FED</code>
+		<finalite>Pro.</finalite>
+		<lieu>&site1;</lieu>
+	</specialite>
 	
-	<Parcour id="RO">
-		<Nom>Recherche opérationnelle</Nom>
-		<Responsable>Yann VAXES</Responsable>
-		<debouches>Administrateur de bases de données ou d’entrepôts de données.</debouches>
-		<debouches>Extraction, transformation et chargement des données.</debouches>
-		<debouches>Études et développement informatique.</debouches>
+	<parcour id="RO">
+		<nom>Recherche opérationnelle</nom>
+		<responsable>Yann VAXES</responsable>
+		<debouche>Administrateur de bases de données ou d’entrepôts de données.</debouche>
+		<debouche>Extraction, transformation et chargement des données.</debouche>
+		<debouche>Études et développement informatique.</debouche>
 		<description>
 			<p>
 				ici description
 			</p>
 		</description>
-	</Parcour>
-	<Semestre>
-		<Ue id ="master1">
-			<Enseignement>
+	</parcour>
+	<semestre>
+		<ue id ="master1">
+			<enseignement>
 						<ref-enseignement ref="ENSINBU4" />
 						<ref-intervenant ref="Santocanale" />
-			</Enseignement>
-			<Role>Obligatoire</Role>
-		</Ue>			
-	</Semestre>
-</Master>	
+			</enseignement>
+			<role>Obligatoire</role>
+		</ue>			
+	</semestre>
+</master>	

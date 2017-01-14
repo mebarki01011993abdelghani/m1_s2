@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
 <!ENTITY  site1  "Luminy" 		>
 <!ENTITY  site2  "St Jerome"	>
 <!ENTITY  site3  "St Charles" 	>
@@ -8,28 +7,25 @@
 <!ENTITY  dom.luminy  			"univ-mrs.fr" 				 >
 <!ENTITY  dom.dil     			"dil.&dom.luminy;" 			 >
 
-<!ELEMENT Enseignement    			((Nom,Identifiant,NombreCreditResume,Plan,Lieu)*)>
-<!ELEMENT Intervenant				((Identifiant,Nom,Mail,SiteWeb)*)				 >
-<!ELEMENT Specialité				((Nom,Identifiant,Code,Finalite,Lieu)*)										 >
-<!ELEMENT Parcours					((Nom,(Responable+),(Debouches+),Description)*)	 >
-<!ELEMENT Semestre					(Ue+)								   			 >																
-<!ELEMENT Ue						(((Enseignements+),Role)*)						 >
-
-<!ELEMENT Nom 						(#PCDATA) #REQUIRED >
-<!ELEMENT Responsable 				(#PCDATA) #REQUIRED >
-<!ELEMENT debouches 				(#PCDATA) #REQUIRED >
-<!ELEMENT description 				(#PCDATA) #REQUIRED >
-<!ELEMENT Enseignement 				(#PCDATA) #REQUIRED >
-<!ELEMENT Role 						(Obligatoire|Facultatif) #REQUIRED >
-<!ELEMENT Lieu 						(#PCDATA) #REQUIRED >
-<!ELEMENT Code 						(#PCDATA) #REQUIRED >
-<!ELEMENT Finalite 					(#PCDATA) #REQUIRED >
-<!ELEMENT Plan 						(#PCDATA) #REQUIRED >
-<!ELEMENT Resume 					(#PCDATA) #REQUIRED >
-<!ELEMENT NombreCredit 				(#PCDATA) #REQUIRED >
-<!ELEMENT Identifiant 				(#PCDATA) #REQUIRED >
-<!ELEMENT Mail 						(#PCDATA) #REQUIRED >
-<!ELEMENT SiteWeb 					(#PCDATA) #REQUIRED >
-<!ELEMENT NombreCredit				(#PCDATA) #REQUIRED >
-
-<!ATTLIST  Enseignement  id  IDREF  #IMPLIED>
+<!ELEMENT master					((intervenant,enseignement,specialite,parcour)*)>
+<!ELEMENT enseignement    			((nom,identifiant,nombreCreditResume,plan,lieu)*)>
+<!ELEMENT intervenant				((identifiant,nom,mail,siteWeb)*)				 >
+<!ELEMENT specialite				((nom,identifiant,code,finalite,lieu)*)			 >							 
+<!ELEMENT parcour					((nom,responsable,debouche,description)*)		 >
+<!ELEMENT semestre					(ue+)								   			 >																
+<!ELEMENT ue						(((enseignements+),role)*)						 >
+<!ELEMENT nom 						(#PCDATA)  >
+<!ELEMENT responsable 				(#PCDATA)  >
+<!ELEMENT debouche 					(#PCDATA)  >
+<!ELEMENT description 				(#PCDATA)  >
+<!ELEMENT role 						(Obligatoire|Facultatif)  >
+<!ELEMENT lieu 						(#PCDATA)  >
+<!ELEMENT code 						(#PCDATA)  >
+<!ELEMENT finalite 					(#PCDATA)  >
+<!ELEMENT plan 						(#PCDATA)  >
+<!ELEMENT resume 					(#PCDATA)  >
+<!ELEMENT nombreCredit 				(#PCDATA)  >
+<!ELEMENT identifiant 				(#PCDATA)  >
+<!ELEMENT mail 						(#PCDATA)  >
+<!ELEMENT siteWeb 					(#PCDATA)  >
+<!ATTLIST enseignement  id  IDREF  #IMPLIED>
