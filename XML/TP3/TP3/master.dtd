@@ -20,7 +20,7 @@
 <!ELEMENT parcours					(nom,responsable,debouche*,description,semestre+)>
 <!ELEMENT ue 						(ref-enseignement+)								>							
 <!ELEMENT semestre					(ue+)								   			>	
-<!ELEMENT responsable 				(ref-intervenant)>
+<!ELEMENT responsable 				(ref-intervenant+)>
 
 <!--ELEMENTS-->
 <!ELEMENT pre-requis 				(#PCDATA)  >
