@@ -1,28 +1,33 @@
-<!ENTITY  site1  "Luminy" 		>
-<!ENTITY  site2  "St Jerome"	>
+<!--ENTYTY-->
+<!ENTITY  site1  "UFR Sciences" 		>
+<!ENTITY  site2  "Université d'Aix-Marseille"	>
 <!ENTITY  site3  "St Charles" 	>
-
 <!ENTITY  adresseSitePerso      ".perso.luminy.univ-amu.fr/" >
 <!ENTITY  http					"http://www."				 >
+<!ENTITY  dom.amu				"univ-amu.fr"				 >
 <!ENTITY  dom.luminy  			"univ-mrs.fr" 				 >
 <!ENTITY  dom.dil     			"dil.&dom.luminy;" 			 >
-<!ENTITY  obli     				"Obligatoire;" 			     >
-<!ENTITY  falc     				"Falcultatif;" 			     >
-
-
+<!ENTITY  obli     				"Obligatoire" 			     >
+<!ENTITY  falc     				"Falcultatif" 			     >
+<!ENTITY  cred3     			"3" 			     		 >
+<!ENTITY  cred6     			"6" 			     		 >
+<!ENTITY  noResume				"Nous sommes désolé, mais nous n'avons pas encore de résumé.">
+<!--RELATIONS ELEMENTS-->
 <!ELEMENT master					(intervenant*,enseignement*,specialite*,parcours*,semestre*)>
-<!ELEMENT enseignement    			((nom,identifiant,nombreCredit,resume,plan,lieu+,ref-intervenant+)*)>
-<!ELEMENT intervenant				((identifiant,nom,mail,siteWeb)*)				 >
-<!ELEMENT specialite				((nom,identifiant,code,finalite,lieu)*)			 >							 
-<!ELEMENT parcours					((nom,responsable,debouche*,description,semestre))		 >
-<!ELEMENT ue 						(ref-enseignement)	>							
-<!ELEMENT semestre					(ue+)								   			 >	
-															
+<!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant+)>
+<!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,etablissement)				 >
+<!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,ref-intervenant+)			 >							 
+<!ELEMENT parcours					(nom,responsable,debouche*,description,semestre+)>
+<!ELEMENT ue 						(ref-enseignement+)								>							
+<!ELEMENT semestre					(ue+)								   			>	
+<!ELEMENT responsable 				(ref-intervenant)>
+
+<!--ELEMENTS-->
+<!ELEMENT pre-requis 				(#PCDATA)  >
 <!ELEMENT nom 						(#PCDATA)  >
-<!ELEMENT responsable 				(#PCDATA)  >
 <!ELEMENT debouche 					(#PCDATA)  >
 <!ELEMENT description 				(#PCDATA)  >
-<!ELEMENT lieu 						(#PCDATA)  >
+<!ELEMENT etablissement 			(#PCDATA)  >
 <!ELEMENT code 						(#PCDATA)  >
 <!ELEMENT finalite 					(#PCDATA)  >
 <!ELEMENT plan 						(#PCDATA)  >
@@ -34,11 +39,11 @@
 <!ELEMENT ref-intervenant    		(#PCDATA)  >
 <!ELEMENT ref-enseignement   		(#PCDATA)  >
 
+<!--ATTRIBUTS-->
 <!ATTLIST enseignement  idEnseignement  ID  #REQUIRED   >
 <!ATTLIST intervenant  idIntervenant  ID  #REQUIRED   >
 <!ATTLIST specialite  idSpecialite  ID  #REQUIRED   >
 <!ATTLIST parcours  idParcour  ID  #REQUIRED   >
-
 <!ATTLIST ref-intervenant  ref IDREF  #REQUIRED   >
 <!ATTLIST ref-enseignement  ref IDREF  #REQUIRED   >
 <!ATTLIST ue  etat  (Obligatoire|Falcultatif)  #REQUIRED>

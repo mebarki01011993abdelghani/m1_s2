@@ -4,42 +4,194 @@
 
 <master>
 <!-- INTERVENANTS -->
-	<intervenant idIntervenant="massat">
+	<intervenant idIntervenant="IN18">
 		<identifiant>JLM</identifiant>
-		<nom>Jean-Luc Massat</nom>
-		<mail>jean-luc.massat@&dom.dil;</mail>
-		<siteWeb>&http;jean-luc.massat&adresseSitePerso;</siteWeb>
+		<nom>Jean-Luc MASSAT</nom>
+		<mail>jean-luc.massat&dom.amu;</mail>
+		<telephone>0491829482</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
 	</intervenant>
-	<intervenant idIntervenant="Santocanale">
-		<identifiant>LS</identifiant>
-		<nom>Luigi Santocanale</nom>
-		<mail>luigi.santocanale@&dom.dil;</mail>
-		<siteWeb>&http;luigi.santocanale&adresseSitePerso;</siteWeb>
+	<intervenant idIntervenant="IN7680">
+		<identifiant>IN7680</identifiant>
+		<nom>Claude LAI</nom>
+		<mail>Claude LAI@&dom.amu;</mail>
+		<telephone>04 91 82 93 16</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN3524">
+		<identifiant>IN3524</identifiant>
+		<nom>Denis LUGIEZ</nom>
+		<mail>denis.luigiezZ@&dom.amu;</mail>
+		<telephone>0413551333</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN17708">
+		<identifiant>IN17708</identifiant>
+		<nom>Stephane MICHEL</nom>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN9224">
+		<identifiant>IN9224</identifiant>
+		<nom>Remi MORIN</nom>
+		<mail>remi.morin@&dom.amu;</mail>
+		<telephone>0491829394</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN7722">
+		<identifiant>IN7722</identifiant>
+		<nom>Noel NOVELLI</nom>
+		<mail>noel.noveli@&dom.amu;</mail>
+		<telephone>04 91 82 93 70</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN13794">
+		<identifiant>IN13794</identifiant>
+		<nom>Frederic OLIVE</nom>
+		<mail>frederic.olive@&dom.amu;</mail>
+		<telephone>0491829000</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN12632">
+		<identifiant>IN12632</identifiant>
+		<nom>Nicola OLIVETTI</nom>
+		<mail>nicolas.olivetti@&dom.amu;</mail>
+		<telephone> 04 860 91 046</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN12969">
+		<identifiant>IN12969</identifiant>
+		<nom>Lydie RENE CHABAROT</nom>
+		<mail>lydie.rene@&dom.amu;</mail>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN4595">
+		<identifiant>IN4595</identifiant>
+		<nom>Pierre-Alain REYNIER</nom>
+		<mail> pierre-alain.reynier@&dom.amu;</mail>
+		<telephone>04 91 82 93 13</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN7931">
+		<identifiant>IN7931</identifiant>
+		<nom>Sylvie RISCH</nom>
+		<mail>sylvie.risch@&dom.amu;</mail>
+		<telephone>0491829316</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN26">
+		<identifiant>IN26</identifiant>
+		<nom>Claude SABATIER</nom>
+		<mail>claude.sabatier@&dom.amu;</mail>
+		<telephone>04 91 82 94 81</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN16625">
+		<identifiant>IN16625</identifiant>
+		<nom>Sana SELLAMI</nom>
+		<mail>sana.sellami@&dom.amu;</mail>
+		<telephone>+33 4 91 05 60 57</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
+	</intervenant>
+	<intervenant idIntervenant="IN8086">
+		<identifiant>IN8086</identifiant>
+		<nom>Yann VAXES</nom>
+		<mail> yann.vaxes@&dom.amu;</mail>
+		<telephone>0491829196</telephone>
+		<etablissement>&site1;, &site2;</etablissement>
 	</intervenant>
 <!-- FIN INTERVENANTS -->
 <!-- ENSEIGNEMENTS -->
+	<enseignement idEnseignement="ENSINBU1">
+		<nom>ANGLAIS</nom>
+		<identifiant>ENSINBU1</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
+	<enseignement idEnseignement="ENSINBU2">
+		<nom>ANGLAIS</nom>
+		<identifiant>ENSINBU1</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>chapitre 1  : Théories de la communication : 1.1 La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener) 1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)chapitre 2 : Rôle de l’interculturalité dans le travail en équipe : 2.1 L’enquête interculturelle de Hofstede pour IBM 2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall) chapitre 3 : Notions de management et de travail collaboratif 3.1 Le travail collaboratif vs le travail coopératif 3.2 La notion de groupes 3.3 Les compétences managériales</resume>
+		<pre-requis>Particulièrement utile pour un choix d’options, les échanges internationaux et la formation continue.</pre-requis>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
 	<enseignement idEnseignement="ENSINBU4">
 		<nom>XML</nom>
 		<identifiant>ENSINBU4</identifiant>
-		<nombreCredit>3</nombreCredit>
-		<resume>XML et les outils associés permettent de représenter et de manipuler des documents semi-structurés. Nous nous attachons, dans ce cours, à présenter les avantages d'XML dans le cadre du WEB et de la transmission des données en insistant sur la portabilité des documents et des applications.</resume>
-		<plan>
-				le langage XML et les DTD, les requêtes XPATH et le langage de transformation XSLT, l'utilisation de documents XML en Java, le langage des schémas XML.
-		</plan>
-		<lieu>&site1; &site2;</lieu>
-		<ref-intervenant ref="massat"></ref-intervenant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>XML, DTD, XSD XPath, XSLT, XQuery.</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
 	</enseignement>
-	
-	<enseignement idEnseignement="ERPOIP">
-		<nom>ANDROID</nom>
-		<identifiant>ERPOIP</identifiant>
-		<nombreCredit>3</nombreCredit>
-		<resume>XML et les outils associés permettent de représenter et de manipuler des documents semi-structurés. Nous nous attachons, dans ce cours, à présenter les avantages d'XML dans le cadre du WEB et de la transmission des données en insistant sur la portabilité des documents et des applications.</resume>
-		<plan>
-				le langage XML et les DTD, les requêtes XPATH et le langage de transformation XSLT, l'utilisation de documents XML en Java, le langage des schémas XML.
-		</plan>
-		<lieu>&site1; &site2;</lieu>
-		<ref-intervenant ref="Santocanale"></ref-intervenant>	
+	<enseignement idEnseignement="ENSINBU5">
+		<nom>Algorithmique et recherche opérationnelle</nom>
+		<identifiant>ENSINBU5</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>Programmation linéaire. Notions et algorithmes de flots.Applications (couplage, affectation, transport, ...)Programmation dynamique (sac à dos, ordonnancement, ...) Algorithmes à performance garantie</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
+	<enseignement idEnseignement="ENSINBU12">
+		<nom>Intelligence artificielle</nom>
+		<identifiant>ENSINBU12</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>Introduction à l'IA Problèmes d'espace d'états et d'exploration Logiques pour l'IA et démonstration automatique Représentation de connaissances Actions, temps et planification Programmation par contraintes et réseaux de contraintes</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
+	<enseignement idEnseignement="ENSINBU15">
+		<nom>Programmation parallèle</nom>
+		<identifiant>ENSINBU15</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>&noResume;</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
+	<enseignement idEnseignement="ENSINBU6">
+		<nom>Projet</nom>
+		<identifiant>ENSINBU6</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
+	<enseignement idEnseignement="ENSINBU7">
+		<nom>Stage de deux mois</nom>
+		<identifiant>ENSINBU7</identifiant>
+		<nombreCredit>&cred6;</nombreCredit>
+		<resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
+	<enseignement idEnseignement="ENSINBU8">
+		<nom>Sémantique</nom>
+		<identifiant>ENSINBU8</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>1-Le lambda-calcul simplement typéSyntaxe, typage, beta et eta-conversions, équations. Modèles : interprétation des jugements de typage.2-Extension à PCF. La règle \mu. 3-Points fixes dans les ordres partiels complets.Le théorème de Tarski.4-Sémantique par point fixe de PCF. 5-Cours de clôture : survol des différentes approches sémantiques.Sémantiques opérationnelles : par transitions, naturelles, machine abstraite de Landin. Sémantique dénotationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage impératif.</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
+	<enseignement idEnseignement="ENSINBU10">
+		<nom>Intégration des systèmes d'information</nom>
+		<identifiant>ENSINBU10</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>Problématique d'intégration des SI Architectures et patrons d'intégration Systèmes d'Information d'entreprises Systèmes d'Information sur Internet</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
+	<enseignement idEnseignement="ENSINBU11">
+		<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
+		<identifiant>ENSINBU11</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
+	<enseignement idEnseignement=" ENSINBU13">
+		<nom>Algorithme à performance garantie</nom>
+		<identifiant> ENSINBU13</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>Algorithmes d'approximation de nature combinatoire pour les problèmes NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune ; FPTAS et PTAS (ordonnancement de taches et sac à dos) ; Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ; Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
+	</enseignement>
+	<enseignement idEnseignement=" ENSINBU16">
+		<nom>Introduction à l'apprentissage automatique</nom>
+		<identifiant>ENSINBU16</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>&noResume;</resume>
+		<ref-intervenant ref="IN18"></ref-intervenant>
 	</enseignement>
 <!-- FIN ENSEIGNEMENTS -->
 <!-- SEPECIALITES -->
@@ -48,20 +200,25 @@
 		<identifiant>GL</identifiant>
 		<code>GL</code>
 		<finalite>Pro.</finalite>
-		<lieu>&site3;</lieu>
+		<etablissement>&site3;</etablissement>
+		<ref-intervenant ref="IN7680"></ref-intervenant>	
 	</specialite>
 	<specialite idSpecialite="ID">	
 		<nom>Informatique décisionnelle</nom>
 		<identifiant>ID</identifiant>
 		<code>FED</code>
 		<finalite>Pro.</finalite>
-		<lieu>&site1;</lieu>
+		<etablissement>&site1;</etablissement>
+		<ref-intervenant ref="IN7680"></ref-intervenant>	
 	</specialite>
+	
 <!-- FIN SPECIALITES -->
 <!-- PARCOURS -->
 	<parcours idParcour="RO">
 		<nom>Recherche opérationnelle</nom>
-		<responsable>Yann VAXES</responsable>
+		<responsable>
+					<ref-intervenant ref="IN18"></ref-intervenant>
+		</responsable>
 		<debouche>Administrateur de bases de données ou d’entrepôts de données.</debouche>
 		<debouche>Extraction, transformation et chargement des données.</debouche>
 		<debouche>Études et développement informatique.</debouche>
@@ -69,11 +226,11 @@
 				ici description
 		</description>
 		<semestre>
-			<ue etat ="Obligatoire">
+			<ue etat = "&obli;">
 				<ref-enseignement ref="ENSINBU4"></ref-enseignement>
 			</ue>
-			<ue etat ="Falcultatif">
-				<ref-enseignement ref="ERPOIP"></ref-enseignement>
+			<ue etat ="&falc;">
+				<ref-enseignement ref="ENSINBU11"></ref-enseignement>
 			</ue>
 		</semestre>
 	</parcours>
