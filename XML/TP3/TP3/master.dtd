@@ -15,9 +15,8 @@
 <!ELEMENT intervenant				((identifiant,nom,mail,siteWeb)*)				 >
 <!ELEMENT specialite				((nom,identifiant,code,finalite,lieu)*)			 >							 
 <!ELEMENT parcours					((nom,responsable,debouche*,description,semestre))		 >
-<!ELEMENT cours 					(ue+)  >
-<!ELEMENT ue 						(ref-enseignement,ref-intervenant+)	>							
-<!ELEMENT semestre					(cours+)								   			 >	
+<!ELEMENT ue 						(ref-enseignement)	>							
+<!ELEMENT semestre					(ue+)								   			 >	
 															
 <!ELEMENT nom 						(#PCDATA)  >
 <!ELEMENT responsable 				(#PCDATA)  >
@@ -42,6 +41,6 @@
 
 <!ATTLIST ref-intervenant  ref IDREF  #REQUIRED   >
 <!ATTLIST ref-enseignement  ref IDREF  #REQUIRED   >
-<!ATTLIST ue  etat  (&obli;|&falc;)  #REQUIRED>
+<!ATTLIST ue  etat  (Obligatoire|Falcultatif)  #REQUIRED>
 
 

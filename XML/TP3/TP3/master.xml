@@ -3,6 +3,7 @@
 
 
 <master>
+<!-- INTERVENANTS -->
 	<intervenant idIntervenant="massat">
 		<identifiant>JLM</identifiant>
 		<nom>Jean-Luc Massat</nom>
@@ -15,7 +16,8 @@
 		<mail>luigi.santocanale@&dom.dil;</mail>
 		<siteWeb>&http;luigi.santocanale&adresseSitePerso;</siteWeb>
 	</intervenant>
-
+<!-- FIN INTERVENANTS -->
+<!-- ENSEIGNEMENTS -->
 	<enseignement idEnseignement="ENSINBU4">
 		<nom>XML</nom>
 		<identifiant>ENSINBU4</identifiant>
@@ -25,8 +27,22 @@
 				le langage XML et les DTD, les requêtes XPATH et le langage de transformation XSLT, l'utilisation de documents XML en Java, le langage des schémas XML.
 		</plan>
 		<lieu>&site1; &site2;</lieu>
+		<ref-intervenant ref="massat"></ref-intervenant>
 	</enseignement>
-
+	
+	<enseignement idEnseignement="ERPOIP">
+		<nom>ANDROID</nom>
+		<identifiant>"ERPOIP"</identifiant>
+		<nombreCredit>3</nombreCredit>
+		<resume>XML et les outils associés permettent de représenter et de manipuler des documents semi-structurés. Nous nous attachons, dans ce cours, à présenter les avantages d'XML dans le cadre du WEB et de la transmission des données en insistant sur la portabilité des documents et des applications.</resume>
+		<plan>
+				le langage XML et les DTD, les requêtes XPATH et le langage de transformation XSLT, l'utilisation de documents XML en Java, le langage des schémas XML.
+		</plan>
+		<lieu>&site1; &site2;</lieu>
+		<ref-intervenant ref="Santocanale"></ref-intervenant>	
+	</enseignement>
+<!-- FIN ENSEIGNEMENTS -->
+<!-- SEPECIALITES -->
 	<specialite idSpecialite="GL">	
 		<nom>Génie logiciel</nom>
 		<identifiant>GL</identifiant>
@@ -41,7 +57,8 @@
 		<finalite>Pro.</finalite>
 		<lieu>&site1;</lieu>
 	</specialite>
-	
+<!-- FIN SPECIALITES -->
+<!-- PARCOURS -->
 	<parcours idParcour="RO">
 		<nom>Recherche opérationnelle</nom>
 		<responsable>Yann VAXES</responsable>
@@ -52,16 +69,13 @@
 				ici description
 		</description>
 		<semestre>
-			<cours>
-				<ue etat =&obli;">
-					<ref-enseignement ref="ENSINBU4"></ref-enseignement>
-					<ref-intervenant ref="massat"></ref-intervenant>
-				</ue>
-					<ue etat =&falc;">
-					<ref-enseignement ref="ENSINBU4"></ref-enseignement>
-					<ref-intervenant ref="Santocanale"></ref-intervenant>
-				</ue>
-			</cours>
+			<ue etat ="Obligatoire">
+				<ref-enseignement ref="ENSINBU4"></ref-enseignement>
+			</ue>
+			<ue etat ="Falcultatif">
+				<ref-enseignement ref="ERPOIP"></ref-enseignement>
+			</ue>
 		</semestre>
 	</parcours>
+<!-- FIN PARCOURS -->
 </master>	
