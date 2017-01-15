@@ -42,7 +42,7 @@
 		<lieu>&site1;</lieu>
 	</specialite>
 	
-	<parcour idParcour="RO">
+	<parcours idParcour="RO">
 		<nom>Recherche opérationnelle</nom>
 		<responsable>Yann VAXES</responsable>
 		<debouche>Administrateur de bases de données ou d’entrepôts de données.</debouche>
@@ -51,14 +51,17 @@
 		<description>
 				ici description
 		</description>
-	</parcour>
-	<semestre>
-		<ue idUe ="master1">
+		<semestre>
 			<cours>
-						<lien ref="ENSINBU4"></lien>
-						<lien ref="massat"></lien>
+				<ue etat =&obli;">
+					<ref-enseignement ref="ENSINBU4"></ref-enseignement>
+					<ref-intervenant ref="massat"></ref-intervenant>
+				</ue>
+					<ue etat =&falc;">
+					<ref-enseignement ref="ENSINBU4"></ref-enseignement>
+					<ref-intervenant ref="Santocanale"></ref-intervenant>
+				</ue>
 			</cours>
-			<role>&obli;</role>
-		</ue>			
-	</semestre>
+		</semestre>
+	</parcours>
 </master>	

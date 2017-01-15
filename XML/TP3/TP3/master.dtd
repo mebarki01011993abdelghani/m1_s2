@@ -10,20 +10,19 @@
 <!ENTITY  falc     				"Falcultatif;" 			     >
 
 
-<!ELEMENT master					((intervenant,enseignement,specialite,parcour)*)>
+<!ELEMENT master					(intervenant*,enseignement*,specialite*,parcours*,semestre*)>
 <!ELEMENT enseignement    			((nom,identifiant,nombreCredit,resume,plan,lieu)*)>
 <!ELEMENT intervenant				((identifiant,nom,mail,siteWeb)*)				 >
 <!ELEMENT specialite				((nom,identifiant,code,finalite,lieu)*)			 >							 
-<!ELEMENT parcour					((nom,responsable,debouche*,description)*)		 >
-<!ELEMENT cours 					((enseignement,(intervenant+))*)  >
-
-<!ELEMENT semestre					(ue+)								   			 >																
-<!ELEMENT ue						(((cours+),role)*)						 >
+<!ELEMENT parcours					((nom,responsable,debouche*,description,semestre))		 >
+<!ELEMENT cours 					(ue+)  >
+<!ELEMENT ue 						(ref-enseignement,ref-intervenant+)	>							
+<!ELEMENT semestre					(cours+)								   			 >	
+															
 <!ELEMENT nom 						(#PCDATA)  >
 <!ELEMENT responsable 				(#PCDATA)  >
 <!ELEMENT debouche 					(#PCDATA)  >
 <!ELEMENT description 				(#PCDATA)  >
-<!ELEMENT role 						(#PCDATA)  >
 <!ELEMENT lieu 						(#PCDATA)  >
 <!ELEMENT code 						(#PCDATA)  >
 <!ELEMENT finalite 					(#PCDATA)  >
@@ -33,14 +32,16 @@
 <!ELEMENT identifiant 				(#PCDATA)  >
 <!ELEMENT mail 						(#PCDATA)  >
 <!ELEMENT siteWeb 					(#PCDATA)  >
-<!ELEMENT lien    		(#PCDATA)  >
+<!ELEMENT ref-intervenant    		(#PCDATA)  >
+<!ELEMENT ref-enseignement   		(#PCDATA)  >
 
 <!ATTLIST enseignement  idEnseignement  ID  #REQUIRED   >
 <!ATTLIST intervenant  idIntervenant  ID  #REQUIRED   >
 <!ATTLIST specialite  idSpecialite  ID  #REQUIRED   >
-<!ATTLIST parcour  idParcour  ID  #REQUIRED   >
-<!ATTLIST ue  idUe  ID  #REQUIRED   >
+<!ATTLIST parcours  idParcour  ID  #REQUIRED   >
 
-<!ATTLIST lien  ref IDREF  #REQUIRED   >
+<!ATTLIST ref-intervenant  ref IDREF  #REQUIRED   >
+<!ATTLIST ref-enseignement  ref IDREF  #REQUIRED   >
+<!ATTLIST ue  etat  (&obli;|&falc;)  #REQUIRED>
 
 
