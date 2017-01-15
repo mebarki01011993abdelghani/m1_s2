@@ -32,7 +32,7 @@
 	
 	<enseignement idEnseignement="ERPOIP">
 		<nom>ANDROID</nom>
-		<identifiant>"ERPOIP"</identifiant>
+		<identifiant>ERPOIP</identifiant>
 		<nombreCredit>3</nombreCredit>
 		<resume>XML et les outils associés permettent de représenter et de manipuler des documents semi-structurés. Nous nous attachons, dans ce cours, à présenter les avantages d'XML dans le cadre du WEB et de la transmission des données en insistant sur la portabilité des documents et des applications.</resume>
 		<plan>

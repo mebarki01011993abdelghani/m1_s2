@@ -11,7 +11,7 @@
 
 
 <!ELEMENT master					(intervenant*,enseignement*,specialite*,parcours*,semestre*)>
-<!ELEMENT enseignement    			((nom,identifiant,nombreCredit,resume,plan,lieu)*)>
+<!ELEMENT enseignement    			((nom,identifiant,nombreCredit,resume,plan,lieu+,ref-intervenant+)*)>
 <!ELEMENT intervenant				((identifiant,nom,mail,siteWeb)*)				 >
 <!ELEMENT specialite				((nom,identifiant,code,finalite,lieu)*)			 >							 
 <!ELEMENT parcours					((nom,responsable,debouche*,description,semestre))		 >
