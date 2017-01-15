@@ -6,19 +6,24 @@
 <!ENTITY  http					"http://www."				 >
 <!ENTITY  dom.luminy  			"univ-mrs.fr" 				 >
 <!ENTITY  dom.dil     			"dil.&dom.luminy;" 			 >
+<!ENTITY  obli     				"Obligatoire;" 			     >
+<!ENTITY  falc     				"Falcultatif;" 			     >
+
 
 <!ELEMENT master					((intervenant,enseignement,specialite,parcour)*)>
-<!ELEMENT enseignement    			((nom,identifiant,nombreCreditResume,plan,lieu)*)>
+<!ELEMENT enseignement    			((nom,identifiant,nombreCredit,resume,plan,lieu)*)>
 <!ELEMENT intervenant				((identifiant,nom,mail,siteWeb)*)				 >
 <!ELEMENT specialite				((nom,identifiant,code,finalite,lieu)*)			 >							 
-<!ELEMENT parcour					((nom,responsable,debouche,description)*)		 >
+<!ELEMENT parcour					((nom,responsable,debouche*,description)*)		 >
+<!ELEMENT cours 					((enseignement,(intervenant+))*)  >
+
 <!ELEMENT semestre					(ue+)								   			 >																
-<!ELEMENT ue						(((enseignements+),role)*)						 >
+<!ELEMENT ue						(((cours+),role)*)						 >
 <!ELEMENT nom 						(#PCDATA)  >
 <!ELEMENT responsable 				(#PCDATA)  >
 <!ELEMENT debouche 					(#PCDATA)  >
 <!ELEMENT description 				(#PCDATA)  >
-<!ELEMENT role 						(Obligatoire|Facultatif)  >
+<!ELEMENT role 						(#PCDATA)  >
 <!ELEMENT lieu 						(#PCDATA)  >
 <!ELEMENT code 						(#PCDATA)  >
 <!ELEMENT finalite 					(#PCDATA)  >
@@ -28,4 +33,14 @@
 <!ELEMENT identifiant 				(#PCDATA)  >
 <!ELEMENT mail 						(#PCDATA)  >
 <!ELEMENT siteWeb 					(#PCDATA)  >
-<!ATTLIST enseignement  id  IDREF  #IMPLIED>
+<!ELEMENT lien    		(#PCDATA)  >
+
+<!ATTLIST enseignement  idEnseignement  ID  #REQUIRED   >
+<!ATTLIST intervenant  idIntervenant  ID  #REQUIRED   >
+<!ATTLIST specialite  idSpecialite  ID  #REQUIRED   >
+<!ATTLIST parcour  idParcour  ID  #REQUIRED   >
+<!ATTLIST ue  idUe  ID  #REQUIRED   >
+
+<!ATTLIST lien  ref IDREF  #REQUIRED   >
+
+

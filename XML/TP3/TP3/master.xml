@@ -1,42 +1,40 @@
-<?xml version="1.0" encoding="utf8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE master SYSTEM "master.dtd">
 
 
 <master>
-	<intervenant id="massat">
+	<intervenant idIntervenant="massat">
 		<identifiant>JLM</identifiant>
 		<nom>Jean-Luc Massat</nom>
 		<mail>jean-luc.massat@&dom.dil;</mail>
 		<siteWeb>&http;jean-luc.massat&adresseSitePerso;</siteWeb>
 	</intervenant>
-	<intervenant id="Santocanale">
+	<intervenant idIntervenant="Santocanale">
 		<identifiant>LS</identifiant>
 		<nom>Luigi Santocanale</nom>
 		<mail>luigi.santocanale@&dom.dil;</mail>
 		<siteWeb>&http;luigi.santocanale&adresseSitePerso;</siteWeb>
 	</intervenant>
 
-	<enseignement id="ENSINBU4">
+	<enseignement idEnseignement="ENSINBU4">
 		<nom>XML</nom>
 		<identifiant>ENSINBU4</identifiant>
 		<nombreCredit>3</nombreCredit>
 		<resume>XML et les outils associés permettent de représenter et de manipuler des documents semi-structurés. Nous nous attachons, dans ce cours, à présenter les avantages d'XML dans le cadre du WEB et de la transmission des données en insistant sur la portabilité des documents et des applications.</resume>
 		<plan>
-			<p>
 				le langage XML et les DTD, les requêtes XPATH et le langage de transformation XSLT, l'utilisation de documents XML en Java, le langage des schémas XML.
-			</p>
 		</plan>
 		<lieu>&site1; &site2;</lieu>
 	</enseignement>
 
-	<specialite id="GL">	
+	<specialite idSpecialite="GL">	
 		<nom>Génie logiciel</nom>
 		<identifiant>GL</identifiant>
 		<code>GL</code>
 		<finalite>Pro.</finalite>
 		<lieu>&site3;</lieu>
 	</specialite>
-	<specialite id="ID">	
+	<specialite idSpecialite="ID">	
 		<nom>Informatique décisionnelle</nom>
 		<identifiant>ID</identifiant>
 		<code>FED</code>
@@ -44,25 +42,23 @@
 		<lieu>&site1;</lieu>
 	</specialite>
 	
-	<parcour id="RO">
+	<parcour idParcour="RO">
 		<nom>Recherche opérationnelle</nom>
 		<responsable>Yann VAXES</responsable>
 		<debouche>Administrateur de bases de données ou d’entrepôts de données.</debouche>
 		<debouche>Extraction, transformation et chargement des données.</debouche>
 		<debouche>Études et développement informatique.</debouche>
 		<description>
-			<p>
 				ici description
-			</p>
 		</description>
 	</parcour>
 	<semestre>
-		<ue id ="master1">
-			<enseignement>
-						<ref-enseignement ref="ENSINBU4" />
-						<ref-intervenant ref="Santocanale" />
-			</enseignement>
-			<role>Obligatoire</role>
+		<ue idUe ="master1">
+			<cours>
+						<lien ref="ENSINBU4"></lien>
+						<lien ref="massat"></lien>
+			</cours>
+			<role>&obli;</role>
 		</ue>			
 	</semestre>
 </master>	
