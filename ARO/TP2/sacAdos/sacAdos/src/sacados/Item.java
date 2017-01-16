@@ -17,13 +17,13 @@ public class Item implements Comparable<Item> {
     private Item indice;
     private float valeur;
     private float poid;
-    private boolean etat;
+    private Integer etat;
 
     public Item(Item obj, float valeur, float poid) {
         this.indice = obj;
         this.valeur = valeur;
         this.poid = poid;
-        this.etat = false;
+        this.etat = 2; // pas de choix
     }
 
     public static ArrayList<Item> tableToArrayList(float[][] table) {
@@ -109,11 +109,11 @@ public class Item implements Comparable<Item> {
         this.poid = poid;
     }
 
-    public boolean isEtat() {
+    public Integer isEtat() {
         return etat;
     }
 
-    public void setEtat(boolean etat) {
+    public void setEtat(Integer etat) {
         this.etat = etat;
     }
 
