@@ -316,7 +316,7 @@
 		<ref-intervenant ref="IN18"></ref-intervenant>
 	</enseignement>
 
-<enseignement idEnseignement="ENSINAU2">
+<enseignement iéEnseignement="ENSINAU2">
 		<nom>Complexité</nom>
 		<identifiant>ENSINAU2</identifiant>
 		<nombreCredit>&cred6;</nombreCredit>
@@ -412,7 +412,7 @@
 		<identifiant>ENSINAU8</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
 		<resume>
-		   	nous sommes désolé, mais nous n'avons pas encore de résumé.
+		   	&noResume;
    		</resume>
 		<pre-requis>
 
@@ -456,7 +456,7 @@
 		<identifiant> ENSINAU12</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
 		<resume>
-		   nous sommes désolé, mais nous n'avons pas encore de résumé.
+		   &noResume;
    		</resume>
 		<pre-requis>
 
@@ -468,7 +468,7 @@
 		<identifiant> ENSINAU13</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
 		<resume>
-		   Résumé : nous sommes désolé, mais nous n'avons pas encore de résumé.
+		   &noResume;
    		</resume>
 		<pre-requis>
 
@@ -508,12 +508,12 @@
 				ici description
 		</description>
 		<semestre>
-			<ue etat = "&obli;">
+			<block etat = "&obli;">
 				<ref-enseignement ref="ENSINBU4"></ref-enseignement>
-			</ue>
-			<ue etat ="&falc;">
+			</block>
+			<block etat ="&falc;">
 				<ref-enseignement ref="ENSINBU11"></ref-enseignement>
-			</ue>
+			</block>
 		</semestre>
 	</parcours>
 <!-- FIN PARCOURS -->

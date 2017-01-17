@@ -19,8 +19,8 @@
 <!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,etablissement)				 >
 <!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,ref-intervenant+)			 >							 
 <!ELEMENT parcours					(nom,responsable,debouche*,description,semestre+)>
-<!ELEMENT ue 						(ref-enseignement+)								>							
-<!ELEMENT semestre					(ue+)								   			>	
+<!ELEMENT block 						(ref-enseignement+)								>							
+<!ELEMENT semestre					(block+)								   			>	
 <!ELEMENT responsable 				(ref-intervenant+)>
 
 <!--ELEMENTS-->
@@ -47,6 +47,6 @@
 <!ATTLIST parcours  idParcour  ID  #REQUIRED   >
 <!ATTLIST ref-intervenant  ref IDREF  #REQUIRED   >
 <!ATTLIST ref-enseignement  ref IDREF  #REQUIRED   >
-<!ATTLIST ue  etat  (Obligatoire|Falcultatif)  #REQUIRED>
+<!ATTLIST block  etat  (Obligatoire|Falcultatif)  #REQUIRED>
 
 
