@@ -5,6 +5,7 @@
 <!ENTITY  adresseSitePerso      ".perso.luminy.univ-amu.fr/" >
 <!ENTITY  http					"http://www."				 >
 <!ENTITY  dom.amu				"univ-amu.fr"				 >
+<!ENTITY  dom.lif				"lif.univ-mrs.fr"			 >
 <!ENTITY  dom.luminy  			"univ-mrs.fr" 				 >
 <!ENTITY  dom.dil     			"dil.&dom.luminy;" 			 >
 <!ENTITY  obli     				"Obligatoire" 			     >
