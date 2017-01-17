@@ -1,0 +1,28 @@
+Question 1 
+xmllint --xpath 'siecle/annee/numero' siecle.xml
+
+Question 2
+xmllint --xpath 'siecle/annee[numero=1950]/mois[numero=2]/jour/nom' siecle.xml 
+
+Question 3
+xmllint --xpath 'siecle/annee[5]/mois/jour[numero-semaine=1]/@id' siecle.xml 
+
+Question 4
+xmllint --xpath 'siecle/annee/mois[jour[1][numero-semaine=1]]/nom' siecle.xml 
+
+Question 5
+xmllint --xpath '//jour[numero=1 and numero-semaine=1]/../nom' siecle.xml 
+
+Question 6
+xmllint --xpath '//mois/jour[numero=31]/../nom' siecle.xml
+
+Question 7
+xmllint --xpath '//mois[not(jour[numero=31]) and jour/numero=30]/nom' siecle.xml
+
+Question 8
+xmllint --xpath '//nom[not(parent::jour)]' siecle.xml
+
+Question 9
+xmllint --xpath 'siecle/annee[numero<1902]/mois/nom' siecle.xml
+
+Question 10
