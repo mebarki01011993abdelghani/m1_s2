@@ -5,9 +5,7 @@
  */
 package tp1;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
+
 
 /**
  *
