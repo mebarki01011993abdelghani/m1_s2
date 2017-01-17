@@ -21,16 +21,17 @@ public class Main {
 
     public static TreeMap<String, Integer> treilli = new TreeMap<String, Integer>();
     public final static int min = 2; // 2 occurences est le min
+    public static ArrayList<ArrayList<Apriori>> donneesTp;
     /*METHODES*/
     /*Convertit un treilli au format string en un arrayList*/
 
-    public void afficherTreeMap(TreeMap<String, Integer> hash) {
-        for (String mapKey : hash.keySet()) {
-            System.out.println("ITEM : " + mapKey + " -- OCCURENRENCES " + hash.get(mapKey));
+    public void afficherTreeMap() {
+        for (String mapKey : treilli.keySet()) {
+            System.out.println("ITEM : " + mapKey + " -- OCCURENRENCES " + treilli.get(mapKey));
         }
     }
 
-    public ArrayList<ArrayList<Apriori>> stringToCorrectFormat(String modele) {
+    public ArrayList<ArrayList<Apriori>> stringToCorrectStructure(String modele) {
         ArrayList<ArrayList<Apriori>> liste = new ArrayList<ArrayList<Apriori>>();
         /*Décomposition*/
         /*Ligne par ligne*/
@@ -55,45 +56,55 @@ public class Main {
     }
 
     /*Compte le nombre d'item dans un treilli*/
-    public void compterItems(ArrayList<ArrayList<Apriori>> liste) {
+    public void compterItems(ArrayList<Apriori> liste) {
+        treilli.clear();
         int taille = liste.size();
-        int tailleCollection = 0;
+        int tailleCollection = donneesTp.size();
         int count = 0;
         for (int i = 0; i < taille; i++) {
-            tailleCollection = liste.get(i).size();
+            String mot = liste.get(i).getItem();
+            System.out.println("mot " + mot);
+            char lettres[] = mot.toCharArray();
+            int cmpt = 0;
+            int tailleMot = lettres.length;
             for (int j = 0; j < tailleCollection; j++) {
-                String ite = liste.get(i).get(j).getItem();
-                if (treilli.containsKey(ite)) {
-                    count = treilli.get(ite) + 1;
-                    treilli.put(ite, count);
-                } else {
-                    treilli.put(ite, 1);
+                for (int k = 0; k < donneesTp.get(j).size(); k++) {
+                    String ite = donneesTp.get(j).get(k).getItem();
+                    if (lettres[cmpt] == ite.charAt(0)) {
+                        cmpt++;
+                        if (cmpt == tailleMot) {
+                            if (treilli.containsKey(mot)) {
+                                count = treilli.get(mot) + 1;
+                                treilli.put(mot, count);
+                            } else {
+                                treilli.put(mot, 1);
+                            }
+                            cmpt = 0;
+                        }
+                    }
                 }
+                cmpt = 0;
+                //System.out.println("de");
             }
+
         }
     }
 
     /*afficher arrayList*/
-    public void afficherListe(ArrayList<ArrayList<Apriori>> liste) {
+    public void afficherListe(ArrayList<Apriori> liste) {
         int tailleListe = liste.size();
-        int tailleCollection = 0;
         for (int i = 0; i < tailleListe; i++) {
-            tailleCollection = liste.get(i).size();
-            for (int j = 0; j < tailleCollection; j++) {
-                System.out.print("ITEM : " + liste.get(i).get(j).getItem() + " -- Occurence " + liste.get(i).get(j).getOccurence() + "\n");
-            }
+            System.out.print("ITEM : " + liste.get(i).getItem() + "\n");
         }
     }
 
 
     /*Générer combinaison*/
-    public ArrayList<ArrayList<Apriori>> combinaison() {
+    public ArrayList<Apriori> combinaison(int taille) {
         /*On check si la taille des itemspour les combinaisons*/
-        ArrayList<ArrayList<Apriori>> donneesLn_1 = new ArrayList<ArrayList<Apriori>>();
-        Map.Entry<String, Integer> entry = treilli.entrySet().iterator().next();
-        String key = entry.getKey();
+        ArrayList<Apriori> donneesLn_1 = new ArrayList<Apriori>();
 
-        if (key.length() == 1) {
+        if (taille == 1) {
             donneesLn_1 = combinaisonTailleUne(treilli);
         } else {
             donneesLn_1 = combinaisonTailleN(treilli);
@@ -103,9 +114,9 @@ public class Main {
     }
 
     /*Combinaison de taille une*/
-    private static ArrayList<ArrayList<Apriori>> combinaisonTailleUne(TreeMap<String, Integer> donnees) {
+    private static ArrayList<Apriori> combinaisonTailleUne(TreeMap<String, Integer> donnees) {
 
-        ArrayList<ArrayList<Apriori>> donneesLn = new ArrayList<ArrayList<Apriori>>();
+        ArrayList<Apriori> donneesLn = new ArrayList<Apriori>();
 
         /*On change le format*/
         ArrayList<Apriori> newDonnees = new ArrayList<Apriori>();
@@ -118,15 +129,13 @@ public class Main {
          */
         for (int i = 0; i < newDonnees.size() - 1; i++) {
             String firstItem = newDonnees.get(i).getItem();
-            ArrayList<Apriori> ar = new ArrayList<Apriori>();
-            donneesLn.add(ar);
             for (int j = i + 1; j < donnees.size(); j++) {
                 String nextItem = newDonnees.get(j).getItem();
                 /*Génération de la nouvelle données*/
                 String result = firstItem.concat(nextItem);
                 Apriori obj = new Apriori(result);
                 //add
-                ar.add(obj);
+                donneesLn.add(obj);
             }
 
         }
@@ -135,8 +144,8 @@ public class Main {
     }
 
     /*Combinaison de taille N différent de 1*/
-    private static ArrayList<ArrayList<Apriori>> combinaisonTailleN(TreeMap<String, Integer> donnees) {
-        ArrayList<ArrayList<Apriori>> donneesLn = new ArrayList<ArrayList<Apriori>>();
+    private static ArrayList<Apriori> combinaisonTailleN(TreeMap<String, Integer> donnees) {
+        ArrayList<Apriori> donneesLn = new ArrayList<Apriori>();
 
         /*On change le format*/
         ArrayList<Apriori> newDonnees = new ArrayList<Apriori>();
@@ -144,14 +153,14 @@ public class Main {
         for (String mapKey : donnees.keySet()) {
             newDonnees.add(new Apriori(mapKey));
         }
+
         boolean find = false;
         // Si les données sont de taille "1"
         for (int i = 0; i < newDonnees.size() - 1; i++) {
             String firstItem = newDonnees.get(i).getItem();
             /*Récupérer la deniere lettre*/
             char lastLetter = firstItem.toCharArray()[firstItem.length() - 1];
-            ArrayList<Apriori> ar = new ArrayList<Apriori>();
-            donneesLn.add(ar);
+
             for (int j = i + 1; j < newDonnees.size(); j++) {
                 String nextItem = newDonnees.get(j).getItem();
                 /*On prend la premier lettre de la chaine*/
@@ -164,7 +173,7 @@ public class Main {
                     String result = firstItem.concat(lastLetters);
                     Apriori obj = new Apriori(result);
                     //add
-                    ar.add(obj);
+                    donneesLn.add(obj);
                 } //Si on ne trouve pas de composition apres en avoir trouvé au moins une on s'arrete
                 else if (find == true) {
                     find = false;
@@ -176,34 +185,61 @@ public class Main {
     }
 
     /*On vérifie si il y a des infréquents, retourne seulement les fréquents*/
-    public static ArrayList<ArrayList<Apriori>> checkMins(ArrayList<ArrayList<Apriori>> ensemble) {
-        int tailleEnsemble = ensemble.size();
-        int tailleCollections = 0;
-        for (int i = 0; i < tailleEnsemble; i++) {
-            tailleCollections = ensemble.get(i).size();
-            for (int j = 0; j < tailleCollections; j++) {
-                Apriori it = ensemble.get(i).get(j);
-                int nbs = treilli.get(it.getItem()); //on get le nombre d'occurences
-                if (nbs < min) {
-                    //ArrayList<Apriori> ite = ensemble.get(i);
-                    // ite.remove(j); // on supprime l'item
-                    treilli.remove(it.getItem());
+    public static void checkMins() {
+        ArrayList<String> delete = new ArrayList<String>();
+        for (String mapKey : treilli.keySet()) {
+            int nbs = treilli.get(mapKey); //on get le nombre d'occurences
+            if (nbs < min) {
+                //ArrayList<Apriori> ite = ensemble.get(i);
+                // ite.remove(j); // on supprime l'item
+                delete.add(mapKey);
+            }
+        }
+        for (int i = 0; i < delete.size(); i++) {
+            treilli.remove(delete.get(i));
+        }
+    }
+
+    private void genererPremierTreilli() {
+        int taille = donneesTp.size();
+        int tailleCollection = 0;
+        int count = 0;
+        for (int i = 0; i < taille; i++) {
+            tailleCollection = donneesTp.get(i).size();
+            for (int j = 0; j < tailleCollection; j++) {
+                String ite = donneesTp.get(i).get(j).getItem();
+                if (treilli.containsKey(ite)) {
+                    count = treilli.get(ite) + 1;
+                    treilli.put(ite, count);
+                } else {
+                    treilli.put(ite, 1);
                 }
             }
         }
-        return ensemble;
     }
 
-    /*public void aprioriAlgo(ArrayList<Apriori> ensemble) {
-     ensemble = checkMins(ensemble);
-     afficherListe(ensemble);
+    public void aprioriAlgo(String jeuDonnees) {
+        Main algo = new Main();
 
-     while (ensemble.size() > 0) {
-     ensemble = combinaison(ensemble);
-     ensemble = checkMins(ensemble);
-     afficherListe(ensemble);
-     }
-     }*/
+        donneesTp = algo.stringToCorrectStructure(jeuDonnees);
+        algo.genererPremierTreilli();
+        algo.checkMins();
+        algo.afficherTreeMap();
+        int i = 1;
+        while (treilli.size() !=0) {
+            System.out.println("NEXT");
+            ArrayList<Apriori> liste = algo.combinaison(i);
+            algo.afficherListe(liste);
+            algo.compterItems(liste);
+            System.out.println("TREILLI");
+            algo.afficherTreeMap();
+            algo.checkMins();
+            System.out.println("ELAGAGE");
+            algo.afficherTreeMap();
+            i++;
+        }
+    }
+
     public static void main(String[] args) {
         //Emplacement fichier
         final String donnees = "src/tp1/donnees";
@@ -214,24 +250,13 @@ public class Main {
         } catch (IOException e) {
             System.out.println(e);
         }
+
         /**
          * ****************************************************************
          */
         Main algo = new Main();
-
-        /*Bon format de données*/
-        ArrayList<ArrayList<Apriori>> jeuDonneesFormat = algo.stringToCorrectFormat(jeuDonnees);
-        ArrayList<ArrayList<Apriori>> sauvegardePremierTreillis = algo.stringToCorrectFormat(jeuDonnees);
-        algo.compterItems(jeuDonneesFormat);
-        algo.afficherTreeMap(treilli);
-        sauvegardePremierTreillis = algo.checkMins(jeuDonneesFormat);
-        System.out.println("APRES ELAGAGE");
-        algo.afficherTreeMap(treilli);
-        jeuDonneesFormat = algo.combinaison();
-        algo.afficherListe(jeuDonneesFormat);
-
-        algo.compterItems(jeuDonneesFormat);
-
-        //algo.afficherListe(algo.combinaison(donneesList));
+        algo.aprioriAlgo(jeuDonnees);
+        
     }
+
 }
