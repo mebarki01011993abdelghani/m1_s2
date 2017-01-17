@@ -1,0 +1,20 @@
+#!/bin/bash
+
+xpath="$1"
+xmlfile="$2"
+
+[ "${xmlfile}" ] || xmlfile="siecle.xml"
+
+if [ ! -e "${xmlfile}" ]; then
+	echo "$0: impossible de trouver ${xmlfile}."
+	exit 1
+fi
+
+option=""
+fgrep -q '<!DOCTYPE' "${xmlfile}" && option="--valid"
+
+xmllint $option --xpath "${xpath}" "${xmlfile}"
+
+echo
+
+exit $?
