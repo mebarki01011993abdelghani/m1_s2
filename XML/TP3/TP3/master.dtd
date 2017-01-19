@@ -1,7 +1,8 @@
 <!--ENTYTY-->
 <!ENTITY  site1  "UFR Sciences" 		>
 <!ENTITY  site2  "Université d'Aix-Marseille"	>
-<!ENTITY  site3  "St Charles" 	>
+<!ENTITY  site3  "St Charles" 			>
+<!ENTITY  site4  "St Jerome" 			>
 <!ENTITY  adresseSitePerso      ".perso.luminy.univ-amu.fr/" >
 <!ENTITY  http					"http://www."				 >
 <!ENTITY  dom.amu				"univ-amu.fr"				 >
@@ -15,11 +16,11 @@
 <!ENTITY  noResume				"Nous sommes désolé, mais nous n'avons pas encore de résumé.">
 <!--RELATIONS ELEMENTS-->
 <!ELEMENT master					(intervenant*,enseignement*,specialite*,parcours*,semestre*)>
-<!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant+)>
+<!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant*)>
 <!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,etablissement)				 >
-<!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,ref-intervenant+)			 >							 
-<!ELEMENT parcours					(nom,responsable,debouche*,description,semestre+)>
-<!ELEMENT block 						(ref-enseignement+)								>							
+<!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,competences,connaissances,ref-intervenant+)			 >							 
+<!ELEMENT parcours					(ref-specialite?,nom,responsable,debouche*,description?,competences?,semestre+)>
+<!ELEMENT block 					(ref-enseignement+)								>							
 <!ELEMENT semestre					(block+)								   			>	
 <!ELEMENT responsable 				(ref-intervenant+)>
 
@@ -39,14 +40,19 @@
 <!ELEMENT siteWeb 					(#PCDATA)  >
 <!ELEMENT ref-intervenant    		(#PCDATA)  >
 <!ELEMENT ref-enseignement   		(#PCDATA)  >
+<!ELEMENT connaissances      		(#PCDATA)  >
+<!ELEMENT competences        		(#PCDATA)  >
 
 <!--ATTRIBUTS-->
 <!ATTLIST enseignement  idEnseignement  ID  #REQUIRED   >
 <!ATTLIST intervenant  idIntervenant  ID  #REQUIRED   >
 <!ATTLIST specialite  idSpecialite  ID  #REQUIRED   >
 <!ATTLIST parcours  idParcour  ID  #REQUIRED   >
+<!ATTLIST semestre  idSemestre  ID  #REQUIRED   >
 <!ATTLIST ref-intervenant  ref IDREF  #REQUIRED   >
 <!ATTLIST ref-enseignement  ref IDREF  #REQUIRED   >
+<!ATTLIST ref-specialite  ref IDREF  #REQUIRED   >
+
 <!ATTLIST block  etat  (Obligatoire|Falcultatif)  #REQUIRED>
 
 
