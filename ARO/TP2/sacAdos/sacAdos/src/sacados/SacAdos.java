@@ -10,13 +10,13 @@ public class SacAdos {
     static float minorant;
     static float majorant;
 
-    static float algorithemGloutonMajorant(Item firstItem) {
+    static float algorithmeGloutonMajorant(Item firstItem) {
         int poidTotal = 0, verifPoid = 0, i = 0;
         float val, depassement, valeurTotal = 0;
 
         Item obj = firstItem;
 
-        while (poidTotal < poidSac) {
+        while (poidTotal < poidSac && obj != null) {
             verifPoid = poidTotal + (int) obj.getPoid();
             if (verifPoid > poidSac) {
                 //On calcul le dépassement
@@ -41,51 +41,46 @@ public class SacAdos {
         return valeurTotal;
     }
 
-    static float algorithemGloutonMinorant(Item firstItem) {
+    static float algorithmeGloutonMinorant(Item firstItem) {
         int poidTotal = 0, verifPoid = 0, i = 0;
         float valeurTotal = 0;
-
         Item obj = firstItem;
 
         while (poidTotal < poidSac && obj != null) {
-            verifPoid = poidTotal + (int) obj.getPoid();
-            if (verifPoid < poidSac) {
-
-                valeurTotal = valeurTotal + obj.getValeur();
-                poidTotal = verifPoid;
-            } else {
-
+            if (obj.getEtat() == 1) {
+                verifPoid = poidTotal + (int) obj.getPoid();
+                if (verifPoid < poidSac) {
+                    valeurTotal = valeurTotal + obj.getValeur();
+                    poidTotal = verifPoid;
+                }
             }
-
             // on récupere l'objet suivant
             obj = obj.getIndice();
-
         }
         return valeurTotal;
     }
 
-    public static float algorithmeBranchAndBound(Item firstItem) {
-        float valeurTotal = 0;
-        float valCourante = 0;
-        Item obj = firstItem;
-        Item lastObj = firstItem;
+    public static void algorithmeBranchAndBound(Item itemCourant) {
+        float valMin = 0;
+        float valMax = 0;
+
         /*Algorithme glouton*/
-        valCourante = (int) algorithemGloutonMajorant(obj);
+        valMax = algorithmeGloutonMajorant(itemCourant);
+        if (valMax > minorant) {
+            valMin = algorithmeGloutonMinorant(itemCourant);
+            System.out.println("val " + valMin);
+            if (valMin > minorant) {
+                minorant = valMin;
+            }
 
-        while (valeurTotal < majorant || obj != null) {
-            if (valCourante > minorant) {
-                lastObj = obj;
-                obj = obj.getIndice();
-                obj.setEtat(1);
-                valCourante = algorithemGloutonMajorant(obj);
-            } else {
-                obj = lastObj.getIndice().getIndice();
-                obj.setEtat(0);
-                valCourante = algorithemGloutonMajorant(obj);
-
+            Item next = itemCourant.getIndice();
+            if (next != null) {
+                next.setEtat(0);
+                algorithmeBranchAndBound(next);
+                next.setEtat(1);
+                algorithmeBranchAndBound(next);
             }
         }
-        return valeurTotal;
     }
 
     public static void main(String[] args) throws IOException {
@@ -102,14 +97,26 @@ public class SacAdos {
 
         Item firstObj = Item.initialiserObjets(objets);
 
-        majorant = algorithemGloutonMajorant(firstObj);
-        minorant = algorithemGloutonMinorant(firstObj);
+        while (firstObj != null) {
+            System.out.println(" valeur " + firstObj.getValeur());
+            System.out.println(" poid " + firstObj.getPoid());
+
+            firstObj = firstObj.getIndice();
+        }
+        majorant = algorithmeGloutonMajorant(firstObj);
+        minorant = algorithmeGloutonMinorant(firstObj);
 
         System.out.println("Version majorante " + majorant);
         System.out.println("Version minorant " + minorant);
         System.out.println("Soit la solution x est borné par : (" + minorant + "<=x<=" + majorant + ")");
 
+        firstObj.setEtat(1);
         algorithmeBranchAndBound(firstObj);
+        firstObj.setEtat(0);
+        algorithmeBranchAndBound(firstObj);
+
+        System.out.println("Minorant : " + minorant);
+
     }
 
 }

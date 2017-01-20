@@ -23,7 +23,7 @@ public class Item implements Comparable<Item> {
         this.indice = obj;
         this.valeur = valeur;
         this.poid = poid;
-        this.etat = 2; // pas de choix
+        this.etat = 1; // pas de choix
     }
 
     public static ArrayList<Item> tableToArrayList(float[][] table) {
@@ -115,6 +115,10 @@ public class Item implements Comparable<Item> {
 
     public void setEtat(Integer etat) {
         this.etat = etat;
+    }
+
+    public Integer getEtat() {
+        return etat;
     }
 
 }
