@@ -10,11 +10,17 @@ public class SacAdos {
     static float minorant;
     static float majorant;
 
-    static float algorithmeGloutonMajorant(Item firstItem) {
-        int poidTotal = 0, verifPoid = 0, i = 0;
-        float val, depassement, valeurTotal = 0;
+    static float algorithmeGloutonMajorant(Item firstItem, float valCourante, float poidCourant) {
+        int poidTotal = (int) poidCourant, verifPoid = 0;
+        float val, depassement, valeurTotal = valCourante;
 
-        Item obj = firstItem;
+        Item obj = firstItem.getIndice();// etat suivant de l'état courant
+
+        // On regarde si l'objet courant est ajouté dans le sac 
+        if (firstItem.getEtat() == 1) {
+            poidTotal = poidTotal + (int) firstItem.getPoid();
+            valeurTotal = valeurTotal + firstItem.getValeur();
+        }
 
         while (poidTotal < poidSac && obj != null) {
             verifPoid = poidTotal + (int) obj.getPoid();
@@ -41,44 +47,61 @@ public class SacAdos {
         return valeurTotal;
     }
 
-    static float algorithmeGloutonMinorant(Item firstItem) {
-        int poidTotal = 0, verifPoid = 0, i = 0;
-        float valeurTotal = 0;
-        Item obj = firstItem;
+    static float algorithmeGloutonMinorant(Item firstItem, float valCourante, float poidCourant) {
+        int poidTotal = (int) poidCourant, verifPoid = 0;
+        float valeurTotal = valCourante;
+        Item obj = firstItem.getIndice(); // etat suivant de l'état courant
+
+        // On regarde si l'objet courant est ajouté dans le sac 
+        if (firstItem.getEtat() == 1) {
+            poidTotal = poidTotal + (int) firstItem.getPoid();
+            valeurTotal = valeurTotal + firstItem.getValeur();
+        }
 
         while (poidTotal < poidSac && obj != null) {
-            if (obj.getEtat() == 1) {
-                verifPoid = poidTotal + (int) obj.getPoid();
-                if (verifPoid < poidSac) {
-                    valeurTotal = valeurTotal + obj.getValeur();
-                    poidTotal = verifPoid;
-                }
+            verifPoid = poidTotal + (int) obj.getPoid();
+            if (verifPoid < poidSac) {
+                valeurTotal = valeurTotal + obj.getValeur();
+                poidTotal = verifPoid;
             }
+
             // on récupere l'objet suivant
             obj = obj.getIndice();
         }
         return valeurTotal;
     }
 
-    public static void algorithmeBranchAndBound(Item itemCourant) {
+    public static void algorithmeBranchAndBound(Item itemCourant, float valCourante, float poidCourant) {
         float valMin = 0;
         float valMax = 0;
 
         /*Algorithme glouton*/
-        valMax = algorithmeGloutonMajorant(itemCourant);
+        valMax = algorithmeGloutonMajorant(itemCourant, valCourante, poidCourant);
         if (valMax > minorant) {
-            valMin = algorithmeGloutonMinorant(itemCourant);
-            System.out.println("val " + valMin);
+
+            valMin = algorithmeGloutonMinorant(itemCourant, valCourante, poidCourant);
+
             if (valMin > minorant) {
                 minorant = valMin;
             }
 
+            /*On avance dans l'arbre*/
             Item next = itemCourant.getIndice();
+
             if (next != null) {
-                next.setEtat(0);
-                algorithmeBranchAndBound(next);
-                next.setEtat(1);
-                algorithmeBranchAndBound(next);
+                if (itemCourant.getEtat() == 1) {
+                    valCourante = valCourante + itemCourant.getValeur();
+                    poidCourant = poidCourant + itemCourant.getPoid();
+                }
+                if (next.getPoid() + poidCourant <= poidSac) {
+                    next.setEtat(0);
+                    algorithmeBranchAndBound(next, valCourante, poidCourant);
+                    next.setEtat(1);
+                    algorithmeBranchAndBound(next, valCourante, poidCourant);
+                }else {
+                    next.setEtat(0);
+                    algorithmeBranchAndBound(next, valCourante, poidCourant);
+                }
             }
         }
     }
@@ -97,25 +120,20 @@ public class SacAdos {
 
         Item firstObj = Item.initialiserObjets(objets);
 
-        while (firstObj != null) {
-            System.out.println(" valeur " + firstObj.getValeur());
-            System.out.println(" poid " + firstObj.getPoid());
-
-            firstObj = firstObj.getIndice();
-        }
-        majorant = algorithmeGloutonMajorant(firstObj);
-        minorant = algorithmeGloutonMinorant(firstObj);
+        majorant = algorithmeGloutonMajorant(firstObj, 0, 0);
+        minorant = algorithmeGloutonMinorant(firstObj, 0, 0);
 
         System.out.println("Version majorante " + majorant);
         System.out.println("Version minorant " + minorant);
         System.out.println("Soit la solution x est borné par : (" + minorant + "<=x<=" + majorant + ")");
 
+        // On déroule l'arbre
         firstObj.setEtat(1);
-        algorithmeBranchAndBound(firstObj);
+        algorithmeBranchAndBound(firstObj, 0, 0);
         firstObj.setEtat(0);
-        algorithmeBranchAndBound(firstObj);
+        algorithmeBranchAndBound(firstObj, 0, 0);
 
-        System.out.println("Minorant : " + minorant);
+        System.out.println("RESULTAT : " + minorant);
 
     }
 
