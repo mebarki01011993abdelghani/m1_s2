@@ -221,7 +221,12 @@
 		<nom>ANGLAIS</nom>
 		<identifiant>ENSINBU1</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
-		<resume>chapitre 1  : Théories de la communication : 1.1 La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener) 1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)chapitre 2 : Rôle de l’interculturalité dans le travail en équipe : 2.1 L’enquête interculturelle de Hofstede pour IBM 2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall) chapitre 3 : Notions de management et de travail collaboratif 3.1 Le travail collaboratif vs le travail coopératif 3.2 La notion de groupes 3.3 Les compétences managériales</resume>
+		<resume>
+			<p>chapitre 1  : Théories de la communication : 1.1 La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener)</p>
+			<p> 1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)</p>
+			<p>chapitre 2 : Rôle de l’interculturalité dans le travail en équipe : 2.1 L’enquête interculturelle de Hofstede pour IBM 2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall) </p>
+			<p>chapitre 3 : Notions de management et de travail collaboratif 3.1 Le travail collaboratif vs le travail coopératif 3.2 La notion de groupes 3.3 Les compétences managériales</p>
+		</resume>
 		<pre-requis>Particulièrement utile pour un choix d’options, les échanges internationaux et la formation continue.</pre-requis>
 	</enseignement>
 	<enseignement idEnseignement="ENSINBU4">
@@ -252,7 +257,7 @@
 		<nom>Projet</nom>
 		<identifiant>ENSINBU6</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
-		<resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
+		<resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. <p>C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</p></resume>
 	</enseignement>
 	<enseignement idEnseignement="ENSINBU7">
 		<nom>Stage de deux mois</nom>
@@ -276,13 +281,13 @@
 		<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
 		<identifiant>ENSINBU11</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
-		<resume>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</resume>
+		<resume><p>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).</p><p>Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</p></resume>
 	</enseignement>
 	<enseignement idEnseignement=" ENSINBU13">
 		<nom>Algorithme à performance garantie</nom>
 		<identifiant> ENSINBU13</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
-		<resume>Algorithmes d'approximation de nature combinatoire pour les problèmes NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune ; FPTAS et PTAS (ordonnancement de taches et sac à dos) ; Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ; Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.</resume>
+		<resume><p>Algorithmes d'approximation de nature combinatoire pour les problèmes NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune ; FPTAS et PTAS (ordonnancement de taches et sac à dos) ; Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ; Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.</p></resume>
 	</enseignement>
 	<enseignement idEnseignement=" ENSINBU16">
 		<nom>Introduction à l'apprentissage automatique</nom>
@@ -307,10 +312,10 @@
 		<identifiant>ENSINAU2</identifiant>
 		<nombreCredit>&cred6;</nombreCredit>
 		<resume>
-		    Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.
-		    Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.
-		    Classes P et NP. Problèmes NP-complets.
-		    Méthodes de résolution des problèmes NP-Complets.
+		    <p><ul><li>Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.</li>
+		    <li>Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.</li>
+		    <li>Classes P et NP. Problèmes NP-complets.</li>
+		    <li>Méthodes de résolution des problèmes NP-Complets.</li></ul></p>
    		</resume>
 		<pre-requis>
 
@@ -322,21 +327,20 @@
 		<identifiant>ENSINAU3</identifiant>
 		<nombreCredit>&cred6;</nombreCredit>
 		<resume>
-		   
-		    Architecture en couches, standard OSI
-		    Couche physique
-		    Couche liaison de Données
-		    Réseau IP
-		    Algorithmes de routage, routage IP
-		    Protocole TCP/IP
-		    Couche Application : HTTP, SMTP, FTP, ...
-		    Bases des protocoles cryptographiques (terminologie, architecture à clef publique).
-		    Introduction à la Sécurité des réseaux.
-
+		<p>
+		    <ul>
+		    <li>Architecture en couches, standard OSI</li>
+		    <li>Couche physique</li>
+		    <li>Couche liaison de Données</li>
+		    <li>Réseau IP</li>
+		    <li>Algorithmes de routage, routage IP</li>
+		    <li>Protocole TCP/IP</li>
+		    <li>Couche Application : HTTP, SMTP, FTP, ...</li>
+		    <li>Bases des protocoles cryptographiques (terminologie, architecture à clef publique).</li>
+		    <li>Introduction à la Sécurité des réseaux.</li>
+		</ul>
+		</p>
    		</resume>
-		<pre-requis>
-
-		</pre-requis>
 	</enseignement>
 
 	<enseignement idEnseignement="ENSINAU4">
@@ -344,7 +348,8 @@
 			<identifiant>ENSINAU4</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
-			   		1- Introduction à la programmation fonctionnelle, sur l'exemple du langage
+			   		<p>
+		   			1- Introduction à la programmation fonctionnelle, sur l'exemple du langage
 					OCaml
 					Expressions, évaluation, types de base. Polymorphisme, ordre supérieur.
 					Fonctions récursives, filtrage. Les diverses stratégies d'évaluation, application à la programmation d'un opérateur de point fixe.
@@ -356,6 +361,7 @@
 					Exceptions, entrées-sorties, séquencement, fichiers, références, tableaux, enregistrements.
 					5- Implantation du filtrage en OCaml
 					Termes formels, substitutions, filtrage.
+					</p>
 	   		</resume>
 	</enseignement>
 
@@ -363,12 +369,13 @@
 		<nom>Programmation logique</nom>
 		<identifiant>ENSINAU6</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
-		<resume>	   
-		    Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.
-		    Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.
-		    Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
-		    Règles prédéfinies.
-
+		<resume>
+			<p>   
+			    Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.
+			    Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.
+			    Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
+			    Règles prédéfinies.
+			</p>	
    		</resume>
 	</enseignement>
 
@@ -377,14 +384,14 @@
 		<identifiant>ENSINAU7</identifiant>
 		<nombreCredit>&cred6;</nombreCredit>
 		<resume>
-		   
+			<p>
 		    Présentation d'Internet.
 		    Les langages et les normes sur Internet.
 		    Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3
 		    Les applications web.
 		    Sécurité.
 		    Les nouvelles et futures technologies.
-
+		</p>
    		</resume>
 	</enseignement>
 
@@ -395,9 +402,6 @@
 		<resume>
 		   	&noResume;
    		</resume>
-		<pre-requis>
-
-		</pre-requis>
 	</enseignement>
 
 	<enseignement idEnseignement="ENSINAU9">
@@ -405,15 +409,10 @@
 		<identifiant>ENSINAU9</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
 		<resume>
-		   	
 		    Rappel de théorie des langages
 		    Algorithmes d'analyse syntaxique pour grammaires ambiguës
 		    Transducteurs finis et leur application en TAL
-
    		</resume>
-		<pre-requis>
-
-		</pre-requis>
 	</enseignement>
 
 	<enseignement idEnseignement=" ENSINAU10">
@@ -424,9 +423,6 @@
 		   	Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de
 			Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).
    		</resume>
-		<pre-requis>
-
-		</pre-requis>
 	</enseignement>
 
 	<enseignement idEnseignement=" ENSINAU12">
@@ -442,6 +438,99 @@
 		<identifiant> ENSINAU13</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
 		<resume>&noResume;</resume>
+	</enseignement>
+
+		<enseignement idEnseignement="ENSINCU41">
+		<nom>Qualité logicielle : outils et méthodes</nom>
+		<identifiant>ENSINCU41</identifiant>
+		<nombreCredit>&cred6;</nombreCredit>
+		<resume>
+		   	Qualité logicielle, test et validation logiciel, ateliers de génie logiciel.
+   		</resume>
+
+	</enseignement>
+
+	<enseignement idEnseignement="ENSINCU42">
+		<nom>Spécification logicielle</nom>
+		<identifiant>ENSINCU42</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+			Modèles formels, modèle SADT, logiciels temps réel, méthode SA-RT.  		
+		</resume>
+		<pre-requis>
+
+		</pre-requis>
+	</enseignement>
+
+<enseignement idEnseignement="ENSINCU43">
+		<nom>Conception logicielle</nom>
+		<identifiant>ENSINCU43</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   	Conception objet, patrons de conception, conception IHM.
+   		</resume>
+	</enseignement>
+
+<enseignement idEnseignement="ENSINCU44">
+		<nom>Architecture logicielle JEE</nom>
+		<identifiant>ENSINCU44</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   Composants logiciels , architectures N-tier, middleware, Entreprise Java Beans (EJB).
+   		</resume>
+	</enseignement>
+
+<enseignement idEnseignement="ENSINCU45">
+		<nom>Technologies du Web et Web 2.0 </nom>
+		<identifiant>ENSINCU45 </identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   	Protocoles de communication, standards Web, Langages à balises, programmation Web, Ajax, XUL, standardisation et convergence d'interfaces.
+   		</resume>
+	</enseignement>
+
+	<enseignement idEnseignement="ENSINCU46">
+		<nom>XML avancé</nom>
+		<identifiant>ENSINCU46</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   Modélisation et navigation, XSchema et XPath avancés, Requêtage des bases documentaires, DOM et SAX avancés.
+   		</resume>
+	</enseignement>
+
+	<enseignement idEnseignement="ENSINCU27">
+		<nom>Anglais 2</nom>
+		<identifiant>ENSINCU45 </identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   	Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.
+   		</resume>
+	</enseignement>
+
+	<enseignement idEnseignement="ENSINCU47">
+		<nom>Gestion de projet</nom>
+		<identifiant>ENSINCU47 </identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   	Définition et acteurs d'un projet, organisation d'un projet, techniques de planification, estimation prévisionnelle d'un projet, pilotage et contrôle d'un projet, recette finale
+   		</resume>
+	</enseignement>
+
+	<enseignement idEnseignement="ENSINCU28">
+		<nom>Communication 2 </nom>
+		<identifiant>ENSINCU28 </identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume><p>
+		   L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.
+			•Valorisation du parcours de formation
+			•Clarification des motivations et de leurs incidences sur des choix professionnels
+			•Identification des aptitudes et des compétences,
+			•Positionnement du projet personnel et professionnel
+			•Ajustement des profils annonce / candidature
+			•Préparation aux entretiens de recrutement
+			•Rédaction de curriculum vitae et de lettres de motivation
+		</p>
+   		</resume>
 	</enseignement>
 <!-- FIN ENSEIGNEMENTS -->
 <!-- SEPECIALITES -->
@@ -511,25 +600,24 @@
 			</block>
 		</semestre>
 	</parcours>
-		<parcours idParcour="Master2">
+	<parcours idParcour="Master2">
 		<ref-specialite ref ="GL"></ref-specialite>
 		<nom>Master 2</nom>
 		<responsable><ref-intervenant ref="IN9224"></ref-intervenant></responsable>
 		<semestre idSemestre ="S3">
 			<block etat = "&obli;">
-				/* TODO S1 */
-			</block>
-			<block etat ="&falc;">
-				<ref-enseignement ref="ENSINAU6"></ref-enseignement>
-				<ref-enseignement ref="ENSINAU7"></ref-enseignement>
-				<ref-enseignement ref="ENSINAU8"></ref-enseignement>
-				<ref-enseignement ref="ENSINAU9"></ref-enseignement>
-				<ref-enseignement ref="ENSINAU10"></ref-enseignement>
-				<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU41"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU42"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU43"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU44"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU45"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU46"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU47"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU27"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU28"></ref-enseignement>
 			</block>
 		</semestre>
-		
 	</parcours>
 	
 <!-- FIN PARCOURS -->
-</master>	
+</master>
