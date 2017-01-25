@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE master SYSTEM "master.dtd">
-
+<?xml-stylesheet type="text/xsl" href="master.xsl" ?>
 
 <master>
-<!-- INTERVENANTS -->
+<intervenants>
 	<intervenant idIntervenant="IN18">
-		<identifiant>JLM</identifiant>
+		<identifiant>IN18</identifiant>
 		<nom>Jean-Luc MASSAT</nom>
 		<mail>jean-luc.massat&dom.amu;</mail>
 		<telephone>0491829482</telephone>
@@ -209,14 +209,8 @@
 			<mail>martine.broche@&dom.amu;</mail>
 			<etablissement>UFR Science</etablissement>
 	</intervenant>
-<!-- FIN INTERVENANTS -->
-<!-- ENSEIGNEMENTS -->
-	<enseignement idEnseignement="ENSINBU1">
-		<nom>ANGLAIS</nom>
-		<identifiant>ENSINBU1</identifiant>
-		<nombreCredit>&cred3;</nombreCredit>
-		<resume>Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</resume>
-	</enseignement>
+</intervenants>
+<enseignements>
 	<enseignement idEnseignement="ENSINBU2">
 		<nom>ANGLAIS</nom>
 		<identifiant>ENSINBU1</identifiant>
@@ -532,7 +526,7 @@
 		</p>
    		</resume>
 	</enseignement>
-<!-- FIN ENSEIGNEMENTS -->
+</enseignements>
 <!-- SEPECIALITES -->
 	<specialite idSpecialite="GL">	
 		<nom>Génie logiciel</nom>

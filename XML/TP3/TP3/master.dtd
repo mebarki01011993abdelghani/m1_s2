@@ -15,7 +15,7 @@
 <!ENTITY  cred6     			"6" 			     		 >
 <!ENTITY  noResume				"Nous sommes désolé, mais nous n'avons pas encore de résumé.">
 <!--RELATIONS ELEMENTS-->
-<!ELEMENT master					(intervenant*,enseignement*,specialite*,parcours*)>
+<!ELEMENT master					(intervenants*,enseignements*,specialite*,parcours*)>
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant*)>
 <!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,etablissement)				 >
 <!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,competences,connaissances,ref-intervenant+)			 >							 
@@ -25,26 +25,28 @@
 <!ELEMENT responsable 				(ref-intervenant+)>
 
 <!--ELEMENTS-->
-<!ELEMENT pre-requis 				(#PCDATA)  >
+<!ELEMENT pre-requis 					(#PCDATA)  >
 <!ELEMENT nom 						(#PCDATA)  >
 <!ELEMENT debouche 					(#PCDATA)  >
-<!ELEMENT description 				(#PCDATA|p*)  >
-<!ELEMENT etablissement 			(#PCDATA)  >
+<!ELEMENT description 					(#PCDATA | p)*  >
+<!ELEMENT etablissement 				(#PCDATA)  >
 <!ELEMENT code 						(#PCDATA)  >
 <!ELEMENT finalite 					(#PCDATA)  >
 <!ELEMENT plan 						(#PCDATA)  >
-<!ELEMENT resume 					(#PCDATA|p*)  >
-<!ELEMENT nombreCredit 				(#PCDATA)  >
-<!ELEMENT identifiant 				(#PCDATA)  >
+<!ELEMENT resume 					(#PCDATA | p)*  >
+<!ELEMENT nombreCredit 					(#PCDATA)  >
+<!ELEMENT identifiant 					(#PCDATA)  >
 <!ELEMENT mail 						(#PCDATA)  >
 <!ELEMENT siteWeb 					(#PCDATA)  >
-<!ELEMENT ref-intervenant    		(#PCDATA)  >
-<!ELEMENT ref-enseignement   		(#PCDATA)  >
-<!ELEMENT connaissances      		(#PCDATA)  >
-<!ELEMENT competences        		(#PCDATA)  >
+<!ELEMENT ref-intervenant    				(#PCDATA)  >
+<!ELEMENT ref-enseignement   				(#PCDATA)  >
+<!ELEMENT connaissances      				(#PCDATA)  >
+<!ELEMENT competences        				(#PCDATA)  >
+<!ELEMENT intervenants        				(intervenant)*  >
+<!ELEMENT enseignements        				(enseignement)*  >
 
 <!--HTML BALISE -->
-<!ELEMENT p							(#PCDATA|em*|ul*|strong*|table)  >				
+<!ELEMENT p						(#PCDATA| em | ul | strong | table)*  >				
 <!ELEMENT strong					(#PCDATA)   >				
 <!ELEMENT em						(#PCDATA)   >
 <!ELEMENT ul						(li+)       >
