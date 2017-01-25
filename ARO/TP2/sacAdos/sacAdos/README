@@ -1,0 +1,69 @@
+--------------------------------------------------------------------------------
+                                    README
+--------------------------------------------------------------------------------
+
+Pour compiler il faut executer javac *.java
+Pour executer il faut executer java SacAdos
+
+Le contenu du sac est dans sac1.txt
+Le chemin du sac est modifiable dans SacAdos.java en modifiant la variable :
+                static final String chemin = "sac1.txt";
+
+--------------------------------------------------------------------------------
+                                 JEUX DE TEST
+--------------------------------------------------------------------------------
+sac0 (opt=103) :
+
+Version majorante 103.8951
+Version minorant 99.0
+Soit la solution x est borné par : (99.0<=x<=103.8951)
+RESULTAT : 103.0
+Temps d'execution:0(ms)
+Nombre de noeuds : 411
+
+On obtient bien la même valeur.
+--------------------------------------------------------------------------------
+sac1 (opt=2077672) :
+
+Version majorante 2082984.6
+Version minorant 1990458.0
+Soit la solution x est borné par : (1990458.0<=x<=2082984.6)
+RESULTAT : 2077672.0
+Temps d'execution:2(ms)
+Nombre de noeuds : 6546
+
+On obtient bien la même valeur.
+--------------------------------------------------------------------------------
+sac2 (opt=2095878) :
+
+Version majorante 2099495.0
+Version minorant 2059164.0
+Soit la solution x est borné par : (2059164.0<=x<=2099495.0)
+RESULTAT : 2095878.0
+Temps d'execution:7(ms)
+Nombre de noeuds : 22868
+
+On obtient bien la même valeur.
+--------------------------------------------------------------------------------
+sac3 (opt=2132531) :
+
+Version majorante 2134502.8
+Version minorant 2111284.0
+Soit la solution x est borné par : (2111284.0<=x<=2134502.8)
+RESULTAT : 2132531.0
+Temps d'execution:10(ms)
+Nombre de noeuds : 62748
+
+On obtient bien la même valeur.
+--------------------------------------------------------------------------------
+sac4 (opt=2166542) :
+
+Version majorante 2167125.8
+Version minorant 2097176.0
+Soit la solution x est borné par : (2097176.0<=x<=2167125.8)
+RESULTAT : 2166542.0
+Temps d'execution:91(ms)
+Nombre de noeuds : 179850
+
+On obtient bien la même valeur.
+--------------------------------------------------------------------------------

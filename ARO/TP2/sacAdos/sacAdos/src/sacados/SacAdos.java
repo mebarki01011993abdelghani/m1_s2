@@ -1,14 +1,13 @@
-package sacados;
-
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class SacAdos {
 
     static int poidSac;
-    static final String chemin = "src/sacados/sac1.txt";
+    static final String chemin = "sac1.txt";
     static float minorant;
     static float majorant;
+    static int compteur;
 
     static float algorithmeGloutonMajorant(Item firstItem, float valCourante, float poidCourant) {
         int poidTotal = (int) poidCourant, verifPoid = 0;
@@ -74,6 +73,8 @@ public class SacAdos {
     public static void algorithmeBranchAndBound(Item itemCourant, float valCourante, float poidCourant) {
         float valMin = 0;
         float valMax = 0;
+        
+        compteur ++;
 
         /*Algorithme glouton*/
         valMax = algorithmeGloutonMajorant(itemCourant, valCourante, poidCourant);
@@ -87,9 +88,10 @@ public class SacAdos {
 
             /*On avance dans l'arbre*/
             Item next = itemCourant.getIndice();
-
+            
             if (next != null) {
                 if (itemCourant.getEtat() == 1) {
+                    
                     valCourante = valCourante + itemCourant.getValeur();
                     poidCourant = poidCourant + itemCourant.getPoid();
                 }
@@ -98,7 +100,7 @@ public class SacAdos {
                     algorithmeBranchAndBound(next, valCourante, poidCourant);
                     next.setEtat(1);
                     algorithmeBranchAndBound(next, valCourante, poidCourant);
-                }else {
+                } else {
                     next.setEtat(0);
                     algorithmeBranchAndBound(next, valCourante, poidCourant);
                 }
@@ -109,7 +111,8 @@ public class SacAdos {
     public static void main(String[] args) throws IOException {
         ArrayList<Item> objets = new ArrayList<Item>();
         ArrayList<Item> objetsNonTrie = new ArrayList<Item>();
-
+        
+        compteur = 0;
         float[][] objs;
 
         /* Initialisation */
@@ -128,12 +131,18 @@ public class SacAdos {
         System.out.println("Soit la solution x est borné par : (" + minorant + "<=x<=" + majorant + ")");
 
         // On déroule l'arbre
+        long startTime = System.currentTimeMillis();
         firstObj.setEtat(1);
         algorithmeBranchAndBound(firstObj, 0, 0);
         firstObj.setEtat(0);
         algorithmeBranchAndBound(firstObj, 0, 0);
-
+        long endTime = System.currentTimeMillis();
         System.out.println("RESULTAT : " + minorant);
+
+        System.out.println("Temps d'execution:" + (endTime - startTime));
+        
+        
+        System.out.println("Nombre de noeuds : " +compteur);
 
     }
 
