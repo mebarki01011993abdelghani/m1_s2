@@ -22,13 +22,13 @@ public class SeptNains {
 class BlancheNeige {
 
     private volatile boolean libre = true;
-    private volatile ArrayList<String> fileAttente = new ArrayList<String>();
+    private volatile ArrayList<Thread> fileAttente = new ArrayList<Thread>();
 
     // Initialement, Blanche-Neige est libre.
     public synchronized void requerir() {
         System.out.println(Thread.currentThread().getName()
                 + " veut la ressource");
-        fileAttente.add(Thread.currentThread().getName());
+        fileAttente.add(Thread.currentThread());
         afficherFileAttente();
     }
 
@@ -41,8 +41,7 @@ class BlancheNeige {
     }
 
     public synchronized void acceder() {
-        String nomThread = Thread.currentThread().getName();
-        while (!libre && fileAttente.get(0).equals(nomThread) == false) // Le nain s'endort sur le moniteur Blanche-Neige.
+        while (!libre || fileAttente.get(0) != Thread.currentThread()) // Le nain s'endort sur le moniteur Blanche-Neige.
         {
             try {
                 wait();
@@ -54,8 +53,9 @@ class BlancheNeige {
         libre = false;
         System.out.println("\t" + Thread.currentThread().getName()
                 + " accède à la ressource.");
-        fileAttente.remove(nomThread);
+        fileAttente.remove(Thread.currentThread());
         afficherFileAttente();
+
     }
 
     public synchronized void relacher() {
@@ -63,6 +63,7 @@ class BlancheNeige {
                 + " relâche la ressource.");
         afficherFileAttente();
         libre = true;
+
         notifyAll();
     }
 }
@@ -77,6 +78,7 @@ class Nain extends Thread {
     }
 
     public void run() {
+        int i = 0;
         while (true) {
             bn.requerir();
             bn.acceder();
@@ -86,6 +88,8 @@ class Nain extends Thread {
                 e.printStackTrace();
             }
             bn.relacher();
+            i++;
+            System.out.println("i " + i);
         }
     }
 }

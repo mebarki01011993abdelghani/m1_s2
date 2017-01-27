@@ -18,7 +18,7 @@ Version majorante 103.8951
 Version minorant 99.0
 Soit la solution x est borné par : (99.0<=x<=103.8951)
 RESULTAT : 103.0
-Temps d'execution:1(ms)
+Temps d'execution:0(ms)
 Nombre de noeuds : 411
 
 On obtient bien la même valeur.
