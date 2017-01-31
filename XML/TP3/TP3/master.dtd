@@ -15,16 +15,20 @@
 <!ENTITY  cred6     			"6" 			     		 >
 <!ENTITY  noResume				"Nous sommes désolé, mais nous n'avons pas encore de résumé.">
 <!--RELATIONS ELEMENTS-->
-<!ELEMENT master					(intervenants*,enseignements*,specialite*,parcours*)>
+<!ELEMENT master					(intervenants*,enseignements*,specialite*,parcour*)>
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant*)>
 <!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,etablissement)				 >
-<!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,competences,connaissances,ref-intervenant+)			 >							 
-<!ELEMENT parcours					(ref-specialite?,nom,responsable,debouche*,description?,competences?,semestre+)>
-<!ELEMENT block 					(ref-enseignement+)								>							
-<!ELEMENT semestre					(block+)								   			>	
+<!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,competences,connaissances,ref-intervenant+)		>							 
+<!ELEMENT parcour					(ref-specialite?,nom,responsable,debouche*,description?,competences?,semestres)>
+<!ELEMENT block 					(ref-enseignement+)								>		
+<!ELEMENT blocks 					(block+)								>						
+<!ELEMENT semestre					(block+)								   	>	
 <!ELEMENT responsable 				(ref-intervenant+)>
-
+<!ELEMENT parcours 					(parcour*)  >
+<!ELEMENT semestres					(semestre*)  >
 <!--ELEMENTS-->
+
+
 <!ELEMENT pre-requis 					(#PCDATA)  >
 <!ELEMENT nom 						(#PCDATA)  >
 <!ELEMENT debouche 					(#PCDATA)  >
