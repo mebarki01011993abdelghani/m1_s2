@@ -26,3 +26,39 @@ Question 9
 xmllint --xpath 'siecle/annee[numero<1902]/mois/nom' siecle.xml
 
 Question 10
+xmllint --xpath '//semaine/ref-jour[@ref="day12099"]/../../../numero' siecle.xml
+
+Question 11
+xmllint --xpath '//mois/jour[last()]/nom' siecle.xml
+
+Question 12
+xmllint --xpath '//annee[last()]/mois[last()]/jour[last()-1]/nom' siecle.xml
+
+Question 13
+xmllint --xpath '//comment()' siecle.xml
+
+Question 14
+xmllint --xpath '//processing-instruction()' siecle.xml
+
+Question 15
+xmllint --xpath 'string(//semaine/ref-jour[@ref="day12099"]/../../../numero)' siecle.xml
+
+Question 15
+xmllint --xpath 'normalize-space(//semaine/ref-jour[@ref="day12099"]/../../../numero)' siecle.xml
+
+Question 16
+xmllint --xpath '//numero=55' siecle.xml
+
+Question 17
+xmllint --xpath '//annee[position()=count(//annee/numero[not(../numero >  numero)])]/numero' siecle.xml
+
+Question 18
+xmllint --xpath '//annee[count(./mois/jour)=366]/numero' siecle.xml
+
+Question 19
+xmllint --xpath '//mois/jour[1][stacount(//mois/jour[1][starts-with(nom,"jeudi")])
+
+Question 20 
+xmllint --xpath 'count(//jour[contains(personne,"JEAN")])' siecle.xml
+
+

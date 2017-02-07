@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT master		(parcours+, intervenants)>
+
+<!ELEMENT parcours		(responsable, nom, description, debouche, semestre+)>
+<!ELEMENT intervenants	(intervenant+)>
+<!ELEMENT autre			(p*)>
+
+<!-- PARCOURS -->
+<!ELEMENT semestre	(obligatoires, options)>
+<!ELEMENT responsable	(#PCDATA)>
+<!ELEMENT description	(#PCDATA|p|ul|table)*>
+<!ELEMENT debouche		(#PCDATA)>
+
+
+<!-- SEMESTRE -->
+<!ELEMENT obligatoires	(unite+)>
+<!ELEMENT options	(unite*)>
+
+<!-- UNITE -->
+<!ELEMENT unite 		(nom, credits, resume, plan, lieux, ref-intervenant*)>
+
+<!ELEMENT nom			(#PCDATA)>
+<!ELEMENT credits		(#PCDATA)>
+<!ELEMENT resume		(#PCDATA|p|ul|table)*>
+<!ELEMENT plan			(#PCDATA)>
+<!ELEMENT lieux			(#PCDATA)>
+<!ELEMENT ref-intervenant	EMPTY>
+<!ELEMENT autres		(autre*)>
+
+<!ATTLIST unite
+	id ID #REQUIRED
+>
+
+<!ATTLIST ref-intervenant
+	ref IDREF #REQUIRED
+>
+
+<!-- INTERVENANT -->
+<!ELEMENT intervenant	(nom, email, web,autres)>
+
+<!ELEMENT email			(#PCDATA)>
+<!ELEMENT web			(#PCDATA)>
+
+<!ATTLIST intervenant
+	id ID #REQUIRED
+>
+
+<!-- HTML DESIGN -->
+<!ELEMENT p 			(#PCDATA|g|i|url|p|table|ul)*>
+<!ELEMENT g				(#PCDATA|i|url)*>
+<!ELEMENT i				(#PCDATA|g|url)*>
+<!ELEMENT url			(#PCDATA)>
+
+<!ELEMENT ul			(li)+>
+<!ELEMENT li			(#PCDATA|g|i|url|p|ul)*>
+
+<!ELEMENT table 		(tr)+>
+<!ELEMENT tr			(td)+>
+<!ELEMENT td			(#PCDATA|g|i|url|li|p|ul)*>

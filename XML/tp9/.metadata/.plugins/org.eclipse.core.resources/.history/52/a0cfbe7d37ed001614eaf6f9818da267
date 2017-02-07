@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<personne
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="simple.xsd"
+    >
+
+    <nom>  Jean Durand  </nom>
+    <age> 30 </age>
+
+</personne>

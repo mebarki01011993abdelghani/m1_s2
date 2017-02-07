@@ -22,6 +22,10 @@ class Babouin extends Thread {
         numero = ++numeroSuivant;              // Chaque babouin possède un numéro distinct
     }
 
+    public int getNumero() {
+        return this.numero;
+    }
+
     public void run() {
         System.out.println("Le babouin " + numero + " arrive sur le côté " + origine + " du canyon.");
         corde.saisir(origine);                 // Pour traverser, le babouin saisit la corde
@@ -54,10 +58,19 @@ class Babouin extends Thread {
 
 class Corde {
 
-    static volatile List<Thread> etatCorde = Collections.synchronizedList(new ArrayList<Thread>()); // Représente les babouins sur la corde,// on a pas besoin du mot clef statique car il y a seulement une seule corde
-    static volatile Cote cote = null;// Cote du premier babouins passant sur la corde
+    private ArrayList<Babouin> babouins;
+    // Représente les babouins sur la corde,// on a pas besoin du mot clef statique car il y a seulement une seule corde
+    private Cote cote;// Cote du premier babouins passant sur la corde
+    private int capacite;
+
+    public Corde() {
+        this.babouins = new ArrayList<Babouin>(); // les babouins sur la corde
+        this.cote = null; // le cote du premier babouin
+        this.capacite = 5; // capacite max de la corde
+    }
 
     public void afficherCorde() {
+<<<<<<< HEAD
         synchronized (Corde.class) {
             System.out.println("Corde : ");
 
@@ -65,9 +78,17 @@ class Corde {
                 System.out.println(etatCorde.get(i).getName());
             }
             System.out.println("----------------------");
+=======
+        System.out.println("Corde : ");
+
+        for (int i = 0; i < babouins.size(); i++) {
+            Babouin bab = (Babouin) babouins.get(i);
+            System.out.println(bab.getNumero());
+>>>>>>> refs/remotes/origin/master
         }
     }
 
+<<<<<<< HEAD
     public void saisir(Cote origine) {
 
         while (etatCorde.size() == 5 || origine != cote) {
@@ -77,12 +98,20 @@ class Corde {
                 cote = origine;
             }
 
+=======
+    public synchronized void saisir(Cote origine) {
+        if (cote == null || babouins.size() == 0) {
+            cote = origine;
+        }
+        while (cote != origine || babouins.size() == capacite) {
+>>>>>>> refs/remotes/origin/master
             try {
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+<<<<<<< HEAD
         synchronized (Corde.class) {
 
             if (etatCorde.size() == 0) { // il monte car pas de babouin sur la corde
@@ -99,12 +128,22 @@ class Corde {
 
         //Tant que le babouin n'est pas la premier etre monté sur la corde
         while (etatCorde.get(0) != Thread.currentThread()) {
+=======
+        Babouin babtwo = (Babouin) Thread.currentThread();
+        babouins.add(babtwo);
+        afficherCorde();
+    }
+
+    public synchronized void lacher(Cote origine) {
+        while (babouins.get(0) != (Babouin) Thread.currentThread() || cote != origine) {
+>>>>>>> refs/remotes/origin/master
             try {
-                wait(); // attend de pouvoir lacher
+                wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+<<<<<<< HEAD
         synchronized (Corde.class) {
 
             etatCorde.remove(Thread.currentThread());
@@ -113,5 +152,9 @@ class Corde {
             notifyAll();
         }
 
+=======
+        babouins.remove((Babouin) Thread.currentThread());
+        notifyAll();
+>>>>>>> refs/remotes/origin/master
     }
 }
