@@ -57,40 +57,47 @@ class Corde {
     static volatile List<Thread> etatCorde = Collections.synchronizedList(new ArrayList<Thread>()); // Représente les babouins sur la corde,// on a pas besoin du mot clef statique car il y a seulement une seule corde
     static volatile Cote cote = null;// Cote du premier babouins passant sur la corde
 
-    public void afficherCorde(List<Thread> etatCorde) {
-        System.out.println("Corde : ");
+    public void afficherCorde() {
+        synchronized (Corde.class) {
+            System.out.println("Corde : ");
 
-        for (int i = 0; i < etatCorde.size(); i++) {
-            System.out.println(etatCorde.get(i).getName());
+            for (int i = 0; i < etatCorde.size(); i++) {
+                System.out.println(etatCorde.get(i).getName());
+            }
+            System.out.println("----------------------");
         }
-        System.out.println("----------------------");
     }
 
-    public synchronized void saisir(Cote origine) {
+    public void saisir(Cote origine) {
 
-        while (etatCorde.size() > 5 && origine != cote) {
+        while (etatCorde.size() == 5 || origine != cote) {
             // on fait attendre les babouins
 
             if (etatCorde.size() == 0) {
                 cote = origine;
             }
+
             try {
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+        synchronized (Corde.class) {
 
-        if (etatCorde.size() == 0) { // il monte car pas de babouin sur la corde
-            cote = origine;
-            etatCorde.add(Thread.currentThread());
-        } else {
-            etatCorde.add(Thread.currentThread());
+            if (etatCorde.size() == 0) { // il monte car pas de babouin sur la corde
+                cote = origine;
+                etatCorde.add(Thread.currentThread());
+            } else {
+                etatCorde.add(Thread.currentThread());
+            }
+            afficherCorde();
         }
-        afficherCorde(etatCorde);
     }
 
-    public synchronized void lacher(Cote origine) {
+    public void lacher(Cote origine) {
+
+        //Tant que le babouin n'est pas la premier etre monté sur la corde
         while (etatCorde.get(0) != Thread.currentThread()) {
             try {
                 wait(); // attend de pouvoir lacher
@@ -98,8 +105,13 @@ class Corde {
                 e.printStackTrace();
             }
         }
-        etatCorde.remove(etatCorde.get(0));
-        afficherCorde(etatCorde);
-        notifyAll();
+        synchronized (Corde.class) {
+
+            etatCorde.remove(Thread.currentThread());
+            afficherCorde();
+
+            notifyAll();
+        }
+
     }
 }

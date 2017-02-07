@@ -159,27 +159,35 @@ public class Main {
         for (int i = 0; i < newDonnees.size() - 1; i++) {
             String firstItem = newDonnees.get(i).getItem();
             /*Récupérer la deniere lettre*/
-            char lastLetter = firstItem.toCharArray()[firstItem.length() - 1];
-
+            char[] letters = firstItem.toCharArray();
+            int cmpt = 0;
             for (int j = i + 1; j < newDonnees.size(); j++) {
                 String nextItem = newDonnees.get(j).getItem();
                 /*On prend la premier lettre de la chaine*/
-                char compare = nextItem.toCharArray()[0];
-                if (compare == lastLetter) {
+                char[] compare = nextItem.toCharArray();
+
+                for (int k = 0; k < nextItem.length() - 1; k++) { // pas la derniere lettre
+                    if (compare[k] == letters[cmpt]) {
+                        cmpt++;
+                    } else {
+                        break;
+                    }
+                }
+                if (cmpt == letters.length - 1) {
                     find = true;
                     /*On récupére les lettres suivantes*/
-                    String lastLetters = nextItem.substring(1, nextItem.length());
+                    String lastLetters = nextItem.substring(nextItem.length() - 1, nextItem.length());
                     /*Génération de la nouvelle données*/
                     String result = firstItem.concat(lastLetters);
                     Apriori obj = new Apriori(result);
                     //add
                     donneesLn.add(obj);
-                } //Si on ne trouve pas de composition apres en avoir trouvé au moins une on s'arrete
-                else if (find == true) {
+                } else if (find == true) {//Si on ne trouve pas de composition apres en avoir trouvé au moins une on s'arrete
                     find = false;
                     break;
                 }
             }
+
         }
         return donneesLn;
     }
@@ -226,7 +234,7 @@ public class Main {
         algo.checkMins();
         algo.afficherTreeMap();
         int i = 1;
-        while (treilli.size() !=0) {
+        while (treilli.size() > 1) {
             System.out.println("NEXT");
             ArrayList<Apriori> liste = algo.combinaison(i);
             algo.afficherListe(liste);
@@ -256,7 +264,7 @@ public class Main {
          */
         Main algo = new Main();
         algo.aprioriAlgo(jeuDonnees);
-        
+
     }
 
 }

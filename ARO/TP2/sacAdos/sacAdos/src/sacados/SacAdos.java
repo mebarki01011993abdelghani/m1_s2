@@ -9,6 +9,7 @@ public class SacAdos {
     static final String chemin = "src/sacados/sac1.txt";
     static float minorant;
     static float majorant;
+    static int cmpt = 0;
 
     static float algorithmeGloutonMajorant(Item firstItem, float valCourante, float poidCourant) {
         int poidTotal = (int) poidCourant, verifPoid = 0;
@@ -78,6 +79,7 @@ public class SacAdos {
         /*Algorithme glouton*/
         valMax = algorithmeGloutonMajorant(itemCourant, valCourante, poidCourant);
         if (valMax > minorant) {
+                    cmpt++;
 
             valMin = algorithmeGloutonMinorant(itemCourant, valCourante, poidCourant);
 
@@ -88,17 +90,21 @@ public class SacAdos {
             /*On avance dans l'arbre*/
             Item next = itemCourant.getIndice();
 
+            // On sauvegarde nos valeurs
+            if (itemCourant.getEtat() == 1) {
+                valCourante = valCourante + itemCourant.getValeur();
+                poidCourant = poidCourant + itemCourant.getPoid();
+            }
+
             if (next != null) {
-                if (itemCourant.getEtat() == 1) {
-                    valCourante = valCourante + itemCourant.getValeur();
-                    poidCourant = poidCourant + itemCourant.getPoid();
-                }
+
+                // On ne doit pas dépasser le poid du sac
                 if (next.getPoid() + poidCourant <= poidSac) {
                     next.setEtat(0);
                     algorithmeBranchAndBound(next, valCourante, poidCourant);
                     next.setEtat(1);
                     algorithmeBranchAndBound(next, valCourante, poidCourant);
-                }else {
+                } else {
                     next.setEtat(0);
                     algorithmeBranchAndBound(next, valCourante, poidCourant);
                 }
@@ -134,6 +140,7 @@ public class SacAdos {
         algorithmeBranchAndBound(firstObj, 0, 0);
 
         System.out.println("RESULTAT : " + minorant);
+        System.out.println("noeud  " + cmpt);
 
     }
 

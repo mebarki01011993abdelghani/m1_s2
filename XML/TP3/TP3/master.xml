@@ -322,7 +322,6 @@
 		<identifiant>ENSINAU3</identifiant>
 		<nombreCredit>&cred6;</nombreCredit>
 		<resume>
-		   
 		    Architecture en couches, standard OSI
 		    Couche physique
 		    Couche liaison de Données
@@ -332,11 +331,7 @@
 		    Couche Application : HTTP, SMTP, FTP, ...
 		    Bases des protocoles cryptographiques (terminologie, architecture à clef publique).
 		    Introduction à la Sécurité des réseaux.
-
    		</resume>
-		<pre-requis>
-
-		</pre-requis>
 	</enseignement>
 
 	<enseignement idEnseignement="ENSINAU4">
@@ -363,12 +358,13 @@
 		<nom>Programmation logique</nom>
 		<identifiant>ENSINAU6</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
-		<resume>	   
-		    Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.
-		    Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.
-		    Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
-		    Règles prédéfinies.
-
+		<resume>
+			<p>   
+			    Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.
+			    Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.
+			    Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
+			    Règles prédéfinies.
+			</p>	
    		</resume>
 	</enseignement>
 
@@ -377,14 +373,12 @@
 		<identifiant>ENSINAU7</identifiant>
 		<nombreCredit>&cred6;</nombreCredit>
 		<resume>
-		   
 		    Présentation d'Internet.
 		    Les langages et les normes sur Internet.
 		    Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3
 		    Les applications web.
 		    Sécurité.
 		    Les nouvelles et futures technologies.
-
    		</resume>
 	</enseignement>
 
@@ -395,9 +389,6 @@
 		<resume>
 		   	&noResume;
    		</resume>
-		<pre-requis>
-
-		</pre-requis>
 	</enseignement>
 
 	<enseignement idEnseignement="ENSINAU9">
@@ -405,15 +396,10 @@
 		<identifiant>ENSINAU9</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
 		<resume>
-		   	
 		    Rappel de théorie des langages
 		    Algorithmes d'analyse syntaxique pour grammaires ambiguës
 		    Transducteurs finis et leur application en TAL
-
    		</resume>
-		<pre-requis>
-
-		</pre-requis>
 	</enseignement>
 
 	<enseignement idEnseignement=" ENSINAU10">
@@ -424,9 +410,6 @@
 		   	Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de
 			Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).
    		</resume>
-		<pre-requis>
-
-		</pre-requis>
 	</enseignement>
 
 	<enseignement idEnseignement=" ENSINAU12">
@@ -442,6 +425,98 @@
 		<identifiant> ENSINAU13</identifiant>
 		<nombreCredit>&cred3;</nombreCredit>
 		<resume>&noResume;</resume>
+	</enseignement>
+
+		<enseignement idEnseignement="ENSINCU41">
+		<nom>Qualité logicielle : outils et méthodes</nom>
+		<identifiant>ENSINCU41</identifiant>
+		<nombreCredit>&cred6;</nombreCredit>
+		<resume>
+		   	Qualité logicielle, test et validation logiciel, ateliers de génie logiciel.
+   		</resume>
+
+	</enseignement>
+
+	<enseignement idEnseignement="ENSINCU42">
+		<nom>Spécification logicielle</nom>
+		<identifiant>ENSINCU42</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+			Modèles formels, modèle SADT, logiciels temps réel, méthode SA-RT.  		
+		</resume>
+		<pre-requis>
+
+		</pre-requis>
+	</enseignement>
+
+<enseignement idEnseignement="ENSINCU43">
+		<nom>Conception logicielle</nom>
+		<identifiant>ENSINCU43</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   	Conception objet, patrons de conception, conception IHM.
+   		</resume>
+	</enseignement>
+
+<enseignement idEnseignement="ENSINCU44">
+		<nom>Architecture logicielle JEE</nom>
+		<identifiant>ENSINCU44</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   Composants logiciels , architectures N-tier, middleware, Entreprise Java Beans (EJB).
+   		</resume>
+	</enseignement>
+
+<enseignement idEnseignement="ENSINCU45">
+		<nom>Technologies du Web et Web 2.0 </nom>
+		<identifiant>ENSINCU45 </identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   	Protocoles de communication, standards Web, Langages à balises, programmation Web, Ajax, XUL, standardisation et convergence d'interfaces.
+   		</resume>
+	</enseignement>
+
+	<enseignement idEnseignement="ENSINCU46">
+		<nom>XML avancé</nom>
+		<identifiant>ENSINCU46</identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   Modélisation et navigation, XSchema et XPath avancés, Requêtage des bases documentaires, DOM et SAX avancés.
+   		</resume>
+	</enseignement>
+
+	<enseignement idEnseignement="ENSINCU27">
+		<nom>Anglais 2</nom>
+		<identifiant>ENSINCU45 </identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   	Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.
+   		</resume>
+	</enseignement>
+
+	<enseignement idEnseignement="ENSINCU47">
+		<nom>Gestion de projet</nom>
+		<identifiant>ENSINCU47 </identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   	Définition et acteurs d'un projet, organisation d'un projet, techniques de planification, estimation prévisionnelle d'un projet, pilotage et contrôle d'un projet, recette finale
+   		</resume>
+	</enseignement>
+
+	<enseignement idEnseignement="ENSINCU28">
+		<nom>Communication 2 </nom>
+		<identifiant>ENSINCU28 </identifiant>
+		<nombreCredit>&cred3;</nombreCredit>
+		<resume>
+		   L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.
+			•Valorisation du parcours de formation
+			•Clarification des motivations et de leurs incidences sur des choix professionnels
+			•Identification des aptitudes et des compétences,
+			•Positionnement du projet personnel et professionnel
+			•Ajustement des profils annonce / candidature
+			•Préparation aux entretiens de recrutement
+			•Rédaction de curriculum vitae et de lettres de motivation
+   		</resume>
 	</enseignement>
 <!-- FIN ENSEIGNEMENTS -->
 <!-- SEPECIALITES -->
@@ -511,24 +586,23 @@
 			</block>
 		</semestre>
 	</parcours>
-		<parcours idParcour="Master2">
+	<parcours idParcour="Master2">
 		<ref-specialite ref ="GL"></ref-specialite>
 		<nom>Master 2</nom>
 		<responsable><ref-intervenant ref="IN9224"></ref-intervenant></responsable>
 		<semestre idSemestre ="S3">
 			<block etat = "&obli;">
-				/* TODO S1 */
-			</block>
-			<block etat ="&falc;">
-				<ref-enseignement ref="ENSINAU6"></ref-enseignement>
-				<ref-enseignement ref="ENSINAU7"></ref-enseignement>
-				<ref-enseignement ref="ENSINAU8"></ref-enseignement>
-				<ref-enseignement ref="ENSINAU9"></ref-enseignement>
-				<ref-enseignement ref="ENSINAU10"></ref-enseignement>
-				<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU41"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU42"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU43"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU44"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU45"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU46"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU47"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU27"></ref-enseignement>
+				<ref-enseignement ref="ENSINCU28"></ref-enseignement>
 			</block>
 		</semestre>
-		
 	</parcours>
 	
 <!-- FIN PARCOURS -->
