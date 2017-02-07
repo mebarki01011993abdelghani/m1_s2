@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:complexType name ="objet">
+      <xs:sequence>
+        <xs:element ref="nom"/>
+      </xs:sequence>
+    </xs:complexType>
+  
+  
+  
+  
+  <xs:element name="objet"> abstract="true" />
+  <xs:element name="master">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="parcours"/>
+        <xs:element ref="intervenants"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="parcours">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="responsable"/>
+        <xs:element ref="nom"/>
+        <xs:element ref="description"/>
+        <xs:element ref="debouche"/>
+        <xs:element maxOccurs="unbounded" ref="semestre"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="intervenants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="intervenant"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- PARCOURS -->
+  <xs:element name="semestre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="obligatoires"/>
+        <xs:element ref="options"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="responsable" type="xs:string"/>
+  <xs:element name="description">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="p"/>
+        <xs:element ref="ul"/>
+        <xs:element ref="table"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="debouche" type="xs:string"/>
+  <!-- SEMESTRE -->
+  <xs:element name="obligatoires">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="unite"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="options">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="unite"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- UNITE -->
+  <xs:element name="unite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nom"/>
+        <xs:element ref="credits"/>
+        <xs:element ref="resume"/>
+        <xs:element ref="plan"/>
+        <xs:element ref="lieux"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-intervenant"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:ID"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nom" type="xs:string"/>
+  <xs:element name="credits" type="xs:string"/>
+  <xs:element name="resume">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="p"/>
+        <xs:element ref="ul"/>
+        <xs:element ref="table"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="plan" type="xs:string"/>
+  <xs:element name="lieux" type="xs:string"/>
+  <xs:element name="ref-intervenant">
+    <xs:complexType>
+      <xs:attribute name="ref" use="required" type="xs:IDREF"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- ELEMENT lieux			(All|Luminy|St-Jerome) -->
+  <!-- INTERVENANT -->
+  <xs:element name="intervenant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nom"/>
+        <xs:element ref="email"/>
+        <xs:element ref="web"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:ID"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="email" type="xs:string"/>
+  <xs:element name="web" type="xs:string"/>
+  <!-- HTML DESIGN -->
+  <xs:element name="p">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="g"/>
+        <xs:element ref="i"/>
+        <xs:element ref="url"/>
+        <xs:element ref="p"/>
+        <xs:element ref="table"/>
+        <xs:element ref="ul"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="g">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="i"/>
+        <xs:element ref="url"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="i">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="g"/>
+        <xs:element ref="url"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="url" type="xs:string"/>
+  <xs:element name="ul">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="li"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="li">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="g"/>
+        <xs:element ref="i"/>
+        <xs:element ref="url"/>
+        <xs:element ref="p"/>
+        <xs:element ref="ul"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="table">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="tr"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="td"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="td">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="g"/>
+        <xs:element ref="i"/>
+        <xs:element ref="url"/>
+        <xs:element ref="li"/>
+        <xs:element ref="p"/>
+        <xs:element ref="ul"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
