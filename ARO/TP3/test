@@ -1,0 +1,12 @@
+\* Problem: example *\
+
+Maximize
+ obj: + x_1 + x_2 + x_3 + x_4
+
+Subject To
+ contrainte_1: + 2 x_1 = 97
+ contrainte_2: + 2 x_2 = 610
+ contrainte_3: + 3 x_3 = 395
+ contrainte_4: + 7 x_4 = 211
+
+End
