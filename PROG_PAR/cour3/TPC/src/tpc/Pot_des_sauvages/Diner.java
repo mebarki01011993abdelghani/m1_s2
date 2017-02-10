@@ -37,9 +37,9 @@ class Sauvage extends Thread {
 
     public void run() {
         while (true) {
-            System.out.println(getName() + ": J'ai faim!");
+            System.out.println(Thread.currentThread().getName() + " : " + "J'ai faim!");
             pot.seServir();
-            System.out.println(getName() + ": Je me suis servi et je vais manger!");
+            System.out.println(Thread.currentThread().getName() + " : " + "Je me suis servi et je vais manger!");
         }
     }
 }
@@ -62,11 +62,14 @@ class Cuisinier extends Thread {
 
 class Pot {
 
-    private int nbPortions;
+    private volatile int nbPortions;
     private int nbPortionsMax;
+    private volatile boolean wakeUp;
+
     public Pot(int nbPortions) {
         this.nbPortions = nbPortions;
         this.nbPortionsMax = nbPortions;
+        this.wakeUp = false;
     }
 
     public int getNbPortions() {
@@ -78,27 +81,43 @@ class Pot {
     }
 
     public synchronized void remplir() {
-        while (nbPortions > 0) { // on attend que le plat soit vide
+        while (wakeUp == false || nbPortions > 0) { // on attend que le plat soit vide
             try {
                 wait();
             } catch (InterruptedException ex) {
                 Logger.getLogger(Pot.class.getName()).log(Level.SEVERE, null, ex);
             }
+
         }
-        System.out.println("REGALEZ VOUS");
-        setNbPortions(nbPortionsMax);
+        System.out.println("Cuisinier : Je suis reveillé !");
+        System.out.println("Je cuisine !");
+        nbPortions = nbPortionsMax;
+        System.out.println("REGALEZ VOUS : pot plein !!");
+
         notifyAll();
     }
 
     public synchronized void seServir() {
+        System.out.println(Thread.currentThread().getName() + " : " + "Je prends la louche ");
+
         while (nbPortions == 0) {   // on attend que le plat soit à de nouveau plein         
             try {
+                if (wakeUp == false) {
+                    System.out.println("Le pot est vide !");
+                    System.out.println(Thread.currentThread().getName() + " : " + "je reveille le cuisinier ");
+                    wakeUp = true;
+                    System.out.println(Thread.currentThread().getName() + " : " + "J'attends que le pôt soit plein ");
+                }
+                notifyAll();
                 wait();
             } catch (InterruptedException ex) {
                 Logger.getLogger(Pot.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        setNbPortions(nbPortions - 1);
+        wakeUp = false;
+        System.out.println("Il y a une part de disponible ");
+        nbPortions = nbPortions - 1;
+        System.out.println(Thread.currentThread().getName() + " : " + "Je pose la louche ");
         notifyAll();
     }
 }
