@@ -16,7 +16,7 @@
 <!ENTITY  noResume				"Nous sommes désolé, mais nous n'avons pas encore de résumé.">
 
 <!--RELATIONS ELEMENTS-->
-<!ELEMENT master					(intervenants*,enseignements*,specialite*,parcours*)>
+<!ELEMENT master					(intervenants*,enseignements*,specialites*,parcours*)>
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant*,adresse*,autre?)>
 <!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,adresse?,etablissement,autre?)>
 <!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,competences,connaissances,ref-intervenant+)>							 
@@ -29,12 +29,13 @@
 <!ELEMENT semestres					(semestre*)>
 <!ELEMENT intervenants        		(intervenant)*>
 <!ELEMENT enseignements        		(enseignement)*>
+<!ELEMENT specialites        		(specialite)*>
 
 <!--ELEMENTS-->
 <!ELEMENT pre-requis 					(#PCDATA)>
 <!ELEMENT nom 						    (#PCDATA)>
 <!ELEMENT debouche 					    (#PCDATA)>
-<!ELEMENT description 					(#PCDATA | p)* >
+<!ELEMENT description 					(#PCDATA | p)*>
 <!ELEMENT etablissement 				(#PCDATA)>
 <!ELEMENT code 						    (#PCDATA)>
 <!ELEMENT finalite 					    (#PCDATA)>
@@ -53,7 +54,7 @@
 <!ELEMENT autre        					ANY>
 
 <!--HTML BALISE -->
-<!ELEMENT p							(#PCDATA| em | ul | strong | table)*>				
+<!ELEMENT p							(#PCDATA| em | ul | strong | table)*  >				
 <!ELEMENT strong					(#PCDATA|p)*>				
 <!ELEMENT em						(#PCDATA)>
 <!ELEMENT ul						(li+)>
