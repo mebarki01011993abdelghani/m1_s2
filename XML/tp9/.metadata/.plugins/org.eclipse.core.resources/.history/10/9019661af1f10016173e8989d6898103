@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT siecle   ANY>
+<!ELEMENT annee   ANY>
+<!ELEMENT numero   ANY>
+<!ELEMENT semaine   ANY>
+<!ELEMENT nom   ANY>
+<!ELEMENT ref-jour   ANY>
+<!ELEMENT mois   ANY>
+<!ELEMENT numero-semaine   ANY>
+<!ELEMENT jour   ANY>
+
+<!ATTLIST mois  id  ID  #REQUIRED>
+<!ATTLIST mois  suivant  ID  #REQUIRED>
+<!ATTLIST enseignement  idEnseignement  ID  #REQUIRED>
+<!ATTLIST ref  ref IDREF  #REQUIRED>

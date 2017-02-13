@@ -1,0 +1,6 @@
+package javaEtXML;
+
+public static void main(String args[]) throws Exception {
+    SaxSample parser = new SaxSample();
+    parser.parseXmlFile("siecle.xml");
+}

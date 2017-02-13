@@ -1,0 +1,38 @@
+package javaEtXML;
+
+import org.xml.sax.Attributes;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXParseException;
+import org.xml.sax.XMLReader;
+import org.xml.sax.helpers.DefaultHandler;
+import org.xml.sax.helpers.XMLReaderFactory;
+
+public class SaxSample extends DefaultHandler {
+
+    int nbElements = 0;
+    int nbCharacters = 0;
+
+	public static void main(String args[]) throws Exception {
+	    SaxSample parser = new SaxSample();
+	    parser.parseXmlFile("siecle.xml");
+	}
+	
+	
+	public void parseXmlFile(String fileName) throws Exception {
+
+	    // créer un analyseur SAX par défaut
+	    XMLReader xr = XMLReaderFactory.createXMLReader();
+
+	    // fixer le(s) gestionnaire(s) d'évènements
+	    xr.setContentHandler(this);
+	    xr.setErrorHandler(this);
+	    // xr.setDTDHandler(this);
+
+	    // fixer les comportements
+	    xr.setFeature("http://xml.org/sax/features/validation", true);
+
+	    // analyser la source XML
+	    xr.parse(new InputSource(fileName));
+	}
+
+}

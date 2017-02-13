@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--NOEUDS--!>
+<!ELEMENT siecle   (annee*)>
+<!ELEMENT annee   (numero,semaines*,mois*)>
+<!ELEMENT semaines   (semaine*)>
+<!ELEMENT semaine   (numero,nom,ref-jour*)>
+<!ELEMENT mois  (numero,nom,jour*)>
+<!ELEMENT jour   (nom,numero,numero-semaine,numero-annee,personne?)>
+
+<!--ID MOIS et MOIS SUIVANT-->
+<!ATTLIST mois  id  ID  #REQUIRED>
+<!ATTLIST mois  suivant  IDREF  #REQUIRED>
+<!ATTLIST jour  id  ID  #REQUIRED>
+<!ATTLIST jour  suivant  IDREF  #REQUIRED>
+<!--REF AU JOURS --!>
+<!ATTLIST ref-jour  ref  IDREF  #REQUIRED>
+
+<!--FEUILLES-!>
+<!ELEMENT numero-semaine   (#PCDATA)>
+<!ELEMENT numero-annee   (#PCDATA)>
+<!ELEMENT numero   (#PCDATA)>
+<!ELEMENT nom   (#PCDATA)>
+<!ELEMENT ref-jour   (#PCDATA)>
+<!ELEMENT personne   (#PCDATA)>
