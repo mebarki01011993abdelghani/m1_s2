@@ -5,7 +5,7 @@
 
         <!-- Génération intervenants HTML -->
         <xsl:for-each select="//intervenant">
-            <xsl:document href="output/intervenants/{@idIntervenant}.html">
+            <xsl:document href="www/intervenants/{@idIntervenant}.html">
                 <html xmlns="http://www.w3.org/1999/xhtml">
                     <head>
                         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -24,7 +24,7 @@
 
         <!-- Génération enseignements HTML -->
         <xsl:for-each select="//enseignement">
-            <xsl:document href="output/enseignements/{@idEnseignement}.html">
+            <xsl:document href="www/enseignements/{@idEnseignement}.html">
                 <html xmlns="http://www.w3.org/1999/xhtml">
                     <head>
                         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -43,7 +43,7 @@
 
         <!-- Génération parcours HTML -->
         <xsl:for-each select="//parcour">
-            <xsl:document href="output/parcours/{@idParcour}.html">
+            <xsl:document href="www/parcours/{@idParcour}.html">
                 <html xmlns="http://www.w3.org/1999/xhtml">
                     <head>
                         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -62,7 +62,7 @@
 
         <!-- Génération semstres HTML -->
         <xsl:for-each select="//semestre">
-            <xsl:document href="output/parcours/semestres/{@idSemestre}.html">
+            <xsl:document href="www/parcours/semestres/{@idSemestre}.html">
                 <html xmlns="http://www.w3.org/1999/xhtml">
                     <head>
                         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -100,7 +100,7 @@
         <ul>
             <xsl:for-each select ="intervenant">
                 <li>
-                    <a href="output/intervenants/{@idIntervenant}.html">
+                    <a href="www/intervenants/{@idIntervenant}.html">
                         <xsl:value-of select="nom"/>
                     </a>
                 </li>
@@ -113,7 +113,7 @@
         <ul>
             <xsl:for-each select ="enseignement">
                 <li>
-                    <a href="output/enseignements/{@idEnseignement}.html">
+                    <a href="www/enseignements/{@idEnseignement}.html">
                         <xsl:value-of select="nom"/>
                     </a>
                 </li>
@@ -126,7 +126,7 @@
         <ul>
             <xsl:for-each select ="parcour">
                 <li>
-                    <a href="output/parcours/{@idParcour}.html">
+                    <a href="www/parcours/{@idParcour}.html">
                         <xsl:value-of select="nom"/>
                     </a>
                 </li>
