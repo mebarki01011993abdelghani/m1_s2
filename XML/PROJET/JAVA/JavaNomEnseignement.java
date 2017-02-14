@@ -31,7 +31,7 @@ public class JavaNomEnseignement {
         JavaNomEnseignement parser = new JavaNomEnseignement();
         buildTreeMois();
         // API SAX
-        parser.parseXmlFile("master.xml");
+        parser.parseXmlFile("../XML/master.xml");
         encoding();
 
     }
