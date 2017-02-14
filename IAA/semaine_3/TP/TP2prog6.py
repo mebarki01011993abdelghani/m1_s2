@@ -46,6 +46,21 @@ maximum =  e + 1.96 * math.sqrt( (e * (1-e)) / n )
 Y_pred =clf.predict(X_test)
 cm = confusion_matrix(Y_test, Y_pred)
 
+n00 = 0
+n01 = 0
+n10 = 0
+n11 = 0
+for i in range(len(cm)):
+    for j in range(len(cm)):
+        if ( i!=j ):
+            n00 = n00+cm[i][j]
+            n01 = n01+cm[i][j]
+        else:
+            n11 = n11+cm[i][j]
+            n10 = n10+cm[i][j]
+resultat = (((abs(n01 - n10)) - 1)*((abs(n01 - n10)) - 1)) / ( n01 + n10 )
+
+print resultat 
 
 print "---------------------------------"
 print "-           GINI                -"
@@ -56,23 +71,27 @@ print "gini :", e
 print "matrice :"
 print cm
 
-print len(X_test)
+n00 = 0
+n01 = 0
+n10 = 0
+n11 = 0
+for i in range(len(cm)):
+    for j in range(len(cm)):
+        if ( i!=j ):
+            n00 = n00+cm[i][j]
+            n10 = n10+cm[i][j]
+        else: 
+            n11 = n11+cm[i][j]
+            n01 = n01+cm[i][j]
+            
+resultat = (abs((n01 - n10) - 1)*abs((n01 - n10) - 1))/(n01+n10)
 
-n0 = 0
-n1 = 0
-for i in range(len(cm)) :
-	count = 0
-	countn1 = 0
-	for j in range(len(cm)) :
-		if i != j :
-			count = cm[i,j] + count
-		else :
-			countn1 = cm[i,j] + countn1
-	n0 = count + n0	
-	n1 = n1 + countn1
-	
-print i,n0,n1
-		
+print resultat 
+
+if (resultat>3.841459) :
+	print "sup a 95 %"
+else :
+	print "inf a 95 %"
 
 			
 
