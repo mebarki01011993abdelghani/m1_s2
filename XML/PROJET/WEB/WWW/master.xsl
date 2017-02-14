@@ -14,7 +14,7 @@
                         </title>
                     </head>
                     <body>
-                        <a href="../../master.html">Index</a>
+                        <a href="../../index.html">Index</a>
                         <br/>
                         <xsl:apply-templates select="."/>
                     </body>
@@ -33,7 +33,7 @@
                         </title>
                     </head>
                     <body>
-                        <a href="../../master.html">Index</a>
+                        <a href="../../index.html">Index</a>
                         <br/>
                         <xsl:apply-templates select="."/>
                     </body>
@@ -52,7 +52,7 @@
                         </title>
                     </head>
                     <body>
-                        <a href="../../master.html">Index</a>
+                        <a href="../../index.html">Index</a>
                         <br/>
                         <xsl:apply-templates select="."/>
                     </body>
@@ -69,7 +69,7 @@
                         <title>Semestre<xsl:value-of select="@idSemestre"/></title>
                     </head>
                     <body>
-                        <a href="../../../master.html">Index</a>
+                        <a href="../../../index.html">Index</a>
                         <br/>
                         <xsl:apply-templates select="."/>
                     </body>
