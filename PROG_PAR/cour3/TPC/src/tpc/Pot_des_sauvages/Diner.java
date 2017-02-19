@@ -130,16 +130,17 @@ class Pot {
         // le while permet d'empecher les sauvages de récupérer la louche si elle est prise
         while (louche != (Sauvage) Thread.currentThread()) {
             try {
-                wait();
                 if (louche == null) {
                     // le sauvage a la louche seulement lui peut se servir
                     louche = (Sauvage) Thread.currentThread();
+                } else {
+                    wait();
                 }
             } catch (InterruptedException ex) {
                 Logger.getLogger(Pot.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        
+
         System.out.println(Thread.currentThread().getName() + " : " + "Je prends la louche ");
         wakeUp = false;
         System.out.println("Il y a une part de disponible ");
