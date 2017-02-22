@@ -19,11 +19,7 @@
 <!ELEMENT master					(intervenants*,enseignements*,specialites*,parcours*)>
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant*,adresse*,autre?)>
 <!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,adresse?,etablissement,autre?)>
-<<<<<<< HEAD
-<!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement+,responsable,description,competences,connaissances?,semestres,politiqueDesStages,aspects?,modalites?,conditionAdmission,debouches,poursuitesEtudes)>							 
-=======
-<!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement+,responsable,description,competences,connaissances,politiqueDesStages,semestres,conditionAdmission,debouches,poursuitesEtudes)>							 
->>>>>>> 5ff8dec6ca83a438d9b24b1e2025c7c5a0d34e64
+<!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement+,responsable,description,competences,connaissances?,semestres,politiqueDesStages,aspects?,modalites?,conditionAdmission,debouches?,poursuitesEtudes?)>							 
 <!ELEMENT parcour					(ref-specialite,autre*)>
 <!ELEMENT block 					(ref-enseignement+)>		
 <!ELEMENT blocks 					(block+)>						
