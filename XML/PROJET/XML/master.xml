@@ -1033,6 +1033,7 @@
 			</semestres>
 		</parcour>
 		<parcour idParcour="Master2">
+			
 			<nom>Master 2</nom>
 			<responsable>
 				<ref-intervenant ref="IN9224"></ref-intervenant>
