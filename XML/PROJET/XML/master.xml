@@ -848,59 +848,325 @@
 				</p>
 			</resume>
 		</enseignement>
+
+		<enseignement idEnseignement="ENSINCU1">
+	<nom> Algorithmique et complexité </nom>
+	<identifiant>ENSINCU1</identifiant>
+	<nombreCredit>&cred6;</nombreCredit>
+	<resume><p>Principales techniques de conception et analyse d'algorithmes (efficaces) pour les problèmes polynomiaux et les problèmes NP-complets. Complexité de l'approximation, du comptage. Complexité paramétrée. Classes probabilistes.</p>
+	</resume>
+</enseignement>
+
+<enseignement idEnseignement="ENSINCU2">
+	<nom> Logique, automates et aspects formels de la théorie des langages </nom>
+	<identifiant>ENSINCU2</identifiant>
+	<nombreCredit>&cred6;</nombreCredit>
+	<resume>
+	<p>Logique du premier ordre. Logiques modales et temporelles. Logiques monadiques. Décidabilité de logiques .
+	Automates de mots finis et infinis. Automates d'arbres et langages réguliers d'arbres. Liens avec la logique</p>
+	</resume>
+</enseignement>
+<enseignement idEnseignement="ENSINCU3">
+	<nom>Statistique inférentielle</nom>
+	<identifiant>ENSINCU3</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume><p>Théorie des probabilités et statistique inférentielle. Ce cours permet d'acquérir des bases solides pour l'apprentissage automatique ou le traitement automatique de la langue naturelle</p>
+	</resume>
+</enseignement>
+<enseignement idEnseignement="ENSINCU4">
+	<nom>Nouveaux défis en apprentissage</nom>
+	<identifiant>ENSINCU4</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume><p>Étude des méthodes d'apprentissage qui traitent, de façon tant théorique qu'appliquée, séparément ou simultanément, un ou plusieurs problèmes classiques</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement="ENSINCU5">
+	<nom>Théorie de l'apprentissage</nom>
+	<identifiant>ENSINCU5Théorie de l'apprentissage</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume><p>Avancées récentes en théorie de l'apprentissage statistique : complexité de Rademacher, bornes PAC-Bayes, stabilité algorithmique, schémas de compression.</p>
+
+	</resume>
+</enseignement>
+
+<enseignement idEnseignement="ENSINCU6">
+	<nom>Inférence grammaticale 	</nom>
+	<identifiant>ENSINCU6</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume><p>Large panorama des différents algorithmes et résultats obtenus récemment pour l'apprentissage de représentations grammaticales de langages</p>
+
+	</resume>
+</enseignement>
+
+
+<enseignement idEnseignement="ENSINCU7">
+	<nom>Apprentissage numérique  </nom>
+	<identifiant>ENSINCU7</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Étude de quelques unes des méthodes les plus performantes en apprentissage numérique : les réseaux de neurones, les modèles de Markov cachés et les machines à vecteurs de support.
+
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement="ENSINCU8">
+	<nom> Fouille de bases de données </nom>
+	<identifiant>ENSINCU8</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Bases mathématiques sur lesquelles reposent les méthodes de fouille de bases de données qui sont également présentées et visent soit l'aide à la décision soit l'administration de bases de données.
+
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement="ENSINCU9">
+	<nom> Entrepôts de données  </nom>
+	<identifiant>ENSINCU9 Entrepôts de données </identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Étude de la problématique posée par les entrepôts de données (ou data warehouse ou OLAP), depuis leur conception jusqu'aux algorithmes de calcul de cubes de données.
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement=" ENSINCU10 ENSINCU10Fouille de données avancée">
+	<nom> Fouille de données avancée</nom>
+	<identifiant> ENSINCU10Fouille de données avancée</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Approfondissement des techniques de fouille de données en étudiant les méthodes de réduction des règles d'association ainsi que leur application à la classification supervisée et en mettant en œuvre des algorithmes par niveaux.
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement=" ENSINCU11">
+	<nom>  Géométrie discrète </nom>
+	<identifiant> ENSINCU11</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Introduction à la géométrie discrète dans $Z^n$, en trois volets : des rappels sur la géométrie des nombres, un état de l'art en géométrie discrète, enfin une étude des transformations de distances et leurs applications.
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement=" ENSINCU12">
+	<nom> Algorithmique des graphes et réseaux  </nom>
+	<identifiant>ENSINCU12</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Algorithmes exacts. Algorithmes d'approximation. Structures de données distribuées.
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement=" ENSINCU13">
+	<nom>Espaces métriques : structure et algorithmiques </nom>
+	<identifiant> ENSINCU13</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	ntroduction aux principales classes et constructions des espaces métriques et des graphes métriques,. Plongements isométriques ou à faible distorsion des espaces métriques dans des espaces géométriques, leur applications en informatique et mathématiques.
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement=" ENSINCU14">
+	<nom>  « Optimisation combinatoire et programmation en nombres entiers »</nom>
+	<identifiant> ENSINCU14 « Optimisation combinatoire et programmation en nombres entiers »</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+Principaux concepts, algorithmes, méthodes et outils qui permettent de résoudre les problèmes d'optimisation combinatoire, en particulier ceux qui se formulent comme des programmes linéaires en nombres entiers.
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement=" ENSINCU15">
+	<nom>  « Logiques et jeux »</nom>
+	<identifiant> ENSINCU15Mu-calcul , syntaxe-sémantique. Model-checking par jeux de parité, tableaux-decidabilité. Puissance expressive</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Mu-calcul , syntaxe-sémantique. Model-checking par jeux de parité, tableaux-decidabilité. Puissance expressive
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement=" ENSINCU16 ENSINCU16	">
+	<nom> Algorithmique distribuée 2 </nom>
+	<identifiant> ENSINCU16	</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Algorithmes de diffusion, diffusion avec retour. Algorithmes d'élection, détection de la terminaison. Tolérance aux pannes
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement=" ENSINCU17">
+	<nom> Vérification et sécurité </nom>
+	<identifiant> ENSINCU17 </identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Model Checking. Algorithmes de vérification. Modèles de sécurité. Vérification de programmes par analyse statique.
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement=" ENSINCU18">
+	<nom>  « Modèles du parallélisme » </nom>
+	<identifiant> ENSINCU18</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Modèles classiques de systèmes. Résultats principaux du domaine concernant les problèmes d'accessibilité, de model-checking, de contrôle ou de synthèse associés.
+		</p>
+
+	</resume>
+</enseignement>
+<enseignement idEnseignement=" ENSINCU19">
+	<nom>  « Modèles et connaissances linguistiques pour le TAL »</nom>
+	<identifiant> ENSINCU19</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Traitement automatique des langues dans ses aspects applications. Différentes types de connaissances et modèles symboliques sur la langue. Plusieurs ressources linguistiques pour le français sont examinées.
+		</p>
+
+	</resume>
+</enseignement>
+
+<enseignement idEnseignement="  ENSINCU20">
+	<nom>  « Syntaxe et sémantique : modèles et outils » </nom>
+	<identifiant>  ENSINCU20</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+	Principes et nature des représentations syntaxiques et sémantiques associables à une phrase. Différents formalismes seront étudiés pour exprimer ces représentations.
+		</p>
+
+	</resume>
+</enseignement>
+
+<enseignement idEnseignement="   ENSINCU21">
+	<nom> « Modèles numériques pour le TAL » </nom>
+	<identifiant>   ENSINCU21</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+			Présentation des modèles numériques utilisés pour différentes tâches du Traitement Automatique des Langue. Algorithmes qui permettent d'en estimer les paramètres à partir de données et les algorithmes de décodage.
+		</p>
+
+	</resume>
+</enseignement>
+
+<enseignement idEnseignement="   ENSINCU22">
+	<nom> « Applications du Traitement Automatique de la Langue (TAL) » </nom>
+	<identifiant>   ENSINCU22</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+			État de l'art dans différentes applications du Traitement Automatique des Langues, tel que la traduction automatique, le résumé automatique ainsi que sur les traitements de « bas niveau » nécessaires dans la majorité des applications.
+		</p>
+
+	</resume>
+</enseignement>
+
+
+<enseignement idEnseignement="   ENSINCU23">
+	<nom> « Algorithmique des chaînes de caractères » </nom>
+	<identifiant>   ENSINCU23</identifiant>
+	<nombreCredit>&cred3;</nombreCredit>
+	<resume>
+		<p>
+			Différentes structures et algorithmes relatifs aux traitements des chaînes de caractères.
+		</p>
+
+	</resume>
+</enseignement>
+
 	</enseignements>
 	<specialites>
-		<specialite idSpecialite="GL">
-			<nom>Génie logiciel</nom>
-			<identifiant>GL</identifiant>
-			<code>GL</code>
-			<finalite>Pro.</finalite>
-			<etablissement>&site4;</etablissement>
+
+
+<specialite idSpecialite="Master1">
+			<nom>Master 1 - Premiere année de tronc commun</nom>
+			<identifiant>Master1</identifiant>
+			<code>Master1</code>
+			<etablissement>&site1;&site2;&site3;&site4;</etablissement>
+			<responsable><ref-intervenant ref="IN9224"></ref-intervenant>
+</responsable>
+			<description><p>L'objectif de cette première année est de donner les bases indispensables permettant, en deuxième année, de choisir une spécialisation dans un domaine précis. Sur les 60 crédits de cette première année, 15 crédits correspondent à des enseignements optionnels. Ces options permettent de construire un parcours adapté. Un choix entre stage ou projet encadré est également proposé au semestre de printemps.</p></description>
+
 			<competences>
 				<p>
-					Le diplômé acquiers les compétences approfondies pour
-					être capable
-					d'intervenir dans toutes les phases du cycle de vie
-					d'un logiciel à
-					la fois au niveau de la conception et la
-					spécification (patrons de
-					conception, UML ...), des architectures et
-					composants logiciels (JEE
-					...), des IHM, de la qualité logicielle,
-					de la validation logiciels,
-					des ateliers de génie logiciels et des
-					technologies du Web. La
-					gestion de projet est aussi aborder pour la
-					maîtrise des grands
-					projets informatiques.
+					Maîtriser les notions fondamentales de l'informatique : principes de fonctionnement des machines, concepts d'organisation des données et algorithmique avancée, notions de réseaux et de systèmes, traduction et langages, information et systèmes distribués, méthodes de conception.
 				</p>
 			</competences>
-			<connaissances>
-				<p>
-					La spécialité Génie logiciel a pour objectif
-					d'apporter aux
-					étudiants
-					les compétences approfondies requises pour
-					pouvoir
-					intervenir dans
-					toutes les phases de la production logiciel
-					à la fois
-					au niveau de
-					la conception et la spécification (patrons de
-					conception, UML ...),
-					des architectures et composants logiciels
-					(JEE
-					...), des IHM, de la
-					qualité logicielle, de la validation logiciels,
-					des ateliers de
-					génie logiciels et des technologies du Web. La
-					gestion de projet est
-					aussi aborder pour la maîtrise des grands
-					projets informatiques.
-				</p>
-			</connaissances>
-			<ref-intervenant ref="IN12068"></ref-intervenant>
-		</specialite>
+
+			<semestres>
+				<semestre idSemestre="S1_M1">
+					<blocks>
+						<block titre="TRONC COMMUN" etat="&obli;">
+							<ref-enseignement ref="ENSINAU1"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU2"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU3"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU4"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU12"></ref-enseignement>
+						</block>
+						<block titre="Falcultatif" etat="&falc;">
+							<ref-enseignement ref="ENSINAU6"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU7"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU8"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU9"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU10"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+						</block>
+					</blocks>
+				</semestre>
+				<semestre idSemestre="S2_M2">
+					<blocks>
+						<block titre="TRONC COMMUN" etat="&obli;">
+							<ref-enseignement ref="ENSINBU1"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU2"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU4"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU5"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU15"></ref-enseignement>
+						</block>
+						<block titre="FALCULTATIF" etat="&falc;">
+							<ref-enseignement ref="ENSINBU6"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU7"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU8"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU9"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU10"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU11"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU12"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU16"></ref-enseignement>
+						</block>
+					</blocks>
+				</semestre>
+			</semestres>
+			<politiqueDesStages><p>La formation par le biais des projets est largement encouragée : un travail d'étude et de recherche réalisé en groupe de deux à trois étudiants termine la première année. C'est l'occasion de mettre en pratique les connaissances acquises durant la formation.
+			Les stages sont optionnels en première année (2 mois). Ils se déroulent en entreprise ou dans un laboratoire suivant la spécialité. La recherche de stage est assurée par l'étudiant avec l'aide de l'équipe pédagogique (liste d'entreprises, diffusion des offres reçues, etc.). Le sujet de stage est validé par un enseignant responsable avant la signature de la convention. La fin du stage donne lieu à une soutenance et à la rédaction d'un mémoire.</p></politiqueDesStages>
+		
+			<aspects><p>En premier lieu, la formation au niveau M1 est caractérisée par un ensemble de cours fondamentaux qui préparent aux spécialités recherche et professionnelles. Ensuite, grâce aux UE optionnelles, les étudiants peuvent choisir des cours plutôt à vocation recherche. Enfin, l'UE projet ou stage peut être dédiée complètement à la recherche : stage dans un laboratoire, ou projet à vocation recherche.</p></aspects>
+			<modalites><p>La première année du master est un tronc commun unique qui n'est pas constitué de parcours. Le premier semestre est composé de 5 unités obligatoires (3 UE à 6 crédits et 2 UE à 3 crédits) et 2 unités optionnelles de 3 crédits. Le deuxième semestre est composé de trois unités obligatoires (pour 15 crédits), de 3 unités optionnelles de 3 crédits et d'un stage ou d'un travail encadré (6 crédits).</p></modalites>
+			<pre-requis>Une licence à dominante informatique.</pre-requis>
+			
+			</specialite>
+
+
 		<specialite idSpecialite="RIM">
 			<nom>Recherche d'informations multimédia</nom>
 			<identifiant>RIM</identifiant>
@@ -954,6 +1220,25 @@
 			</connaissances>
 			<ref-intervenant ref="IN9941"></ref-intervenant>
 		</specialite>
+
+		<specialite idSpecialite="IF">
+			<nom>Informatique fondamentale (IF)</nom>
+			<identifiant>IF</identifiant>
+			<code>IF</code>
+			<finalite>Rech.</finalite>
+			<etablissement>&site1;</etablissement>
+			<competences>En termes de compétences cette spécialité a pour but de développer chez les étudiants leur capacité à raisonner et à for, et de les initier à la recherche.
+
+Cette spécialité de master a pour vocation de former des diplômés en informatique capables d'occuper des postes d'enseignant-chercheur ou de chercheur, ou tout poste lié à la recherche dans les organismes de recherche publics ou privés.</competences>
+			<connaissances>L'objectif de la spécialité Informatique Fondamentale est de donner des connaissances solides dans le domaine des fondements de l'informatique.
+
+Il s'agit d'acquérir des connaissances sur les concepts et les méthodes dans les thèmes couverts par le laboratoire d'informatique fondamentale.</connaissances>
+			<ref-intervenant ref="IN9941"></ref-intervenant>
+		</specialite>
+	</specialites>
+
+
+
 	</specialites>
 	<parcours>
 		<parcour idParcour="Master1">
@@ -988,49 +1273,7 @@
 					distribués, méthodes de conception.
 				</p>
 			</competences>
-			<semestres>
-				<semestre idSemestre="S1_M1">
-					<blocks>
-						<block titre="TRONC COMMUN" etat="&obli;">
-							<ref-enseignement ref="ENSINAU1"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU2"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU3"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU4"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU12"></ref-enseignement>
-						</block>
-						<block titre="Falcultatif" etat="&falc;">
-							<ref-enseignement ref="ENSINAU6"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU7"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU8"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU9"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU10"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU13"></ref-enseignement>
-						</block>
-					</blocks>
-				</semestre>
-				<semestre idSemestre="S2_M2">
-					<blocks>
-						<block titre="TRONC COMMUN" etat="&obli;">
-							<ref-enseignement ref="ENSINBU1"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU2"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU4"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU5"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU15"></ref-enseignement>
-						</block>
-						<block titre="FALCULTATIF" etat="&falc;">
-							<ref-enseignement ref="ENSINBU6"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU7"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU8"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU9"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU10"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU11"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU12"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU13"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU16"></ref-enseignement>
-						</block>
-					</blocks>
-				</semestre>
-			</semestres>
+			
 		</parcour>
 		<parcour idParcour="Master2">
 			
