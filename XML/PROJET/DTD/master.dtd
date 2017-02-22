@@ -19,8 +19,8 @@
 <!ELEMENT master					(intervenants*,enseignements*,specialites*,parcours*)>
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant*,adresse*,autre?)>
 <!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,adresse?,etablissement,autre?)>
-<!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,competences,connaissances,ref-intervenant+)>							 
-<!ELEMENT parcour					(ref-specialite?,nom,responsable,debouche*,description?,competences?,autre*,semestres)>
+<!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,description,competences,connaissances,debouche*,ref-intervenant+)>							 
+<!ELEMENT parcour					(ref-specialite,responsable,autre*,semestres)>
 <!ELEMENT block 					(ref-enseignement+)>		
 <!ELEMENT blocks 					(block+)>						
 <!ELEMENT semestre					(blocks+)>	
