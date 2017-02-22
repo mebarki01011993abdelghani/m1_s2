@@ -20,7 +20,7 @@
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant*,adresse*,autre?)>
 <!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,adresse?,etablissement,autre?)>
 <!ELEMENT specialite				(nom,identifiant,code,finalite,etablissement+,competences,connaissances,ref-intervenant+)>							 
-<!ELEMENT parcour					(ref-specialite?,nom,responsable,debouche*,description?,competences?,semestres)>
+<!ELEMENT parcour					(ref-specialite?,nom,responsable,debouche*,description?,competences?,autre*,semestres)>
 <!ELEMENT block 					(ref-enseignement+)>		
 <!ELEMENT blocks 					(block+)>						
 <!ELEMENT semestre					(blocks+)>	
@@ -47,11 +47,14 @@
 <!ELEMENT siteWeb 					    (#PCDATA)>
 <!ELEMENT ref-intervenant    			(#PCDATA)>
 <!ELEMENT ref-enseignement   			(#PCDATA)>
-<!ELEMENT connaissances      			(#PCDATA)>
-<!ELEMENT competences        			(#PCDATA)>
+<!ELEMENT connaissances      			(#PCDATA | p)*>
+<!ELEMENT competences        			(#PCDATA | p)*>
 <!ELEMENT telephone        				(#PCDATA)>
 <!ELEMENT adresse        				(#PCDATA)>
-<!ELEMENT autre        					ANY>
+<!ELEMENT titre        				(#PCDATA | p)*>
+
+<!-- Permet de créer un element adapter à son besoin -->
+<!ELEMENT autre        					(titre, p, ANY*)>
 
 <!--HTML BALISE -->
 <!ELEMENT p							(#PCDATA| em | ul | strong | table)*  >				
@@ -74,3 +77,4 @@
 <!ATTLIST ref-enseignement  ref IDREF  #REQUIRED>
 <!ATTLIST ref-specialite  ref IDREF  #REQUIRED>
 <!ATTLIST block  etat  (Obligatoire|Falcultatif)  #REQUIRED>
+<!ATTLIST block  titre CDATA   #REQUIRED>
