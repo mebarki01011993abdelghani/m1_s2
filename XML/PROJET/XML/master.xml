@@ -205,7 +205,6 @@
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
 
-
 		<intervenant idIntervenant="IN14758">
 			<identifiant>IN14758</identifiant>
 			<nom>Martine BROCHE</nom>
@@ -213,6 +212,7 @@
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
 	</intervenants>
+
 	<enseignements>
 		<enseignement idEnseignement="ENSINBU1">
 			<nom>ANGLAIS</nom>
@@ -288,12 +288,20 @@
 			<identifiant>ENSINBU6</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
-				Le but du projet est de mettre en oeuvre, de l'analyse à la
-				programmation, les notions présentées en cours.
-				<p>C'est l'occasion, pour les étudiants, d'utiliser sur un cas
-					pratique, les éléments exposées dans les UE. Travail effectué sous
-					la direction pédagogique d'un enseignant, et donnant lieu à la
-					rédaction d'un mémoire et d'une soutenance orale.
+				<p>
+					Le but du projet est de mettre en oeuvre, de l'analyse à la
+					programmation, les notions présentées en cours.
+					C'est l'occasion,
+					pour les étudiants, d'utiliser sur un cas
+					pratique, les
+					éléments
+					exposées dans les UE. Travail effectué sous
+					la direction
+					pédagogique
+					d'un enseignant, et donnant lieu à la
+					rédaction d'un
+					mémoire et d'une
+					soutenance orale.
 				</p>
 			</resume>
 		</enseignement>
@@ -301,12 +309,17 @@
 			<nom>Stage de deux mois</nom>
 			<identifiant>ENSINBU7</identifiant>
 			<nombreCredit>&cred6;</nombreCredit>
-			<resume>Le but du projet est de mettre en oeuvre, de l'analyse à la
-				programmation, les notions présentées en cours. C'est l'occasion,
-				pour les étudiants, d'utiliser sur un cas pratique, les éléments
-				exposées dans les UE. Travail effectué sous la direction pédagogique
-				d'un enseignant, et donnant lieu à la rédaction d'un mémoire et
-				d'une soutenance orale.
+			<resume>
+				<p>
+					Le but du projet est de mettre en oeuvre, de l'analyse à la
+					programmation, les notions présentées en cours. C'est l'occasion,
+					pour les étudiants, d'utiliser sur un cas pratique, les éléments
+					exposées dans les UE. Travail effectué sous la direction
+					pédagogique
+					d'un enseignant, et donnant lieu à la rédaction d'un
+					mémoire et
+					d'une soutenance orale.
+				</p>
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU8">
@@ -1192,10 +1205,51 @@
 		</enseignement>
 
 	</enseignements>
+	<semestres>
+		<semestre idSemestre="S1_M1">
+			<blocks>
+				<block titre="TRONC COMMUN" etat="&obli;">
+					<ref-enseignement ref="ENSINAU1"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU2"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU3"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU4"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU12"></ref-enseignement>
+				</block>
+				<block titre="Falcultatif" etat="&falc;">
+					<ref-enseignement ref="ENSINAU6"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU7"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU8"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU9"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU10"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+				</block>
+			</blocks>
+		</semestre>
+		<semestre idSemestre="S2_M1">
+			<blocks>
+				<block titre="TRONC COMMUN" etat="&obli;">
+					<ref-enseignement ref="ENSINBU1"></ref-enseignement>
+					<ref-enseignement ref="ENSINBU2"></ref-enseignement>
+					<ref-enseignement ref="ENSINBU4"></ref-enseignement>
+					<ref-enseignement ref="ENSINBU5"></ref-enseignement>
+					<ref-enseignement ref="ENSINBU15"></ref-enseignement>
+				</block>
+				<block titre="FALCULTATIF" etat="&falc;">
+					<ref-enseignement ref="ENSINBU6"></ref-enseignement>
+					<ref-enseignement ref="ENSINBU7"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU8"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU9"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU10"></ref-enseignement>
+					<ref-enseignement ref="ENSINBU11"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU12"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+					<ref-enseignement ref="ENSINBU16"></ref-enseignement>
+				</block>
+			</blocks>
+		</semestre>
+	</semestres>
 	<specialites>
-
-
-		<specialite idSpecialite="Master1">
+		<specialite idSpecialite="spe_master1">
 			<nom>Master 1 - Premiere année de tronc commun</nom>
 			<identifiant>Master1</identifiant>
 			<code>Master1</code>
@@ -1223,50 +1277,8 @@
 					méthodes de conception.
 				</p>
 			</competences>
-
-			<semestres>
-				<semestre idSemestre="S1_M1">
-					<blocks>
-						<block titre="TRONC COMMUN" etat="&obli;">
-							<ref-enseignement ref="ENSINAU1"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU2"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU3"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU4"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU12"></ref-enseignement>
-						</block>
-						<block titre="Falcultatif" etat="&falc;">
-							<ref-enseignement ref="ENSINAU6"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU7"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU8"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU9"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU10"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU13"></ref-enseignement>
-						</block>
-					</blocks>
-				</semestre>
-				<semestre idSemestre="S2_M2">
-					<blocks>
-						<block titre="TRONC COMMUN" etat="&obli;">
-							<ref-enseignement ref="ENSINBU1"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU2"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU4"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU5"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU15"></ref-enseignement>
-						</block>
-						<block titre="FALCULTATIF" etat="&falc;">
-							<ref-enseignement ref="ENSINBU6"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU7"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU8"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU9"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU10"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU11"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU12"></ref-enseignement>
-							<ref-enseignement ref="ENSINAU13"></ref-enseignement>
-							<ref-enseignement ref="ENSINBU16"></ref-enseignement>
-						</block>
-					</blocks>
-				</semestre>
-			</semestres>
+			<ref-semestre ref="S1_M1"></ref-semestre>
+			<ref-semestre ref="S1_M2"></ref-semestre>
 			<politiqueDesStages>
 				<p>La formation par le biais des projets est largement encouragée :
 					un travail d'étude et de recherche réalisé en groupe de deux à
@@ -1304,9 +1316,7 @@
 				</p>
 			</modalites>
 			<conditionAdmission>Une licence à dominante informatique.</conditionAdmission>
-
 		</specialite>
-
 
 		<specialite idSpecialite="RIM">
 			<nom>Recherche d'informations multimédia</nom>
@@ -1314,6 +1324,10 @@
 			<code>RIM</code>
 			<finalite>Pro.</finalite>
 			<etablissement>&site1;</etablissement>
+			<responsable>
+				<ref-intervenant ref="IN9941"></ref-intervenant>
+			</responsable>
+			<description></description>
 			<competences>
 				<p>
 					Les enseignements sont organisés selon deux axes :
@@ -1359,7 +1373,12 @@
 					signal au niveau sémantique.
 				</p>
 			</connaissances>
-			<ref-intervenant ref="IN9941"></ref-intervenant>
+			<ref-semestre ref="S1_M1"></ref-semestre>
+			<ref-semestre ref="S1_M2"></ref-semestre>
+			<politiqueDesStages></politiqueDesStages>
+			<conditionAdmission></conditionAdmission>
+			<debouches></debouches>
+			<poursuitesEtudes></poursuitesEtudes>
 		</specialite>
 
 		<specialite idSpecialite="IF">
@@ -1368,6 +1387,10 @@
 			<code>IF</code>
 			<finalite>Rech.</finalite>
 			<etablissement>&site1;</etablissement>
+			<responsable>
+				<ref-intervenant ref="IN9941"></ref-intervenant>
+			</responsable>
+			<description></description>
 			<competences>En termes de compétences cette spécialité a pour but de
 				développer chez les étudiants leur capacité à raisonner et à for, et
 				de les initier à la recherche.
@@ -1390,7 +1413,12 @@
 				laboratoire d'informatique
 				fondamentale.
 			</connaissances>
-			<ref-intervenant ref="IN9941"></ref-intervenant>
+			<ref-semestre ref="S1_M1"></ref-semestre>
+			<ref-semestre ref="S1_M2"></ref-semestre>
+			<politiqueDesStages></politiqueDesStages>
+			<conditionAdmission></conditionAdmission>
+			<debouches></debouches>
+			<poursuitesEtudes></poursuitesEtudes>
 		</specialite>
 		<specialite idSpecialite="ID">
 			<nom>Master 1</nom>
@@ -1411,7 +1439,34 @@
 				</p>
 			</competences>
 			<connaissances></connaissances>
-			<semestres></semestres>
+			<ref-semestre ref="S1_M1"></ref-semestre>
+			<ref-semestre ref="S1_M2"></ref-semestre>
+			<politiqueDesStages></politiqueDesStages>
+			<conditionAdmission></conditionAdmission>
+			<debouches></debouches>
+			<poursuitesEtudes></poursuitesEtudes>
+		</specialite>
+		<specialite idSpecialite="IDd">
+			<nom>Master 1</nom>
+			<identifiant></identifiant>
+			<code></code>
+			<etablissement></etablissement>
+			<responsable>
+				<ref-intervenant ref="IN9224"></ref-intervenant>
+			</responsable>
+			<description>
+				<p>
+
+				</p>
+			</description>
+			<competences>
+				<p>
+
+				</p>
+			</competences>
+			<connaissances></connaissances>
+			<ref-semestre ref="S1_M1"></ref-semestre>
+			<ref-semestre ref="S1_M2"></ref-semestre>
 			<politiqueDesStages></politiqueDesStages>
 			<conditionAdmission></conditionAdmission>
 			<debouches></debouches>
@@ -1420,113 +1475,15 @@
 	</specialites>
 
 	<parcours>
-		<parcour idParcour="id">
-			<ref-specialite ref="dd"></ref-specialite>
+		<parcour idParcour="parcour_master_1">
+			<ref-specialite ref="spe_master1"></ref-specialite>
 		</parcour>
-		<parcour idParcour="Master2">
-
-			<nom>Master 2</nom>
-			<responsable>
-				<ref-intervenant ref="IN9224"></ref-intervenant>
-			</responsable>
-			<semestres>
-				<semestre idSemestre="S3">
-					<blocks>
-						<block titre="TRONC COMMUN" etat="&obli;">
-							<ref-enseignement ref="ENSINCU41"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU42"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU43"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU44"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU45"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU46"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU47"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU27"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU28"></ref-enseignement>
-						</block>
-					</blocks>
-				</semestre>
-			</semestres>
+		<parcour idParcour="parcour_fsil">
+			<ref-specialite ref="spe_fsi"></ref-specialite>
+			<ref-specialite ref="spe_isl"></ref-specialite>
 		</parcour>
-		<parcour idParcour="FSI">
-			<nom>Fiabilité et sécurité informatique (FSI)</nom>
-			<responsable>
-				<ref-intervenant ref="IN2563"></ref-intervenant>
-			</responsable>
-			<description>
-				<p>
-					La formation donne les principes et techniques liés à la
-					conception
-					de systèmes informatiques surs dans un environnement
-					ouvert et
-					hétérogène. Elle forme les étudiants aux principes et
-					méthodes de
-					développement modernes qui reposent sur des outils de
-					prototypage,
-					de test et de suivi de logiciels, avec des
-					méthodologies
-					normalisées. Elle apporte des compétences fortes en
-					sécurité
-					informatique dans les domaines liés à l'échange
-					d'information
-					(Web-services, protocoles de communication et
-					cryptographiques,..)
-					et à la communication entre systèmes (réseaux
-					hétérogènes et
-					applications embarquées ou distribuées).
-				</p>
-			</description>
-			<competences>
-				<p>
-					<ul>
-						<li>Anglais, Communication, Gestion de projet</li>
-						<li>Méthode de développement logiciel (Spécification, Tests,
-							Evaluation de performance)
-						</li>
-						<li>Savoir définir et mettre en œuvre les méthodes de sécurité
-							informatique dans un environnement distribué et ouvert
-						</li>
-						<li>Savoir spécifier, concevoir et réaliser un système logiciel et
-							matériel complexe
-						</li>
-						<li>Programmation de systèmes embarqués</li>
-					</ul>
-				</p>
-			</competences>
-			<autre>
-				<titre>Connaissances à acquérir</titre>
-				<p>
-					L'objectif de la spécialité FSIL est de former des étudiants afin
-					qu'ils
-					puissent concevoir, réaliser, valider et mettre en
-					exploitation des
-					logiciels. Pour ce faire, ils devront connaître les
-					concepts, les
-					outils et les méthodes liés au développement de
-					logiciels. Les
-					aspects de qualité, de sécurité et de bonne
-					intégration dans des
-					environnements informatiques complexes seront
-					les points forts de
-					la formation.
-				</p>
-			</autre>
-			<semestres>
-				<semestre idSemestre="S3_FSI">
-					<blocks>
-						<block titre="TRONC COMMUN" etat="&obli;">
-							<ref-enseignement ref="ENSINCU41"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU42"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU43"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU44"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU45"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU46"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU47"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU27"></ref-enseignement>
-							<ref-enseignement ref="ENSINCU28"></ref-enseignement>
-						</block>
-					</blocks>
-				</semestre>
-			</semestres>
+		<parcour idParcour="parcour_if">
+			<ref-specialite ref="spe_if"></ref-specialite>
 		</parcour>
 	</parcours>
 </master>

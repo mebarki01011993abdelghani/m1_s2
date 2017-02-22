@@ -16,11 +16,11 @@
 <!ENTITY  noResume				"Nous sommes désolé, mais nous n'avons pas encore de résumé.">
 
 <!--RELATIONS ELEMENTS-->
-<!ELEMENT master					(intervenants*,enseignements*,specialites*,parcours*)>
+<!ELEMENT master					(intervenants,enseignements,semestres,specialites,parcours)>
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant*,adresse*,autre?)>
 <!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,adresse?,etablissement,autre?)>
-<!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement+,responsable,description,competences,connaissances?,semestres,politiqueDesStages,aspects?,modalites?,conditionAdmission,debouches?,poursuitesEtudes?)>							 
-<!ELEMENT parcour					(ref-specialite,autre*)>
+<!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement+,responsable,description,competences,connaissances?,ref-semestre,ref-semestre,politiqueDesStages,aspects?,modalites?,conditionAdmission,debouches?,poursuitesEtudes?)>							 
+<!ELEMENT parcour					(ref-specialite+,autre*)>
 <!ELEMENT block 					(ref-enseignement+)>		
 <!ELEMENT blocks 					(block+)>						
 <!ELEMENT semestre					(blocks+)>	
@@ -30,16 +30,16 @@
 <!ELEMENT intervenants        		(intervenant)*>
 <!ELEMENT enseignements        		(enseignement)*>
 <!ELEMENT specialites        		(specialite)*>
-<!ELEMENT responsable				(ref-intervenant)>
 
 <!--ELEMENTS-->
-<!ELEMENT 	aspects			(#PCDATA | p)*>
-<!ELEMENT 	modalites		(#PCDATA | p)*>
+<!ELEMENT pre-requis						(#PCDATA | p)*>
+<!ELEMENT aspects						(#PCDATA | p)*>
+<!ELEMENT modalites						(#PCDATA | p)*>
 <!ELEMENT politiqueDesStages			(#PCDATA | p)*>
 <!ELEMENT conditionAdmission 			(#PCDATA | p)*>
 <!ELEMENT poursuitesEtudes				(#PCDATA | p)*>
 <!ELEMENT nom 						    (#PCDATA)>
-<!ELEMENT debouche 					    (#PCDATA)>
+<!ELEMENT debouches					    (#PCDATA)>
 <!ELEMENT description 					(#PCDATA | p)*>
 <!ELEMENT etablissement 				(#PCDATA)>
 <!ELEMENT code 						    (#PCDATA)>
@@ -52,6 +52,8 @@
 <!ELEMENT siteWeb 					    (#PCDATA)>
 <!ELEMENT ref-intervenant    			(#PCDATA)>
 <!ELEMENT ref-enseignement   			(#PCDATA)>
+<!ELEMENT ref-specialite	   			(#PCDATA)>
+<!ELEMENT ref-semestre   				(#PCDATA)>
 <!ELEMENT connaissances      			(#PCDATA | p)*>
 <!ELEMENT competences        			(#PCDATA | p)*>
 <!ELEMENT telephone        				(#PCDATA)>
@@ -81,5 +83,6 @@
 <!ATTLIST ref-intervenant  ref IDREF  #REQUIRED>
 <!ATTLIST ref-enseignement  ref IDREF  #REQUIRED>
 <!ATTLIST ref-specialite  ref IDREF  #REQUIRED>
+<!ATTLIST ref-semestre  ref IDREF  #REQUIRED>
 <!ATTLIST block  etat  (Obligatoire|Falcultatif)  #REQUIRED>
 <!ATTLIST block  titre CDATA   #REQUIRED>
