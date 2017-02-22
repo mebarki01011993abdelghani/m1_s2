@@ -14,7 +14,7 @@ dtd:
 	xmllint --valid XML/master.xml > traceExecutions/traceDTD.txt
 
 xsd:
-	xmllint -valid -schema XSD/master.xsd XML/noEnt.xml > traceExecutions/traceXSD.txt
+	xmllint -valid -schema XSD/master.xsd XML/masterNoEnt.xml > traceExecutions/traceXSD.txt
 
 web:
 	xsltproc XSL/master.xsl XML/master.xml > www/index.html

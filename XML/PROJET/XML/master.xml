@@ -1,648 +1,903 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE master SYSTEM "../DTD/master.dtd">
-<?xml-stylesheet type="text/xsl" href="master.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="../XSL/master.xsl" ?>
 
 <master>
-    <intervenants>
-        <intervenant idIntervenant="IN18">
-            <identifiant>IN18</identifiant>
-            <nom>Jean-Luc MASSAT</nom>
-            <mail>jean-luc.massat&dom.amu;</mail>
-            <telephone>0491829482</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN7680">
-            <identifiant>IN7680</identifiant>
-            <nom>Claude LAI</nom>
-            <mail>Claude LAI@&dom.amu;</mail>
-            <telephone>04 91 82 93 16</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN3524">
-            <identifiant>IN3524</identifiant>
-            <nom>Denis LUGIEZ</nom>
-            <mail>denis.luigiezZ@&dom.amu;</mail>
-            <telephone>0413551333</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN17708">
-            <identifiant>IN17708</identifiant>
-            <nom>Stephane MICHEL</nom>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN9224">
-            <identifiant>IN9224</identifiant>
-            <nom>Remi MORIN</nom>
-            <mail>remi.morin@&dom.amu;</mail>
-            <telephone>0491829394</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN7722">
-            <identifiant>IN7722</identifiant>
-            <nom>Noel NOVELLI</nom>
-            <mail>noel.noveli@&dom.amu;</mail>
-            <telephone>04 91 82 93 70</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN13794">
-            <identifiant>IN13794</identifiant>
-            <nom>Frederic OLIVE</nom>
-            <mail>frederic.olive@&dom.amu;</mail>
-            <telephone>0491829000</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN12632">
-            <identifiant>IN12632</identifiant>
-            <nom>Nicola OLIVETTI</nom>
-            <mail>nicolas.olivetti@&dom.amu;</mail>
-            <telephone> 04 860 91 046</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN12969">
-            <identifiant>IN12969</identifiant>
-            <nom>Lydie RENE CHABAROT</nom>
-            <mail>lydie.rene@&dom.amu;</mail>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN4595">
-            <identifiant>IN4595</identifiant>
-            <nom>Pierre-Alain REYNIER</nom>
-            <mail> pierre-alain.reynier@&dom.amu;</mail>
-            <telephone>04 91 82 93 13</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN7931">
-            <identifiant>IN7931</identifiant>
-            <nom>Sylvie RISCH</nom>
-            <mail>sylvie.risch@&dom.amu;</mail>
-            <telephone>0491829316</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN26">
-            <identifiant>IN26</identifiant>
-            <nom>Claude SABATIER</nom>
-            <mail>claude.sabatier@&dom.amu;</mail>
-            <telephone>04 91 82 94 81</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN16625">
-            <identifiant>IN16625</identifiant>
-            <nom>Sana SELLAMI</nom>
-            <mail>sana.sellami@&dom.amu;</mail>
-            <telephone>+33 4 91 05 60 57</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="IN8086">
-            <identifiant>IN8086</identifiant>
-            <nom>Yann VAXES</nom>
-            <mail> yann.vaxes@&dom.amu;</mail>
-            <telephone>0491829196</telephone>
-            <etablissement>&site1;, &site2;</etablissement>
-        </intervenant>
-        <intervenant idIntervenant="II1000">
-            <identifiant>II1000</identifiant>
-            <nom>Thierry ARTIÈRES</nom>
-            <mail>Thierry.artieres@&dom.lif;</mail>
-            <etablissement>École Centrale Marseille</etablissement>
-        </intervenant>
+	<intervenants>
+		<intervenant idIntervenant="IN18">
+			<identifiant>IN18</identifiant>
+			<nom>Jean-Luc MASSAT</nom>
+			<mail>jean-luc.massat&dom.amu;</mail>
+			<telephone>0491829482</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN7680">
+			<identifiant>IN7680</identifiant>
+			<nom>Claude LAI</nom>
+			<mail>Claude
+				LAI@&dom.amu;</mail>
+			<telephone>04 91 82 93 16</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN3524">
+			<identifiant>IN3524</identifiant>
+			<nom>Denis LUGIEZ</nom>
+			<mail>denis.luigiezZ@&dom.amu;</mail>
+			<telephone>0413551333</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN17708">
+			<identifiant>IN17708</identifiant>
+			<nom>Stephane MICHEL</nom>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN9224">
+			<identifiant>IN9224</identifiant>
+			<nom>Remi MORIN</nom>
+			<mail>remi.morin@&dom.amu;</mail>
+			<telephone>0491829394</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN7722">
+			<identifiant>IN7722</identifiant>
+			<nom>Noel NOVELLI</nom>
+			<mail>noel.noveli@&dom.amu;</mail>
+			<telephone>04 91 82 93 70</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN13794">
+			<identifiant>IN13794</identifiant>
+			<nom>Frederic OLIVE</nom>
+			<mail>frederic.olive@&dom.amu;</mail>
+			<telephone>0491829000</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN12632">
+			<identifiant>IN12632</identifiant>
+			<nom>Nicola OLIVETTI</nom>
+			<mail>nicolas.olivetti@&dom.amu;</mail>
+			<telephone> 04 860 91 046</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN12969">
+			<identifiant>IN12969</identifiant>
+			<nom>Lydie RENE CHABAROT</nom>
+			<mail>lydie.rene@&dom.amu;</mail>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN4595">
+			<identifiant>IN4595</identifiant>
+			<nom>Pierre-Alain REYNIER</nom>
+			<mail>
+				pierre-alain.reynier@&dom.amu;</mail>
+			<telephone>04 91 82 93 13</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN7931">
+			<identifiant>IN7931</identifiant>
+			<nom>Sylvie RISCH</nom>
+			<mail>sylvie.risch@&dom.amu;</mail>
+			<telephone>0491829316</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN26">
+			<identifiant>IN26</identifiant>
+			<nom>Claude SABATIER</nom>
+			<mail>claude.sabatier@&dom.amu;</mail>
+			<telephone>04 91 82 94 81</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN16625">
+			<identifiant>IN16625</identifiant>
+			<nom>Sana SELLAMI</nom>
+			<mail>sana.sellami@&dom.amu;</mail>
+			<telephone>+33 4 91 05 60 57</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="IN8086">
+			<identifiant>IN8086</identifiant>
+			<nom>Yann VAXES</nom>
+			<mail>
+				yann.vaxes@&dom.amu;</mail>
+			<telephone>0491829196</telephone>
+			<etablissement>&site1;, &site2;</etablissement>
+		</intervenant>
+		<intervenant idIntervenant="II1000">
+			<identifiant>II1000</identifiant>
+			<nom>Thierry ARTIÈRES</nom>
+			<mail>Thierry.artieres@&dom.lif;</mail>
+			<etablissement>École Centrale Marseille</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN616">
-            <identifiant>II1000</identifiant>
-            <nom>Roland AGOPIAN</nom>
-            <mail>roland.agopian@&dom.amu;</mail>
-            <telephone>0413551364</telephone>
-            <etablissement>UFR Sciences</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN616">
+			<identifiant>II1000</identifiant>
+			<nom>Roland AGOPIAN</nom>
+			<mail>roland.agopian@&dom.amu;</mail>
+			<telephone>0413551364</telephone>
+			<etablissement>UFR Sciences</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN1021">
-            <identifiant>IN1021</identifiant>
-            <nom>clara BERTOLISSI</nom>
-            <mail>clara.bertolissi@&dom.amu;</mail>
-            <telephone>04 91 82 95 27</telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN1021">
+			<identifiant>IN1021</identifiant>
+			<nom>clara BERTOLISSI</nom>
+			<mail>clara.bertolissi@&dom.amu;</mail>
+			<telephone>04 91 82 95 27</telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN2563">
-            <identifiant>IN2563</identifiant>
-            <nom>Emmanuel GODARD</nom>
-            <mail>emmanuel.godard@&dom.amu;</mail>
-            <telephone></telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN2563">
+			<identifiant>IN2563</identifiant>
+			<nom>Emmanuel GODARD</nom>
+			<mail>emmanuel.godard@&dom.amu;</mail>
+			<telephone></telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN6213">
-            <identifiant>IN6213</identifiant>
-            <nom>Arnaud LABOUREL</nom>
-            <mail>arnaud.labourel@&dom.amu;</mail>
-            <telephone>0491829195</telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN6213">
+			<identifiant>IN6213</identifiant>
+			<nom>Arnaud LABOUREL</nom>
+			<mail>arnaud.labourel@&dom.amu;</mail>
+			<telephone>0491829195</telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN7001">
-            <identifiant>IN7001</identifiant>
-            <nom>Nadia CREIGNOU</nom>
-            <mail>nadia.creignou@&dom.amu;</mail>
-            <telephone>04 91 82 94 80</telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN7001">
+			<identifiant>IN7001</identifiant>
+			<nom>Nadia CREIGNOU</nom>
+			<mail>nadia.creignou@&dom.amu;</mail>
+			<telephone>04 91 82 94 80</telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN8007">
-            <identifiant>IN8007</identifiant>
-            <nom>Line JAMET</nom>
-            <mail>line.jakubiec@&dom.amu;</mail>
-            <telephone>0491829311</telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN8007">
+			<identifiant>IN8007</identifiant>
+			<nom>Line JAMET</nom>
+			<mail>line.jakubiec@&dom.amu;</mail>
+			<telephone>0491829311</telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN8615">
-            <identifiant>IN8615</identifiant>
-            <nom>Bertrand ESTELLON</nom>
-            <mail>bertrand.estellon@&dom.amu;</mail>
-            <telephone> 04 91 82 94 92</telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN8615">
+			<identifiant>IN8615</identifiant>
+			<nom>Bertrand ESTELLON</nom>
+			<mail>bertrand.estellon@&dom.amu;</mail>
+			<telephone> 04 91 82 94 92</telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN9941">
-            <identifiant>IN9941</identifiant>
-            <nom>Frederic BECHET</nom>
-            <mail>frederic.bechet@&dom.amu;</mail>
-            <telephone>04 91 82 95 59</telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN9941">
+			<identifiant>IN9941</identifiant>
+			<nom>Frederic BECHET</nom>
+			<mail>frederic.bechet@&dom.amu;</mail>
+			<telephone>04 91 82 95 59</telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN10388">
-            <identifiant>IN10388</identifiant>
-            <nom>Benoit FAVRE</nom>
-            <mail>benoit.favre@&dom.amu;</mail>
-            <telephone></telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN10388">
+			<identifiant>IN10388</identifiant>
+			<nom>Benoit FAVRE</nom>
+			<mail>benoit.favre@&dom.amu;</mail>
+			<telephone></telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN12068">
-            <identifiant>IN12068</identifiant>
-            <nom>Djamal HABET</nom>
-            <mail>djamal.habet@&dom.amu;</mail>
-            <telephone> 0491288321</telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN12068">
+			<identifiant>IN12068</identifiant>
+			<nom>Djamal HABET</nom>
+			<mail>djamal.habet@&dom.amu;</mail>
+			<telephone> 0491288321</telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN12316">
-            <identifiant>IN12316</identifiant>
-            <nom>Isabelle DEMONGODIN</nom>
-            <mail>isabel.demongodin@&dom.amu;</mail>
-            <telephone>0491056077</telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN12316">
+			<identifiant>IN12316</identifiant>
+			<nom>Isabelle DEMONGODIN</nom>
+			<mail>isabel.demongodin@&dom.amu;</mail>
+			<telephone>0491056077</telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
-        <intervenant idIntervenant="IN12544">
-            <identifiant>IN12544</identifiant>
-            <nom>Omar BOUCELMA</nom>
-            <mail>omar.boucelma@&dom.amu;</mail>
-            <telephone>0491056053</telephone>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
+		<intervenant idIntervenant="IN12544">
+			<identifiant>IN12544</identifiant>
+			<nom>Omar BOUCELMA</nom>
+			<mail>omar.boucelma@&dom.amu;</mail>
+			<telephone>0491056053</telephone>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
 
 
-        <intervenant idIntervenant="IN14758">
-            <identifiant>IN14758</identifiant>
-            <nom>Martine BROCHE</nom>
-            <mail>martine.broche@&dom.amu;</mail>
-            <etablissement>UFR Science</etablissement>
-        </intervenant>
-    </intervenants>
-    <enseignements>
-        <enseignement idEnseignement="ENSINBU1">
-            <nom>ANGLAIS</nom>
-            <identifiant>ENSINBU1</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                Apprendre l'anglais
-            </resume>
-	
-        </enseignement>
-        <enseignement idEnseignement="ENSINBU2">
-            <nom>COMMUNICATION</nom>
-            <identifiant>ENSINBU2</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                <p>chapitre 1  : Théories de la communication : 1.1 La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener)</p>
-                <p> 1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)</p>
-                <p>chapitre 2 : Rôle de l’interculturalité dans le travail en équipe : 2.1 L’enquête interculturelle de Hofstede pour IBM 2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall) </p>
-                <p>chapitre 3 : Notions de management et de travail collaboratif 3.1 Le travail collaboratif vs le travail coopératif 3.2 La notion de groupes 3.3 Les compétences managériales</p>
-            </resume>
-            <pre-requis>Particulièrement utile pour un choix d’options, les échanges internationaux et la formation continue.</pre-requis>
-        </enseignement>
-        <enseignement idEnseignement="ENSINBU4">
-            <nom>XML</nom>
-            <identifiant>ENSINBU4</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>XML, DTD, XSD XPath, XSLT, XQuery.</resume>
-        </enseignement>
-	
-        <enseignement idEnseignement="ENSINBU5">
-            <nom>Algorithmique et recherche opérationnelle</nom>
-            <identifiant>ENSINBU5</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>Programmation linéaire. Notions et algorithmes de flots.Applications (couplage, affectation, transport, ...)Programmation dynamique (sac à dos, ordonnancement, ...) Algorithmes à performance garantie</resume>
-        </enseignement>
-        <enseignement idEnseignement="ENSINBU12">
-            <nom>Intelligence artificielle</nom>
-            <identifiant>ENSINBU12</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>Introduction à l'IA Problèmes d'espace d'états et d'exploration Logiques pour l'IA et démonstration automatique Représentation de connaissances Actions, temps et planification Programmation par contraintes et réseaux de contraintes</resume>
-        </enseignement>
-        <enseignement idEnseignement="ENSINBU15">
-            <nom>Programmation parallèle</nom>
-            <identifiant>ENSINBU15</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>&noResume;</resume>
-        </enseignement>
-        <enseignement idEnseignement="ENSINBU6">
-            <nom>Projet</nom>
-            <identifiant>ENSINBU6</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. <p>C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</p></resume>
-        </enseignement>
-        <enseignement idEnseignement="ENSINBU7">
-            <nom>Stage de deux mois</nom>
-            <identifiant>ENSINBU7</identifiant>
-            <nombreCredit>&cred6;</nombreCredit>
-            <resume>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.</resume>
-        </enseignement>
-        <enseignement idEnseignement="ENSINBU8">
-            <nom>Sémantique</nom>
-            <identifiant>ENSINBU8</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>1-Le lambda-calcul simplement typéSyntaxe, typage, beta et eta-conversions, équations. Modèles : interprétation des jugements de typage.2-Extension à PCF. La règle \mu. 3-Points fixes dans les ordres partiels complets.Le théorème de Tarski.4-Sémantique par point fixe de PCF. 5-Cours de clôture : survol des différentes approches sémantiques.Sémantiques opérationnelles : par transitions, naturelles, machine abstraite de Landin. Sémantique dénotationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage impératif.</resume>
-        </enseignement>
-        <enseignement idEnseignement="ENSINBU10">
-            <nom>Intégration des systèmes d'information</nom>
-            <identifiant>ENSINBU10</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>Problématique d'intégration des SI Architectures et patrons d'intégration Systèmes d'Information d'entreprises Systèmes d'Information sur Internet</resume>
-        </enseignement>
-        <enseignement idEnseignement="ENSINBU11">
-            <nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
-            <identifiant>ENSINBU11</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                <p>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).</p>
-                <p>Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</p>
-            </resume>
-        </enseignement>
-        <enseignement idEnseignement=" ENSINBU13">
-            <nom>Algorithme à performance garantie</nom>
-            <identifiant> ENSINBU13</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                <p>Algorithmes d'approximation de nature combinatoire pour les problèmes NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune ; FPTAS et PTAS (ordonnancement de taches et sac à dos) ; Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ; Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.</p>
-            </resume>
-        </enseignement>
-        <enseignement idEnseignement=" ENSINBU16">
-            <nom>Introduction à l'apprentissage automatique</nom>
-            <identifiant>ENSINBU16</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>&noResume;</resume>
-        </enseignement>
-        <enseignement idEnseignement="ENSINAU1">
-            <nom>Génie Logiciel</nom>
-            <identifiant>ENSINAU1</identifiant>
-            <nombreCredit>&cred6;</nombreCredit>
-            <resume>
-                Processus logiciel
-                Gestion de projet
-                Spécification et conception (artefact : notation UML)
-                Design patterns
-            </resume>
-        </enseignement>
+		<intervenant idIntervenant="IN14758">
+			<identifiant>IN14758</identifiant>
+			<nom>Martine BROCHE</nom>
+			<mail>martine.broche@&dom.amu;</mail>
+			<etablissement>UFR Science</etablissement>
+		</intervenant>
+	</intervenants>
+	<enseignements>
+		<enseignement idEnseignement="ENSINBU1">
+			<nom>ANGLAIS</nom>
+			<identifiant>ENSINBU1</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				Apprendre l'anglais
+			</resume>
 
-        <enseignement idEnseignement="ENSINAU2">
-            <nom>Complexité</nom>
-            <identifiant>ENSINAU2</identifiant>
-            <nombreCredit>&cred6;</nombreCredit>
-            <resume>
-                <p>
-                    <ul>
-                        <li>Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.</li>
-                        <li>Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.</li>
-                        <li>Classes P et NP. Problèmes NP-complets.</li>
-                        <li>Méthodes de résolution des problèmes NP-Complets.</li>
-                    </ul>
-                </p>
-            </resume>
-            <pre-requis>
+		</enseignement>
+		<enseignement idEnseignement="ENSINBU2">
+			<nom>COMMUNICATION</nom>
+			<identifiant>ENSINBU2</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				<p>chapitre 1 : Théories de la communication : 1.1 La théorie
+					mathématique de l’information (Shannon, Weaver), la cybernétique
+					(Wiener)
+				</p>
+				<p> 1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie
+					de la communication par les processus (Mucchielli)
+				</p>
+				<p>chapitre 2 : Rôle de l’interculturalité dans le travail en équipe
+					: 2.1 L’enquête interculturelle de Hofstede pour IBM 2.2 La
+					gestuelle et le paralangage et la proxémie dans le monde (Hall)
+				</p>
+				<p>chapitre 3 : Notions de management et de travail collaboratif 3.1
+					Le travail collaboratif vs le travail coopératif 3.2 La notion de
+					groupes 3.3 Les compétences managériales
+				</p>
+			</resume>
+			<pre-requis>Particulièrement utile pour un choix d’options, les
+				échanges internationaux et la formation continue.</pre-requis>
+		</enseignement>
+		<enseignement idEnseignement="ENSINBU4">
+			<nom>XML</nom>
+			<identifiant>ENSINBU4</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>XML, DTD, XSD XPath, XSLT, XQuery.</resume>
+		</enseignement>
 
-            </pre-requis>
-        </enseignement>
+		<enseignement idEnseignement="ENSINBU5">
+			<nom>Algorithmique et recherche opérationnelle</nom>
+			<identifiant>ENSINBU5</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>Programmation linéaire. Notions et algorithmes de
+				flots.Applications (couplage, affectation, transport,
+				...)Programmation dynamique (sac à dos, ordonnancement, ...)
+				Algorithmes à performance garantie
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement="ENSINBU12">
+			<nom>Intelligence artificielle</nom>
+			<identifiant>ENSINBU12</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>Introduction à l'IA Problèmes d'espace d'états et
+				d'exploration Logiques pour l'IA et démonstration automatique
+				Représentation de connaissances Actions, temps et planification
+				Programmation par contraintes et réseaux de contraintes
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement="ENSINBU15">
+			<nom>Programmation parallèle</nom>
+			<identifiant>ENSINBU15</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>&noResume;
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement="ENSINBU6">
+			<nom>Projet</nom>
+			<identifiant>ENSINBU6</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				Le but du projet est de mettre en oeuvre, de l'analyse à la
+				programmation, les notions présentées en cours.
+				<p>C'est l'occasion, pour les étudiants, d'utiliser sur un cas
+					pratique, les éléments exposées dans les UE. Travail effectué sous
+					la direction pédagogique d'un enseignant, et donnant lieu à la
+					rédaction d'un mémoire et d'une soutenance orale.
+				</p>
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement="ENSINBU7">
+			<nom>Stage de deux mois</nom>
+			<identifiant>ENSINBU7</identifiant>
+			<nombreCredit>&cred6;</nombreCredit>
+			<resume>Le but du projet est de mettre en oeuvre, de l'analyse à la
+				programmation, les notions présentées en cours. C'est l'occasion,
+				pour les étudiants, d'utiliser sur un cas pratique, les éléments
+				exposées dans les UE. Travail effectué sous la direction pédagogique
+				d'un enseignant, et donnant lieu à la rédaction d'un mémoire et
+				d'une soutenance orale.
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement="ENSINBU8">
+			<nom>Sémantique</nom>
+			<identifiant>ENSINBU8</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>1-Le lambda-calcul simplement typéSyntaxe, typage, beta et
+				eta-conversions, équations. Modèles : interprétation des jugements
+				de typage.2-Extension à PCF. La règle \mu. 3-Points fixes dans les
+				ordres partiels complets.Le théorème de Tarski.4-Sémantique par
+				point fixe de PCF. 5-Cours de clôture : survol des différentes
+				approches sémantiques.Sémantiques opérationnelles : par transitions,
+				naturelles, machine abstraite de Landin. Sémantique dénotationnelles
+				: cas fonctionnel(cf.chapitre 4) et cas d'un petit langage
+				impératif.
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement="ENSINBU10">
+			<nom>Intégration des systèmes d'information</nom>
+			<identifiant>ENSINBU10</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>Problématique d'intégration des SI Architectures et patrons
+				d'intégration Systèmes d'Information d'entreprises Systèmes
+				d'Information sur Internet
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement="ENSINBU11">
+			<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
+			<identifiant>ENSINBU11</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				<p>Actuellement, de plus en plus de données sont conservées sans
+					être réellement exploitées. Elles représentent pourtant une source
+					importante d’information. La fouille de données peut-être définie
+					comme le processus permettant d’extraire de l’information non
+					triviale et non préalablement connue à partir des données. Dans cet
+					enseignement, nous nous focaliserons sur l’extraction de
+					corrélations entre les données (règle d’association, Dépendances
+					Fonctionnelles...) et nous verrons des techniques de mesure de la
+					qualité des données (détection et correction d’erreur).
+				</p>
+				<p>Par ailleurs, nous passerons du côté obscur des SGBD en mettant
+					évidence le lien existant entre les performances d'un SGBD et les
+					choix d'implémentation des différents algorithmes utilisés (gestion
+					de la concurrence, reprise sur panne, transaction...) ainsi que les
+					différentes implémentations existantes des opérations de base des
+					SGBD comme les jointures ou les tris accompagnés de leurs
+					conditions d'utilisation.
+				</p>
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement=" ENSINBU13">
+			<nom>Algorithme à performance garantie</nom>
+			<identifiant> ENSINBU13</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				<p>Algorithmes d'approximation de nature combinatoire pour les
+					problèmes NP-complets suivants : Voyageur de Commerce, arbre de
+					Steiner, ordonnancement de taches, clustering, p-centres, sac à
+					dos, bin packing, couverture d'ensemble, la plus courte
+					sur-séquence commune ; FPTAS et PTAS (ordonnancement de taches et
+					sac à dos) ; Algorithmes d'approximation par programmation linéaire
+					: l'arrondi et la méthode primale-duale (MAXSAT, couverture
+					d'ensemble, multicoupes et multiflots dans les arbres) ;
+					Algorithmes en ligne et compétitivité : la pagination et les
+					k-serveurs.
+				</p>
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement=" ENSINBU16">
+			<nom>Introduction à l'apprentissage automatique</nom>
+			<identifiant>ENSINBU16</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>&noResume;
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement="ENSINAU1">
+			<nom>Génie Logiciel</nom>
+			<identifiant>ENSINAU1</identifiant>
+			<nombreCredit>&cred6;</nombreCredit>
+			<resume>
+				Processus logiciel
+				Gestion de projet
+				Spécification et
+				conception (artefact : notation UML)
+				Design patterns
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINAU3">
-            <nom>Réseaux</nom>
-            <identifiant>ENSINAU3</identifiant>
-            <nombreCredit>&cred6;</nombreCredit>
-            <resume>
-                <p>
-                    <ul>
-                        <li>Architecture en couches, standard OSI</li>
-                        <li>Couche physique</li>
-                        <li>Couche liaison de Données</li>
-                        <li>Réseau IP</li>
-                        <li>Algorithmes de routage, routage IP</li>
-                        <li>Protocole TCP/IP</li>
-                        <li>Couche Application : HTTP, SMTP, FTP, ...</li>
-                        <li>Bases des protocoles cryptographiques (terminologie, architecture à clef publique).</li>
-                        <li>Introduction à la Sécurité des réseaux.</li>
-                    </ul>
-                </p>
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement="ENSINAU2">
+			<nom>Complexité</nom>
+			<identifiant>ENSINAU2</identifiant>
+			<nombreCredit>&cred6;</nombreCredit>
+			<resume>
+				<p>
+					<ul>
+						<li>Rappels sur les notions d'analyse de la complexité des
+							algorithmes et des problèmes.
+						</li>
+						<li>Notion de problèmes (décision, recherche, dénombrement,
+							énumération, optimisation). Bornes inférieures de complexité.
+						</li>
+						<li>Classes P et NP. Problèmes NP-complets.</li>
+						<li>Méthodes de résolution des problèmes NP-Complets.</li>
+					</ul>
+				</p>
+			</resume>
+			<pre-requis>
 
-        <enseignement idEnseignement="ENSINAU4">
-            <nom>Programmation fonctionnelle</nom>
-            <identifiant>ENSINAU4</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                <p>
-                    1- Introduction à la programmation fonctionnelle, sur l'exemple du langage
-                    OCaml
-                    Expressions, évaluation, types de base. Polymorphisme, ordre supérieur.
-                    Fonctions récursives, filtrage. Les diverses stratégies d'évaluation, application à la programmation d'un opérateur de point fixe.
-                    2- Les types
-                    Sommes, types récursifs, polymorphes. Arbres. Filtrage.
-                    3- Sémantique opérationnelle
-                    Liaisons, environnements, clôtures. Évaluation des fonctions récursives .
-                    4- Aspects impératifs
-                    Exceptions, entrées-sorties, séquencement, fichiers, références, tableaux, enregistrements.
-                    5- Implantation du filtrage en OCaml
-                    Termes formels, substitutions, filtrage.
-                </p>
-            </resume>
-        </enseignement>
+			</pre-requis>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINAU6">
-            <nom>Programmation logique</nom>
-            <identifiant>ENSINAU6</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                <p>   
-                    Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.
-                    Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.
-                    Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
-                    Règles prédéfinies.
-                </p>	
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement="ENSINAU3">
+			<nom>Réseaux</nom>
+			<identifiant>ENSINAU3</identifiant>
+			<nombreCredit>&cred6;</nombreCredit>
+			<resume>
+				<p>
+					<ul>
+						<li>Architecture en couches, standard OSI</li>
+						<li>Couche physique</li>
+						<li>Couche liaison de Données</li>
+						<li>Réseau IP</li>
+						<li>Algorithmes de routage, routage IP</li>
+						<li>Protocole TCP/IP</li>
+						<li>Couche Application : HTTP, SMTP, FTP, ...</li>
+						<li>Bases des protocoles cryptographiques (terminologie,
+							architecture à clef publique).
+						</li>
+						<li>Introduction à la Sécurité des réseaux.</li>
+					</ul>
+				</p>
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINAU7">
-            <nom>Outils de l'internet</nom>
-            <identifiant>ENSINAU7</identifiant>
-            <nombreCredit>&cred6;</nombreCredit>
-            <resume>
-                <p>
-                    Présentation d'Internet.
-                    Les langages et les normes sur Internet.
-                    Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3
-                    Les applications web.
-                    Sécurité.
-                    Les nouvelles et futures technologies.
-                </p>
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement="ENSINAU4">
+			<nom>Programmation fonctionnelle</nom>
+			<identifiant>ENSINAU4</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				<p>
+					1- Introduction à la programmation fonctionnelle, sur l'exemple
+					du
+					langage
+					OCaml
+					Expressions, évaluation, types de base.
+					Polymorphisme, ordre supérieur.
+					Fonctions récursives, filtrage. Les
+					diverses stratégies
+					d'évaluation, application à la programmation
+					d'un opérateur de
+					point fixe.
+					2- Les types
+					Sommes, types récursifs,
+					polymorphes. Arbres. Filtrage.
+					3- Sémantique opérationnelle
+					Liaisons, environnements, clôtures. Évaluation des fonctions
+					récursives .
+					4- Aspects impératifs
+					Exceptions, entrées-sorties,
+					séquencement, fichiers, références, tableaux,
+					enregistrements.
+					5-
+					Implantation du filtrage en OCaml
+					Termes formels, substitutions,
+					filtrage.
+				</p>
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINAU8">
-            <nom>Système embarqué</nom>
-            <identifiant>ENSINAU8</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
+		<enseignement idEnseignement="ENSINAU6">
+			<nom>Programmation logique</nom>
+			<identifiant>ENSINAU6</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				<p>
+					Introduction. Forme générale des règles. Effacement, unification,
+					backtracking.
+					Contrôle de l'exécution.
+					Listes, arbres et n-uplets.
+					Liste représentée par différence de listes.
+					Ajout en tête et en
+					queue, concaténation.
+					Analyseurs syntaxiques. Construction d'un
+					arbre syntaxique. Liste des
+					feuilles d'un arbre. Freeze et analyse
+					par feuille.
+					Règles prédéfinies.
+				</p>
+			</resume>
+		</enseignement>
+
+		<enseignement idEnseignement="ENSINAU7">
+			<nom>Outils de l'internet</nom>
+			<identifiant>ENSINAU7</identifiant>
+			<nombreCredit>&cred6;</nombreCredit>
+			<resume>
+				<p>
+					Présentation d'Internet.
+					Les langages et les normes sur Internet.
+					Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3
+					Les applications web.
+					Sécurité.
+					Les nouvelles et futures technologies.
+				</p>
+			</resume>
+		</enseignement>
+
+		<enseignement idEnseignement="ENSINAU8">
+			<nom>Système embarqué</nom>
+			<identifiant>ENSINAU8</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
 		   	&noResume;
-            </resume>
-        </enseignement>
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINAU9">
-            <nom>Fondamentaux pour l'ingénierie des langues</nom>
-            <identifiant>ENSINAU9</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                Rappel de théorie des langages
-                Algorithmes d'analyse syntaxique pour grammaires ambiguës
-                Transducteurs finis et leur application en TAL
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement="ENSINAU9">
+			<nom>Fondamentaux pour l'ingénierie des langues</nom>
+			<identifiant>ENSINAU9</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				Rappel de théorie des langages
+				Algorithmes d'analyse
+				syntaxique pour grammaires ambiguës
+				Transducteurs finis et leur
+				application en TAL
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement=" ENSINAU10">
-            <nom>Modèles à évènements discrets</nom>
-            <identifiant> ENSINAU10</identifiant>
-            <nombreCredit>&cred6;</nombreCredit>
-            <resume>
-                Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de
-                Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement=" ENSINAU10">
+			<nom>Modèles à évènements discrets</nom>
+			<identifiant> ENSINAU10</identifiant>
+			<nombreCredit>&cred6;</nombreCredit>
+			<resume>
+				Posséder les notions de base en modélisation et analyse de
+				systèmes
+				dynamiques à événements discrets et particulièrement
+				appréhender le
+				formalisme réseau de
+				Pétri. Étudier la conception et la
+				spécification des systèmes réactifs à
+				travers l'analyse du modèle à
+				évènements discrets (concurrence,
+				parallélisme, synchronisation).
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement=" ENSINAU12">
-            <nom>BDR : approfondissement</nom>
-            <identifiant> ENSINAU12</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
+		<enseignement idEnseignement=" ENSINAU12">
+			<nom>BDR : approfondissement</nom>
+			<identifiant> ENSINAU12</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
 		   &noResume;
-            </resume>
-        </enseignement>
-        <enseignement idEnseignement=" ENSINAU13">
-            <nom>SPORT</nom>
-            <identifiant> ENSINAU13</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>&noResume;</resume>
-        </enseignement>
+			</resume>
+		</enseignement>
+		<enseignement idEnseignement=" ENSINAU13">
+			<nom>SPORT</nom>
+			<identifiant> ENSINAU13</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>&noResume;
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINCU41">
-            <nom>Qualité logicielle : outils et méthodes</nom>
-            <identifiant>ENSINCU41</identifiant>
-            <nombreCredit>&cred6;</nombreCredit>
-            <resume>
-                Qualité logicielle, test et validation logiciel, ateliers de génie logiciel.
-            </resume>
+		<enseignement idEnseignement="ENSINCU41">
+			<nom>Qualité logicielle : outils et méthodes</nom>
+			<identifiant>ENSINCU41</identifiant>
+			<nombreCredit>&cred6;</nombreCredit>
+			<resume>
+				Qualité logicielle, test et validation logiciel, ateliers de
+				génie
+				logiciel.
+			</resume>
 
-        </enseignement>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINCU42">
-            <nom>Spécification logicielle</nom>
-            <identifiant>ENSINCU42</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                Modèles formels, modèle SADT, logiciels temps réel, méthode SA-RT.  		
-            </resume>
-            <pre-requis>
+		<enseignement idEnseignement="ENSINCU42">
+			<nom>Spécification logicielle</nom>
+			<identifiant>ENSINCU42</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				Modèles formels, modèle SADT, logiciels temps réel, méthode
+				SA-RT.
+			</resume>
+			<pre-requis>
 
-            </pre-requis>
-        </enseignement>
+			</pre-requis>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINCU43">
-            <nom>Conception logicielle</nom>
-            <identifiant>ENSINCU43</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                Conception objet, patrons de conception, conception IHM.
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement="ENSINCU43">
+			<nom>Conception logicielle</nom>
+			<identifiant>ENSINCU43</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				Conception objet, patrons de conception, conception IHM.
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINCU44">
-            <nom>Architecture logicielle JEE</nom>
-            <identifiant>ENSINCU44</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                Composants logiciels , architectures N-tier, middleware, Entreprise Java Beans (EJB).
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement="ENSINCU44">
+			<nom>Architecture logicielle JEE</nom>
+			<identifiant>ENSINCU44</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				Composants logiciels , architectures N-tier, middleware,
+				Entreprise Java Beans
+				(EJB).
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINCU45">
-            <nom>Technologies du Web et Web 2.0 </nom>
-            <identifiant>ENSINCU45 </identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                Protocoles de communication, standards Web, Langages à balises, programmation Web, Ajax, XUL, standardisation et convergence d'interfaces.
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement="ENSINCU45">
+			<nom>Technologies du Web et Web 2.0 </nom>
+			<identifiant>ENSINCU45 </identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				Protocoles de communication, standards Web, Langages à
+				balises, programmation
+				Web, Ajax, XUL, standardisation et convergence
+				d'interfaces.
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINCU46">
-            <nom>XML avancé</nom>
-            <identifiant>ENSINCU46</identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                Modélisation et navigation, XSchema et XPath avancés, Requêtage des bases documentaires, DOM et SAX avancés.
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement="ENSINCU46">
+			<nom>XML avancé</nom>
+			<identifiant>ENSINCU46</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				Modélisation et navigation, XSchema et XPath avancés,
+				Requêtage des bases
+				documentaires, DOM et SAX avancés.
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINCU27">
-            <nom>Anglais 2</nom>
-            <identifiant>ENSINCU45 </identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement="ENSINCU27">
+			<nom>Anglais 2</nom>
+			<identifiant>ENSINCU45 </identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				Expression orale et écrite : exposés sur des sujets
+				scientifiques et / ou
+				professionnels, travaux écrits. Préparation et
+				passage du TOEIC.
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINCU47">
-            <nom>Gestion de projet</nom>
-            <identifiant>ENSINCU47 </identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                Définition et acteurs d'un projet, organisation d'un projet, techniques de planification, estimation prévisionnelle d'un projet, pilotage et contrôle d'un projet, recette finale
-            </resume>
-        </enseignement>
+		<enseignement idEnseignement="ENSINCU47">
+			<nom>Gestion de projet</nom>
+			<identifiant>ENSINCU47 </identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				Définition et acteurs d'un projet, organisation d'un projet,
+				techniques de
+				planification, estimation prévisionnelle d'un projet,
+				pilotage et
+				contrôle d'un projet, recette finale
+			</resume>
+		</enseignement>
 
-        <enseignement idEnseignement="ENSINCU28">
-            <nom>Communication 2 </nom>
-            <identifiant>ENSINCU28 </identifiant>
-            <nombreCredit>&cred3;</nombreCredit>
-            <resume>
-                <p>
-                    L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.
-                    •Valorisation du parcours de formation
-                    •Clarification des motivations et de leurs incidences sur des choix professionnels
-                    •Identification des aptitudes et des compétences,
-                    •Positionnement du projet personnel et professionnel
-                    •Ajustement des profils annonce / candidature
-                    •Préparation aux entretiens de recrutement
-                    •Rédaction de curriculum vitae et de lettres de motivation
-                </p>
-            </resume>
-        </enseignement>
-    </enseignements>
-    <specialites>
-        <specialite idSpecialite="GL">	
-            <nom>Génie logiciel</nom>
-            <identifiant>GL</identifiant>
-            <code>GL</code>
-            <finalite>Pro.</finalite>
-            <etablissement>&site4;</etablissement>
-            <competences>Le diplômé acquiers les compétences approfondies pour être capable d'intervenir dans toutes les phases du cycle de vie d'un logiciel à la fois au niveau de la conception et la spécification (patrons de conception, UML ...), des architectures et composants logiciels (JEE ...), des IHM, de la qualité logicielle, de la validation logiciels, des ateliers de génie logiciels et des technologies du Web. La gestion de projet est aussi aborder pour la maîtrise des grands projets informatiques.</competences>
-            <connaissances>La spécialité  Génie logiciel  a pour objectif d'apporter aux étudiants les compétences approfondies requises pour pouvoir intervenir dans toutes les phases de la production logiciel à la fois au niveau de la conception et la spécification (patrons de conception, UML ...), des architectures et composants logiciels (JEE ...), des IHM, de la qualité logicielle, de la validation logiciels, des ateliers de génie logiciels et des technologies du Web. La gestion de projet est aussi aborder pour la maîtrise des grands projets informatiques.</connaissances>
-            <ref-intervenant ref="IN12068"></ref-intervenant>	
-        </specialite>
-        <specialite idSpecialite="RIM">	
-            <nom>Recherche d'informations multimédia</nom>
-            <identifiant>RIM</identifiant>
-            <code>RIM</code>
-            <finalite>Pro.</finalite>
-            <etablissement>&site1;</etablissement>
-            <competences>Les enseignements sont organisés selon deux axes : l'analyse et la représentation du contenu d'une part ; l'indexation et la recherche d'information d'autre part. L'analyse et le traitement du contenu désignent les traitements de fichiers texte, audio, image ou vidéo permettant d'obtenir une représentation structurée de leur contenu sous forme de descripteurs, du niveau signal au niveau sémantique. L'indexation consiste à utiliser ces descripteurs afin d'indexer finement chaque document pour procéder à son archivage de façon optimisée.</competences>
-            <connaissances>L'objectif de la spécialité RIM est de former des spécialistes du traitement et de la recherche de contenus multimédias sur internet. Les enseignements sont organisés selon deux axes : l'analyse et la représentation du contenu d'une part ; l'indexation et la recherche d'information d'autre part. L'analyse et le traitement du contenu désignent les traitements de fichiers texte, audio, image ou vidéo permettant d'obtenir une représentation structurée de leur contenu sous forme de descripteurs, du niveau signal au niveau sémantique.</connaissances>
-            <ref-intervenant ref="IN9941"></ref-intervenant>	
-        </specialite>
-    </specialites>
-    <parcours>
-        <parcour idParcour="Master1">
-            <nom>Master 1</nom>
-            <responsable>
-                <ref-intervenant ref="IN9224"></ref-intervenant>
-            </responsable>
-            <description>L'objectif de cette première année est de donner les bases indispensables permettant, en deuxième année, de choisir une spécialisation dans un domaine précis. Sur les 60 crédits de cette première année, 15 crédits correspondent à des enseignements optionnels. Ces options permettent de construire un parcours adapté. Un choix entre stage ou projet encadré est également proposé au semestre de printemps.</description>
-            <competences>Maîtriser les notions fondamentales de l'informatique : principes de fonctionnement des machines, concepts d'organisation des données et algorithmique avancée, notions de réseaux et de systèmes, traduction et langages, information et systèmes distribués, méthodes de conception.</competences>
-            <semestres>
-                <semestre idSemestre ="S1">
-                    <blocks>
-                        <block etat = "&obli;">
-                            <ref-enseignement ref="ENSINAU1"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU2"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU3"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU4"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU12"></ref-enseignement>
-                        </block>
-                        <block etat ="&falc;">
-                            <ref-enseignement ref="ENSINAU6"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU7"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU8"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU9"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU10"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU13"></ref-enseignement>
-                        </block>
-                    </blocks>
-                </semestre>
-                <semestre idSemestre ="S2" >
-                    <blocks>
-                        <block etat = "&obli;">
-                            <ref-enseignement ref="ENSINBU1"></ref-enseignement>
-                            <ref-enseignement ref="ENSINBU2"></ref-enseignement>
-                            <ref-enseignement ref="ENSINBU4"></ref-enseignement>
-                            <ref-enseignement ref="ENSINBU5"></ref-enseignement>
-                            <ref-enseignement ref="ENSINBU15"></ref-enseignement>
-                        </block>
-                        <block etat ="&falc;">
-                            <ref-enseignement ref="ENSINBU6"></ref-enseignement>
-                            <ref-enseignement ref="ENSINBU7"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU8"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU9"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU10"></ref-enseignement>
-                            <ref-enseignement ref="ENSINBU11"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU12"></ref-enseignement>
-                            <ref-enseignement ref="ENSINAU13"></ref-enseignement>
-                            <ref-enseignement ref="ENSINBU16"></ref-enseignement>
-                        </block>
-                    </blocks>
-                </semestre>
-            </semestres>
-        </parcour>
-        <parcour idParcour="Master2">
-            <nom>Master 2</nom>
-            <responsable>
-                <ref-intervenant ref="IN9224"></ref-intervenant>
-            </responsable>
-            <semestres>
-                <semestre idSemestre ="S3">
-                    <blocks>
-                        <block etat = "&obli;">
-                            <ref-enseignement ref="ENSINCU41"></ref-enseignement>
-                            <ref-enseignement ref="ENSINCU42"></ref-enseignement>
-                            <ref-enseignement ref="ENSINCU43"></ref-enseignement>
-                            <ref-enseignement ref="ENSINCU44"></ref-enseignement>
-                            <ref-enseignement ref="ENSINCU45"></ref-enseignement>
-                            <ref-enseignement ref="ENSINCU46"></ref-enseignement>
-                            <ref-enseignement ref="ENSINCU47"></ref-enseignement>
-                            <ref-enseignement ref="ENSINCU27"></ref-enseignement>
-                            <ref-enseignement ref="ENSINCU28"></ref-enseignement>
-                        </block>
-                    </blocks>
-                </semestre>
-            </semestres>
-        </parcour>
-    </parcours>
+		<enseignement idEnseignement="ENSINCU28">
+			<nom>Communication 2 </nom>
+			<identifiant>ENSINCU28 </identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				<p>
+					L’étudiant apprend à effectuer un bilan de son parcours de
+					formation, à
+					élaborer un projet professionnel personnel, à cerner
+					ses
+					motivations et à enrichir ses connaissances des métiers et du
+					marché de l’informatique pour se constituer un portefeuille de
+					compétences.
+					•Valorisation du parcours de formation
+					•Clarification
+					des motivations et de leurs incidences sur des choix
+					professionnels
+					•Identification des aptitudes et des compétences,
+					•Positionnement du
+					projet personnel et professionnel
+					•Ajustement des profils annonce /
+					candidature
+					•Préparation aux entretiens de recrutement
+					•Rédaction de
+					curriculum vitae et de lettres de motivation
+				</p>
+			</resume>
+		</enseignement>
+	</enseignements>
+	<specialites>
+		<specialite idSpecialite="GL">
+			<nom>Génie logiciel</nom>
+			<identifiant>GL</identifiant>
+			<code>GL</code>
+			<finalite>Pro.</finalite>
+			<etablissement>&site4;</etablissement>
+			<competences>Le diplômé acquiers les compétences approfondies pour
+				être capable d'intervenir dans toutes les phases du cycle de vie
+				d'un logiciel à la fois au niveau de la conception et la
+				spécification (patrons de conception, UML ...), des architectures et
+				composants logiciels (JEE ...), des IHM, de la qualité logicielle,
+				de la validation logiciels, des ateliers de génie logiciels et des
+				technologies du Web. La gestion de projet est aussi aborder pour la
+				maîtrise des grands projets informatiques.</competences>
+			<connaissances>La spécialité Génie logiciel a pour objectif
+				d'apporter aux étudiants les compétences approfondies requises pour
+				pouvoir intervenir dans toutes les phases de la production logiciel
+				à la fois au niveau de la conception et la spécification (patrons de
+				conception, UML ...), des architectures et composants logiciels (JEE
+				...), des IHM, de la qualité logicielle, de la validation logiciels,
+				des ateliers de génie logiciels et des technologies du Web. La
+				gestion de projet est aussi aborder pour la maîtrise des grands
+				projets informatiques.</connaissances>
+			<ref-intervenant ref="IN12068"></ref-intervenant>
+		</specialite>
+		<specialite idSpecialite="RIM">
+			<nom>Recherche d'informations multimédia</nom>
+			<identifiant>RIM</identifiant>
+			<code>RIM</code>
+			<finalite>Pro.</finalite>
+			<etablissement>&site1;</etablissement>
+			<competences>Les enseignements sont organisés selon deux axes :
+				l'analyse et la représentation du contenu d'une part ; l'indexation
+				et la recherche d'information d'autre part. L'analyse et le
+				traitement du contenu désignent les traitements de fichiers texte,
+				audio, image ou vidéo permettant d'obtenir une représentation
+				structurée de leur contenu sous forme de descripteurs, du niveau
+				signal au niveau sémantique. L'indexation consiste à utiliser ces
+				descripteurs afin d'indexer finement chaque document pour procéder à
+				son archivage de façon optimisée.</competences>
+			<connaissances>L'objectif de la spécialité RIM est de former des
+				spécialistes du traitement et de la recherche de contenus
+				multimédias sur internet. Les enseignements sont organisés selon
+				deux axes : l'analyse et la représentation du contenu d'une part ;
+				l'indexation et la recherche d'information d'autre part. L'analyse
+				et le traitement du contenu désignent les traitements de fichiers
+				texte, audio, image ou vidéo permettant d'obtenir une représentation
+				structurée de leur contenu sous forme de descripteurs, du niveau
+				signal au niveau sémantique.</connaissances>
+			<ref-intervenant ref="IN9941"></ref-intervenant>
+		</specialite>
+	</specialites>
+	<parcours>
+		<parcour idParcour="Master1">
+			<nom>Master 1</nom>
+			<responsable>
+				<ref-intervenant ref="IN9224"></ref-intervenant>
+			</responsable>
+			<description>L'objectif de cette première année est de donner les
+				bases indispensables permettant, en deuxième année, de choisir une
+				spécialisation dans un domaine précis. Sur les 60 crédits de cette
+				première année, 15 crédits correspondent à des enseignements
+				optionnels. Ces options permettent de construire un parcours adapté.
+				Un choix entre stage ou projet encadré est également proposé au
+				semestre de printemps.
+			</description>
+			<competences>Maîtriser les notions fondamentales de l'informatique :
+				principes de fonctionnement des machines, concepts d'organisation
+				des données et algorithmique avancée, notions de réseaux et de
+				systèmes, traduction et langages, information et systèmes
+				distribués, méthodes de conception.</competences>
+			<semestres>
+				<semestre idSemestre="S1_M1">
+					<blocks>
+						<block titre ="TRONC COMMUN" etat="&obli;">
+							<ref-enseignement ref="ENSINAU1"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU2"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU3"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU4"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU12"></ref-enseignement>
+						</block>
+						<block titre ="Falcultatif" etat="&falc;">
+							<ref-enseignement ref="ENSINAU6"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU7"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU8"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU9"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU10"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+						</block>
+					</blocks>
+				</semestre>
+				<semestre idSemestre="S2_M2">
+					<blocks>
+						<block titre ="TRONC COMMUN" etat="&obli;">
+							<ref-enseignement ref="ENSINBU1"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU2"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU4"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU5"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU15"></ref-enseignement>
+						</block>
+						<block titre ="FALCULTATIF" etat="&falc;">
+							<ref-enseignement ref="ENSINBU6"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU7"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU8"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU9"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU10"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU11"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU12"></ref-enseignement>
+							<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+							<ref-enseignement ref="ENSINBU16"></ref-enseignement>
+						</block>
+					</blocks>
+				</semestre>
+			</semestres>
+		</parcour>
+		<parcour idParcour="Master2">
+			<nom>Master 2</nom>
+			<responsable>
+				<ref-intervenant ref="IN9224"></ref-intervenant>
+			</responsable>
+			<semestres>
+				<semestre idSemestre="S3">
+					<blocks>
+						<block titre = "TRONC COMMUN" etat="&obli;">
+							<ref-enseignement ref="ENSINCU41"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU42"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU43"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU44"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU45"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU46"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU47"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU27"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU28"></ref-enseignement>
+						</block>
+					</blocks>
+				</semestre>
+			</semestres>
+		</parcour>
+		<parcour idParcour="FSI">
+			<nom>Fiabilité et sécurité informatique (FSI)</nom>
+			<responsable>
+				<ref-intervenant ref="IN2563"></ref-intervenant>
+			</responsable>
+			<description>
+				<p>
+					La formation donne les principes et techniques liés à la
+					conception
+					de systèmes informatiques surs dans un environnement
+					ouvert et
+					hétérogène. Elle forme les étudiants aux principes et
+					méthodes de
+					développement modernes qui reposent sur des outils de
+					prototypage,
+					de test et de suivi de logiciels, avec des
+					méthodologies
+					normalisées. Elle apporte des compétences fortes en
+					sécurité
+					informatique dans les domaines liés à l'échange
+					d'information
+					(Web-services, protocoles de communication et
+					cryptographiques,..)
+					et à la communication entre systèmes (réseaux
+					hétérogènes et
+					applications embarquées ou distribuées).
+				</p>
+			</description>
+			<competences>
+				<p>
+					<ul>
+						<li>Anglais, Communication, Gestion de projet</li>
+						<li>Méthode de développement logiciel (Spécification, Tests,
+							Evaluation de performance)
+						</li>
+						<li>Savoir définir et mettre en œuvre les méthodes de sécurité
+							informatique dans un environnement distribué et ouvert
+						</li>
+						<li>Savoir spécifier, concevoir et réaliser un système logiciel et
+							matériel complexe
+						</li>
+						<li>Programmation de systèmes embarqués</li>
+					</ul>
+				</p>
+			</competences>
+			<autre>
+			<titre>Connaissances à acquérir</titre>
+			<p>
+				L'objectif de la spécialité FSIL est de former des étudiants afin qu'ils puissent concevoir, réaliser, valider et mettre en exploitation des logiciels. Pour ce faire, ils devront connaître les concepts, les outils et les méthodes liés au développement de logiciels. Les aspects de qualité, de sécurité et de bonne intégration dans des environnements informatiques complexes seront les points forts de la formation.
+			</p>
+			</autre>
+			<semestres>
+				<semestre idSemestre="S3_FSI">
+					<blocks>
+						<block titre ="TRONC COMMUN" etat="&obli;">
+							<ref-enseignement ref="ENSINCU41"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU42"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU43"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU44"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU45"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU46"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU47"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU27"></ref-enseignement>
+							<ref-enseignement ref="ENSINCU28"></ref-enseignement>
+						</block>
+					</blocks>
+				</semestre>
+			</semestres>
+		</parcour>
+	</parcours>
 </master>

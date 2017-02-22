@@ -141,6 +141,7 @@
                 <li>Semestre : <xsl:value-of select="@idSemestre"/></li>
                 <xsl:for-each select="blocks/block">
                     <h2>
+                        <xsl:value-of select="@titre"/>
                         <xsl:value-of select="@etat"/>
                     </h2>
                     <ul>
@@ -207,7 +208,7 @@
                 <li>
                     <xsl:apply-templates select="semestres"/>
                 </li>
-                <li>Compétences :<xsl:value-of select="competences"/></li>
+                <li>Compétences :<xsl:value-of select="competences" /></li>
             </ul>
         </div>
     </xsl:template>
