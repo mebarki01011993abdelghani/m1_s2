@@ -9,15 +9,7 @@ public class Diner {
     public static void main(String args[]) {
         int nbSauvages = 10;               // La tribu comporte 10 sauvages affamés
         int nbPortions = 5;                // Le pôt contient 5 parts, lorsqu'il est rempli
-	/*
-         try {
-         nbSauvages = Integer.parseInt(args[0]) ;
-         nbPortions = Integer.parseInt(args[1]) ; }
-         catch(Exception e) {
-         System.err.println("Usage: java Diner <nb de sauvages> <taille du pot>") ;
-         System.exit(1) ;
-         }
-         */
+
         System.out.println("Il y a " + nbSauvages + " sauvages.");
         System.out.println("Le pôt peut contenir " + nbPortions + " portions.");
         Pot pot = new Pot(nbPortions);
