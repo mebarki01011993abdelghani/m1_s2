@@ -5,6 +5,7 @@ declare option saxon:output "indent=yes";
     for
        	$intervenant in doc("../XML/master.xml")//intervenants
     let $nom := $intervenant//nom
+    let $numero := 
     return
         <item>
             {$nom}
