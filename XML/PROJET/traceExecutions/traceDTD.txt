@@ -6,112 +6,112 @@
 		<intervenant idIntervenant="IN18">
 			<identifiant>IN18</identifiant>
 			<nom>Jean-Luc MASSAT</nom>
-			<mail>jean-luc.massatuniv-amu.fr</mail>
+			<mail>jean-luc.massat&dom.amu;</mail>
 			<telephone>0491829482</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN7680">
 			<identifiant>IN7680</identifiant>
 			<nom>Claude LAI</nom>
 			<mail>Claude
-				LAI@univ-amu.fr</mail>
+				LAI@&dom.amu;</mail>
 			<telephone>04 91 82 93 16</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN3524">
 			<identifiant>IN3524</identifiant>
 			<nom>Denis LUGIEZ</nom>
-			<mail>denis.luigiezZ@univ-amu.fr</mail>
+			<mail>denis.luigiezZ@&dom.amu;</mail>
 			<telephone>0413551333</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN17708">
 			<identifiant>IN17708</identifiant>
 			<nom>Stephane MICHEL</nom>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN9224">
 			<identifiant>IN9224</identifiant>
 			<nom>Remi MORIN</nom>
-			<mail>remi.morin@univ-amu.fr</mail>
+			<mail>remi.morin@&dom.amu;</mail>
 			<telephone>0491829394</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN7722">
 			<identifiant>IN7722</identifiant>
 			<nom>Noel NOVELLI</nom>
-			<mail>noel.noveli@univ-amu.fr</mail>
+			<mail>noel.noveli@&dom.amu;</mail>
 			<telephone>04 91 82 93 70</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN13794">
 			<identifiant>IN13794</identifiant>
 			<nom>Frederic OLIVE</nom>
-			<mail>frederic.olive@univ-amu.fr</mail>
+			<mail>frederic.olive@&dom.amu;</mail>
 			<telephone>0491829000</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN12632">
 			<identifiant>IN12632</identifiant>
 			<nom>Nicola OLIVETTI</nom>
-			<mail>nicolas.olivetti@univ-amu.fr</mail>
+			<mail>nicolas.olivetti@&dom.amu;</mail>
 			<telephone> 04 860 91 046</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN12969">
 			<identifiant>IN12969</identifiant>
 			<nom>Lydie RENE CHABAROT</nom>
-			<mail>lydie.rene@univ-amu.fr</mail>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<mail>lydie.rene@&dom.amu;</mail>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN4595">
 			<identifiant>IN4595</identifiant>
 			<nom>Pierre-Alain REYNIER</nom>
 			<mail>
-				pierre-alain.reynier@univ-amu.fr</mail>
+				pierre-alain.reynier@&dom.amu;</mail>
 			<telephone>04 91 82 93 13</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN7931">
 			<identifiant>IN7931</identifiant>
 			<nom>Sylvie RISCH</nom>
-			<mail>sylvie.risch@univ-amu.fr</mail>
+			<mail>sylvie.risch@&dom.amu;</mail>
 			<telephone>0491829316</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN26">
 			<identifiant>IN26</identifiant>
 			<nom>Claude SABATIER</nom>
-			<mail>claude.sabatier@univ-amu.fr</mail>
+			<mail>claude.sabatier@&dom.amu;</mail>
 			<telephone>04 91 82 94 81</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN16625">
 			<identifiant>IN16625</identifiant>
 			<nom>Sana SELLAMI</nom>
-			<mail>sana.sellami@univ-amu.fr</mail>
+			<mail>sana.sellami@&dom.amu;</mail>
 			<telephone>+33 4 91 05 60 57</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN8086">
 			<identifiant>IN8086</identifiant>
 			<nom>Yann VAXES</nom>
 			<mail>
-				yann.vaxes@univ-amu.fr</mail>
+				yann.vaxes@&dom.amu;</mail>
 			<telephone>0491829196</telephone>
-			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
+			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="II1000">
 			<identifiant>II1000</identifiant>
 			<nom>Thierry ARTIÈRES</nom>
-			<mail>Thierry.artieres@lif.univ-mrs.fr</mail>
+			<mail>Thierry.artieres@&dom.lif;</mail>
 			<etablissement>École Centrale Marseille</etablissement>
 		</intervenant>
 
 		<intervenant idIntervenant="IN616">
 			<identifiant>II1000</identifiant>
 			<nom>Roland AGOPIAN</nom>
-			<mail>roland.agopian@univ-amu.fr</mail>
+			<mail>roland.agopian@&dom.amu;</mail>
 			<telephone>0413551364</telephone>
 			<etablissement>UFR Sciences</etablissement>
 		</intervenant>
@@ -119,7 +119,7 @@
 		<intervenant idIntervenant="IN1021">
 			<identifiant>IN1021</identifiant>
 			<nom>clara BERTOLISSI</nom>
-			<mail>clara.bertolissi@univ-amu.fr</mail>
+			<mail>clara.bertolissi@&dom.amu;</mail>
 			<telephone>04 91 82 95 27</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -127,7 +127,7 @@
 		<intervenant idIntervenant="IN2563">
 			<identifiant>IN2563</identifiant>
 			<nom>Emmanuel GODARD</nom>
-			<mail>emmanuel.godard@univ-amu.fr</mail>
+			<mail>emmanuel.godard@&dom.amu;</mail>
 			<telephone/>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -135,7 +135,7 @@
 		<intervenant idIntervenant="IN6213">
 			<identifiant>IN6213</identifiant>
 			<nom>Arnaud LABOUREL</nom>
-			<mail>arnaud.labourel@univ-amu.fr</mail>
+			<mail>arnaud.labourel@&dom.amu;</mail>
 			<telephone>0491829195</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -143,7 +143,7 @@
 		<intervenant idIntervenant="IN7001">
 			<identifiant>IN7001</identifiant>
 			<nom>Nadia CREIGNOU</nom>
-			<mail>nadia.creignou@univ-amu.fr</mail>
+			<mail>nadia.creignou@&dom.amu;</mail>
 			<telephone>04 91 82 94 80</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -151,7 +151,7 @@
 		<intervenant idIntervenant="IN8007">
 			<identifiant>IN8007</identifiant>
 			<nom>Line JAMET</nom>
-			<mail>line.jakubiec@univ-amu.fr</mail>
+			<mail>line.jakubiec@&dom.amu;</mail>
 			<telephone>0491829311</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -159,7 +159,7 @@
 		<intervenant idIntervenant="IN8615">
 			<identifiant>IN8615</identifiant>
 			<nom>Bertrand ESTELLON</nom>
-			<mail>bertrand.estellon@univ-amu.fr</mail>
+			<mail>bertrand.estellon@&dom.amu;</mail>
 			<telephone> 04 91 82 94 92</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -167,7 +167,7 @@
 		<intervenant idIntervenant="IN9941">
 			<identifiant>IN9941</identifiant>
 			<nom>Frederic BECHET</nom>
-			<mail>frederic.bechet@univ-amu.fr</mail>
+			<mail>frederic.bechet@&dom.amu;</mail>
 			<telephone>04 91 82 95 59</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -175,7 +175,7 @@
 		<intervenant idIntervenant="IN10388">
 			<identifiant>IN10388</identifiant>
 			<nom>Benoit FAVRE</nom>
-			<mail>benoit.favre@univ-amu.fr</mail>
+			<mail>benoit.favre@&dom.amu;</mail>
 			<telephone/>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -183,7 +183,7 @@
 		<intervenant idIntervenant="IN12068">
 			<identifiant>IN12068</identifiant>
 			<nom>Djamal HABET</nom>
-			<mail>djamal.habet@univ-amu.fr</mail>
+			<mail>djamal.habet@&dom.amu;</mail>
 			<telephone> 0491288321</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -191,7 +191,7 @@
 		<intervenant idIntervenant="IN12316">
 			<identifiant>IN12316</identifiant>
 			<nom>Isabelle DEMONGODIN</nom>
-			<mail>isabel.demongodin@univ-amu.fr</mail>
+			<mail>isabel.demongodin@&dom.amu;</mail>
 			<telephone>0491056077</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -199,7 +199,7 @@
 		<intervenant idIntervenant="IN12544">
 			<identifiant>IN12544</identifiant>
 			<nom>Omar BOUCELMA</nom>
-			<mail>omar.boucelma@univ-amu.fr</mail>
+			<mail>omar.boucelma@&dom.amu;</mail>
 			<telephone>0491056053</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
@@ -207,7 +207,7 @@
 		<intervenant idIntervenant="IN14758">
 			<identifiant>IN14758</identifiant>
 			<nom>Martine BROCHE</nom>
-			<mail>martine.broche@univ-amu.fr</mail>
+			<mail>martine.broche@&dom.amu;</mail>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
 	</intervenants>
@@ -216,7 +216,7 @@
 		<enseignement idEnseignement="ENSINBU1">
 			<nom>ANGLAIS</nom>
 			<identifiant>ENSINBU1</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -228,7 +228,7 @@
 		<enseignement idEnseignement="ENSINBU2">
 			<nom>COMMUNICATION</nom>
 			<identifiant>ENSINBU2</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>chapitre 1 : Théories de la communication : 1.1 La théorie
 					mathématique de l’information (Shannon, Weaver), la cybernétique
@@ -252,14 +252,14 @@
 		<enseignement idEnseignement="ENSINBU4">
 			<nom>XML</nom>
 			<identifiant>ENSINBU4</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>XML, DTD, XSD XPath, XSLT, XQuery.</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINBU5">
 			<nom>Algorithmique et recherche opérationnelle</nom>
 			<identifiant>ENSINBU5</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>Programmation linéaire. Notions et algorithmes de
 				flots.Applications (couplage, affectation, transport,
 				...)Programmation dynamique (sac à dos, ordonnancement, ...)
@@ -269,7 +269,7 @@
 		<enseignement idEnseignement="ENSINBU12">
 			<nom>Intelligence artificielle</nom>
 			<identifiant>ENSINBU12</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>Introduction à l'IA Problèmes d'espace d'états et
 				d'exploration Logiques pour l'IA et démonstration automatique
 				Représentation de connaissances Actions, temps et planification
@@ -279,13 +279,13 @@
 		<enseignement idEnseignement="ENSINBU15">
 			<nom>Programmation parallèle</nom>
 			<identifiant>ENSINBU15</identifiant>
-			<nombreCredit>3</nombreCredit>
-			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>&noResume; </resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU6">
 			<nom>Projet</nom>
 			<identifiant>ENSINBU6</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Le but du projet est de mettre en oeuvre, de l'analyse à la
@@ -307,7 +307,7 @@
 		<enseignement idEnseignement="ENSINBU7">
 			<nom>Stage de deux mois</nom>
 			<identifiant>ENSINBU7</identifiant>
-			<nombreCredit>6</nombreCredit>
+			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				<p>
 					Le but du projet est de mettre en oeuvre, de l'analyse à la
@@ -324,7 +324,7 @@
 		<enseignement idEnseignement="ENSINBU8">
 			<nom>Sémantique</nom>
 			<identifiant>ENSINBU8</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -358,7 +358,7 @@
 		<enseignement idEnseignement="ENSINBU10">
 			<nom>Intégration des systèmes d'information</nom>
 			<identifiant>ENSINBU10</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -376,12 +376,12 @@
 			<identifiant>ENSINBU10</identifiant>
 			<nombreCredit>27</nombreCredit>
 			<resume>
-				Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+				&noResume; </resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU11">
 			<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
 			<identifiant>ENSINBU11</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Actuellement, de plus en plus de données sont conservées sans
@@ -416,7 +416,7 @@
 		<enseignement idEnseignement="ENSINBU13">
 			<nom>Algorithme à performance garantie</nom>
 			<identifiant> ENSINBU13</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Algorithmes d'approximation de nature combinatoire pour les
@@ -445,13 +445,13 @@
 		<enseignement idEnseignement="ENSINBU16">
 			<nom>Introduction à l'apprentissage automatique</nom>
 			<identifiant>ENSINBU16</identifiant>
-			<nombreCredit>3</nombreCredit>
-			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>&noResume; </resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINAU1">
 			<nom>Génie Logiciel</nom>
 			<identifiant>ENSINAU1</identifiant>
-			<nombreCredit>6</nombreCredit>
+			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -477,7 +477,7 @@
 		<enseignement idEnseignement="ENSINAU2">
 			<nom>Complexité</nom>
 			<identifiant>ENSINAU2</identifiant>
-			<nombreCredit>6</nombreCredit>
+			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -500,7 +500,7 @@
 		<enseignement idEnseignement="ENSINAU3">
 			<nom>Réseaux</nom>
 			<identifiant>ENSINAU3</identifiant>
-			<nombreCredit>6</nombreCredit>
+			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -523,7 +523,7 @@
 		<enseignement idEnseignement="ENSINAU4">
 			<nom>Programmation fonctionnelle</nom>
 			<identifiant>ENSINAU4</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -574,7 +574,7 @@
 		<enseignement idEnseignement="ENSINAU6">
 			<nom>Programmation logique</nom>
 			<identifiant>ENSINAU6</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -612,7 +612,7 @@
 		<enseignement idEnseignement="ENSINAU7">
 			<nom>Outils de l'internet</nom>
 			<identifiant>ENSINAU7</identifiant>
-			<nombreCredit>6</nombreCredit>
+			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -640,15 +640,15 @@
 		<enseignement idEnseignement="ENSINAU8">
 			<nom>Système embarqué</nom>
 			<identifiant>ENSINAU8</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
-				Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+				&noResume; </resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINAU9">
 			<nom>Fondamentaux pour l'ingénierie des langues</nom>
 			<identifiant>ENSINAU9</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -673,7 +673,7 @@
 		<enseignement idEnseignement="ENSINAU10">
 			<nom>Modèles à évènements discrets</nom>
 			<identifiant> ENSINAU10</identifiant>
-			<nombreCredit>6</nombreCredit>
+			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				Posséder les notions de base en modélisation et analyse de
 				systèmes
@@ -691,21 +691,21 @@
 		<enseignement idEnseignement="ENSINAU12">
 			<nom>BDR : approfondissement</nom>
 			<identifiant> ENSINAU12</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
-				Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+				&noResume; </resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINAU13">
 			<nom>SPORT</nom>
 			<identifiant> ENSINAU13</identifiant>
-			<nombreCredit>3</nombreCredit>
-			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>&noResume; </resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU41">
 			<nom>Qualité logicielle : outils et méthodes</nom>
 			<identifiant>ENSINCU41</identifiant>
-			<nombreCredit>6</nombreCredit>
+			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				<p>
 					Qualité logicielle, test et validation logiciel, ateliers de
@@ -719,22 +719,19 @@
 		<enseignement idEnseignement="ENSINCU42">
 			<nom>Spécification logicielle</nom>
 			<identifiant>ENSINCU42</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Modèles formels, modèle SADT, logiciels temps réel, méthode
 					SA-RT.
 				</p>
 			</resume>
-			<pre-requis>
-
-			</pre-requis>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU43">
 			<nom>Conception logicielle</nom>
 			<identifiant>ENSINCU43</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				Conception objet, patrons de conception, conception IHM.
 			</resume>
@@ -743,7 +740,7 @@
 		<enseignement idEnseignement="ENSINCU44">
 			<nom>Architecture logicielle JEE</nom>
 			<identifiant>ENSINCU44</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Composants logiciels , architectures N-tier, middleware,
@@ -754,9 +751,9 @@
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU45">
-			<nom>Technologies du Web et Web 2.0 </nom>
-			<identifiant>ENSINCU45 </identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nom>Technologies du Web et Web 2.0</nom>
+			<identifiant>ENSINCU45</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Protocoles de communication, standards Web, Langages à
@@ -770,7 +767,7 @@
 		<enseignement idEnseignement="ENSINCU46">
 			<nom>XML avancé</nom>
 			<identifiant>ENSINCU46</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Modélisation et navigation, XSchema et XPath avancés,
@@ -783,8 +780,8 @@
 
 		<enseignement idEnseignement="ENSINCU27">
 			<nom>Anglais 2</nom>
-			<identifiant>ENSINCU45 </identifiant>
-			<nombreCredit>3</nombreCredit>
+			<identifiant>ENSINCU45</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Expression orale et écrite : exposés sur des sujets
@@ -799,8 +796,8 @@
 
 		<enseignement idEnseignement="ENSINCU47">
 			<nom>Gestion de projet</nom>
-			<identifiant>ENSINCU47 </identifiant>
-			<nombreCredit>3</nombreCredit>
+			<identifiant>ENSINCU47</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Définition et acteurs d'un projet, organisation d'un projet,
@@ -813,9 +810,9 @@
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU28">
-			<nom>Communication 2 </nom>
+			<nom>Communication 2</nom>
 			<identifiant>ENSINCU28 </identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -871,7 +868,7 @@
 		<enseignement idEnseignement="ENSINCU1">
 			<nom> Algorithmique et complexité </nom>
 			<identifiant>ENSINCU1</identifiant>
-			<nombreCredit>6</nombreCredit>
+			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				<p>Principales techniques de conception et analyse d'algorithmes
 					(efficaces) pour les problèmes polynomiaux et les problèmes
@@ -882,11 +879,9 @@
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU2">
-			<nom> Logique, automates et aspects formels de la théorie des
-				langages
-			</nom>
+			<nom>Logique, automates et aspects formels de la théorie des langages</nom>
 			<identifiant>ENSINCU2</identifiant>
-			<nombreCredit>6</nombreCredit>
+			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				<p>Logique du premier ordre. Logiques modales et temporelles.
 					Logiques monadiques. Décidabilité de logiques .
@@ -899,7 +894,7 @@
 		<enseignement idEnseignement="ENSINCU3">
 			<nom>Statistique inférentielle</nom>
 			<identifiant>ENSINCU3</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>Théorie des probabilités et statistique inférentielle. Ce cours
 					permet d'acquérir des bases solides pour l'apprentissage
@@ -910,60 +905,53 @@
 		<enseignement idEnseignement="ENSINCU4">
 			<nom>Nouveaux défis en apprentissage</nom>
 			<identifiant>ENSINCU4</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>Étude des méthodes d'apprentissage qui traitent, de façon tant
 					théorique qu'appliquée, séparément ou simultanément, un ou
 					plusieurs problèmes classiques
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU5">
 			<nom>Théorie de l'apprentissage</nom>
-			<identifiant>ENSINCU5Théorie de l'apprentissage</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<identifiant>ENSINCU5</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>Avancées récentes en théorie de l'apprentissage statistique :
 					complexité de Rademacher, bornes PAC-Bayes, stabilité
 					algorithmique, schémas de compression.
 				</p>
-
 			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU6">
-			<nom>Inférence grammaticale 	</nom>
+			<nom>Inférence grammaticale</nom>
 			<identifiant>ENSINCU6</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>Large panorama des différents algorithmes et résultats obtenus
 					récemment pour l'apprentissage de représentations grammaticales de
 					langages
 				</p>
-
 			</resume>
 		</enseignement>
-
-
 		<enseignement idEnseignement="ENSINCU7">
-			<nom>Apprentissage numérique  </nom>
+			<nom>Apprentissage numérique</nom>
 			<identifiant>ENSINCU7</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Étude de quelques unes des méthodes les plus performantes en
 					apprentissage numérique : les réseaux de neurones, les modèles de
 					Markov cachés et les machines à vecteurs de support.
-
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU8">
-			<nom> Fouille de bases de données </nom>
+			<nom>Fouille de bases de données</nom>
 			<identifiant>ENSINCU8</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Bases mathématiques sur lesquelles reposent les méthodes de
@@ -971,15 +959,13 @@
 					bases de données qui sont également présentées et visent
 					soit
 					l'aide à la décision soit l'administration de bases de données.
-
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU9">
-			<nom> Entrepôts de données  </nom>
-			<identifiant>ENSINCU9 Entrepôts de données </identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nom>Entrepôts de données</nom>
+			<identifiant>ENSINCU9</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Étude de la problématique posée par les entrepôts de données (ou
@@ -992,9 +978,9 @@
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU10">
-			<nom> Fouille de données avancée</nom>
-			<identifiant> ENSINCU10Fouille de données avancée</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nom>Fouille de données avancée</nom>
+			<identifiant>ENSINCU10</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Approfondissement des techniques de fouille de données en
@@ -1005,13 +991,12 @@
 					œuvre des algorithmes
 					par niveaux.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU11">
 			<nom> Géométrie discrète </nom>
 			<identifiant> ENSINCU11</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Introduction à la géométrie discrète dans $Z^n$, en trois volets
@@ -1022,26 +1007,24 @@
 					et leurs
 					applications.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU12">
-			<nom> Algorithmique des graphes et réseaux  </nom>
+			<nom>Algorithmique des graphes et réseaux</nom>
 			<identifiant>ENSINCU12</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Algorithmes exacts. Algorithmes d'approximation. Structures de
 					données
 					distribuées.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU13">
-			<nom>Espaces métriques : structure et algorithmiques </nom>
+			<nom>Espaces métriques : structure et algorithmiques</nom>
 			<identifiant> ENSINCU13</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					ntroduction aux principales classes et constructions des espaces
@@ -1052,15 +1035,13 @@
 					géométriques,
 					leur applications en informatique et mathématiques.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU14">
-			<nom> « Optimisation combinatoire et programmation en nombres entiers
-				»</nom>
+			<nom>Optimisation combinatoire et programmation en nombres entiers</nom>
 			<identifiant> ENSINCU14 « Optimisation combinatoire et programmation
 				en nombres entiers »</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Principaux concepts, algorithmes, méthodes et outils qui
@@ -1071,14 +1052,13 @@
 					nombres
 					entiers.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU15">
 			<nom> « Logiques et jeux »</nom>
 			<identifiant> ENSINCU15Mu-calcul , syntaxe-sémantique. Model-checking
 				par jeux de parité, tableaux-decidabilité. Puissance expressive</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Mu-calcul , syntaxe-sémantique. Model-checking par jeux de
@@ -1091,20 +1071,19 @@
 		<enseignement idEnseignement="ENSINCU16">
 			<nom> Algorithmique distribuée 2 </nom>
 			<identifiant> ENSINCU16	</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Algorithmes de diffusion, diffusion avec retour. Algorithmes
 					d'élection,
 					détection de la terminaison. Tolérance aux pannes
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU17">
 			<nom> Vérification et sécurité </nom>
 			<identifiant> ENSINCU17 </identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Model Checking. Algorithmes de vérification. Modèles de sécurité.
@@ -1113,9 +1092,9 @@
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU18">
-			<nom> « Modèles du parallélisme » </nom>
+			<nom>Modèles du parallélisme</nom>
 			<identifiant> ENSINCU18</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Modèles classiques de systèmes. Résultats principaux du domaine
@@ -1124,13 +1103,12 @@
 					contrôle ou de
 					synthèse associés.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU19">
 			<nom> « Modèles et connaissances linguistiques pour le TAL »</nom>
 			<identifiant> ENSINCU19</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Traitement automatique des langues dans ses aspects applications.
@@ -1140,14 +1118,13 @@
 					Plusieurs ressources linguistiques pour le français sont
 					examinées.
 				</p>
-
 			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU20">
-			<nom> « Syntaxe et sémantique : modèles et outils » </nom>
+			<nom>Syntaxe et sémantique : modèles et outils</nom>
 			<identifiant> ENSINCU20</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Principes et nature des représentations syntaxiques et
@@ -1156,14 +1133,13 @@
 					étudiés
 					pour exprimer ces représentations.
 				</p>
-
 			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU21">
 			<nom> « Modèles numériques pour le TAL » </nom>
 			<identifiant> ENSINCU21</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Présentation des modèles numériques utilisés pour différentes
@@ -1174,14 +1150,13 @@
 					algorithmes de
 					décodage.
 				</p>
-
 			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU22">
-			<nom> « Applications du Traitement Automatique de la Langue (TAL) » </nom>
+			<nom>Applications du Traitement Automatique de la Langue (TAL)</nom>
 			<identifiant> ENSINCU22</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					État de l'art dans différentes applications du Traitement
@@ -1191,14 +1166,13 @@
 					automatique ainsi que sur les traitements de « bas niveau »
 					nécessaires dans la majorité des applications.
 				</p>
-
 			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINDU1">
 			<nom>«Communication scientifique»</nom>
 			<identifiant>ENSINDU1</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Lecture d'un article en anglais et exposé oral.
@@ -1209,20 +1183,19 @@
 		<enseignement idEnseignement="ENSINCU23">
 			<nom> « Algorithmique des chaînes de caractères » </nom>
 			<identifiant> ENSINCU23</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Différentes structures et algorithmes relatifs aux traitements
 					des chaînes de
 					caractères.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINDU3">
 			<nom>Projet industriel de mise en application</nom>
 			<identifiant>ENSINDU3</identifiant>
-			<nombreCredit>6</nombreCredit>
+			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				<p>
 					Rédaction du cahier des charges. Conception de l'application.
@@ -1234,7 +1207,7 @@
 		<enseignement idEnseignement="ENSINCU35">
 			<nom>Sécurité des systèmes embarqués</nom>
 			<identifiant>ENSINCU35</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					But de ce module est de familiariser les étudiants avec les
@@ -1246,7 +1219,7 @@
 					cartes à puce sans et avec contact pour des applications de
 					sécurité).
 
-					Contenu du cours :
+					<strong>Contenu du cours :</strong>
 					<ul>
 						<li>Introduction à USB : architecture matériel et logiciel,
 							classes de périphériques, classes de transferts, nouveautés dans
@@ -1289,7 +1262,7 @@
 		<enseignement idEnseignement="ENSINCU34">
 			<nom>Qualité</nom>
 			<identifiant> ENSINCU34</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					<ul>
@@ -1326,7 +1299,7 @@
 		<enseignement idEnseignement="ENSINCU33">
 			<nom>Fiabilité logicielle 2</nom>
 			<identifiant> ENSINCU33</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					La première partie du cours se divise en deux sections : la
@@ -1425,7 +1398,7 @@
 		<enseignement idEnseignement="ENSINCU32">
 			<nom>Sécurité internet et réseau</nom>
 			<identifiant> ENSINCU32</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Le cours aborde la sécurité de l'information sous deux aspects :
@@ -1450,7 +1423,7 @@
 		<enseignement idEnseignement="ENSINCU67">
 			<nom>Projet d'entreprise</nom>
 			<identifiant> ENSINCU67</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					L'objet de cet enseignement est de présenter un projet de
@@ -1473,7 +1446,7 @@
 		<enseignement idEnseignement="ENSINCU31">
 			<nom>Systèmes hétérogènes</nom>
 			<identifiant> ENSINCU31</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Les parties magistrales de l'enseignement seront l'occasion
@@ -1512,7 +1485,7 @@
 		<enseignement idEnseignement="ENSINCU30">
 			<nom>Plateforme JEE</nom>
 			<identifiant> ENSINCU30</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					L'objet du cours est de présenter le développement d'applications
@@ -1551,12 +1524,11 @@
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU29">
-			<nom/>
-			<identifiant> ENSINCU29</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nom>Fiabilité logicielle 1</nom>
+			<identifiant>ENSINCU29</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
-
 					Introduction fiabilité vs sécurité
 					Test boite blanche (graphe de
 					contrôle, de donnée, mesure de
@@ -1580,8 +1552,8 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU36">
 			<nom>Administration système et réseau</nom>
-			<identifiant> ENSINCU36	</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<identifiant>ENSINCU36</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 
@@ -1592,7 +1564,7 @@
 		<enseignement idEnseignement="ENSINCU37">
 			<nom>Méthodes de développement </nom>
 			<identifiant> ENSINCU37</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					En cours, sont vus les éléments suivants :
@@ -1614,7 +1586,7 @@
 		<enseignement idEnseignement="ENSINCU38">
 			<nom>Architecture logicielle JEE</nom>
 			<identifiant> ENSINCU38</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					L'objet du cours est de présenter l'architecture et le
@@ -1650,7 +1622,7 @@
 		<enseignement idEnseignement="ENSINCU39">
 			<nom>Intégration des données</nom>
 			<identifiant> ENSINCU39</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
 					Ce cours est structuré en trois parties :
@@ -1663,17 +1635,15 @@
 					SQLXML
 					La correspondance Objet/Relationnel : Le standard JPA,
 					l’implantation Hibernate
-
 				</p>
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU40">
-			<nom/>
-			<identifiant> ENSINCU40</identifiant>
-			<nombreCredit>3</nombreCredit>
+			<nom>Administration et alimentation de BD</nom>
+			<identifiant>ENSINCU40</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
-
 					Architecture d’un SGBD.
 					Création, Confidentialité, Optimisation et
 					Sécurité d’une base de données.
@@ -1684,20 +1654,19 @@
 					Alimentation, nettoyage et sélection des données en vue
 					d'analyses.
 					Logiciels possible : ORACLE, Pentaho Data Integration.
-
 				</p>
 			</resume>
 		</enseignement>
 	</enseignements>
 	<blocks>
-		<block idBlock="M1_S1_OBLI" titre="TRONC COMMUN" etat="Obligatoire">
+		<block idBlock="M1_S1_OBLI" titre="TRONC COMMUN" etat="&obli;">
 			<ref-enseignement ref="ENSINAU1"/>
 			<ref-enseignement ref="ENSINAU2"/>
 			<ref-enseignement ref="ENSINAU3"/>
 			<ref-enseignement ref="ENSINAU4"/>
 			<ref-enseignement ref="ENSINAU12"/>
 		</block>
-		<block idBlock="M1_S1_FALC" titre="Falcultatif" etat="Falcultatif">
+		<block idBlock="M1_S1_FALC" titre="Falcultatif" etat="&falc;">
 			<ref-enseignement ref="ENSINAU6"/>
 			<ref-enseignement ref="ENSINAU7"/>
 			<ref-enseignement ref="ENSINAU8"/>
@@ -1705,14 +1674,14 @@
 			<ref-enseignement ref="ENSINAU10"/>
 			<ref-enseignement ref="ENSINAU13"/>
 		</block>
-		<block idBlock="M1_S2_OBLI" titre="TRONC COMMUN" etat="Obligatoire">
+		<block idBlock="M1_S2_OBLI" titre="TRONC COMMUN" etat="&obli;">
 			<ref-enseignement ref="ENSINBU1"/>
 			<ref-enseignement ref="ENSINBU2"/>
 			<ref-enseignement ref="ENSINBU4"/>
 			<ref-enseignement ref="ENSINBU5"/>
 			<ref-enseignement ref="ENSINBU15"/>
 		</block>
-		<block idBlock="M1_S2_FALC" titre="FALCULTATIF" etat="Falcultatif">
+		<block idBlock="M1_S2_FALC" titre="FALCULTATIF" etat="&falc;">
 			<ref-enseignement ref="ENSINBU6"/>
 			<ref-enseignement ref="ENSINBU7"/>
 			<ref-enseignement ref="ENSINAU8"/>
@@ -1723,43 +1692,43 @@
 			<ref-enseignement ref="ENSINAU13"/>
 			<ref-enseignement ref="ENSINBU16"/>
 		</block>
-		<block idBlock="TC_FSI_ISL" titre="TC des parcours FSI et ISL" etat="Obligatoire">
+		<block idBlock="TC_FSI_ISL" titre="TC des parcours FSI et ISL" etat="&obli;">
 			<ref-enseignement ref="ENSINCU27"/>
 			<ref-enseignement ref="ENSINCU28"/>
 			<ref-enseignement ref="ENSINCU29"/>
 			<ref-enseignement ref="ENSINCU30"/>
 			<ref-enseignement ref="ENSINCU31"/>
 		</block>
-		<block idBlock="SPE_S3_FSI_ISL_BONUS" titre="Unité d'enseignement à bonus" etat="Falcultatif">
+		<block idBlock="SPE_S3_FSI_ISL_BONUS" titre="Unité d'enseignement à bonus" etat="&falc;">
 			<ref-enseignement ref="ENSINCU67"/>
 		</block>
-		<block idBlock="SPE_S3_FSI_OBLI" titre="Unités obligatoires" etat="Obligatoire">
+		<block idBlock="SPE_S3_FSI_OBLI" titre="Unités obligatoires" etat="&obli;">
 			<ref-enseignement ref="ENSINCU32"/>
 			<ref-enseignement ref="ENSINCU33"/>
 			<ref-enseignement ref="ENSINCU34"/>
 			<ref-enseignement ref="ENSINCU35"/>
 		</block>
-		<block idBlock="SPE_S4_FSI_OBLI" titre="Unités obligatoires" etat="Obligatoire">
+		<block idBlock="SPE_S4_FSI_OBLI" titre="Unités obligatoires" etat="&obli;">
 			<ref-enseignement ref="ENSINDU3"/>
 			<ref-enseignement ref="ENSINDU4"/>
 		</block>
-		<block idBlock="SPE_S3_ISL_OBLI" titre="Unités obligatoires" etat="Obligatoire">
+		<block idBlock="SPE_S3_ISL_OBLI" titre="Unités obligatoires" etat="&obli;">
 			<ref-enseignement ref="ENSINCU36"/>
 			<ref-enseignement ref="ENSINCU37"/>
 			<ref-enseignement ref="ENSINCU38"/>
 			<ref-enseignement ref="ENSINCU39"/>
 			<ref-enseignement ref="ENSINCU40"/>
 		</block>
-		<block idBlock="SPE_S4_ISL_OBLI" titre="Unités obligatoires" etat="Obligatoire">
+		<block idBlock="SPE_S4_ISL_OBLI" titre="Unités obligatoires" etat="&obli;">
 			<ref-enseignement ref="ENSINDU3"/>
 			<ref-enseignement ref="ENSINDU4"/>
 		</block>
-		<block idBlock="SPE_S3_IF_OBLI" titre="Unités obligatoires" etat="Obligatoire">
+		<block idBlock="SPE_S3_IF_OBLI" titre="Unités obligatoires" etat="&obli;">
 			<ref-enseignement ref="ENSINCU1"/>
 			<ref-enseignement ref="ENSINCU2"/>
 			<ref-enseignement ref="ENSINCU3"/>
 		</block>
-		<block idBlock="SPE_S3_IF_FALC" titre="15 crédits à choisir (validation requise)" etat="Falcultatif">
+		<block idBlock="SPE_S3_IF_FALC" titre="15 crédits à choisir (validation requise)" etat="&falc;">
 			<ref-enseignement ref="ENSINCU4"/>
 			<ref-enseignement ref="ENSINCU5"/>
 			<ref-enseignement ref="ENSINCU6"/>
@@ -1781,7 +1750,7 @@
 			<ref-enseignement ref="ENSINCU22"/>
 			<ref-enseignement ref="ENSINCU23"/>
 		</block>
-		<block idBlock="SPE_S4_IF_OBLI" titre="Unités obligatoires" etat="Obligatoire">
+		<block idBlock="SPE_S4_IF_OBLI" titre="Unités obligatoires" etat="&obli;">
 			<ref-enseignement ref="ENSINDU1"/>
 			<ref-enseignement ref="ENSINDU2"/>
 		</block>
@@ -1825,7 +1794,7 @@
 			<nom>Master 1 - Premiere année de tronc commun</nom>
 			<identifiant>Master1</identifiant>
 			<code>Master1</code>
-			<etablissement>UFR SciencesUniversité d'Aix-MarseilleSt CharlesSt Jerome</etablissement>
+			<etablissement>&site1;&site2;&site3;&site4;</etablissement>
 			<responsable>
 				<ref-intervenant ref="IN9224"/>
 			</responsable>
@@ -1893,7 +1862,7 @@
 			<identifiant>IF</identifiant>
 			<code>IF</code>
 			<finalite>Rech.</finalite>
-			<etablissement>UFR Sciences</etablissement>
+			<etablissement>&site1;</etablissement>
 			<responsable>
 				<ref-intervenant ref="IN9941"/>
 			</responsable>
@@ -1933,7 +1902,7 @@
 			<code>FSI</code>
 			<finalite>Un parcours à finalité professionnelle de la spécialité
 				Fiabilité, sécurité et intégration logicielle</finalite>
-			<etablissement>UFR Sciences</etablissement>
+			<etablissement>&site1;</etablissement>
 			<responsable>
 				<ref-intervenant ref="IN9941"/>
 			</responsable>
@@ -2101,7 +2070,7 @@
 			<code>ISL</code>
 			<finalite>Un parcours à finalité professionnelle de la spécialité
 				Fiabilité, sécurité et intégration logicielle</finalite>
-			<etablissement>UFR Sciences</etablissement>
+			<etablissement>&site1;</etablissement>
 			<responsable>
 				<ref-intervenant ref="IN18"/>
 			</responsable>

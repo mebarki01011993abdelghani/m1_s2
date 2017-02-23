@@ -22,14 +22,15 @@ import org.w3c.dom.NodeList;
 public class JavaNomEnseignement {
 
 
-    static boolean findMois = false;
+    static boolean findEnseignement = false;
     static boolean findNom = false;
     static Element racine;
     static Document doc;
 
     public static void main(String args[]) throws Exception {
         JavaNomEnseignement parser = new JavaNomEnseignement();
-        buildTreeMois();
+        //On build le l'arbre xml avec les noms des enseignements
+        buildTreeNom();
         // API SAX
         parser.parseXmlFile("../XML/master.xml");
         encoding();
@@ -57,8 +58,9 @@ public class JavaNomEnseignement {
     }
 
     public void printTree(Node n) {
-        if (n.getNodeType() == org.w3c.dom.Node.TEXT_NODE && findMois == true && findNom == true) {
-            findMois = false;
+    	//On est sur le noeud nom de l'enseignement et on souhaite afficher son contenu
+        if (n.getNodeType() == org.w3c.dom.Node.TEXT_NODE && findEnseignement == true && findNom == true) {
+            findEnseignement = false;
             findNom = false;
             Element nom = doc.createElement("nom");
             nom.appendChild(doc.createTextNode(n.getNodeValue()));
@@ -66,13 +68,15 @@ public class JavaNomEnseignement {
         } else if (n instanceof Comment) {
             System.out.printf("<!-- %s -->", n.getNodeValue());
         } else if (n instanceof Element) {
+        	//On est dans le noeud enseignement
             if (n.getNodeName().equals("enseignement")) {
-                findMois = true;
+            	findEnseignement = true;
                 printTrees(n.getChildNodes());
-            } else if (n.getNodeName().equals("nom") && findMois == true) {
+                //On est sur le noeud nom de l'enseignement
+            } else if (n.getNodeName().equals("nom") && findEnseignement == true) {
                 findNom = true;
                 printTrees(n.getChildNodes());
-            } else if (findMois == false) {
+            } else if (findEnseignement == false) {
                 printTrees(n.getChildNodes());
             }
         } else if (n instanceof Document) {
@@ -80,7 +84,7 @@ public class JavaNomEnseignement {
         }
     }
 
-    public static void buildTreeMois() throws TransformerException, ParserConfigurationException {
+    public static void buildTreeNom() throws TransformerException, ParserConfigurationException {
         // ajout de noeuds
         doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         racine = doc.createElement("enseignements");
