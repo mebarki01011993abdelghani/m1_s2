@@ -2032,15 +2032,92 @@
 			<ref-semestre ref="S4_FSIL_ISI"></ref-semestre>
 			<politiqueDesStages>
 				<p>
-					La formation par le biais des projets est largement encouragée : la
-					deuxième année se clôture par un projet de huit semaines en groupe
-					de cinq à six étudiants. C'est l'occasion de mettre en pratique les
+					La formation par le biais des projets est largement encouragée :
+					la
+					deuxième année se clôture par un projet de huit semaines en
+					groupe
+					de cinq à six étudiants. C'est l'occasion de mettre en
+					pratique les
 					connaissances acquises durant la formation.
 				</p>
 			</politiqueDesStages>
-			<conditionAdmission></conditionAdmission>
-			<debouches></debouches>
-			<poursuitesEtudes></poursuitesEtudes>
+			<conditionAdmission>
+				<p>
+					<strong>Pré-requis obligatoires :</strong>
+					<ul>
+						<li>Être titulaire d'une première année de Master en informatique.
+						</li>
+						<li>Avoir de bonnes connaissances en bases de données, langages
+							objets et génie logiciel.
+						</li>
+					</ul>
+					<strong>Pré-requis recommandés :</strong>
+					<ul>
+						<li>
+							Avoir de bonnes connaissances en bases de données, langages
+							objets et
+							génie logiciel.
+						</li>
+					</ul>
+					<strong>Admission :</strong>
+					<p>
+						L'entrée en deuxième année se fait uniquement sur dossier. Une
+						première
+						année de Master à dominante informatique est requise (60
+						crédits).
+						Tout autre diplôme de niveau équivalent sera également
+						étudié. La
+						deuxième année du Master est également accessible par le
+						biais de
+						la VAP et de la VAE.
+					</p>
+				</p>
+			</conditionAdmission>
+			<debouches>
+				<p>
+					Les secteurs d'activités concernés sont tous ceux qui utilisent et
+					développent des applications informatiques, avec des pré-requis
+					forts de fiabilité (qualité logicielle) et sécurité (protection
+					contre les actions malveillantes). Les SSII forment une part
+					importante des débouchés mais de grands groupes de l'industrie
+					(transports, électronique, défense,...) ou des services (banques,
+					assurance,..) sont également des employeurs. Les PME innovantes en
+					informatique (éditeurs, prestataires de services, ...) et les
+					collectivités territoriales et établissements publics complètent le
+					secteur d'activité.
+					<p>Métiers visés pour le parcours FSI :</p>
+					<ul>
+						<li>Ingénieur études et développement,</li>
+						<li>Responsable réseaux,</li>
+						<li>Responsable systèmes et sécurité,</li>
+						<li>Ingénieur qualité.</li>
+					</ul>
+					<p>Métiers visés par le parcours ISL :</p>
+					<ul>
+						<li>Ingénieur études et développement,</li>
+						<li>Architecte logiciel,</li>
+						<li>Ingénieur en système d'information,</li>
+						<li>Expert technique ou fonctionnel.</li>
+					</ul>
+				</p>
+			</debouches>
+			<poursuitesEtudes>
+				<p>
+					<ul>
+						<li>Un doctorat est envisageable à l'issue de la spécialité FSIL.
+						</li>
+						<li>Les diplômés ont également la possibilité de choisir des
+							formations plus axées sur la gestion des projets scientifiques
+							pour ceux qui visent des postes à forte responsabilité.
+						</li>
+						<li>Il est également envisageable de suivre une autre spécialité
+							du
+							même master ou d'un autre pour enrichir son portefeuille de
+							compétences.
+						</li>
+					</ul>
+				</p>
+			</poursuitesEtudes>
 		</specialite>
 	</specialites>
 	<parcours>
