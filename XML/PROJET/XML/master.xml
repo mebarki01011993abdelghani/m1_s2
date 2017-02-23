@@ -1247,7 +1247,40 @@
 				</block>
 			</blocks>
 		</semestre>
+
+		<semestre idSemestre="S3_FSI">
+			<blocks>
+				<block titre ="TRONC COMMUN" etat="&obli;">
+					<ref-enseignement ref="ENSINCU1"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU2"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU3"></ref-enseignement>
+				</block>
+				<block titre ="OPTIONS" etat="&falc;">
+					<ref-enseignement ref="ENSINCU4"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU5"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU6"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU7"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU8"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU9"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU10"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU11"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU12"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU13"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU14"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU15"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU16"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU17"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU18"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU19"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU20"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU21"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU22"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU23"></ref-enseignement>
+				</block>
+			</blocks>
+		</semestre>
 	</semestres>
+	
 	<specialites>
 		<specialite idSpecialite="spe_master1">
 			<nom>Master 1 - Premiere année de tronc commun</nom>
@@ -1373,15 +1406,15 @@
 					signal au niveau sémantique.
 				</p>
 			</connaissances>
-			<ref-semestre ref="S1_M1"></ref-semestre>
-			<ref-semestre ref="S1_M2"></ref-semestre>
+			<ref-semestre ref="S1_RIM"></ref-semestre>
+			<ref-semestre ref="S2_RIM"></ref-semestre>
 			<politiqueDesStages></politiqueDesStages>
 			<conditionAdmission></conditionAdmission>
 			<debouches></debouches>
 			<poursuitesEtudes></poursuitesEtudes>
 		</specialite>
 
-		<specialite idSpecialite="IF">
+		<specialite idSpecialite="spe_if">
 			<nom>Informatique fondamentale (IF)</nom>
 			<identifiant>IF</identifiant>
 			<code>IF</code>
@@ -1413,67 +1446,14 @@
 				laboratoire d'informatique
 				fondamentale.
 			</connaissances>
-			<ref-semestre ref="S1_M1"></ref-semestre>
-			<ref-semestre ref="S1_M2"></ref-semestre>
-			<politiqueDesStages></politiqueDesStages>
-			<conditionAdmission></conditionAdmission>
-			<debouches></debouches>
-			<poursuitesEtudes></poursuitesEtudes>
-		</specialite>
-		<specialite idSpecialite="ID">
-			<nom>Master 1</nom>
-			<identifiant></identifiant>
-			<code></code>
-			<etablissement></etablissement>
-			<responsable>
-				<ref-intervenant ref="IN9224"></ref-intervenant>
-			</responsable>
-			<description>
-				<p>
-
-				</p>
-			</description>
-			<competences>
-				<p>
-
-				</p>
-			</competences>
-			<connaissances></connaissances>
-			<ref-semestre ref="S1_M1"></ref-semestre>
-			<ref-semestre ref="S1_M2"></ref-semestre>
-			<politiqueDesStages></politiqueDesStages>
-			<conditionAdmission></conditionAdmission>
-			<debouches></debouches>
-			<poursuitesEtudes></poursuitesEtudes>
-		</specialite>
-		<specialite idSpecialite="IDd">
-			<nom>Master 1</nom>
-			<identifiant></identifiant>
-			<code></code>
-			<etablissement></etablissement>
-			<responsable>
-				<ref-intervenant ref="IN9224"></ref-intervenant>
-			</responsable>
-			<description>
-				<p>
-
-				</p>
-			</description>
-			<competences>
-				<p>
-
-				</p>
-			</competences>
-			<connaissances></connaissances>
-			<ref-semestre ref="S1_M1"></ref-semestre>
-			<ref-semestre ref="S1_M2"></ref-semestre>
+			<ref-semestre ref="S3_FSI"></ref-semestre>
 			<politiqueDesStages></politiqueDesStages>
 			<conditionAdmission></conditionAdmission>
 			<debouches></debouches>
 			<poursuitesEtudes></poursuitesEtudes>
 		</specialite>
 	</specialites>
-
+	
 	<parcours>
 		<parcour idParcour="parcour_master_1">
 			<ref-specialite ref="spe_master1"></ref-specialite>
@@ -1486,4 +1466,5 @@
 			<ref-specialite ref="spe_if"></ref-specialite>
 		</parcour>
 	</parcours>
+
 </master>
