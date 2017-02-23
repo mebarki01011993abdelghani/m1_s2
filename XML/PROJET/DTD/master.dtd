@@ -67,7 +67,7 @@
 <!ELEMENT p							(#PCDATA| em | ul | strong | table)*  >				
 <!ELEMENT strong					(#PCDATA|p)*>				
 <!ELEMENT em						(#PCDATA)>
-<!ELEMENT ul						(li+)>
+<!ELEMENT ul						(li+ | p)*>
 <!ELEMENT li						(#PCDATA|p|ul|table)*>
 <!ELEMENT table						(tr+)>
 <!ELEMENT tr						(th+|d+)>
