@@ -1205,6 +1205,24 @@
 		</enseignement>
 
 	</enseignements>
+	<blocks>
+		<block idBlock ="TC_FSI_ISL" titre="TC des parcours FSI et ISL" etat="&obli;">
+			<ref-enseignement ref="ENSINCU27"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU28"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU29"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU30"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU31"></ref-enseignement>
+		</block>
+		<block idBlock ="SPE_FSI" titre="Unité d'enseignement à bonus" etat="&falc;">
+			<ref-enseignement ref="ENSINCU67"></ref-enseignement>
+		</block>
+		<block idBlock ="SPE_FSI_OBLI" titre="Unités obligatoires " etat="&obli;">
+			<ref-enseignement ref="ENSINCU32"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU33"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU34"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU35"></ref-enseignement>
+		</block>
+	</blocks>
 	<semestres>
 		<semestre idSemestre="S1_M1">
 			<blocks>
@@ -1267,24 +1285,10 @@
 			</blocks>
 		</semestre>
 		<semestre idSemestre="S3_FSIL_FSI_ISL">
-			<blocks>
-				<block titre="TC des parcours FSI et ISL" etat="&obli;">
-					<ref-enseignement ref="ENSINCU27"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU28"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU29"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU30"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU31"></ref-enseignement>
-				</block>
-				<block titre="Unité d'enseignement à bonus" etat="&falc;">
-					<ref-enseignement ref="ENSINCU67"></ref-enseignement>
-				</block>
-				<block titre="Unités obligatoires " etat="&obli;">
-					<ref-enseignement ref="ENSINCU32"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU33"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU34"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU35"></ref-enseignement>
-				</block>
-			</blocks>
+			<ref-block ref="d"></ref-block>
+			<ref-block ref="e"></ref-block>
+			<ref-block ref="r"></ref-block>
+
 		</semestre>
 		<semestre idSemestre="S4_FSIL_FSI">
 			<blocks>
@@ -1315,7 +1319,7 @@
 			</blocks>
 		</semestre>
 	</semestres>
-	
+
 	<specialites>
 		<specialite idSpecialite="spe_master1">
 			<nom>Master 1 - Premiere année de tronc commun</nom>
@@ -1425,7 +1429,7 @@
 			<poursuitesEtudes></poursuitesEtudes>
 		</specialite>
 	</specialites>
-	
+
 	<parcours>
 		<parcour idParcour="parcour_master_1">
 			<ref-specialite ref="spe_master1"></ref-specialite>

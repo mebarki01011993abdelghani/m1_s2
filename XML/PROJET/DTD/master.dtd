@@ -16,14 +16,14 @@
 <!ENTITY  noResume				"Nous sommes désolé, mais nous n'avons pas encore de résumé.">
 
 <!--RELATIONS ELEMENTS-->
-<!ELEMENT master					(intervenants,enseignements,semestres,specialites,parcours)>
+<!ELEMENT master					(intervenants,enseignements,blocks,semestres,specialites,parcours)>
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,resume,pre-requis?,plan?,etablissement*,ref-intervenant*,adresse*,autre?)>
 <!ELEMENT intervenant				(identifiant,nom,mail?,siteWeb?,telephone?,adresse?,etablissement,autre?)>
 <!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement+,responsable,description,competences,connaissances?,ref-semestre,ref-semestre,politiqueDesStages,aspects?,modalites?,conditionAdmission,debouches?,poursuitesEtudes?)>							 
 <!ELEMENT parcour					(ref-specialite+,autre*)>
 <!ELEMENT block 					(ref-enseignement+)>		
 <!ELEMENT blocks 					(block+)>						
-<!ELEMENT semestre					(blocks+)>	
+<!ELEMENT semestre					(ref-block+)>	
 <!ELEMENT responsable 				(ref-intervenant+)>
 <!ELEMENT parcours 					(parcour*)>
 <!ELEMENT semestres					(semestre*)>
@@ -32,7 +32,7 @@
 <!ELEMENT specialites        		(specialite)*>
 
 <!--ELEMENTS-->
-<!ELEMENT pre-requis						(#PCDATA | p)*>
+<!ELEMENT pre-requis					(#PCDATA | p)*>
 <!ELEMENT aspects						(#PCDATA | p)*>
 <!ELEMENT modalites						(#PCDATA | p)*>
 <!ELEMENT politiqueDesStages			(#PCDATA | p)*>
@@ -72,7 +72,7 @@
 <!ELEMENT table						(tr+)>
 <!ELEMENT tr						(th+|d+)>
 <!ELEMENT th						(#PCDATA)>
-
+<!ELEMENT ref-block					(#PCDATA)>
 
 <!--ATTRIBUTS-->
 <!ATTLIST enseignement  idEnseignement  ID  #REQUIRED>
@@ -80,9 +80,12 @@
 <!ATTLIST specialite  idSpecialite  ID  #REQUIRED>
 <!ATTLIST parcour  idParcour  ID  #REQUIRED>
 <!ATTLIST semestre  idSemestre  ID  #REQUIRED>
+<!ATTLIST block  idBlock  ID  #REQUIRED>
 <!ATTLIST ref-intervenant  ref IDREF  #REQUIRED>
 <!ATTLIST ref-enseignement  ref IDREF  #REQUIRED>
 <!ATTLIST ref-specialite  ref IDREF  #REQUIRED>
 <!ATTLIST ref-semestre  ref IDREF  #REQUIRED>
+<!ATTLIST ref-block  ref IDREF  #REQUIRED>
 <!ATTLIST block  etat  (Obligatoire|Falcultatif)  #REQUIRED>
 <!ATTLIST block  titre CDATA   #REQUIRED>
+
