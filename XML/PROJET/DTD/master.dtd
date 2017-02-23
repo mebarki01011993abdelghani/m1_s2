@@ -39,7 +39,7 @@
 <!ELEMENT conditionAdmission 			(#PCDATA | p)*>
 <!ELEMENT poursuitesEtudes				(#PCDATA | p)*>
 <!ELEMENT nom 						    (#PCDATA)>
-<!ELEMENT debouches					    (#PCDATA)>
+<!ELEMENT debouches					    (#PCDATA | p)*>
 <!ELEMENT description 					(#PCDATA | p)*>
 <!ELEMENT etablissement 				(#PCDATA)>
 <!ELEMENT code 						    (#PCDATA)>
@@ -64,7 +64,7 @@
 <!ELEMENT autre        					(titre, p, ANY*)>
 
 <!--HTML BALISE -->
-<!ELEMENT p							(#PCDATA| em | ul | strong | table)*  >				
+<!ELEMENT p							(#PCDATA| em | ul | strong | table | p)*  >				
 <!ELEMENT strong					(#PCDATA|p)*>				
 <!ELEMENT em						(#PCDATA)>
 <!ELEMENT ul						(li+ | p)*>

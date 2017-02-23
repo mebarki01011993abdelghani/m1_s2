@@ -1928,49 +1928,111 @@
 			<identifiant>SPE_FSI</identifiant>
 			<code>FSI</code>
 			<finalite>Un parcours à finalité professionnelle de la spécialité
-Fiabilité, sécurité et intégration logicielle</finalite>
+				Fiabilité, sécurité et intégration logicielle</finalite>
 			<etablissement>&site1;</etablissement>
 			<responsable>
 				<ref-intervenant ref="IN9941"></ref-intervenant>
 			</responsable>
-			<description>La formation donne les principes et techniques liés à la conception de systèmes informatiques surs dans un environnement ouvert et hétérogène. Elle forme les étudiants aux principes et méthodes de développement modernes qui reposent sur des outils de prototypage, de test et de suivi de logiciels, avec des méthodologies normalisées. Elle apporte des compétences fortes en sécurité informatique dans les domaines liés à l'échange d'information (Web-services, protocoles de communication et cryptographiques,..) et à la communication entre systèmes (réseaux hétérogènes et applications embarquées ou distribuées).</description>
+			<description>La formation donne les principes et techniques liés à la
+				conception de systèmes informatiques surs dans un environnement
+				ouvert et hétérogène. Elle forme les étudiants aux principes et
+				méthodes de développement modernes qui reposent sur des outils de
+				prototypage, de test et de suivi de logiciels, avec des
+				méthodologies normalisées. Elle apporte des compétences fortes en
+				sécurité informatique dans les domaines liés à l'échange
+				d'information (Web-services, protocoles de communication et
+				cryptographiques,..) et à la communication entre systèmes (réseaux
+				hétérogènes et applications embarquées ou distribuées).
+			</description>
 			<competences>
-    Anglais, Communication, Gestion de projet
-    Méthode de développement logiciel (Spécification, Tests, Evaluation de performance)
-    Savoir définir et mettre en œuvre les méthodes de sécurité informatique dans un environnement distribué et ouvert
-    Savoir spécifier, concevoir et réaliser un système logiciel et matériel complexe
-    Programmation de systèmes embarqués
+				Anglais, Communication, Gestion de projet
+				Méthode de
+				développement logiciel (Spécification, Tests, Evaluation de
+				performance)
+				Savoir définir et mettre en œuvre les méthodes de
+				sécurité informatique
+				dans un environnement distribué et ouvert
+				Savoir spécifier, concevoir et réaliser un système logiciel et
+				matériel
+				complexe
+				Programmation de systèmes embarqués
 
 			</competences>
-			<connaissances>L'objectif de la spécialité FSIL est de former des étudiants afin qu'ils puissent concevoir, réaliser, valider et mettre en exploitation des logiciels. Pour ce faire, ils devront connaître les concepts, les outils et les méthodes liés au développement de logiciels. Les aspects de qualité, de sécurité et de bonne intégration dans des environnements informatiques complexes seront les points forts de la formation.
+			<connaissances>L'objectif de la spécialité FSIL est de former des
+				étudiants afin qu'ils puissent concevoir, réaliser, valider et
+				mettre en exploitation des logiciels. Pour ce faire, ils devront
+				connaître les concepts, les outils et les méthodes liés au
+				développement de logiciels. Les aspects de qualité, de sécurité et
+				de bonne intégration dans des environnements informatiques complexes
+				seront les points forts de la formation.
 			</connaissances>
 			<ref-semestre ref="S3_FSIL_FSI"></ref-semestre>
 			<ref-semestre ref="S4_FSIL_FSI"></ref-semestre>
-			<politiqueDesStages>Les stages sont optionnels en première année (2 mois), obligatoires en deuxième année (4 à 6 mois). La recherche de stage est assurée par l'étudiant avec l'aide de l'équipe pédagogique (liste d'entreprises, diffusion des offres reçues, etc.). Le sujet de stage est validé par un enseignant responsable avant la signature de la convention. Les sujets doivent vérifier un cahier des charges qui est donné aux étudiants en début d'année. Le stage peut alors débuter. Durant la période de stage, un rapport d'avancement est demandé régulièrement au stagiaire (tous les mois). Les éventuels problèmes sont ainsi décelés au plus tôt. A l'issue du stage, le stagiaire doit fournir un rapport de stage et faire une soutenance orale. Il est noté sur la base de son rapport, de sa présentation et de l'évaluation du stage faite par son tuteur en entreprise.</politiqueDesStages>
+			<politiqueDesStages>Les stages sont optionnels en première année (2
+				mois), obligatoires en deuxième année (4 à 6 mois). La recherche de
+				stage est assurée par l'étudiant avec l'aide de l'équipe pédagogique
+				(liste d'entreprises, diffusion des offres reçues, etc.). Le sujet
+				de stage est validé par un enseignant responsable avant la signature
+				de la convention. Les sujets doivent vérifier un cahier des charges
+				qui est donné aux étudiants en début d'année. Le stage peut alors
+				débuter. Durant la période de stage, un rapport d'avancement est
+				demandé régulièrement au stagiaire (tous les mois). Les éventuels
+				problèmes sont ainsi décelés au plus tôt. A l'issue du stage, le
+				stagiaire doit fournir un rapport de stage et faire une soutenance
+				orale. Il est noté sur la base de son rapport, de sa présentation et
+				de l'évaluation du stage faite par son tuteur en entreprise.</politiqueDesStages>
 			<conditionAdmission>
 
-L'entrée en deuxième année se fait uniquement sur dossier. Une première année de Master à dominante informatique est requise (60 crédits). Tout autre diplôme de niveau équivalent sera également étudié. La deuxième année du Master est également accessible par le biais de la VAP et de la VAE.</conditionAdmission>
-			<debouches>Les secteurs d'activités concernés sont tous ceux qui utilisent et développent des applications informatiques, avec des pré-requis forts de fiabilité (qualité logicielle) et sécurité (protection contre les actions malveillantes). Les SSII forment une part importante des débouchés mais de grands groupes de l'industrie (transports, électronique, défense,...) ou des services (banques, assurance,..) sont également des employeurs. Les PME innovantes en informatique (éditeurs, prestataires de services, ...) et les collectivités territoriales et établissements publics complètent le secteur d'activité.
+				L'entrée en deuxième année se fait uniquement sur
+				dossier. Une première
+				année de Master à dominante informatique est
+				requise (60 crédits).
+				Tout autre diplôme de niveau équivalent sera
+				également étudié. La
+				deuxième année du Master est également
+				accessible par le biais de la
+				VAP et de la VAE.</conditionAdmission>
+			<debouches>Les secteurs d'activités concernés sont tous ceux qui
+				utilisent et développent des applications informatiques, avec des
+				pré-requis forts de fiabilité (qualité logicielle) et sécurité
+				(protection contre les actions malveillantes). Les SSII forment une
+				part importante des débouchés mais de grands groupes de l'industrie
+				(transports, électronique, défense,...) ou des services (banques,
+				assurance,..) sont également des employeurs. Les PME innovantes en
+				informatique (éditeurs, prestataires de services, ...) et les
+				collectivités territoriales et établissements publics complètent le
+				secteur d'activité.
 
-Métiers visés pour le parcours FSI :
+				Métiers visés pour le parcours FSI :
 
-    Ingénieur études et développement,
-    Responsable réseaux,
-    Responsable systèmes et sécurité,
-    Ingénieur qualité.
+				Ingénieur
+				études et développement,
+				Responsable réseaux,
+				Responsable systèmes et
+				sécurité,
+				Ingénieur qualité.
 
-Métiers visés par le parcours ISL :
+				Métiers visés par le parcours ISL :
 
-    Ingénieur études et développement,
-    Architecte logiciel,
-    Ingénieur en système d'information,
-    Expert technique ou fonctionnel.
-</debouches>
+				Ingénieur études et développement,
+				Architecte logiciel,
+				Ingénieur en
+				système d'information,
+				Expert technique ou fonctionnel.
+			</debouches>
 			<poursuitesEtudes>
-    Un doctorat est envisageable à l'issue de la spécialité FSIL.
-    Les diplômés ont également la possibilité de choisir des formations plus axées sur la gestion des projets scientifiques pour ceux qui visent des postes à forte responsabilité.
-    Il est également envisageable de suivre une autre spécialité du même master ou d'un autre pour enrichir son portefeuille de compétences.
-</poursuitesEtudes>
+				Un doctorat est envisageable à l'issue de la
+				spécialité FSIL.
+				Les diplômés ont également la possibilité de choisir
+				des formations
+				plus axées sur la gestion des projets scientifiques
+				pour ceux qui
+				visent des postes à forte responsabilité.
+				Il est
+				également envisageable de suivre une autre spécialité du même
+				master
+				ou d'un autre pour enrichir son portefeuille de compétences.
+			</poursuitesEtudes>
 		</specialite>
 		<specialite idSpecialite="SPE_ISL">
 			<nom>Intégration de systèmes logiciels (ISL)</nom>
@@ -2048,6 +2110,40 @@ Métiers visés par le parcours ISL :
 					connaissances acquises durant la formation.
 				</p>
 			</politiqueDesStages>
+			<aspects>
+				<p>Les membres de l'équipe pédagogique ont une expérience importante
+					en ce qui concerne l'enseignement des bases de données et des
+					applications réparties objets. La plupart des cours spécifiques de
+					ce parcours sont déjà proposés aux étudiants dans le cadre des
+					diplômes actuels depuis plus de 10 ans et régulièrement mis à jour.
+				</p>
+			</aspects>
+			<modalites>
+				<p>
+					L'organisation des enseignements est destinée à renforcer tous
+					les
+					aspects professionnels de la formation. On peut citer notamment
+					:
+					<ul>
+						<li>le travail en petit groupe et l'évaluation à base de projets,
+						</li>
+						<li>la mise en situation de responsabilité (gestion du parc
+							d'ordinateurs par les étudiants, projet de fin d'année géré
+							directement par les étudiants),
+						</li>
+						<li>les nombreux documents à rédiger durant les enseignements,
+						</li>
+						<li>les nombreuses présentations orales à effectuer,</li>
+						<li>les enseignements spécifiques en Anglais (préparation et
+							passage du TOEIC) et Communication (Lettre de motivation, CV,
+							entretien d'embauche, règles de savoir-être),
+						</li>
+						<li>le contact avec des professionnels via les séminaires et les
+							présentations d'entreprises.
+						</li>
+					</ul>
+				</p>
+			</modalites>
 			<conditionAdmission>
 				<p>
 					<strong>Pré-requis obligatoires :</strong>
@@ -2125,6 +2221,7 @@ Métiers visés par le parcours ISL :
 					</ul>
 				</p>
 			</poursuitesEtudes>
+
 		</specialite>
 	</specialites>
 	<parcours>
