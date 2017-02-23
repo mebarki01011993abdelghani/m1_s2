@@ -1563,18 +1563,6 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement="ENSINDU3">
-			<nom>Projet industriel de mise en application </nom>
-			<identifiant>ENSINDU3</identifiant>
-			<nombreCredit>&cred3;</nombreCredit>
-			<resume>
-				<p>
-					Rédaction du cahier des charges. Conception de l'application. Développement
-					et test. Rédaction d'un mémoire et présentation.
-
-				</p>
-			</resume>
-		</enseignement>
 	</enseignements>
 	<blocks>
 		<block idBlock="M1_S1_OBLI" titre="TRONC COMMUN" etat="&obli;">
