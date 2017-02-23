@@ -1351,69 +1351,6 @@
 			<conditionAdmission>Une licence à dominante informatique.</conditionAdmission>
 		</specialite>
 
-		<specialite idSpecialite="RIM">
-			<nom>Recherche d'informations multimédia</nom>
-			<identifiant>RIM</identifiant>
-			<code>RIM</code>
-			<finalite>Pro.</finalite>
-			<etablissement>&site1;</etablissement>
-			<responsable>
-				<ref-intervenant ref="IN9941"></ref-intervenant>
-			</responsable>
-			<description></description>
-			<competences>
-				<p>
-					Les enseignements sont organisés selon deux axes :
-					l'analyse et la
-					représentation du contenu d'une part ; l'indexation
-					et la recherche
-					d'information d'autre part. L'analyse et le
-					traitement du contenu
-					désignent les traitements de fichiers texte,
-					audio, image ou vidéo
-					permettant d'obtenir une représentation
-					structurée de leur contenu
-					sous forme de descripteurs, du niveau
-					signal au niveau sémantique.
-					L'indexation consiste à utiliser ces
-					descripteurs afin d'indexer
-					finement chaque document pour procéder
-					à
-					son archivage de façon
-					optimisée.
-				</p>
-			</competences>
-			<connaissances>
-				<p>
-					L'objectif de la spécialité RIM est de former des
-					spécialistes du
-					traitement
-					et de la recherche de contenus
-					multimédias sur internet.
-					Les
-					enseignements sont organisés selon
-					deux axes : l'analyse et la
-					représentation du contenu d'une part ;
-					l'indexation et la recherche
-					d'information d'autre part. L'analyse
-					et le traitement du contenu
-					désignent les traitements de fichiers
-					texte, audio, image ou vidéo
-					permettant d'obtenir une
-					représentation
-					structurée de leur contenu
-					sous forme de descripteurs, du niveau
-					signal au niveau sémantique.
-				</p>
-			</connaissances>
-			<ref-semestre ref="S1_RIM"></ref-semestre>
-			<ref-semestre ref="S2_RIM"></ref-semestre>
-			<politiqueDesStages></politiqueDesStages>
-			<conditionAdmission></conditionAdmission>
-			<debouches></debouches>
-			<poursuitesEtudes></poursuitesEtudes>
-		</specialite>
-
 		<specialite idSpecialite="spe_if">
 			<nom>Informatique fondamentale (IF)</nom>
 			<identifiant>IF</identifiant>
