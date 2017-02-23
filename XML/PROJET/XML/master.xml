@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE master SYSTEM "../DTD/master.dtd">
 <?xml-stylesheet type="text/xsl" href="../XSL/master.xsl" ?>
-
 <master>
 	<intervenants>
 		<intervenant idIntervenant="IN18">
@@ -371,6 +370,13 @@
 					</ul>
 				</p>
 			</resume>
+		</enseignement>
+		<enseignement idEnseignement="ENSINDU2">
+			<nom>Initiation à la recherche</nom>
+			<identifiant>ENSINBU10</identifiant>
+			<nombreCredit>27</nombreCredit>
+			<resume>
+				&noResume; </resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU11">
 			<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
@@ -1189,6 +1195,16 @@
 			</resume>
 		</enseignement>
 
+		<enseignement idEnseignement="ENSINDU1">
+			<nom>«Communication scientifique»</nom>
+			<identifiant>ENSINDU1</identifiant>
+			<nombreCredit>&cred3;</nombreCredit>
+			<resume>
+				<p>
+					Lecture d'un article en anglais et exposé oral.
+				</p>
+			</resume>
+		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU23">
 			<nom> « Algorithmique des chaînes de caractères » </nom>
@@ -1772,8 +1788,6 @@
 			<ref-enseignement ref="ENSINCU21"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU22"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU23"></ref-enseignement>
-			<ref-enseignement ref="ENSINCU25"></ref-enseignement>
-			<ref-enseignement ref="ENSINCU26"></ref-enseignement>
 		</block>
 		<block idBlock="SPE_S4_IF_OBLI" titre="Unités obligatoires"
 			etat="&obli;">
@@ -1782,35 +1796,35 @@
 		</block>
 	</blocks>
 	<semestres>
-		<semestre idSemestre="S1_M1">
+		<semestre idSemestre="M1_S1">
 			<ref-block ref="M1_S1_OBLI"></ref-block>
 			<ref-block ref="M1_S1_FALC"></ref-block>
 		</semestre>
-		<semestre idSemestre="S2_M1">
+		<semestre idSemestre="M1_S2">
 			<ref-block ref="M1_S2_OBLI"></ref-block>
 			<ref-block ref="M1_S2_FALC"></ref-block>
 		</semestre>
-		<semestre idSemestre="S3_FSIL_ISL">
+		<semestre idSemestre="M2_S3_FSIL_ISL">
 			<ref-block ref="TC_FSI_ISL"></ref-block>
 			<ref-block ref="SPE_S3_FSI_ISL_BONUS"></ref-block>
 			<ref-block ref="SPE_S3_ISL_OBLI"></ref-block>
 		</semestre>
-		<semestre idSemestre="S4_FSIL_ISL">
+		<semestre idSemestre="M2_S4_FSIL_ISL">
 			<ref-block ref="SPE_S4_ISL_OBLI"></ref-block>
 		</semestre>
-		<semestre idSemestre="S3_FSIL_FSI">
+		<semestre idSemestre="M2_S3_FSIL_FSI">
 			<ref-block ref="TC_FSI_ISL"></ref-block>
 			<ref-block ref="SPE_S3_FSI_ISL_BONUS"></ref-block>
 			<ref-block ref="SPE_S3_FSI_OBLI"></ref-block>
 		</semestre>
-		<semestre idSemestre="S4_FSIL_FSI">
-			<ref-block ref="SPE_S4_FSI"></ref-block>
+		<semestre idSemestre="M2_S4_FSIL_FSI">
+			<ref-block ref="SPE_S4_FSI_OBLI"></ref-block>
 		</semestre>
-		<semestre idSemestre="S3_FSIL_IF">
+		<semestre idSemestre="M2_S3_FSIL_IF">
 			<ref-block ref="SPE_S3_IF_OBLI"></ref-block>
 			<ref-block ref="SPE_S3_IF_FALC"></ref-block>
 		</semestre>
-		<semestre idSemestre="S4_FSIL_IF">
+		<semestre idSemestre="M2_S4_FSIL_IF">
 			<ref-block ref="SPE_S4_IF_OBLI"></ref-block>
 		</semestre>
 	</semestres>
@@ -1843,8 +1857,8 @@
 					méthodes de conception.
 				</p>
 			</competences>
-			<ref-semestre ref="S1_M1"></ref-semestre>
-			<ref-semestre ref="S1_M2"></ref-semestre>
+			<ref-semestre ref="M1_S1"></ref-semestre>
+			<ref-semestre ref="M1_S2"></ref-semestre>
 			<politiqueDesStages>
 				<p>La formation par le biais des projets est largement encouragée :
 					un travail d'étude et de recherche réalisé en groupe de deux à
@@ -1915,8 +1929,8 @@
 				laboratoire d'informatique
 				fondamentale.
 			</connaissances>
-			<ref-semestre ref="S3_IF"></ref-semestre>
-			<ref-semestre ref="S4_IF"></ref-semestre>
+			<ref-semestre ref="M2_S3_FSIL_IF"></ref-semestre>
+			<ref-semestre ref="M2_S4_FSIL_IF"></ref-semestre>
 			<politiqueDesStages></politiqueDesStages>
 			<conditionAdmission></conditionAdmission>
 			<debouches></debouches>
@@ -1932,107 +1946,163 @@
 			<responsable>
 				<ref-intervenant ref="IN9941"></ref-intervenant>
 			</responsable>
-			<description><p>La formation donne les principes et techniques liés à la
-				conception de systèmes informatiques surs dans un environnement
-				ouvert et hétérogène. Elle forme les étudiants aux principes et
-				méthodes de développement modernes qui reposent sur des outils de
-				prototypage, de test et de suivi de logiciels, avec des
-				méthodologies normalisées. Elle apporte des compétences fortes en
-				sécurité informatique dans les domaines liés à l'échange
-				d'information (Web-services, protocoles de communication et
-				cryptographiques,..) et à la communication entre systèmes (réseaux
-				hétérogènes et applications embarquées ou distribuées).</p>
+			<description>
+				<p>La formation donne les principes et techniques liés à la
+					conception de systèmes informatiques surs dans un environnement
+					ouvert et hétérogène. Elle forme les étudiants aux principes et
+					méthodes de développement modernes qui reposent sur des outils de
+					prototypage, de test et de suivi de logiciels, avec des
+					méthodologies normalisées. Elle apporte des compétences fortes en
+					sécurité informatique dans les domaines liés à l'échange
+					d'information (Web-services, protocoles de communication et
+					cryptographiques,..) et à la communication entre systèmes (réseaux
+					hétérogènes et applications embarquées ou distribuées).
+				</p>
 			</description>
-			<competences><ul>
-				<li>Anglais, Communication, Gestion de projet</li>
-				<li>Méthode de
-				développement logiciel (Spécification, Tests, Evaluation de
-				performance)</li>
-				<li>Savoir définir et mettre en œuvre les méthodes de
-				sécurité informatique
-				dans un environnement distribué et ouvert</li>
-				<li>Savoir spécifier, concevoir et réaliser un système logiciel et
-				matériel
-				complexe</li>
-				<li>Programmation de systèmes embarqués</li>
-</ul>
+			<competences>
+				<p>
+					<ul>
+						<li>Anglais, Communication, Gestion de projet</li>
+						<li>Méthode de
+							développement logiciel (Spécification, Tests,
+							Evaluation de
+							performance)
+						</li>
+						<li>Savoir définir et mettre en œuvre les méthodes de
+							sécurité
+							informatique
+							dans un environnement distribué et ouvert
+						</li>
+						<li>Savoir spécifier, concevoir et réaliser un système logiciel et
+							matériel
+							complexe
+						</li>
+						<li>Programmation de systèmes embarqués</li>
+					</ul>
+				</p>
 			</competences>
-			<connaissances><p>L'objectif de la spécialité FSIL est de former des
-				étudiants afin qu'ils puissent concevoir, réaliser, valider et
-				mettre en exploitation des logiciels. Pour ce faire, ils devront
-				connaître les concepts, les outils et les méthodes liés au
-				développement de logiciels. Les aspects de qualité, de sécurité et
-				de bonne intégration dans des environnements informatiques complexes
-				seront les points forts de la formation.</p>
+			<connaissances>
+				<p>L'objectif de la spécialité FSIL est de former des
+					étudiants afin
+					qu'ils puissent concevoir, réaliser, valider et
+					mettre en
+					exploitation des logiciels. Pour ce faire, ils devront
+					connaître les
+					concepts, les outils et les méthodes liés au
+					développement de
+					logiciels. Les aspects de qualité, de sécurité et
+					de bonne
+					intégration dans des environnements informatiques
+					complexes
+					seront
+					les points forts de la formation.
+				</p>
 			</connaissances>
-			<ref-semestre ref="S3_FSIL_FSI"></ref-semestre>
-			<ref-semestre ref="S4_FSIL_FSI"></ref-semestre>
-			<politiqueDesStages><p>Les stages sont optionnels en première année (2
-				mois), obligatoires en deuxième année (4 à 6 mois). La recherche de
-				stage est assurée par l'étudiant avec l'aide de l'équipe pédagogique
-				(liste d'entreprises, diffusion des offres reçues, etc.). Le sujet
-				de stage est validé par un enseignant responsable avant la signature
-				de la convention. Les sujets doivent vérifier un cahier des charges
-				qui est donné aux étudiants en début d'année. Le stage peut alors
-				débuter. Durant la période de stage, un rapport d'avancement est
-				demandé régulièrement au stagiaire (tous les mois). Les éventuels
-				problèmes sont ainsi décelés au plus tôt. A l'issue du stage, le
-				stagiaire doit fournir un rapport de stage et faire une soutenance
-				orale. Il est noté sur la base de son rapport, de sa présentation et
-				de l'évaluation du stage faite par son tuteur en entreprise.</p></politiqueDesStages>
+			<ref-semestre ref="M2_S3_FSIL_FSI"></ref-semestre>
+			<ref-semestre ref="M2_S4_FSIL_FSI"></ref-semestre>
+			<politiqueDesStages>
+				<p>Les stages sont optionnels en première année (2
+					mois),
+					obligatoires en deuxième année (4 à 6 mois). La recherche de
+					stage
+					est assurée par l'étudiant avec l'aide de l'équipe pédagogique
+					(liste d'entreprises, diffusion des offres reçues, etc.). Le sujet
+					de stage est validé par un enseignant responsable avant la
+					signature
+					de la convention. Les sujets doivent vérifier un cahier
+					des charges
+					qui est donné aux étudiants en début d'année. Le stage
+					peut alors
+					débuter. Durant la période de stage, un rapport
+					d'avancement est
+					demandé régulièrement au stagiaire (tous les mois).
+					Les éventuels
+					problèmes sont ainsi décelés au plus tôt. A l'issue du
+					stage, le
+					stagiaire doit fournir un rapport de stage et faire une
+					soutenance
+					orale. Il est noté sur la base de son rapport, de sa
+					présentation
+					et
+					de l'évaluation du stage faite par son tuteur en
+					entreprise.
+				</p>
+			</politiqueDesStages>
 			<conditionAdmission>
-<p>
-				L'entrée en deuxième année se fait uniquement sur
-				dossier. Une première
-				année de Master à dominante informatique est
-				requise (60 crédits).
-				Tout autre diplôme de niveau équivalent sera
-				également étudié. La
-				deuxième année du Master est également
-				accessible par le biais de la
-				VAP et de la VAE.</conditionAdmission></p>
-			<debouches><p>Les secteurs d'activités concernés sont tous ceux qui
-				utilisent et développent des applications informatiques, avec des
-				pré-requis forts de fiabilité (qualité logicielle) et sécurité
-				(protection contre les actions malveillantes). Les SSII forment une
-				part importante des débouchés mais de grands groupes de l'industrie
-				(transports, électronique, défense,...) ou des services (banques,
-				assurance,..) sont également des employeurs. Les PME innovantes en
-				informatique (éditeurs, prestataires de services, ...) et les
-				collectivités territoriales et établissements publics complètent le
-				secteur d'activité.</p>
-
-				Métiers visés pour le parcours FSI :
-				<ul>
-					<li>			Ingénieur
-								études et développement,</li>
-					<li>			Responsable réseaux,</li>
-					<li>			Responsable systèmes et
-								sécurité,</li>
-					<li>			Ingénieur qualité.</li>
-
-								Métiers visés par le parcours ISL :
-
-					<li>			Ingénieur études et développement,</li>
-					<li>			Architecte logiciel,</li>
-					<li>			Ingénieur en
-								système d'information,</li>
-					<li>			Expert technique ou fonctionnel.</li>
-				</ul>
+				<p>
+					L'entrée en deuxième année se fait uniquement sur
+					dossier. Une
+					première
+					année de Master à dominante informatique est
+					requise (60
+					crédits).
+					Tout autre diplôme de niveau équivalent sera
+					également
+					étudié. La
+					deuxième année du Master est également
+					accessible par le
+					biais de la
+					VAP et de la VAE.
+				</p>
+			</conditionAdmission>
+			<debouches>
+				<p>Les secteurs d'activités concernés sont tous ceux qui
+					utilisent et
+					développent des applications informatiques, avec des
+					pré-requis
+					forts de fiabilité (qualité logicielle) et sécurité
+					(protection
+					contre les actions malveillantes). Les SSII forment une
+					part
+					importante des débouchés mais de grands groupes de l'industrie
+					(transports, électronique, défense,...) ou des services (banques,
+					assurance,..) sont également des employeurs. Les PME innovantes en
+					informatique (éditeurs, prestataires de services, ...) et les
+					collectivités territoriales et établissements publics complètent le
+					secteur d'activité.
+				</p>
+				<p>
+					Métiers visés pour le parcours FSI :
+					<ul>
+						<li> Ingénieur
+							études et développement,
+						</li>
+						<li> Responsable réseaux,</li>
+						<li> Responsable systèmes et
+							sécurité,
+						</li>
+						<li> Ingénieur qualité.</li>
+						<p>
+							Métiers visés par le parcours ISL :
+						</p>
+						<li> Ingénieur études et développement,</li>
+						<li> Architecte logiciel,</li>
+						<li> Ingénieur en
+							système d'information,
+						</li>
+						<li> Expert technique ou fonctionnel.</li>
+					</ul>
+				</p>
 			</debouches>
 			<poursuitesEtudes>
-			<p>	Un doctorat est envisageable à l'issue de la
-				spécialité FSIL.
-				Les diplômés ont également la possibilité de choisir
-				des formations
-				plus axées sur la gestion des projets scientifiques
-				pour ceux qui
-				visent des postes à forte responsabilité.
-				Il est
-				également envisageable de suivre une autre spécialité du même
-				master
-				ou d'un autre pour enrichir son portefeuille de compétences.
-			</p></poursuitesEtudes>
+				<p> Un doctorat est envisageable à l'issue de la
+					spécialité FSIL.
+					Les
+					diplômés ont également la possibilité de choisir
+					des formations
+					plus
+					axées sur la gestion des projets scientifiques
+					pour ceux qui
+					visent
+					des postes à forte responsabilité.
+					Il est
+					également envisageable de
+					suivre une autre spécialité du même
+					master
+					ou d'un autre pour
+					enrichir son portefeuille de compétences.
+				</p>
+			</poursuitesEtudes>
 		</specialite>
 		<specialite idSpecialite="SPE_ISL">
 			<nom>Intégration de systèmes logiciels (ISL)</nom>
@@ -2097,8 +2167,8 @@
 					la formation.
 				</p>
 			</connaissances>
-			<ref-semestre ref="S3_FSIL_ISI"></ref-semestre>
-			<ref-semestre ref="S4_FSIL_ISI"></ref-semestre>
+			<ref-semestre ref="M2_S3_FSIL_ISL"></ref-semestre>
+			<ref-semestre ref="M2_S4_FSIL_ISL"></ref-semestre>
 			<politiqueDesStages>
 				<p>
 					La formation par le biais des projets est largement encouragée :
@@ -2221,7 +2291,6 @@
 					</ul>
 				</p>
 			</poursuitesEtudes>
-
 		</specialite>
 	</specialites>
 	<parcours>
