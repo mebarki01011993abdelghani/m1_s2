@@ -1247,6 +1247,73 @@
 				</block>
 			</blocks>
 		</semestre>
+		<semestre idSemestre="S3_IF">
+			<blocks>
+				<block titre="TRONC COMMUN" etat="&obli;">
+					<ref-enseignement ref="ENSINAU1"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU2"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU3"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU4"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU12"></ref-enseignement>
+				</block>
+				<block titre="Falcultatif" etat="&falc;">
+					<ref-enseignement ref="ENSINAU6"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU7"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU8"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU9"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU10"></ref-enseignement>
+					<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+				</block>
+			</blocks>
+		</semestre>
+		<semestre idSemestre="S3_FSIL_FSI">
+			<blocks>
+				<block titre="TC des parcours FSI et ISL" etat="&obli;">
+					<ref-enseignement ref="ENSINCU27"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU28"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU29"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU30"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU31"></ref-enseignement>
+				</block>
+				<block titre="Unité d'enseignement à bonus" etat="&falc;">
+					<ref-enseignement ref="ENSINCU67"></ref-enseignement>
+				</block>
+				<block titre="Unités obligatoires " etat="&obli;">
+					<ref-enseignement ref="ENSINCU32"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU33"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU34"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU35"></ref-enseignement>
+				</block>
+			</blocks>
+		</semestre>
+		<semestre idSemestre="S4_FSIL_FSI">
+			<blocks>
+				<block titre="Unités obligatoires" etat="&obli;">
+					<ref-enseignement ref="ENSINDU3"></ref-enseignement>
+					<ref-enseignement ref="ENSINDU4"></ref-enseignement>
+				</block>
+			</blocks>
+		</semestre>
+		<semestre idSemestre="S3_FSIL_ISL">
+			<blocks>
+				<block titre="TC des parcours FSI et ISL" etat="&obli;">
+					<ref-enseignement ref="ENSINCU27"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU28"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU29"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU30"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU31"></ref-enseignement>
+				</block>
+				<block titre="Unité d'enseignement à bonus" etat="&falc;">
+					<ref-enseignement ref="ENSINCU67"></ref-enseignement>
+				</block>
+				<block titre="Unités obligatoires " etat="&obli;">
+					<ref-enseignement ref="ENSINCU32"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU33"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU34"></ref-enseignement>
+					<ref-enseignement ref="ENSINCU35"></ref-enseignement>
+				</block>
+			</blocks>
+		</semestre>
 	</semestres>
 	<specialites>
 		<specialite idSpecialite="spe_master1">
