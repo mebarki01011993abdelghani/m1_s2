@@ -5,10 +5,11 @@ declare option saxon:output "indent=yes";
     for
        	$intervenant in doc("../XML/master.xml")//intervenants
     let $nom := $intervenant//nom
-    let $numero := 
+    let $idInter := ($intervenant)/@idIntervenant
     return
         <item>
-            {$nom}
+	    {$nom}
+	    {$idInter}
         </item>
 }
 </resultat>
