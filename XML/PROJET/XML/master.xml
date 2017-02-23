@@ -1266,7 +1266,7 @@
 				</block>
 			</blocks>
 		</semestre>
-		<semestre idSemestre="S3_FSIL_FSI">
+		<semestre idSemestre="S3_FSIL_FSI_ISL">
 			<blocks>
 				<block titre="TC des parcours FSI et ISL" etat="&obli;">
 					<ref-enseignement ref="ENSINCU27"></ref-enseignement>
