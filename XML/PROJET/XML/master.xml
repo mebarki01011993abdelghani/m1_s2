@@ -1933,7 +1933,7 @@
 			<responsable>
 				<ref-intervenant ref="IN9941"></ref-intervenant>
 			</responsable>
-			<description>La formation donne les principes et techniques liés à la
+			<description><p>La formation donne les principes et techniques liés à la
 				conception de systèmes informatiques surs dans un environnement
 				ouvert et hétérogène. Elle forme les étudiants aux principes et
 				méthodes de développement modernes qui reposent sur des outils de
@@ -1942,33 +1942,33 @@
 				sécurité informatique dans les domaines liés à l'échange
 				d'information (Web-services, protocoles de communication et
 				cryptographiques,..) et à la communication entre systèmes (réseaux
-				hétérogènes et applications embarquées ou distribuées).
+				hétérogènes et applications embarquées ou distribuées).</p>
 			</description>
-			<competences>
-				Anglais, Communication, Gestion de projet
-				Méthode de
+			<competences><ul>
+				<li>Anglais, Communication, Gestion de projet</li>
+				<li>Méthode de
 				développement logiciel (Spécification, Tests, Evaluation de
-				performance)
-				Savoir définir et mettre en œuvre les méthodes de
+				performance)</li>
+				<li>Savoir définir et mettre en œuvre les méthodes de
 				sécurité informatique
-				dans un environnement distribué et ouvert
-				Savoir spécifier, concevoir et réaliser un système logiciel et
+				dans un environnement distribué et ouvert</li>
+				<li>Savoir spécifier, concevoir et réaliser un système logiciel et
 				matériel
-				complexe
-				Programmation de systèmes embarqués
-
+				complexe</li>
+				<li>Programmation de systèmes embarqués</li>
+</ul>
 			</competences>
-			<connaissances>L'objectif de la spécialité FSIL est de former des
+			<connaissances><p>L'objectif de la spécialité FSIL est de former des
 				étudiants afin qu'ils puissent concevoir, réaliser, valider et
 				mettre en exploitation des logiciels. Pour ce faire, ils devront
 				connaître les concepts, les outils et les méthodes liés au
 				développement de logiciels. Les aspects de qualité, de sécurité et
 				de bonne intégration dans des environnements informatiques complexes
-				seront les points forts de la formation.
+				seront les points forts de la formation.</p>
 			</connaissances>
 			<ref-semestre ref="S3_FSIL_FSI"></ref-semestre>
 			<ref-semestre ref="S4_FSIL_FSI"></ref-semestre>
-			<politiqueDesStages>Les stages sont optionnels en première année (2
+			<politiqueDesStages><p>Les stages sont optionnels en première année (2
 				mois), obligatoires en deuxième année (4 à 6 mois). La recherche de
 				stage est assurée par l'étudiant avec l'aide de l'équipe pédagogique
 				(liste d'entreprises, diffusion des offres reçues, etc.). Le sujet
@@ -1980,9 +1980,9 @@
 				problèmes sont ainsi décelés au plus tôt. A l'issue du stage, le
 				stagiaire doit fournir un rapport de stage et faire une soutenance
 				orale. Il est noté sur la base de son rapport, de sa présentation et
-				de l'évaluation du stage faite par son tuteur en entreprise.</politiqueDesStages>
+				de l'évaluation du stage faite par son tuteur en entreprise.</p></politiqueDesStages>
 			<conditionAdmission>
-
+<p>
 				L'entrée en deuxième année se fait uniquement sur
 				dossier. Une première
 				année de Master à dominante informatique est
@@ -1991,8 +1991,8 @@
 				également étudié. La
 				deuxième année du Master est également
 				accessible par le biais de la
-				VAP et de la VAE.</conditionAdmission>
-			<debouches>Les secteurs d'activités concernés sont tous ceux qui
+				VAP et de la VAE.</conditionAdmission></p>
+			<debouches><p>Les secteurs d'activités concernés sont tous ceux qui
 				utilisent et développent des applications informatiques, avec des
 				pré-requis forts de fiabilité (qualité logicielle) et sécurité
 				(protection contre les actions malveillantes). Les SSII forment une
@@ -2001,27 +2001,28 @@
 				assurance,..) sont également des employeurs. Les PME innovantes en
 				informatique (éditeurs, prestataires de services, ...) et les
 				collectivités territoriales et établissements publics complètent le
-				secteur d'activité.
+				secteur d'activité.</p>
 
 				Métiers visés pour le parcours FSI :
+				<ul>
+					<li>			Ingénieur
+								études et développement,</li>
+					<li>			Responsable réseaux,</li>
+					<li>			Responsable systèmes et
+								sécurité,</li>
+					<li>			Ingénieur qualité.</li>
 
-				Ingénieur
-				études et développement,
-				Responsable réseaux,
-				Responsable systèmes et
-				sécurité,
-				Ingénieur qualité.
+								Métiers visés par le parcours ISL :
 
-				Métiers visés par le parcours ISL :
-
-				Ingénieur études et développement,
-				Architecte logiciel,
-				Ingénieur en
-				système d'information,
-				Expert technique ou fonctionnel.
+					<li>			Ingénieur études et développement,</li>
+					<li>			Architecte logiciel,</li>
+					<li>			Ingénieur en
+								système d'information,</li>
+					<li>			Expert technique ou fonctionnel.</li>
+				</ul>
 			</debouches>
 			<poursuitesEtudes>
-				Un doctorat est envisageable à l'issue de la
+			<p>	Un doctorat est envisageable à l'issue de la
 				spécialité FSIL.
 				Les diplômés ont également la possibilité de choisir
 				des formations
@@ -2032,7 +2033,7 @@
 				également envisageable de suivre une autre spécialité du même
 				master
 				ou d'un autre pour enrichir son portefeuille de compétences.
-			</poursuitesEtudes>
+			</p></poursuitesEtudes>
 		</specialite>
 		<specialite idSpecialite="SPE_ISL">
 			<nom>Intégration de systèmes logiciels (ISL)</nom>
