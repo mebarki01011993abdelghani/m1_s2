@@ -1203,20 +1203,89 @@
 
 			</resume>
 		</enseignement>
-
 	</enseignements>
 	<blocks>
-		<block idBlock ="TC_FSI_ISL" titre="TC des parcours FSI et ISL" etat="&obli;">
+		<block idBlock="M1_S1_OBLI" titre="TRONC COMMUN" etat="&obli;">
+			<ref-enseignement ref="ENSINAU1"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU2"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU3"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU4"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU12"></ref-enseignement>
+		</block>
+		<block idBlock="M1_S1_FALC" titre="Falcultatif" etat="&falc;">
+			<ref-enseignement ref="ENSINAU6"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU7"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU8"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU9"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU10"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+		</block>
+		<block idBlock="M1_S2_OBLI" titre="TRONC COMMUN" etat="&obli;">
+			<ref-enseignement ref="ENSINBU1"></ref-enseignement>
+			<ref-enseignement ref="ENSINBU2"></ref-enseignement>
+			<ref-enseignement ref="ENSINBU4"></ref-enseignement>
+			<ref-enseignement ref="ENSINBU5"></ref-enseignement>
+			<ref-enseignement ref="ENSINBU15"></ref-enseignement>
+		</block>
+		<block idBlock="M1_S2_FALC" titre="FALCULTATIF" etat="&falc;">
+			<ref-enseignement ref="ENSINBU6"></ref-enseignement>
+			<ref-enseignement ref="ENSINBU7"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU8"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU9"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU10"></ref-enseignement>
+			<ref-enseignement ref="ENSINBU11"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU12"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+			<ref-enseignement ref="ENSINBU16"></ref-enseignement>
+		</block>
+		<block idBlock="TC_FSI_ISL" titre="TC des parcours FSI et ISL"
+			etat="&obli;">
 			<ref-enseignement ref="ENSINCU27"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU28"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU29"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU30"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU31"></ref-enseignement>
 		</block>
-		<block idBlock ="SPE_FSI" titre="Unité d'enseignement à bonus" etat="&falc;">
+		<block idBlock="SPE_S3_FSI_BONUS" titre="Unité d'enseignement à bonus"
+			etat="&falc;">
 			<ref-enseignement ref="ENSINCU67"></ref-enseignement>
 		</block>
-		<block idBlock ="SPE_FSI_OBLI" titre="Unités obligatoires " etat="&obli;">
+		<block idBlock="SPE_S3_FSI_OBLI" titre="Unités obligatoires"
+			etat="&obli;">
+			<ref-enseignement ref="ENSINCU32"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU33"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU34"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU35"></ref-enseignement>
+		</block>
+		<block idBlock="SPE_IF_OBLI" titre="TRONC COMMUN" etat="&obli;">
+			<ref-enseignement ref="ENSINAU1"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU2"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU3"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU4"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU12"></ref-enseignement>
+		</block>
+		<block idBlock="SPE_IF_FALC" titre="Falcultatif" etat="&falc;">
+			<ref-enseignement ref="ENSINAU6"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU7"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU8"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU9"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU10"></ref-enseignement>
+			<ref-enseignement ref="ENSINAU13"></ref-enseignement>
+		</block>
+		<block idBlock="SPE_S4_FSIL_FSI" titre="Unités obligatoires"
+			etat="&obli;">
+			<ref-enseignement ref="ENSINDU3"></ref-enseignement>
+			<ref-enseignement ref="ENSINDU4"></ref-enseignement>
+		</block>
+		<block idBlock="SPE_FSIL_OBLI" titre="Unités obligatoires "
+			etat="&obli;">
+			<ref-enseignement ref="ENSINCU32"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU33"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU34"></ref-enseignement>
+			<ref-enseignement ref="ENSINCU35"></ref-enseignement>
+		</block>
+		<block idBlock="SPE_S4_FSIL_FSI" titre="Unités obligatoires "
+			etat="&obli;">
 			<ref-enseignement ref="ENSINCU32"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU33"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU34"></ref-enseignement>
@@ -1225,98 +1294,29 @@
 	</blocks>
 	<semestres>
 		<semestre idSemestre="S1_M1">
-			<blocks>
-				<block titre="TRONC COMMUN" etat="&obli;">
-					<ref-enseignement ref="ENSINAU1"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU2"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU3"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU4"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU12"></ref-enseignement>
-				</block>
-				<block titre="Falcultatif" etat="&falc;">
-					<ref-enseignement ref="ENSINAU6"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU7"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU8"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU9"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU10"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU13"></ref-enseignement>
-				</block>
-			</blocks>
+			<ref-block ref="M1_S1_OBLI"></ref-block>
+			<ref-block ref="M1_S1_FALC"></ref-block>
 		</semestre>
 		<semestre idSemestre="S2_M1">
-			<blocks>
-				<block titre="TRONC COMMUN" etat="&obli;">
-					<ref-enseignement ref="ENSINBU1"></ref-enseignement>
-					<ref-enseignement ref="ENSINBU2"></ref-enseignement>
-					<ref-enseignement ref="ENSINBU4"></ref-enseignement>
-					<ref-enseignement ref="ENSINBU5"></ref-enseignement>
-					<ref-enseignement ref="ENSINBU15"></ref-enseignement>
-				</block>
-				<block titre="FALCULTATIF" etat="&falc;">
-					<ref-enseignement ref="ENSINBU6"></ref-enseignement>
-					<ref-enseignement ref="ENSINBU7"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU8"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU9"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU10"></ref-enseignement>
-					<ref-enseignement ref="ENSINBU11"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU12"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU13"></ref-enseignement>
-					<ref-enseignement ref="ENSINBU16"></ref-enseignement>
-				</block>
-			</blocks>
+			<ref-block ref="M1_S2_OBLI"></ref-block>
+			<ref-block ref="M1_S2_FALC"></ref-block>
 		</semestre>
 		<semestre idSemestre="S3_IF">
-			<blocks>
-				<block titre="TRONC COMMUN" etat="&obli;">
-					<ref-enseignement ref="ENSINAU1"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU2"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU3"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU4"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU12"></ref-enseignement>
-				</block>
-				<block titre="Falcultatif" etat="&falc;">
-					<ref-enseignement ref="ENSINAU6"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU7"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU8"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU9"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU10"></ref-enseignement>
-					<ref-enseignement ref="ENSINAU13"></ref-enseignement>
-				</block>
-			</blocks>
-		</semestre>
-		<semestre idSemestre="S3_FSIL_FSI_ISL">
-			<ref-block ref="d"></ref-block>
-			<ref-block ref="e"></ref-block>
-			<ref-block ref="r"></ref-block>
-
-		</semestre>
-		<semestre idSemestre="S4_FSIL_FSI">
-			<blocks>
-				<block titre="Unités obligatoires" etat="&obli;">
-					<ref-enseignement ref="ENSINDU3"></ref-enseignement>
-					<ref-enseignement ref="ENSINDU4"></ref-enseignement>
-				</block>
-			</blocks>
+			<ref-block ref=""></ref-block>
+			<ref-block ref=""></ref-block>
 		</semestre>
 		<semestre idSemestre="S3_FSIL_ISL">
-			<blocks>
-				<block titre="TC des parcours FSI et ISL" etat="&obli;">
-					<ref-enseignement ref="ENSINCU27"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU28"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU29"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU30"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU31"></ref-enseignement>
-				</block>
-				<block titre="Unité d'enseignement à bonus" etat="&falc;">
-					<ref-enseignement ref="ENSINCU67"></ref-enseignement>
-				</block>
-				<block titre="Unités obligatoires " etat="&obli;">
-					<ref-enseignement ref="ENSINCU32"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU33"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU34"></ref-enseignement>
-					<ref-enseignement ref="ENSINCU35"></ref-enseignement>
-				</block>
-			</blocks>
+			<ref-block ref="TC_FSI_ISL"></ref-block>
+			<ref-block ref="SPE_S3_FSI_BONUS"></ref-block>
+			<ref-block ref="SPE_S3_ISL_OBLI"></ref-block>
+		</semestre>
+		<semestre idSemestre="S3_FSIL_FSI">
+			<ref-block ref="TC_FSI_ISL"></ref-block>
+			<ref-block ref="SPE_S3_FSI_BONUS"></ref-block>
+			<ref-block ref="SPE_S3_FSI_OBLI"></ref-block>
+		</semestre>
+		<semestre idSemestre="S4_FSIL_FSI">
+			<ref-block ref="SPE_S4_FSIL_FSI"></ref-block>
 		</semestre>
 	</semestres>
 
