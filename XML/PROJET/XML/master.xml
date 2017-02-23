@@ -1215,7 +1215,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU35">
+		<enseignement idEnseignement="ENSINCU35">
 			<nom>Sécurité des systèmes embarqués</nom>
 			<identifiant>ENSINCU35</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1270,7 +1270,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU34">
+		<enseignement idEnseignement="ENSINCU34">
 			<nom>Qualité</nom>
 			<identifiant> ENSINCU34</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1307,7 +1307,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU33">
+		<enseignement idEnseignement="ENSINCU33">
 			<nom>Fiabilité logicielle 2</nom>
 			<identifiant> ENSINCU33</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1406,7 +1406,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU32">
+		<enseignement idEnseignement="ENSINCU32">
 			<nom>Sécurité internet et réseau</nom>
 			<identifiant> ENSINCU32</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1431,7 +1431,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU67">
+		<enseignement idEnseignement="ENSINCU67">
 			<nom>Projet d'entreprise</nom>
 			<identifiant> ENSINCU67</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1454,7 +1454,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU31">
+		<enseignement idEnseignement="ENSINCU31">
 			<nom>Systèmes hétérogènes</nom>
 			<identifiant> ENSINCU31</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1493,7 +1493,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU30">
+		<enseignement idEnseignement="ENSINCU30">
 			<nom>Plateforme JEE</nom>
 			<identifiant> ENSINCU30</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1534,7 +1534,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU29">
+		<enseignement idEnseignement="ENSINCU29">
 			<nom></nom>
 			<identifiant> ENSINCU29</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1562,7 +1562,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU36">
+		<enseignement idEnseignement="ENSINCU36">
 			<nom>Administration système et réseau</nom>
 			<identifiant> ENSINCU36	</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1573,7 +1573,7 @@
 			</resume>
 		</enseignement>
 
-		<enseignement idEnseignement=" ENSINCU37">
+		<enseignement idEnseignement="ENSINCU37">
 			<nom>Méthodes de développement </nom>
 			<identifiant> ENSINCU37</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1595,7 +1595,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU38">
+		<enseignement idEnseignement="ENSINCU38">
 			<nom>Architecture logicielle JEE</nom>
 			<identifiant> ENSINCU38</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1631,7 +1631,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU39">
+		<enseignement idEnseignement="ENSINCU39">
 			<nom>Intégration des données</nom>
 			<identifiant> ENSINCU39</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1772,7 +1772,6 @@
 			<ref-enseignement ref="ENSINCU21"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU22"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU23"></ref-enseignement>
-			<ref-enseignement ref="ENSINCU24"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU25"></ref-enseignement>
 			<ref-enseignement ref="ENSINCU26"></ref-enseignement>
 		</block>
@@ -1807,11 +1806,11 @@
 		<semestre idSemestre="S4_FSIL_FSI">
 			<ref-block ref="SPE_S4_FSI"></ref-block>
 		</semestre>
-		<semestre idSemestre="S3_IF">
+		<semestre idSemestre="S3_FSIL_IF">
 			<ref-block ref="SPE_S3_IF_OBLI"></ref-block>
 			<ref-block ref="SPE_S3_IF_FALC"></ref-block>
 		</semestre>
-		<semestre idSemestre="S4_IF">
+		<semestre idSemestre="S4_FSIL_IF">
 			<ref-block ref="SPE_S4_IF_OBLI"></ref-block>
 		</semestre>
 	</semestres>

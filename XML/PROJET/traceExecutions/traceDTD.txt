@@ -1763,7 +1763,6 @@
 			<ref-enseignement ref="ENSINCU21"/>
 			<ref-enseignement ref="ENSINCU22"/>
 			<ref-enseignement ref="ENSINCU23"/>
-			<ref-enseignement ref="ENSINCU24"/>
 			<ref-enseignement ref="ENSINCU25"/>
 			<ref-enseignement ref="ENSINCU26"/>
 		</block>
@@ -1797,11 +1796,11 @@
 		<semestre idSemestre="S4_FSIL_FSI">
 			<ref-block ref="SPE_S4_FSI"/>
 		</semestre>
-		<semestre idSemestre="S3_IF">
+		<semestre idSemestre="S3_FSIL_IF">
 			<ref-block ref="SPE_S3_IF_OBLI"/>
 			<ref-block ref="SPE_S3_IF_FALC"/>
 		</semestre>
-		<semestre idSemestre="S4_IF">
+		<semestre idSemestre="S4_FSIL_IF">
 			<ref-block ref="SPE_S4_IF_OBLI"/>
 		</semestre>
 	</semestres>
