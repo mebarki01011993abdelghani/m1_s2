@@ -1315,6 +1315,7 @@
 			</blocks>
 		</semestre>
 	</semestres>
+	
 	<specialites>
 		<specialite idSpecialite="spe_master1">
 			<nom>Master 1 - Premiere année de tronc commun</nom>
@@ -1440,15 +1441,15 @@
 					signal au niveau sémantique.
 				</p>
 			</connaissances>
-			<ref-semestre ref="S1_M1"></ref-semestre>
-			<ref-semestre ref="S1_M2"></ref-semestre>
+			<ref-semestre ref="S1_RIM"></ref-semestre>
+			<ref-semestre ref="S2_RIM"></ref-semestre>
 			<politiqueDesStages></politiqueDesStages>
 			<conditionAdmission></conditionAdmission>
 			<debouches></debouches>
 			<poursuitesEtudes></poursuitesEtudes>
 		</specialite>
 
-		<specialite idSpecialite="IF">
+		<specialite idSpecialite="spe_if">
 			<nom>Informatique fondamentale (IF)</nom>
 			<identifiant>IF</identifiant>
 			<code>IF</code>
@@ -1480,67 +1481,14 @@
 				laboratoire d'informatique
 				fondamentale.
 			</connaissances>
-			<ref-semestre ref="S1_M1"></ref-semestre>
-			<ref-semestre ref="S1_M2"></ref-semestre>
-			<politiqueDesStages></politiqueDesStages>
-			<conditionAdmission></conditionAdmission>
-			<debouches></debouches>
-			<poursuitesEtudes></poursuitesEtudes>
-		</specialite>
-		<specialite idSpecialite="ID">
-			<nom>Master 1</nom>
-			<identifiant></identifiant>
-			<code></code>
-			<etablissement></etablissement>
-			<responsable>
-				<ref-intervenant ref="IN9224"></ref-intervenant>
-			</responsable>
-			<description>
-				<p>
-
-				</p>
-			</description>
-			<competences>
-				<p>
-
-				</p>
-			</competences>
-			<connaissances></connaissances>
-			<ref-semestre ref="S1_M1"></ref-semestre>
-			<ref-semestre ref="S1_M2"></ref-semestre>
-			<politiqueDesStages></politiqueDesStages>
-			<conditionAdmission></conditionAdmission>
-			<debouches></debouches>
-			<poursuitesEtudes></poursuitesEtudes>
-		</specialite>
-		<specialite idSpecialite="IDd">
-			<nom>Master 1</nom>
-			<identifiant></identifiant>
-			<code></code>
-			<etablissement></etablissement>
-			<responsable>
-				<ref-intervenant ref="IN9224"></ref-intervenant>
-			</responsable>
-			<description>
-				<p>
-
-				</p>
-			</description>
-			<competences>
-				<p>
-
-				</p>
-			</competences>
-			<connaissances></connaissances>
-			<ref-semestre ref="S1_M1"></ref-semestre>
-			<ref-semestre ref="S1_M2"></ref-semestre>
+			<ref-semestre ref="S3_FSI"></ref-semestre>
 			<politiqueDesStages></politiqueDesStages>
 			<conditionAdmission></conditionAdmission>
 			<debouches></debouches>
 			<poursuitesEtudes></poursuitesEtudes>
 		</specialite>
 	</specialites>
-
+	
 	<parcours>
 		<parcour idParcour="parcour_master_1">
 			<ref-specialite ref="spe_master1"></ref-specialite>
@@ -1553,4 +1501,5 @@
 			<ref-specialite ref="spe_if"></ref-specialite>
 		</parcour>
 	</parcours>
+
 </master>
