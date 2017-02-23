@@ -10,6 +10,7 @@
 <nom>Stage de deux mois</nom>
 <nom>Sémantique</nom>
 <nom>Intégration des systèmes d'information</nom>
+<nom>Initiation à la recherche</nom>
 <nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
 <nom>Algorithme à performance garantie</nom>
 <nom>Introduction à l'apprentissage automatique</nom>
@@ -28,9 +29,51 @@
 <nom>Spécification logicielle</nom>
 <nom>Conception logicielle</nom>
 <nom>Architecture logicielle JEE</nom>
-<nom>Technologies du Web et Web 2.0 </nom>
+<nom>Technologies du Web et Web 2.0</nom>
 <nom>XML avancé</nom>
 <nom>Anglais 2</nom>
 <nom>Gestion de projet</nom>
-<nom>Communication 2 </nom>
+<nom>Communication 2</nom>
+<nom> Algorithmique et complexité </nom>
+<nom> Logique, automates et aspects formels de la théorie des
+				langages
+			</nom>
+<nom>Statistique inférentielle</nom>
+<nom>Nouveaux défis en apprentissage</nom>
+<nom>Théorie de l'apprentissage</nom>
+<nom>Inférence grammaticale</nom>
+<nom>Apprentissage numérique</nom>
+<nom>Fouille de bases de données</nom>
+<nom>Entrepôts de données</nom>
+<nom>Fouille de données avancée</nom>
+<nom> Géométrie discrète </nom>
+<nom> Algorithmique des graphes et réseaux  </nom>
+<nom>Espaces métriques : structure et algorithmiques </nom>
+<nom>Optimisation combinatoire et programmation en nombres entiers
+				</nom>
+<nom> « Logiques et jeux »</nom>
+<nom> Algorithmique distribuée 2 </nom>
+<nom> Vérification et sécurité </nom>
+<nom>Modèles du parallélisme</nom>
+<nom> « Modèles et connaissances linguistiques pour le TAL »</nom>
+<nom>Syntaxe et sémantique : modèles et outils</nom>
+<nom> « Modèles numériques pour le TAL » </nom>
+<nom>Applications du Traitement Automatique de la Langue (TAL)</nom>
+<nom>«Communication scientifique»</nom>
+<nom> « Algorithmique des chaînes de caractères » </nom>
+<nom>Projet industriel de mise en application</nom>
+<nom>Sécurité des systèmes embarqués</nom>
+<nom>Stage en entreprise</nom>
+<nom>Qualité</nom>
+<nom>Fiabilité logicielle 2</nom>
+<nom>Sécurité internet et réseau</nom>
+<nom>Projet d'entreprise</nom>
+<nom>Systèmes hétérogènes</nom>
+<nom>Plateforme JEE</nom>
+<nom>Fiabilité logicielle 1</nom>
+<nom>Administration système et réseau</nom>
+<nom>Méthodes de développement </nom>
+<nom>Architecture logicielle JEE</nom>
+<nom>Intégration des données</nom>
+<nom>Administration et alimentation de BD</nom>
 </enseignements>

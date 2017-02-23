@@ -413,7 +413,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINBU13">
+		<enseignement idEnseignement="ENSINBU13">
 			<nom>Algorithme à performance garantie</nom>
 			<identifiant> ENSINBU13</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -670,7 +670,7 @@
 			</resume>
 		</enseignement>
 
-		<enseignement idEnseignement=" ENSINAU10">
+		<enseignement idEnseignement="ENSINAU10">
 			<nom>Modèles à évènements discrets</nom>
 			<identifiant> ENSINAU10</identifiant>
 			<nombreCredit>&cred6;</nombreCredit>
@@ -688,14 +688,14 @@
 			</resume>
 		</enseignement>
 
-		<enseignement idEnseignement=" ENSINAU12">
+		<enseignement idEnseignement="ENSINAU12">
 			<nom>BDR : approfondissement</nom>
 			<identifiant> ENSINAU12</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				&noResume; </resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINAU13">
+		<enseignement idEnseignement="ENSINAU13">
 			<nom>SPORT</nom>
 			<identifiant> ENSINAU13</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -726,9 +726,6 @@
 					SA-RT.
 				</p>
 			</resume>
-			<pre-requis>
-
-			</pre-requis>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU43">
@@ -754,8 +751,8 @@
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU45">
-			<nom>Technologies du Web et Web 2.0 </nom>
-			<identifiant>ENSINCU45 </identifiant>
+			<nom>Technologies du Web et Web 2.0</nom>
+			<identifiant>ENSINCU45</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -783,7 +780,7 @@
 
 		<enseignement idEnseignement="ENSINCU27">
 			<nom>Anglais 2</nom>
-			<identifiant>ENSINCU45 </identifiant>
+			<identifiant>ENSINCU45</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -799,7 +796,7 @@
 
 		<enseignement idEnseignement="ENSINCU47">
 			<nom>Gestion de projet</nom>
-			<identifiant>ENSINCU47 </identifiant>
+			<identifiant>ENSINCU47</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -813,7 +810,7 @@
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU28">
-			<nom>Communication 2 </nom>
+			<nom>Communication 2</nom>
 			<identifiant>ENSINCU28 </identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
@@ -882,9 +879,7 @@
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU2">
-			<nom> Logique, automates et aspects formels de la théorie des
-				langages
-			</nom>
+			<nom>Logique, automates et aspects formels de la théorie des langages</nom>
 			<identifiant>ENSINCU2</identifiant>
 			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
@@ -916,24 +911,22 @@
 					théorique qu'appliquée, séparément ou simultanément, un ou
 					plusieurs problèmes classiques
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU5">
 			<nom>Théorie de l'apprentissage</nom>
-			<identifiant>ENSINCU5Théorie de l'apprentissage</identifiant>
+			<identifiant>ENSINCU5</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>Avancées récentes en théorie de l'apprentissage statistique :
 					complexité de Rademacher, bornes PAC-Bayes, stabilité
 					algorithmique, schémas de compression.
 				</p>
-
 			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU6">
-			<nom>Inférence grammaticale 	</nom>
+			<nom>Inférence grammaticale</nom>
 			<identifiant>ENSINCU6</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
@@ -941,13 +934,10 @@
 					récemment pour l'apprentissage de représentations grammaticales de
 					langages
 				</p>
-
 			</resume>
 		</enseignement>
-
-
 		<enseignement idEnseignement="ENSINCU7">
-			<nom>Apprentissage numérique  </nom>
+			<nom>Apprentissage numérique</nom>
 			<identifiant>ENSINCU7</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
@@ -955,13 +945,11 @@
 					Étude de quelques unes des méthodes les plus performantes en
 					apprentissage numérique : les réseaux de neurones, les modèles de
 					Markov cachés et les machines à vecteurs de support.
-
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU8">
-			<nom> Fouille de bases de données </nom>
+			<nom>Fouille de bases de données</nom>
 			<identifiant>ENSINCU8</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
@@ -971,14 +959,12 @@
 					bases de données qui sont également présentées et visent
 					soit
 					l'aide à la décision soit l'administration de bases de données.
-
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU9">
-			<nom> Entrepôts de données  </nom>
-			<identifiant>ENSINCU9 Entrepôts de données </identifiant>
+			<nom>Entrepôts de données</nom>
+			<identifiant>ENSINCU9</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -992,8 +978,8 @@
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU10">
-			<nom> Fouille de données avancée</nom>
-			<identifiant> ENSINCU10Fouille de données avancée</identifiant>
+			<nom>Fouille de données avancée</nom>
+			<identifiant>ENSINCU10</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1005,7 +991,6 @@
 					œuvre des algorithmes
 					par niveaux.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU11">
@@ -1022,11 +1007,10 @@
 					et leurs
 					applications.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU12">
-			<nom> Algorithmique des graphes et réseaux  </nom>
+			<nom>Algorithmique des graphes et réseaux</nom>
 			<identifiant>ENSINCU12</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
@@ -1035,11 +1019,10 @@
 					données
 					distribuées.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU13">
-			<nom>Espaces métriques : structure et algorithmiques </nom>
+			<nom>Espaces métriques : structure et algorithmiques</nom>
 			<identifiant> ENSINCU13</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
@@ -1052,12 +1035,10 @@
 					géométriques,
 					leur applications en informatique et mathématiques.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU14">
-			<nom> « Optimisation combinatoire et programmation en nombres entiers
-				»</nom>
+			<nom>Optimisation combinatoire et programmation en nombres entiers</nom>
 			<identifiant> ENSINCU14 « Optimisation combinatoire et programmation
 				en nombres entiers »</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -1071,7 +1052,6 @@
 					nombres
 					entiers.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU15">
@@ -1098,7 +1078,6 @@
 					d'élection,
 					détection de la terminaison. Tolérance aux pannes
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU17">
@@ -1113,7 +1092,7 @@
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU18">
-			<nom> « Modèles du parallélisme » </nom>
+			<nom>Modèles du parallélisme</nom>
 			<identifiant> ENSINCU18</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
@@ -1124,7 +1103,6 @@
 					contrôle ou de
 					synthèse associés.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU19">
@@ -1140,12 +1118,11 @@
 					Plusieurs ressources linguistiques pour le français sont
 					examinées.
 				</p>
-
 			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU20">
-			<nom> « Syntaxe et sémantique : modèles et outils » </nom>
+			<nom>Syntaxe et sémantique : modèles et outils</nom>
 			<identifiant> ENSINCU20</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
@@ -1156,7 +1133,6 @@
 					étudiés
 					pour exprimer ces représentations.
 				</p>
-
 			</resume>
 		</enseignement>
 
@@ -1174,12 +1150,11 @@
 					algorithmes de
 					décodage.
 				</p>
-
 			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU22">
-			<nom> « Applications du Traitement Automatique de la Langue (TAL) » </nom>
+			<nom>Applications du Traitement Automatique de la Langue (TAL)</nom>
 			<identifiant> ENSINCU22</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
@@ -1191,7 +1166,6 @@
 					automatique ainsi que sur les traitements de « bas niveau »
 					nécessaires dans la majorité des applications.
 				</p>
-
 			</resume>
 		</enseignement>
 
@@ -1216,7 +1190,6 @@
 					des chaînes de
 					caractères.
 				</p>
-
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINDU3">
@@ -1246,7 +1219,7 @@
 					cartes à puce sans et avec contact pour des applications de
 					sécurité).
 
-					Contenu du cours :
+					<strong>Contenu du cours :</strong>
 					<ul>
 						<li>Introduction à USB : architecture matériel et logiciel,
 							classes de périphériques, classes de transferts, nouveautés dans
@@ -1551,12 +1524,11 @@
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU29">
-			<nom></nom>
-			<identifiant> ENSINCU29</identifiant>
+			<nom>Fiabilité logicielle 1</nom>
+			<identifiant>ENSINCU29</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
-
 					Introduction fiabilité vs sécurité
 					Test boite blanche (graphe de
 					contrôle, de donnée, mesure de
@@ -1580,7 +1552,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU36">
 			<nom>Administration système et réseau</nom>
-			<identifiant> ENSINCU36	</identifiant>
+			<identifiant>ENSINCU36</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1663,17 +1635,15 @@
 					SQLXML
 					La correspondance Objet/Relationnel : Le standard JPA,
 					l’implantation Hibernate
-
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINCU40">
-			<nom></nom>
-			<identifiant> ENSINCU40</identifiant>
+		<enseignement idEnseignement="ENSINCU40">
+			<nom>Administration et alimentation de BD</nom>
+			<identifiant>ENSINCU40</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
-
 					Architecture d’un SGBD.
 					Création, Confidentialité, Optimisation et
 					Sécurité d’une base de données.
@@ -1684,7 +1654,6 @@
 					Alimentation, nettoyage et sélection des données en vue
 					d'analyses.
 					Logiciels possible : ORACLE, Pentaho Data Integration.
-
 				</p>
 			</resume>
 		</enseignement>
