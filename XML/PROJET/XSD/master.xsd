@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ENTITY -->
-<!-- RELATIONS ELEMENTS -->
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified">
-	<xs:element name="objet" type="objet" block="substitution"
-		abstract="true" />
-	<xs:complexType name="objet">
-		<xs:sequence>
-			<xs:element ref="nom" />
-		</xs:sequence>
-		<xs:attribute name="id" use="required" type="xs:NCName" />
-	</xs:complexType>
+
 	<xs:element name="master">
 		<xs:complexType>
 			<xs:sequence>
@@ -27,8 +18,8 @@
 	<xs:element name="enseignement">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="nom"/>
-				<xs:element ref="identifiant" />
+				<xs:element ref="nom" />
+				<xs:element name="identifiant" type="ID" />
 				<xs:element ref="nombreCredit" />
 				<xs:element minOccurs="0" ref="professeurs" />
 				<xs:element ref="resume" />
@@ -36,43 +27,45 @@
 				<xs:element minOccurs="0" ref="plan" />
 				<xs:element minOccurs="0" maxOccurs="unbounded" ref="etablissement" />
 				<xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-intervenant" />
-				<xs:element minOccurs="0" maxOccurs="unbounded" ref="adresse" />
+				<!-- Deux adresses maximum -->
+				<xs:element minOccurs="0" maxOccurs="2" ref="adresse" />
 				<xs:element minOccurs="0" ref="autre" />
 			</xs:sequence>
-			<xs:attribute name="idEnseignement" use="required" type="xs:ID" />
+			<xs:attribute name="idEnseignement" use="required" type="ID" />
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="intervenant">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="identifiant" />
+				<xs:element name="identifiant" type="ID" />
 				<xs:element ref="nom" />
-				<xs:element minOccurs="0" ref="mail" />
-				<xs:element minOccurs="0" ref="siteWeb" />
-				<xs:element minOccurs="0" ref="telephone" />
-				<xs:element minOccurs="0" ref="adresse" />
+				<xs:element minOccurs="0" maxOccurs="3" ref="mail" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="siteWeb" />
+				<!-- On peut ajouter au plus 3 numéro de téléphone -->
+				<xs:element minOccurs="0" maxOccurs="3" ref="telephone" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="adresse" />
 				<xs:element ref="etablissement" />
 				<xs:element minOccurs="0" ref="autre" />
 			</xs:sequence>
-			<xs:attribute name="idIntervenant" use="required" type="xs:ID" />
+			<xs:attribute name="idIntervenant" use="required" type="ID" />
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="specialite">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element ref="nom" />
-				<xs:element ref="identifiant" />
-				<xs:element ref="code" />
-				<xs:element minOccurs="0" ref="finalite" />
+				<xs:element name="identifiant" type="ID" />
+				<xs:element name="code" type="ID" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="finalite" />
 				<xs:element maxOccurs="unbounded" ref="etablissement" />
 				<xs:element ref="responsable" />
 				<xs:element ref="description" />
 				<xs:element ref="competences" />
-				<xs:element minOccurs="0" ref="connaissances" />
-				<xs:element minOccurs="2" maxOccurs="2" ref="ref-semestre" /><!-- 
-					Il y a obligatoirement 2 semestres -->
+				<xs:element minOccurs="0"  maxOccurs="1" ref="connaissances" />
+				<!--Il y a obligatoirement 2 semestres -->
+				<xs:element minOccurs="2" maxOccurs="2" ref="ref-semestre" />
 				<xs:element ref="politiqueDesStages" />
-				<xs:element minOccurs="0" ref="aspects" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="aspects" />
 				<xs:element minOccurs="0" ref="modalites" />
 				<xs:element ref="conditionAdmission" />
 				<xs:element minOccurs="0" ref="debouches" />
@@ -87,7 +80,7 @@
 				<xs:element maxOccurs="unbounded" ref="ref-specialite" />
 				<xs:element minOccurs="0" maxOccurs="unbounded" ref="autre" />
 			</xs:sequence>
-			<xs:attribute name="idParcour" use="required" type="xs:ID" />
+			<xs:attribute name="idParcour" use="required" type="ID" />
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="block">
@@ -95,7 +88,7 @@
 			<xs:sequence>
 				<xs:element maxOccurs="unbounded" ref="ref-enseignement" />
 			</xs:sequence>
-			<xs:attribute name="idBlock" use="required" type="xs:ID" />
+			<xs:attribute name="idBlock" use="required" type="ID" />
 			<xs:attribute name="etat" use="required">
 				<xs:simpleType>
 					<xs:restriction base="xs:token">
@@ -119,7 +112,7 @@
 			<xs:sequence>
 				<xs:element maxOccurs="unbounded" ref="ref-block" />
 			</xs:sequence>
-			<xs:attribute name="idSemestre" use="required" type="xs:ID" />
+			<xs:attribute name="idSemestre" use="required" type="ID" />
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="responsable">
@@ -214,7 +207,7 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="nom" type="xs:string" />
+	<xs:element name="nom" type="xs:normalizedString" />
 	<xs:element name="debouches">
 		<xs:complexType mixed="true">
 			<xs:sequence>
@@ -229,10 +222,9 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="etablissement" type="xs:string" />
-	<xs:element name="code" type="xs:string" />
-	<xs:element name="finalite" type="xs:string" />
-	<xs:element name="plan" type="xs:string" />
+	<xs:element name="etablissement" type="xs:normalizedString" />
+	<xs:element name="finalite" type="xs:normalizedString" />
+	<xs:element name="plan" type="xs:normalizedString" />
 	<xs:element name="resume">
 		<xs:complexType mixed="true">
 			<xs:sequence>
@@ -240,10 +232,9 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="nombreCredit" type="xs:string" />
-	<xs:element name="identifiant" type="xs:string" />
-	<xs:element name="mail" type="xs:string" />
-	<xs:element name="siteWeb" type="xs:string" />
+	<xs:element name="nombreCredit" type="xs:normalizedString" />
+
+	<xs:element name="siteWeb" type="xs:normalizedString" />
 	<xs:element name="ref-intervenant">
 		<xs:complexType mixed="true">
 			<xs:attribute name="ref" use="required" type="xs:IDREF" />
@@ -278,8 +269,8 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="telephone" type="xs:string" />
-	<xs:element name="adresse" type="xs:string" />
+
+	<xs:element name="adresse" type="xs:normalizedString" />
 	<xs:element name="titre">
 		<xs:complexType mixed="true">
 			<xs:sequence>
@@ -287,15 +278,7 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<!-- Permet de créer un element adapter à son besoin -->
-	<xs:element name="autre">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="titre" />
-				<xs:element ref="p" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+
 	<!-- HTML BALISE -->
 	<xs:element name="p">
 		<xs:complexType mixed="true">
@@ -315,7 +298,7 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="em" type="xs:string" />
+	<xs:element name="em" type="xs:normalizedString" />
 	<xs:element name="ul">
 		<xs:complexType>
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
@@ -347,10 +330,46 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="th" type="xs:string" />
+	<xs:element name="th" type="xs:normalizedString" />
 	<xs:element name="ref-block">
 		<xs:complexType mixed="true">
 			<xs:attribute name="ref" use="required" type="xs:IDREF" />
 		</xs:complexType>
+	</xs:element>
+	<!-- Permet de créer un element adapter à son besoin -->
+	<xs:element name="autre">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="titre" />
+				<xs:element ref="p" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- REGEX POUR VERIFIER TELEPHONE +33 ou 10 chiffres avec espace entre 
+		2 chiffres ou null -->
+	<xs:element name="telephone">
+		<xs:simpleType>
+			<xs:restriction base="xs:normalizedString">
+				<xs:pattern
+					value="null|[0-9]{10}|([0-9]{2}\s){4}[0-9]{2}|(\+33)\s[0-9]\s([0-9]{2}\s){3}[0-9]{2}" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!--CHECK ID -->
+	<xs:simpleType name="ID">
+		<xs:restriction base="xs:normalizedString">
+			<xs:whiteSpace value="collapse" />
+			<xs:pattern value="([0-9]*(_)*[A-Z]*)*" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- CHECK MAIL source regex : http://stackoverflow.com/questions/2147780/how-to-validate-an-email-id-in-xml-schema -->
+	<xs:element name="mail">
+		<xs:simpleType>
+			<xs:restriction base="xs:normalizedString">
+				<xs:pattern
+					value="null|([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})" />
+			</xs:restriction>
+		</xs:simpleType>
 	</xs:element>
 </xs:schema>

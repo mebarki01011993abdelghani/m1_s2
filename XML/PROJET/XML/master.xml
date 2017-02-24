@@ -6,15 +6,14 @@
 		<intervenant idIntervenant="IN18">
 			<identifiant>IN18</identifiant>
 			<nom>Jean-Luc MASSAT</nom>
-			<mail>jean-luc.massat&dom.amu;</mail>
+			<mail>jean-luc.massat@&dom.amu;</mail>
 			<telephone>0491829482</telephone>
 			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN7680">
 			<identifiant>IN7680</identifiant>
 			<nom>Claude LAI</nom>
-			<mail>Claude
-				LAI@&dom.amu;</mail>
+			<mail>ClaudeLAI@&dom.amu;</mail>
 			<telephone>04 91 82 93 16</telephone>
 			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
@@ -55,7 +54,7 @@
 			<identifiant>IN12632</identifiant>
 			<nom>Nicola OLIVETTI</nom>
 			<mail>nicolas.olivetti@&dom.amu;</mail>
-			<telephone> 04 860 91 046</telephone>
+			<telephone>04 86 09 10 46</telephone>
 			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
 		<intervenant idIntervenant="IN12969">
@@ -67,8 +66,7 @@
 		<intervenant idIntervenant="IN4595">
 			<identifiant>IN4595</identifiant>
 			<nom>Pierre-Alain REYNIER</nom>
-			<mail>
-				pierre-alain.reynier@&dom.amu;</mail>
+			<mail>pierre-alain.reynier@&dom.amu;</mail>
 			<telephone>04 91 82 93 13</telephone>
 			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
@@ -96,8 +94,7 @@
 		<intervenant idIntervenant="IN8086">
 			<identifiant>IN8086</identifiant>
 			<nom>Yann VAXES</nom>
-			<mail>
-				yann.vaxes@&dom.amu;</mail>
+			<mail>yann.vaxes@&dom.amu;</mail>
 			<telephone>0491829196</telephone>
 			<etablissement>&site1;, &site2;</etablissement>
 		</intervenant>
@@ -128,7 +125,6 @@
 			<identifiant>IN2563</identifiant>
 			<nom>Emmanuel GODARD</nom>
 			<mail>emmanuel.godard@&dom.amu;</mail>
-			<telephone></telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
 
@@ -160,7 +156,7 @@
 			<identifiant>IN8615</identifiant>
 			<nom>Bertrand ESTELLON</nom>
 			<mail>bertrand.estellon@&dom.amu;</mail>
-			<telephone> 04 91 82 94 92</telephone>
+			<telephone>04 91 82 94 92</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
 
@@ -176,7 +172,6 @@
 			<identifiant>IN10388</identifiant>
 			<nom>Benoit FAVRE</nom>
 			<mail>benoit.favre@&dom.amu;</mail>
-			<telephone></telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
 
@@ -184,7 +179,7 @@
 			<identifiant>IN12068</identifiant>
 			<nom>Djamal HABET</nom>
 			<mail>djamal.habet@&dom.amu;</mail>
-			<telephone> 0491288321</telephone>
+			<telephone>0491288321</telephone>
 			<etablissement>UFR Science</etablissement>
 		</intervenant>
 
@@ -415,7 +410,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU13">
 			<nom>Algorithme à performance garantie</nom>
-			<identifiant> ENSINBU13</identifiant>
+			<identifiant>ENSINBU13</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -442,7 +437,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement=" ENSINBU16">
+		<enseignement idEnseignement="ENSINBU16">
 			<nom>Introduction à l'apprentissage automatique</nom>
 			<identifiant>ENSINBU16</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
@@ -672,7 +667,7 @@
 
 		<enseignement idEnseignement="ENSINAU10">
 			<nom>Modèles à évènements discrets</nom>
-			<identifiant> ENSINAU10</identifiant>
+			<identifiant>ENSINAU10</identifiant>
 			<nombreCredit>&cred6;</nombreCredit>
 			<resume>
 				Posséder les notions de base en modélisation et analyse de
@@ -690,14 +685,14 @@
 
 		<enseignement idEnseignement="ENSINAU12">
 			<nom>BDR : approfondissement</nom>
-			<identifiant> ENSINAU12</identifiant>
+			<identifiant>ENSINAU12</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				&noResume; </resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINAU13">
 			<nom>SPORT</nom>
-			<identifiant> ENSINAU13</identifiant>
+			<identifiant>ENSINAU13</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>&noResume; </resume>
 		</enseignement>
@@ -811,7 +806,7 @@
 
 		<enseignement idEnseignement="ENSINCU28">
 			<nom>Communication 2</nom>
-			<identifiant>ENSINCU28 </identifiant>
+			<identifiant>ENSINCU28</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -995,7 +990,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU11">
 			<nom> Géométrie discrète </nom>
-			<identifiant> ENSINCU11</identifiant>
+			<identifiant>ENSINCU11</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1023,7 +1018,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU13">
 			<nom>Espaces métriques : structure et algorithmiques</nom>
-			<identifiant> ENSINCU13</identifiant>
+			<identifiant>ENSINCU13</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1039,8 +1034,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU14">
 			<nom>Optimisation combinatoire et programmation en nombres entiers</nom>
-			<identifiant> ENSINCU14 « Optimisation combinatoire et programmation
-				en nombres entiers »</identifiant>
+			<identifiant>ENSINCU14</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1055,9 +1049,8 @@
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU15">
-			<nom> « Logiques et jeux »</nom>
-			<identifiant> ENSINCU15Mu-calcul , syntaxe-sémantique. Model-checking
-				par jeux de parité, tableaux-decidabilité. Puissance expressive</identifiant>
+			<nom>Logiques et jeux</nom>
+			<identifiant>ENSINCU15</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1070,7 +1063,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU16">
 			<nom> Algorithmique distribuée 2 </nom>
-			<identifiant> ENSINCU16	</identifiant>
+			<identifiant>ENSINCU16</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1082,7 +1075,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU17">
 			<nom> Vérification et sécurité </nom>
-			<identifiant> ENSINCU17 </identifiant>
+			<identifiant>ENSINCU17</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1093,7 +1086,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU18">
 			<nom>Modèles du parallélisme</nom>
-			<identifiant> ENSINCU18</identifiant>
+			<identifiant>ENSINCU18</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1107,7 +1100,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU19">
 			<nom> « Modèles et connaissances linguistiques pour le TAL »</nom>
-			<identifiant> ENSINCU19</identifiant>
+			<identifiant>ENSINCU19</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1123,7 +1116,7 @@
 
 		<enseignement idEnseignement="ENSINCU20">
 			<nom>Syntaxe et sémantique : modèles et outils</nom>
-			<identifiant> ENSINCU20</identifiant>
+			<identifiant>ENSINCU20</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1138,7 +1131,7 @@
 
 		<enseignement idEnseignement="ENSINCU21">
 			<nom> « Modèles numériques pour le TAL » </nom>
-			<identifiant> ENSINCU21</identifiant>
+			<identifiant>ENSINCU21</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1155,7 +1148,7 @@
 
 		<enseignement idEnseignement="ENSINCU22">
 			<nom>Applications du Traitement Automatique de la Langue (TAL)</nom>
-			<identifiant> ENSINCU22</identifiant>
+			<identifiant>ENSINCU22</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1182,7 +1175,7 @@
 
 		<enseignement idEnseignement="ENSINCU23">
 			<nom> « Algorithmique des chaînes de caractères » </nom>
-			<identifiant> ENSINCU23</identifiant>
+			<identifiant>ENSINCU23</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1261,7 +1254,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU34">
 			<nom>Qualité</nom>
-			<identifiant> ENSINCU34</identifiant>
+			<identifiant>ENSINCU34</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1298,7 +1291,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU33">
 			<nom>Fiabilité logicielle 2</nom>
-			<identifiant> ENSINCU33</identifiant>
+			<identifiant>ENSINCU33</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1397,7 +1390,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU32">
 			<nom>Sécurité internet et réseau</nom>
-			<identifiant> ENSINCU32</identifiant>
+			<identifiant>ENSINCU32</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1422,7 +1415,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU67">
 			<nom>Projet d'entreprise</nom>
-			<identifiant> ENSINCU67</identifiant>
+			<identifiant>ENSINCU67</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1445,7 +1438,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU31">
 			<nom>Systèmes hétérogènes</nom>
-			<identifiant> ENSINCU31</identifiant>
+			<identifiant>ENSINCU31</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1484,7 +1477,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU30">
 			<nom>Plateforme JEE</nom>
-			<identifiant> ENSINCU30</identifiant>
+			<identifiant>ENSINCU30</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1563,7 +1556,7 @@
 
 		<enseignement idEnseignement="ENSINCU37">
 			<nom>Méthodes de développement </nom>
-			<identifiant> ENSINCU37</identifiant>
+			<identifiant>ENSINCU37</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1585,7 +1578,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU38">
 			<nom>Architecture logicielle JEE</nom>
-			<identifiant> ENSINCU38</identifiant>
+			<identifiant>ENSINCU38</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1621,7 +1614,7 @@
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU39">
 			<nom>Intégration des données</nom>
-			<identifiant> ENSINCU39</identifiant>
+			<identifiant>ENSINCU39</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>
 				<p>
@@ -1801,8 +1794,8 @@
 	<specialites>
 		<specialite idSpecialite="SPE_MASTER1">
 			<nom>Master 1 - Premiere année de tronc commun</nom>
-			<identifiant>Master1</identifiant>
-			<code>Master1</code>
+			<identifiant>MASTER1</identifiant>
+			<code>MASTER1</code>
 			<etablissement>&site1;&site2;&site3;&site4;</etablissement>
 			<responsable>
 				<ref-intervenant ref="IN9224"></ref-intervenant>
@@ -2075,7 +2068,7 @@
 		</specialite>
 		<specialite idSpecialite="SPE_ISL">
 			<nom>Intégration de systèmes logiciels (ISL)</nom>
-			<identifiant>isl</identifiant>
+			<identifiant>ISL</identifiant>
 			<code>ISL</code>
 			<finalite>Un parcours à finalité professionnelle de la spécialité
 				Fiabilité, sécurité et intégration logicielle</finalite>
