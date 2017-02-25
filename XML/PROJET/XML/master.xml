@@ -212,6 +212,9 @@
 			<nom>ANGLAIS</nom>
 			<identifiant>ENSINBU1</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
+			<professeurs>
+					<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
 			<resume>
 				<p>
 					<ul>
@@ -248,12 +251,18 @@
 			<nom>XML</nom>
 			<identifiant>ENSINBU4</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
+			<professeurs>
+					<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
 			<resume>XML, DTD, XSD XPath, XSLT, XQuery.</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINBU5">
 			<nom>Algorithmique et recherche opérationnelle</nom>
 			<identifiant>ENSINBU5</identifiant>
+			<professeurs>
+					<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>Programmation linéaire. Notions et algorithmes de
 				flots.Applications (couplage, affectation, transport,
@@ -264,6 +273,9 @@
 		<enseignement idEnseignement="ENSINBU12">
 			<nom>Intelligence artificielle</nom>
 			<identifiant>ENSINBU12</identifiant>
+			<professeurs>
+					<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
 			<nombreCredit>&cred3;</nombreCredit>
 			<resume>Introduction à l'IA Problèmes d'espace d'états et
 				d'exploration Logiques pour l'IA et démonstration automatique
@@ -275,12 +287,19 @@
 			<nom>Programmation parallèle</nom>
 			<identifiant>ENSINBU15</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
+			<professeurs>
+					<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
 			<resume>&noResume; </resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU6">
 			<nom>Projet</nom>
 			<identifiant>ENSINBU6</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
+			<professeurs>
+					<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
+
 			<resume>
 				<p>
 					Le but du projet est de mettre en oeuvre, de l'analyse à la
@@ -303,6 +322,10 @@
 			<nom>Stage de deux mois</nom>
 			<identifiant>ENSINBU7</identifiant>
 			<nombreCredit>&cred6;</nombreCredit>
+			<professeurs>
+					<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
+
 			<resume>
 				<p>
 					Le but du projet est de mettre en oeuvre, de l'analyse à la
@@ -320,6 +343,10 @@
 			<nom>Sémantique</nom>
 			<identifiant>ENSINBU8</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
+			<professeurs>
+					<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
+
 			<resume>
 				<p>
 					<ul>
@@ -354,6 +381,10 @@
 			<nom>Intégration des systèmes d'information</nom>
 			<identifiant>ENSINBU10</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
+			<professeurs>
+					<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
+
 			<resume>
 				<p>
 					<ul>
@@ -377,6 +408,10 @@
 			<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
 			<identifiant>ENSINBU11</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
+			<professeurs>
+					<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
+
 			<resume>
 				<p>
 					Actuellement, de plus en plus de données sont conservées sans
@@ -412,6 +447,10 @@
 			<nom>Algorithme à performance garantie</nom>
 			<identifiant>ENSINBU13</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
+			<professeurs>
+					<ref-intervenant ref="II1000"></ref-intervenant>
+			</professeurs>
+
 			<resume>
 				<p>
 					Algorithmes d'approximation de nature combinatoire pour les
@@ -473,6 +512,7 @@
 			<nom>Complexité</nom>
 			<identifiant>ENSINAU2</identifiant>
 			<nombreCredit>&cred6;</nombreCredit>
+
 			<resume>
 				<p>
 					<ul>
