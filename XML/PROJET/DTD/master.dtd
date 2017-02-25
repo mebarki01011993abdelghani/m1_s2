@@ -59,7 +59,7 @@
 <!ELEMENT competences        			(#PCDATA | p)*>
 <!ELEMENT telephone        				(#PCDATA)>
 <!ELEMENT adresse        				(#PCDATA)>
-<!ELEMENT titre        					(#PCDATA | p)*>
+<!ELEMENT titre        					(#PCDATA)*>
 
 <!-- Permet de créer un element adapter à son besoin -->
 <!ELEMENT autre        					(titre, p, ANY*)>
