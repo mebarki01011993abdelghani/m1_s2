@@ -89,23 +89,25 @@
 				<title>Master Luminy</title>
 			</head>
 			<body>
-				<header>
+				<div class="header">
 					<img src="../CSS/CONTENTS/logo.png"></img>
 					<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
-					<img src="../CSS/CONTENTS/logo.png"></img>
-				</header>
+				</div>
 				<div class="navigation">
 					<h1>Liste parcours</h1>
 					<xsl:apply-templates select="parcours" />
-					<h1>Liste Intervenants</h1>
-					<xsl:apply-templates select="intervenants" />
-					<h1>Liste Enseignements</h1>
-					<xsl:apply-templates select="enseignements" />
+					<!-- <h1>Liste Intervenants</h1> <xsl:apply-templates select="intervenants" 
+						/> <h1>Liste Enseignements</h1> <xsl:apply-templates select="enseignements" 
+						/> -->
+				</div>
+				<div class="body">
+					<xsl:copy-of select="description" />
 				</div>
 			</body>
 		</html>
 	</xsl:template>
 	<!-- FIN NOEUD MASTER -->
+
 
 	<!-- NOEUD INTERVENANTS -->
 	<xsl:template match="intervenants">
@@ -139,7 +141,9 @@
 			<xsl:for-each select="parcour">
 				<li>
 					<a href="www/parcours/{@idParcour}.html">
-						<strong><xsl:value-of select="nom" /></strong>
+						<strong>
+							<xsl:value-of select="nom" />
+						</strong>
 					</a>
 					<xsl:for-each select="ref-specialite">
 						<xsl:variable name="ref" select="@ref" />
@@ -147,7 +151,9 @@
 							<xsl:for-each select="//specialite">
 								<xsl:if test="$ref = @idSpecialite">
 									<li>
-										<a href="#"><xsl:value-of select="nom"/></a>
+										<a href="#">
+											<xsl:value-of select="nom" />
+										</a>
 									</li>
 								</xsl:if>
 							</xsl:for-each>

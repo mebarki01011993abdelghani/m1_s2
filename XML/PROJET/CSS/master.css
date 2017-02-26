@@ -7,33 +7,37 @@ p {
 	font-size: 20px;
 }
 
-header {
-	width: 80%;
-	list-style: none;
-	margin-left: 20%;
-	padding: 0;
+.header {
+	padding: 20px;
 }
 
-header h1 {
-	float: left;
+.header h1 {
 	color: #16a9fc;
 	text-align: center;
 	font-size: 25px;
 }
 
-header img {
+.header img {
+	float: left;
 	padding-left: 20px;
 	padding-right: 20px;
 	vertical-align: middle;
-	float: left;
-	vertical-align: middle;
+}
+
+.body {
+	margin-left: 300px;
+	padding: 50px;
+}
+
+.body p {
+	font-size: 18px;
 }
 
 .navigation {
+	float: left;
 	width: 200px;
 	list-style: none;
 	margin-left: 5%;
-	padding: 0;
 }
 
 .navigation h1 {

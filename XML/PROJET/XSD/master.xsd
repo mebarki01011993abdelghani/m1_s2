@@ -11,6 +11,7 @@
 				<xs:element ref="semestres" />
 				<xs:element ref="specialites" />
 				<xs:element ref="parcours" />
+				<xs:element ref="description" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>

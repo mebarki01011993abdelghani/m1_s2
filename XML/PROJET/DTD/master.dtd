@@ -16,7 +16,7 @@
 <!ENTITY  noResume				"Nous sommes désolé, mais nous n'avons pas encore de résumé.">
 
 <!--RELATIONS ELEMENTS-->
-<!ELEMENT master					(intervenants,enseignements,blocks,semestres,specialites,parcours)>
+<!ELEMENT master					(intervenants,enseignements,blocks,semestres,specialites,parcours,description)>
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,professeurs?,resume,pre-requis?,plan?,etablissement*,ref-intervenant*,adresse*,autre?)>
 <!ELEMENT intervenant				(identifiant,nom,mail*,siteWeb?,telephone*,adresse?,etablissement,autre?)>
 <!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement+,responsable,description,competences,connaissances?,ref-semestre*,politiqueDesStages,aspects?,modalites?,conditionAdmission,debouches?,poursuitesEtudes?)>							 
