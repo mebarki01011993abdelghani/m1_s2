@@ -1139,7 +1139,7 @@
 			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINCU19">
-			<nom> « Modèles et connaissances linguistiques pour le TAL »</nom>
+			<nom> Modèles et connaissances linguistiques pour le TAL</nom>
 			<identifiant>ENSINCU19</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<resume>
@@ -1170,7 +1170,7 @@
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU21">
-			<nom> « Modèles numériques pour le TAL » </nom>
+			<nom> Modèles numériques pour le TAL </nom>
 			<identifiant>ENSINCU21</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<resume>
@@ -1196,7 +1196,7 @@
 					Automatique
 					des Langues, tel que la traduction automatique, le
 					résumé
-					automatique ainsi que sur les traitements de « bas niveau »
+					automatique ainsi que sur les traitements de bas niveau »
 					nécessaires dans la majorité des applications.
 				</p>
 			</resume>
@@ -1214,7 +1214,7 @@
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU23">
-			<nom> « Algorithmique des chaînes de caractères » </nom>
+			<nom> Algorithmique des chaînes de caractères </nom>
 			<identifiant>ENSINCU23</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<resume>
@@ -1374,7 +1374,7 @@
 					telles failles de
 					sécurité. Un exemple de vérification formelle
 					automatique (basée
-					sur des techniques de « model checking ») sur le
+					sur des techniques de model checking ») sur le
 					protocole de
 					sécurité Single-Sign-On est présenté.
 					La deuxième partie
@@ -1394,9 +1394,9 @@
 					support pour les
 					développeurs, les évaluateurs et les utilisateurs
 					finaux. Ils
-					servent de base pour évaluer et déterminer le « degré de
+					servent de base pour évaluer et déterminer le degré de
 					confiance
-					» que l'on peut attribuer à un système ou à une
+					que l'on peut attribuer à un système ou à une
 					application. En
 					particulier, ils décrivent 7 niveaux d'évaluation et
 					d'analyse de
@@ -1467,7 +1467,7 @@
 					lancerdans
 					une création d'entreprise, sans la complétude verticale
 					donnée par
-					exemple par un cours de type« école de commerce » sur
+					exemple par un cours de type« école de commerce sur
 					l'aspect
 					marché. Une vision de Business Plan pourra ainsi être
 					acquise à la
@@ -2289,13 +2289,16 @@
 	</specialites>
 	<parcours>
 		<parcour idParcour="PARCOUR_MASTER_1">
+			<nom>Master 1</nom>
 			<ref-specialite ref="SPE_MASTER1"/>
 		</parcour>
 		<parcour idParcour="PARCOUR_FSIL">
+			<nom>FSIL</nom>
 			<ref-specialite ref="SPE_FSI"/>
 			<ref-specialite ref="SPE_ISL"/>
 		</parcour>
 		<parcour idParcour="PARCOUR_IF">
+			<nom>IF</nom>
 			<ref-specialite ref="SPE_IF"/>
 		</parcour>
 	</parcours>

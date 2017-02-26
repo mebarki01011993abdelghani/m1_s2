@@ -41,7 +41,6 @@ declare option saxon:output "indent=yes";
 											<li>{$idRef}</li>
 										else
 											""
-					
 								}
 				            </ul>
 				 	}

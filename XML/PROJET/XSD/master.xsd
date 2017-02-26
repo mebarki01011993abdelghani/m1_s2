@@ -76,6 +76,7 @@
 	<xs:element name="parcour">
 		<xs:complexType>
 			<xs:sequence>
+				<xs:element ref="nom" />
 				<xs:element maxOccurs="unbounded" ref="ref-specialite" />
 				<xs:element minOccurs="0" maxOccurs="unbounded" ref="autre" />
 			</xs:sequence>
@@ -280,7 +281,7 @@
 			<xs:restriction base="xs:string">
 				<xs:whiteSpace value='collapse' />
 				<xs:maxLength value='80' />
-				<xs:minLength value='3' />
+				<xs:minLength value='2' />
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
