@@ -213,7 +213,7 @@
 			<identifiant>ENSINBU1</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<professeurs>
-					<ref-intervenant ref="IN8007"></ref-intervenant>
+				<ref-intervenant ref="IN8007"></ref-intervenant>
 			</professeurs>
 			<resume>
 				<p>
@@ -245,14 +245,15 @@
 				</p>
 			</resume>
 			<pre-requis>Particulièrement utile pour un choix d’options, les
-				échanges internationaux et la formation continue.</pre-requis>
+				échanges internationaux et la formation continue.
+			</pre-requis>
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU4">
 			<nom>XML</nom>
 			<identifiant>ENSINBU4</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<professeurs>
-					<ref-intervenant ref="IN8007"></ref-intervenant>
+				<ref-intervenant ref="IN8007"></ref-intervenant>
 			</professeurs>
 			<resume>XML, DTD, XSD XPath, XSLT, XQuery.</resume>
 		</enseignement>
@@ -260,10 +261,10 @@
 		<enseignement idEnseignement="ENSINBU5">
 			<nom>Algorithmique et recherche opérationnelle</nom>
 			<identifiant>ENSINBU5</identifiant>
-			<professeurs>
-					<ref-intervenant ref="IN8007"></ref-intervenant>
-			</professeurs>
 			<nombreCredit>&cred3;</nombreCredit>
+			<professeurs>
+				<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
 			<resume>Programmation linéaire. Notions et algorithmes de
 				flots.Applications (couplage, affectation, transport,
 				...)Programmation dynamique (sac à dos, ordonnancement, ...)
@@ -273,10 +274,10 @@
 		<enseignement idEnseignement="ENSINBU12">
 			<nom>Intelligence artificielle</nom>
 			<identifiant>ENSINBU12</identifiant>
-			<professeurs>
-					<ref-intervenant ref="IN8007"></ref-intervenant>
-			</professeurs>
 			<nombreCredit>&cred3;</nombreCredit>
+			<professeurs>
+				<ref-intervenant ref="IN8007"></ref-intervenant>
+			</professeurs>
 			<resume>Introduction à l'IA Problèmes d'espace d'états et
 				d'exploration Logiques pour l'IA et démonstration automatique
 				Représentation de connaissances Actions, temps et planification
@@ -288,7 +289,7 @@
 			<identifiant>ENSINBU15</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<professeurs>
-					<ref-intervenant ref="IN8007"></ref-intervenant>
+				<ref-intervenant ref="IN8007"></ref-intervenant>
 			</professeurs>
 			<resume>&noResume; </resume>
 		</enseignement>
@@ -297,7 +298,7 @@
 			<identifiant>ENSINBU6</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<professeurs>
-					<ref-intervenant ref="IN8007"></ref-intervenant>
+				<ref-intervenant ref="IN8007"></ref-intervenant>
 			</professeurs>
 
 			<resume>
@@ -323,7 +324,7 @@
 			<identifiant>ENSINBU7</identifiant>
 			<nombreCredit>&cred6;</nombreCredit>
 			<professeurs>
-					<ref-intervenant ref="IN8007"></ref-intervenant>
+				<ref-intervenant ref="IN8007"></ref-intervenant>
 			</professeurs>
 
 			<resume>
@@ -344,9 +345,8 @@
 			<identifiant>ENSINBU8</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<professeurs>
-					<ref-intervenant ref="IN8007"></ref-intervenant>
+				<ref-intervenant ref="IN8007"></ref-intervenant>
 			</professeurs>
-
 			<resume>
 				<p>
 					<ul>
@@ -382,7 +382,7 @@
 			<identifiant>ENSINBU10</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<professeurs>
-					<ref-intervenant ref="IN8007"></ref-intervenant>
+				<ref-intervenant ref="IN8007"></ref-intervenant>
 			</professeurs>
 
 			<resume>
@@ -409,7 +409,7 @@
 			<identifiant>ENSINBU11</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<professeurs>
-					<ref-intervenant ref="IN8007"></ref-intervenant>
+				<ref-intervenant ref="IN8007"></ref-intervenant>
 			</professeurs>
 
 			<resume>
@@ -448,7 +448,7 @@
 			<identifiant>ENSINBU13</identifiant>
 			<nombreCredit>&cred3;</nombreCredit>
 			<professeurs>
-					<ref-intervenant ref="II1000"></ref-intervenant>
+				<ref-intervenant ref="II1000"></ref-intervenant>
 			</professeurs>
 
 			<resume>
@@ -1896,7 +1896,8 @@
 					crédits).
 				</p>
 			</modalites>
-			<conditionAdmission>Une licence à dominante informatique.</conditionAdmission>
+			<conditionAdmission>Une licence à dominante informatique.
+			</conditionAdmission>
 		</specialite>
 
 		<specialite idSpecialite="SPE_IF">
