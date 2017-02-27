@@ -24,7 +24,7 @@ int betha(Data* data, int fournisseur, int S[], int cout_client[][]){
 				sol += x;
 		}
 	}
-	
+	/*finir les 3 autres points du calcul de betha et enregistrer les clients pris dans le spoint 2*/
 	return sol;
 	
 }
