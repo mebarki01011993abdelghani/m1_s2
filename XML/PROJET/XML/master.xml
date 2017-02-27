@@ -2309,6 +2309,14 @@
 		</parcour>
 		<parcour idParcour="PARCOUR_FSIL">
 			<nom>FSIL</nom>
+			<description>
+				<p>Cette spécialité à finalité
+					professionnelle est une composante du Master Informatique. Elle est
+					déclinée en deux parcours qui partagent un tronc-commun au début de
+					la deuxième année (semestre 3). Consultez ces deux parcours pour
+					avoir une information plus précise :
+				</p>
+			</description>
 			<ref-specialite ref="SPE_FSI"></ref-specialite>
 			<ref-specialite ref="SPE_ISL"></ref-specialite>
 		</parcour>

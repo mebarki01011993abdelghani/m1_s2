@@ -2300,6 +2300,14 @@
 		</parcour>
 		<parcour idParcour="PARCOUR_FSIL">
 			<nom>FSIL</nom>
+			<description>
+				<p>Cette spécialité à finalité
+					professionnelle est une composante du Master Informatique. Elle est
+					déclinée en deux parcours qui partagent un tronc-commun au début de
+					la deuxième année (semestre 3). Consultez ces deux parcours pour
+					avoir une information plus précise :
+				</p>
+			</description>
 			<ref-specialite ref="SPE_FSI"/>
 			<ref-specialite ref="SPE_ISL"/>
 		</parcour>
@@ -2318,7 +2326,8 @@
 			organisations. Notre ambition est de former des étudiants dont les
 			compétences sont tout à fait comparables à celles acquises dans les
 			meilleurs écoles d'ingénieurs.
-
+		</p>
+		<p>
 			Le Master informatique repose sur plus de 25 ans d'expérience
 			d'enseignement d'informatique sur l'Université d'Aix-Marseille
 			(maîtrise, DEA et DESS en informatique) et s'est structuré lors du

@@ -20,7 +20,7 @@
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,professeurs?,resume,pre-requis?,plan?,etablissement*,ref-intervenant*,adresse*,autre?)>
 <!ELEMENT intervenant				(identifiant,nom,mail*,siteWeb?,telephone*,adresse?,etablissement,autre?)>
 <!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement+,responsable,description,competences,connaissances?,ref-semestre*,politiqueDesStages,aspects?,modalites?,conditionAdmission,debouches?,poursuitesEtudes?)>							 
-<!ELEMENT parcour					(nom,ref-specialite+,autre*)>
+<!ELEMENT parcour					(nom,description?,ref-specialite+,autre*)>
 <!ELEMENT block 					(ref-enseignement+)>		
 <!ELEMENT blocks 					(block+)>						
 <!ELEMENT semestre					(ref-block+)>	

@@ -2,7 +2,6 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified">
-
 	<xs:element name="master">
 		<xs:complexType>
 			<xs:sequence>
@@ -12,6 +11,7 @@
 				<xs:element ref="semestres" />
 				<xs:element ref="specialites" />
 				<xs:element ref="parcours" />
+				<xs:element ref="description" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -40,10 +40,10 @@
 				<xs:element name="identifiant" type="ID" />
 				<xs:element ref="nom" />
 				<xs:element minOccurs="0" maxOccurs="3" ref="mail" />
-				<xs:element minOccurs="0" maxOccurs="1" ref="siteWeb" />
+				<xs:element minOccurs="0" ref="siteWeb" />
 				<!-- On peut ajouter au plus 3 numéro de téléphone -->
 				<xs:element minOccurs="0" maxOccurs="3" ref="telephone" />
-				<xs:element minOccurs="0" maxOccurs="1" ref="adresse" />
+				<xs:element minOccurs="0" ref="adresse" />
 				<xs:element ref="etablissement" />
 				<xs:element minOccurs="0" ref="autre" />
 			</xs:sequence>
@@ -77,6 +77,7 @@
 	<xs:element name="parcour">
 		<xs:complexType>
 			<xs:sequence>
+				<xs:element ref="nom" />
 				<xs:element maxOccurs="unbounded" ref="ref-specialite" />
 				<xs:element minOccurs="0" maxOccurs="unbounded" ref="autre" />
 			</xs:sequence>
@@ -207,7 +208,6 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="nom" type="xs:normalizedString" />
 	<xs:element name="debouches">
 		<xs:complexType mixed="true">
 			<xs:sequence>
@@ -232,8 +232,6 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="nombreCredit" type="xs:normalizedString" />
-
 	<xs:element name="siteWeb" type="xs:normalizedString" />
 	<xs:element name="ref-intervenant">
 		<xs:complexType mixed="true">
@@ -278,20 +276,27 @@
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
-
-	<xs:element name="titre">
-		<xs:complexType mixed="true">
-			<xs:sequence>
-				<xs:element minOccurs="0" maxOccurs="unbounded" ref="p" />
-			</xs:sequence>
-		</xs:complexType>
+	<!-- Le nom doit être explicite et pas trop long -->
+	<xs:element name="nom">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:whiteSpace value='collapse' />
+				<xs:maxLength value='80' />
+				<xs:minLength value='2' />
+			</xs:restriction>
+		</xs:simpleType>
 	</xs:element>
-	<xs:simpleType name="contenuTitre">
-		<xs:restriction base="xs:string">
-			<xs:whiteSpace value='collapse' />
-			<xs:maxLength value='100' />
-		</xs:restriction>
-	</xs:simpleType>
+	<!-- Le titre ne doit pas etre un string trop grand -->
+	<xs:element name="titre">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:whiteSpace value='collapse' />
+				<xs:maxLength value='15' />
+				<xs:minLength value='5' />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
 	<!-- HTML BALISE -->
 	<xs:element name="p">
 		<xs:complexType mixed="true">
@@ -350,6 +355,8 @@
 			<xs:attribute name="ref" use="required" type="xs:IDREF" />
 		</xs:complexType>
 	</xs:element>
+	<!-- Les crédits sont des entiers positifs -->
+	<xs:element name="nombreCredit" type="xs:positiveInteger" />
 	<!-- Permet de créer un element adapter à son besoin -->
 	<xs:element name="autre">
 		<xs:complexType>
@@ -363,7 +370,6 @@
 		2 chiffres ou null -->
 	<xs:element name="telephone">
 		<xs:simpleType>
-			<!-- On supprime le blancs -->
 			<xs:restriction base="xs:normalizedString">
 				<xs:pattern
 					value="null|[0-9]{10}|([0-9]{2}\s){4}[0-9]{2}|(\+33)\s[0-9]\s([0-9]{2}\s){3}[0-9]{2}" />

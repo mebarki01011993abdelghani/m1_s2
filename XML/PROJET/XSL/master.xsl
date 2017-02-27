@@ -47,15 +47,52 @@
 			<xsl:document href="www/parcours/{@idParcour}.html">
 				<html xmlns="http://www.w3.org/1999/xhtml">
 					<head>
+						<link rel="stylesheet" type="text/css" href="../../CSS/master.css" />
 						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 						<title>
 							<xsl:value-of select="nom" />
 						</title>
 					</head>
 					<body>
-						<a href="../../index.html">Index</a>
-						<br />
-						<xsl:apply-templates select="." />
+						<div class="header">
+							<img src="../../CSS/CONTENTS/logo.png"></img>
+							<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
+						</div>
+						<div class="navigation">
+							<xsl:apply-templates select="//parcours" />
+						</div>
+						<div class="body">
+							<h1>
+								<xsl:value-of select="nom" />
+							</h1>
+							<h2>Responsables :</h2>
+							<xsl:for-each select="ref-specialite">
+								<xsl:variable name="ref" select="@ref" />
+								<ul>
+									<xsl:for-each select="//specialite">
+										<xsl:if test="$ref = @idSpecialite">
+											<xsl:apply-templates select="responsable/ref-intervenant" />
+										</xsl:if>
+									</xsl:for-each>
+								</ul>
+							</xsl:for-each>
+							<xsl:copy-of select="description" />
+							<br />
+							<xsl:for-each select="ref-specialite">
+								<xsl:variable name="ref" select="@ref" />
+								<ul>
+									<xsl:for-each select="//specialite">
+										<xsl:if test="$ref = @idSpecialite">
+											<li>
+												<a href="#">
+													<xsl:value-of select="nom" />
+												</a>
+											</li>
+										</xsl:if>
+									</xsl:for-each>
+								</ul>
+							</xsl:for-each>
+						</div>
 					</body>
 				</html>
 			</xsl:document>
@@ -94,11 +131,7 @@
 					<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 				</div>
 				<div class="navigation">
-					<h1>Liste parcours</h1>
 					<xsl:apply-templates select="parcours" />
-					<!-- <h1>Liste Intervenants</h1> <xsl:apply-templates select="intervenants" 
-						/> <h1>Liste Enseignements</h1> <xsl:apply-templates select="enseignements" 
-						/> -->
 				</div>
 				<div class="body">
 					<xsl:copy-of select="description" />
@@ -138,31 +171,54 @@
 	<!-- NOEUD PARCOURS -->
 	<xsl:template match="parcours">
 		<ul>
+			<li>
+				<strong>PARCOURS</strong>
+			</li>
 			<xsl:for-each select="parcour">
 				<li>
-					<a href="www/parcours/{@idParcour}.html">
+					<a href="parcours/{@idParcour}.html">
 						<strong>
 							<xsl:value-of select="nom" />
 						</strong>
 					</a>
-					<xsl:for-each select="ref-specialite">
-						<xsl:variable name="ref" select="@ref" />
-						<ul>
-							<xsl:for-each select="//specialite">
-								<xsl:if test="$ref = @idSpecialite">
-									<li>
-										<a href="#">
-											<xsl:value-of select="nom" />
-										</a>
-									</li>
-								</xsl:if>
-							</xsl:for-each>
-						</ul>
-					</xsl:for-each>
+					<xsl:apply-templates select="ref-specialite" />
 				</li>
 			</xsl:for-each>
 		</ul>
 	</xsl:template>
+
+	<!-- NOEUD REF SEPCIALITE -->
+	<xsl:template match="ref-specialite">
+		<xsl:variable name="ref" select="@ref" />
+		<ul>
+			<xsl:for-each select="//specialite">
+				<xsl:if test="$ref = @idSpecialite">
+					<li>
+						<a href="#">
+							<xsl:value-of select="nom" />
+						</a>
+					</li>
+				</xsl:if>
+			</xsl:for-each>
+		</ul>
+	</xsl:template>
+
+	<!-- NOEUD ref-intervenant -->
+	<xsl:template match="ref-intervenant">
+		<xsl:variable name="ref" select="@ref" />
+		<xsl:for-each select="//intervenant">
+			<xsl:if test="$ref = @idIntervenant">
+				<li>
+					<a href="#">
+						<xsl:value-of select="nom" />
+					</a>
+				</li>
+			</xsl:if>
+		</xsl:for-each>
+	</xsl:template>
+	<!-- FIN NOEUD ref-intervenant -->
+
+	<!-- FIN NOEUD REF SEPCIALITE -->
 
 	<!-- NOEUD SEMESTRES -->
 	<xsl:template match="semestres">

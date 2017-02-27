@@ -78,6 +78,7 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element ref="nom" />
+				<xs:element minOccurs="0" ref="description" />
 				<xs:element maxOccurs="unbounded" ref="ref-specialite" />
 				<xs:element minOccurs="0" maxOccurs="unbounded" ref="autre" />
 			</xs:sequence>

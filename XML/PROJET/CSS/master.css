@@ -61,6 +61,12 @@ p {
 	text-align: center;
 }
 
+.navigation ul li {
+	list-style-type: none;
+	font: 1em "Trebuchet MS", Arial, sans-serif;
+	text-align: center;
+}
+
 .navigation li a {
 	display: block;
 	background: #cde1fc;
