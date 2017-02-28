@@ -12,8 +12,6 @@ mkdir_web:
 	mkdir -p www
 dtd:
 	xmllint --valid XML/master.xml > traceExecutions/traceDTD.txt
-noEnt:
-	xmllint --valid --noent XML/master.xml > XML/masterNoEnt.xml 
 
 xsd:
 	xmllint -valid -schema XSD/master.xsd XML/masterNoEnt.xml > traceExecutions/traceXSD.txt

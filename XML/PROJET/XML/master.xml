@@ -1805,34 +1805,42 @@
 	</blocks>
 	<semestres>
 		<semestre idSemestre="M1_S1">
+			<titre>1</titre>
 			<ref-block ref="M1_S1_OBLI"></ref-block>
 			<ref-block ref="M1_S1_FALC"></ref-block>
 		</semestre>
 		<semestre idSemestre="M1_S2">
+			<titre>2</titre>
 			<ref-block ref="M1_S2_OBLI"></ref-block>
 			<ref-block ref="M1_S2_FALC"></ref-block>
 		</semestre>
 		<semestre idSemestre="M2_S3_FSIL_ISL">
+			<titre>3</titre>
 			<ref-block ref="TC_FSI_ISL"></ref-block>
 			<ref-block ref="SPE_S3_FSI_ISL_BONUS"></ref-block>
 			<ref-block ref="SPE_S3_ISL_OBLI"></ref-block>
 		</semestre>
 		<semestre idSemestre="M2_S4_FSIL_ISL">
+			<titre>4</titre>
 			<ref-block ref="SPE_S4_ISL_OBLI"></ref-block>
 		</semestre>
 		<semestre idSemestre="M2_S3_FSIL_FSI">
+			<titre>3</titre>
 			<ref-block ref="TC_FSI_ISL"></ref-block>
 			<ref-block ref="SPE_S3_FSI_ISL_BONUS"></ref-block>
 			<ref-block ref="SPE_S3_FSI_OBLI"></ref-block>
 		</semestre>
 		<semestre idSemestre="M2_S4_FSIL_FSI">
+			<titre>4</titre>
 			<ref-block ref="SPE_S4_FSI_OBLI"></ref-block>
 		</semestre>
 		<semestre idSemestre="M2_S3_FSIL_IF">
+			<titre>3</titre>
 			<ref-block ref="SPE_S3_IF_OBLI"></ref-block>
 			<ref-block ref="SPE_S3_IF_FALC"></ref-block>
 		</semestre>
 		<semestre idSemestre="M2_S4_FSIL_IF">
+			<titre>4</titre>
 			<ref-block ref="SPE_S4_IF_OBLI"></ref-block>
 		</semestre>
 	</semestres>

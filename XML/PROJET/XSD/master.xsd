@@ -112,6 +112,7 @@
 	<xs:element name="semestre">
 		<xs:complexType>
 			<xs:sequence>
+				<xs:element ref="titre" />
 				<xs:element maxOccurs="unbounded" ref="ref-block" />
 			</xs:sequence>
 			<xs:attribute name="idSemestre" use="required" type="ID" />
@@ -293,7 +294,7 @@
 			<xs:restriction base="xs:string">
 				<xs:whiteSpace value='collapse' />
 				<xs:maxLength value='15' />
-				<xs:minLength value='5' />
+				<xs:minLength value='1' />
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>

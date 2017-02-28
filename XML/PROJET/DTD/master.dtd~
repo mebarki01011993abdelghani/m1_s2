@@ -23,7 +23,7 @@
 <!ELEMENT parcour					(nom,description?,ref-specialite+,autre*)>
 <!ELEMENT block 					(ref-enseignement+)>		
 <!ELEMENT blocks 					(block+)>						
-<!ELEMENT semestre					(titre,ref-block+)>	
+<!ELEMENT semestre					(ref-block+)>	
 <!ELEMENT responsable 				(ref-intervenant+)>
 <!ELEMENT parcours 					(parcour*)>
 <!ELEMENT semestres					(semestre*)>
