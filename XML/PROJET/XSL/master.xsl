@@ -4,7 +4,7 @@
 
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	
+
 	<!-- NOEUD MASTER -->
 	<xsl:template match="master">
 
@@ -64,9 +64,9 @@
 							<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 						</div>
 						<div class="navigation">
-							<xsl:call-template name="menu" >
-								 <xsl:with-param name="link"></xsl:with-param>
-		  					</xsl:call-template>
+							<xsl:call-template name="menu">
+								<xsl:with-param name="link"></xsl:with-param>
+							</xsl:call-template>
 						</div>
 						<div class="body">
 							<h1>
@@ -138,9 +138,11 @@
 					<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 				</div>
 				<div class="navigation">
-					<xsl:call-template name="menu" >
-						 <xsl:with-param name="link">parcours/</xsl:with-param>
-  					</xsl:call-template>
+					<xsl:call-template name="menu">
+						<xsl:with-param name="link">
+							parcours/
+						</xsl:with-param>
+					</xsl:call-template>
 				</div>
 				<div class="body">
 					<xsl:copy-of select="description" />
@@ -179,20 +181,34 @@
 
 	<!-- NOEUD PARCOURS -->
 	<xsl:template name="menu">
-   		<xsl:param name="link" />
+		<xsl:param name="link" />
 		<ul>
 			<li>
 				<strong>PARCOURS</strong>
 			</li>
+
 			<xsl:for-each select="//parcour">
-				<li>
-					<a href="{$link}{@idParcour}.html">
-						<strong>
-							<xsl:value-of select="nom" />
-						</strong>
-					</a>
-					<xsl:apply-templates select="ref-specialite" />
-				</li>
+				<!-- Plus d'une specialité -->
+				<xsl:if test="count(ref-specialite) > 1 ">
+					<li>
+						<a href="{$link}{@idParcour}.html">
+							<strong>
+								<xsl:value-of select="nom" />
+							</strong>
+						</a>
+						<xsl:apply-templates select="ref-specialite" />
+					</li>
+				</xsl:if>
+				<!-- Une seule specialité-->
+				<xsl:if test="count(ref-specialite) = 1 ">
+					<li>
+						<a href="{$link}specialites/{@idSpecialite}.html">
+							<strong>
+								<xsl:value-of select="nom" />
+							</strong>
+						</a>
+					</li>
+				</xsl:if>
 			</xsl:for-each>
 		</ul>
 	</xsl:template>
