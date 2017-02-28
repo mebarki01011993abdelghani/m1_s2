@@ -131,7 +131,7 @@
 					<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 				</div>
 				<div class="navigation">
-					<xsl:apply-templates select="parcours" />
+					<xsl:apply-templates select="parcours" />					
 				</div>
 				<div class="body">
 					<xsl:copy-of select="description" />
@@ -186,6 +186,7 @@
 			</xsl:for-each>
 		</ul>
 	</xsl:template>
+	
 
 	<!-- NOEUD REF SEPCIALITE -->
 	<xsl:template match="ref-specialite">
