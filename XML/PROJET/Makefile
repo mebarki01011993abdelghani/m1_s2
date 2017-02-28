@@ -21,7 +21,13 @@ web:
 
 tidy:
 
+path_xq:
+	wget http://tinyurl.com/jlmassat/ens/xml/ress/SaxonHE9-7-0-15J.zip &
+	mkdir $HOME/saxon9 &
+	unzip -d $HOME/saxon9 SaxonHE9-7-0-15J.zip &
+	alias saxon="java -jar $HOME/saxon9/saxon9he.jar"
+
 xq:
-	
+	java -cp $HOME/saxon9/saxon9he.jar net.sf.saxon.Query "-q:XQ/requete.xq"
 java:
 	cd JAVA && make all
