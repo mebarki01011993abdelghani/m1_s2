@@ -27,6 +27,26 @@
 				</html>
 			</xsl:document>
 		</xsl:for-each>
+		
+		<!-- Génération Page spécialité -->
+		<xsl:for-each select="//specialite">
+			<xsl:document href="www/specialites/{@idSpecialite}.html">
+				<html xmlns="http://www.w3.org/1999/xhtml">
+					<head>
+						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+						<link rel="stylesheet" type="text/css" href="../CSS/master.css" />
+						<title>
+							<xsl:value-of select="nom" />
+						</title>
+					</head>
+					<body>
+						<a href="../../index.html">Index</a>
+						<br />
+						<xsl:apply-templates select="." />
+					</body>
+				</html>
+			</xsl:document>
+		</xsl:for-each>
 
 		<!-- Génération enseignements HTML -->
 		<xsl:for-each select="//enseignement">
@@ -204,7 +224,7 @@
 			<xsl:for-each select="//specialite">
 				<xsl:if test="$ref = @idSpecialite">
 					<li>
-						<a href="#">
+						<a href="/{$ref}.html">
 							<xsl:value-of select="nom" />
 						</a>
 					</li>
@@ -353,6 +373,16 @@
 		<div id="{@idSemestre}">
 			<h2>
 				Semestre n°
+				<xsl:value-of select="@idSemestre" />
+			</h2>
+		</div>
+	</xsl:template>
+	
+	<!-- PAGE SPECIALITE -->
+	<xsl:template match="specialite">
+		<div id="{@idSemestre}">
+			<h2>
+				Semestre n°aaaaaaaaaa
 				<xsl:value-of select="@idSemestre" />
 			</h2>
 		</div>
