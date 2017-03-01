@@ -30,7 +30,14 @@ p {
 	padding: 50px;
 	background: #d2ecea;
 }
-
+.titre {
+	width : 90%;
+	height: 25px;
+	background: #204a70;
+	text-align: center;
+	padding: 1px;
+	border-color: #ffffff;
+}
 .body p {
 	font-size: 18px;
 }
@@ -41,6 +48,13 @@ p {
 	list-style: none;
 	margin-left: 5%;
 }
+ tr, td {
+ 	padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+ tr:hover {background-color: #f5f5f5}
+ tr:nth-child(even) {background-color: #f2f2f2}	
 
 .navigation h1 {
 	color: black;
