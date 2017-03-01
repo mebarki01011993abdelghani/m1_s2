@@ -52,7 +52,9 @@
 							<xsl:for-each select="//enseignement">
 								<tr>
 									<td>
-										<a href="../enseignements/{@idEnseignement}.html"><xsl:value-of select="@idEnseignement" /></a>
+										<a href="../enseignements/{@idEnseignement}.html">
+											<xsl:value-of select="@idEnseignement" />
+										</a>
 									</td>
 									<td>
 										<a>
@@ -142,7 +144,9 @@
 							<img src="../../CSS/CONTENTS/logo.png"></img>
 							<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 						</div>
-							<center><a href="#null" onclick="javascript:history.back();">Retour</a></center>
+						<center>
+							<a href="#null" onclick="javascript:history.back();">Retour</a>
+						</center>
 						<xsl:apply-templates select="." />
 					</body>
 				</html>
@@ -167,7 +171,9 @@
 						</div>
 						<div class="navigation">
 							<xsl:call-template name="menu">
-								<xsl:with-param name="link">../</xsl:with-param>
+								<xsl:with-param name="link">
+									../
+								</xsl:with-param>
 							</xsl:call-template>
 						</div>
 						<div class="body">
@@ -183,7 +189,7 @@
 			<xsl:document href="www/enseignements/{@idEnseignement}.html">
 				<html xmlns="http://www.w3.org/1999/xhtml">
 					<head>
-												<link rel="stylesheet" type="text/css" href="../../CSS/master.css" />
+						<link rel="stylesheet" type="text/css" href="../../CSS/master.css" />
 						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 						<title>
 							<xsl:value-of select="nom" />
@@ -191,11 +197,13 @@
 					</head>
 					<body>
 						<div class="header">
-							<img src="/../../CSS/CONTENTS/logo.png"></img>
+							<img src="../../CSS/CONTENTS/logo.png"></img>
 							<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 						</div>
-						<div class ="body">
-								<center><a href="#null" onclick="javascript:history.back();">Retour</a></center>
+						<div class="body">
+							<center>
+								<a href="#null" onclick="javascript:history.back();">Retour</a>
+							</center>
 							<xsl:apply-templates select="." />
 						</div>
 					</body>
@@ -233,6 +241,7 @@
 								<xsl:variable name="ref" select="@ref" />
 								<ul>
 									<xsl:for-each select="//specialite">
+										<!--On peut aussi mettre la condition en XPATH dans le select-->
 										<xsl:if test="$ref = @idSpecialite">
 											<xsl:apply-templates select="responsable/ref-intervenant" />
 										</xsl:if>
@@ -247,7 +256,7 @@
 									<xsl:for-each select="//specialite">
 										<xsl:if test="$ref = @idSpecialite">
 											<li>
-												<a href="#">
+												<a href="specialites/{$ref}.html">
 													<xsl:value-of select="nom" />
 												</a>
 											</li>
@@ -275,7 +284,9 @@
 				</div>
 				<div class="navigation">
 					<xsl:call-template name="menu">
-						<xsl:with-param name="link">parcours/</xsl:with-param>
+						<xsl:with-param name="link">
+							parcours/
+						</xsl:with-param>
 					</xsl:call-template>
 				</div>
 				<div class="body">
@@ -365,7 +376,7 @@
 			<!-- Test condition sans XPTATH -->
 			<xsl:if test="$ref = @idIntervenant">
 				<li>
-					<a href="#">
+					<a href="../intervenants/{$ref}.html">
 						<xsl:value-of select="nom" />
 					</a>
 				</li>
@@ -472,7 +483,8 @@
 	<!-- Semestre -->
 	<xsl:template name="genererSemestre">
 		<xsl:param name="idSemestre" />
-		Programme du S<xsl:value-of select="//semestre[@idSemestre = $idSemestre]/titre" />
+		Programme du S
+		<xsl:value-of select="//semestre[@idSemestre = $idSemestre]/titre" />
 		<xsl:for-each select="//semestre[@idSemestre = $idSemestre]/ref-block">
 			<xsl:variable name="idBlock" select="@ref" />
 			<li>

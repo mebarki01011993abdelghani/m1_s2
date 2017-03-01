@@ -399,7 +399,7 @@
 				</p>
 			</resume>
 		</enseignement>
-		<enseignement idEnseignement="ENSINDU2">
+		<enseignement idEnseignement="ENSINDU">
 			<nom>Initiation à la recherche</nom>
 			<identifiant>ENSINBU10</identifiant>
 			<nombreCredit>27</nombreCredit>
