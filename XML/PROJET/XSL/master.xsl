@@ -8,6 +8,7 @@
 	<!-- NOEUD MASTER -->
 	<xsl:template match="master">
 
+		
 		<!-- Génération intervenants HTML -->
 		<xsl:for-each select="//intervenant">
 			<xsl:document href="www/intervenants/{@idIntervenant}.html">
@@ -198,6 +199,8 @@
 			</xsl:for-each>
 		</ul>
 	</xsl:template>
+
+
 
 	<!-- NOEUD PARCOURS -->
 	<xsl:template name="menu">
@@ -407,6 +410,7 @@
 			<xsl:param name="idEnseignement" />
 			<li><a href="../../enseignements/{$idEnseignement}.html"><xsl:value-of select="//enseignement[@idEnseignement = $idEnseignement]/nom" />(<xsl:value-of select="//enseignement[@idEnseignement = $idEnseignement]/nombreCredit"/> crédits)</a></li>
 		</xsl:template>
+
 	<!-- PAGE SPECIALITE -->
 	<xsl:template match="specialite">
 			<h2>
