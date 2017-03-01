@@ -82,7 +82,7 @@
 					</div>
 					<div class="navigation">
 						<xsl:call-template name="menu">
-							<xsl:with-param name="link">/</xsl:with-param>
+							<xsl:with-param name="link"></xsl:with-param>
 						</xsl:call-template>
 					</div>
 					<center>
