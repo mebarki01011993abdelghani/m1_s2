@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified">
+	
+	<xs:complexType name="objet" abstract="true">
+	    <xs:sequence>
+	        <xs:element ref="nom" />
+	    </xs:sequence>
+	</xs:complexType>
+	
 	<xs:element name="master">
 		<xs:complexType>
 			<xs:sequence>
@@ -50,11 +58,11 @@
 			<xs:attribute name="idIntervenant" use="required" type="ID" />
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="specialite">
-		<xs:complexType>
+	<xs:element name="specialite" >
+		<xs:complexType >
 			<xs:sequence>
 				<xs:element ref="nom" />
-				<xs:element name="identifiant" type="ID" />
+				<xs:element name="entifiant" type="ID" />
 				<xs:element name="code" type="ID" />
 				<xs:element minOccurs="0" ref="finalite" />
 				<xs:element maxOccurs="unbounded" ref="etablissement" />
@@ -234,7 +242,6 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="siteWeb" type="xs:normalizedString" />
 	<xs:element name="ref-intervenant">
 		<xs:complexType mixed="true">
 			<xs:attribute name="ref" use="required" type="xs:IDREF" />
@@ -398,4 +405,14 @@
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
+
+	<!-- CHECK WEB regex -->
+	<xs:element name="siteWeb">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[hH][tT]{2}[pP]://[wW]{3}.*" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
 </xs:schema>

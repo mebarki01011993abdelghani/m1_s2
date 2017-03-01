@@ -33,6 +33,7 @@
 			<identifiant>IN9224</identifiant>
 			<nom>Remi MORIN</nom>
 			<mail>remi.morin@univ-amu.fr</mail>
+			<siteWeb>http://www.test.com</siteWeb>
 			<telephone>0491829394</telephone>
 			<etablissement>UFR Sciences, Université d'Aix-Marseille</etablissement>
 		</intervenant>

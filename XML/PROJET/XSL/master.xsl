@@ -255,7 +255,7 @@
 	<!-- Générer spécialités -->
 	<xsl:template name="genererSpecialite">
 		<xsl:param name="link" />
-		<xsl:param name="ref" />		
+		<xsl:param name="ref" />
 		<ul>
 			<li>
 				<a href="{$link}specialites/{$ref}.html">
@@ -445,17 +445,34 @@
 				Nom :
 				<xsl:value-of select="nom" />
 			</xsl:if>
-			<xsl:variable name="ref" select="responsable/ref-intervenant/@ref" />			
-			Responsable :
-			<xsl:value-of select="//intervenant[@idIntervenant = $ref]/nom" />
-			Lieu d'enseignement :
-			<xsl:value-of select="etablissement" />
-			Description :
-			<xsl:copy-of select="description" />
-			Compétences à acquérir :
-			<xsl:copy-of select="competences" />
-			Connaissances à acquérir :
-			<xsl:copy-of select="connaissances" />
+			<xsl:variable name="ref" select="responsable/ref-intervenant/@ref" />
+
+			<xsl:if test="//intervenant[@idIntervenant = $ref]/nom != ''">
+				Responsable :
+				<xsl:value-of select="//intervenant[@idIntervenant = $ref]/nom" />
+			</xsl:if>
+			<xsl:if test="etablissement != ''">
+
+				Lieu d'enseignement :
+				<xsl:value-of select="etablissement" />
+			</xsl:if>
+			<xsl:if test="description != ''">
+
+				Description :
+				<xsl:copy-of select="description" />
+			</xsl:if>
+			<xsl:if test="competences != ''">
+
+				Compétences à acquérir :
+				<xsl:copy-of select="competences" />
+			</xsl:if>
+			<xsl:if test="connaissances != ''">
+
+				Connaissances à acquérir :
+				<xsl:copy-of select="connaissances" />
+			</xsl:if>
+
+
 			Programme et enseignements :
 			<xsl:for-each select="ref-semestre">
 				<xsl:variable name="idSemestre" select="@ref" />
@@ -465,18 +482,42 @@
 					</xsl:with-param>
 				</xsl:call-template>
 			</xsl:for-each>
-			Politique des stages :
-			<xsl:copy-of select="politiqueDesStages" />
-			Aspects formation et recherche :
-			<xsl:copy-of select="aspects" />
-			Modalité et recherche :
-			<xsl:copy-of select="modalites" />
-			Condition d'admission et pré-requis :
-			<xsl:copy-of select="conditionAdmission" />
-			Débouchés :
-			<xsl:copy-of select="debouches" />
-			Poursuites d'études :
-			<xsl:copy-of select="poursuitesEtudes" />
+
+			<xsl:if test="politiqueDesStages != ''">
+
+				Politique des stages :
+				<xsl:copy-of select="politiqueDesStages" />
+			</xsl:if>
+
+			<xsl:if test="aspects != ''">
+
+				Aspects formation et recherche :
+				<xsl:copy-of select="aspects" />
+			</xsl:if>
+
+			<xsl:if test="modalites != ''">
+
+				Modalité et recherche :
+				<xsl:copy-of select="modalites" />
+			</xsl:if>
+
+			<xsl:if test="conditionAdmission != ''">
+
+				Condition d'admission et pré-requis :
+				<xsl:copy-of select="conditionAdmission" />
+			</xsl:if>
+
+			<xsl:if test="debouches != ''">
+
+				Débouchés :
+				<xsl:copy-of select="debouches" />
+			</xsl:if>
+
+			<xsl:if test="poursuitesEtudes != ''">
+
+				Poursuites d'études :
+				<xsl:copy-of select="poursuitesEtudes" />
+			</xsl:if>
 			<xsl:copy-of select="autre" />
 		</h2>
 	</xsl:template>
