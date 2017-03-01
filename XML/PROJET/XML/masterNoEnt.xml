@@ -214,7 +214,7 @@
 			<identifiant>ENSINBU1</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="IN8007"/>
+				<ref-intervenant ref="IN8007" />
 			</professeurs>
 			<resume>
 				<p>
@@ -254,7 +254,7 @@
 			<identifiant>ENSINBU4</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="IN8007"/>
+				<ref-intervenant ref="IN8007" />
 			</professeurs>
 			<resume>XML, DTD, XSD XPath, XSLT, XQuery.</resume>
 		</enseignement>
@@ -264,7 +264,7 @@
 			<identifiant>ENSINBU5</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="IN8007"/>
+				<ref-intervenant ref="IN8007" />
 			</professeurs>
 			<resume>Programmation linéaire. Notions et algorithmes de
 				flots.Applications (couplage, affectation, transport,
@@ -277,7 +277,7 @@
 			<identifiant>ENSINBU12</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="IN8007"/>
+				<ref-intervenant ref="IN8007" />
 			</professeurs>
 			<resume>Introduction à l'IA Problèmes d'espace d'états et
 				d'exploration Logiques pour l'IA et démonstration automatique
@@ -290,16 +290,17 @@
 			<identifiant>ENSINBU15</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="IN8007"/>
+				<ref-intervenant ref="IN8007" />
 			</professeurs>
-			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU6">
 			<nom>Projet</nom>
 			<identifiant>ENSINBU6</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="IN8007"/>
+				<ref-intervenant ref="IN8007" />
 			</professeurs>
 
 			<resume>
@@ -325,7 +326,7 @@
 			<identifiant>ENSINBU7</identifiant>
 			<nombreCredit>6</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="IN8007"/>
+				<ref-intervenant ref="IN8007" />
 			</professeurs>
 
 			<resume>
@@ -346,7 +347,7 @@
 			<identifiant>ENSINBU8</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="IN8007"/>
+				<ref-intervenant ref="IN8007" />
 			</professeurs>
 			<resume>
 				<p>
@@ -383,7 +384,7 @@
 			<identifiant>ENSINBU10</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="IN8007"/>
+				<ref-intervenant ref="IN8007" />
 			</professeurs>
 
 			<resume>
@@ -403,14 +404,15 @@
 			<identifiant>ENSINBU10</identifiant>
 			<nombreCredit>27</nombreCredit>
 			<resume>
-				Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+				Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU11">
 			<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
 			<identifiant>ENSINBU11</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="IN8007"/>
+				<ref-intervenant ref="IN8007" />
 			</professeurs>
 
 			<resume>
@@ -449,7 +451,7 @@
 			<identifiant>ENSINBU13</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<professeurs>
-				<ref-intervenant ref="II1000"/>
+				<ref-intervenant ref="II1000" />
 			</professeurs>
 
 			<resume>
@@ -481,7 +483,8 @@
 			<nom>Introduction à l'apprentissage automatique</nom>
 			<identifiant>ENSINBU16</identifiant>
 			<nombreCredit>3</nombreCredit>
-			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINAU1">
 			<nom>Génie Logiciel</nom>
@@ -678,7 +681,8 @@
 			<identifiant>ENSINAU8</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<resume>
-				Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+				Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINAU9">
@@ -729,13 +733,15 @@
 			<identifiant>ENSINAU12</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<resume>
-				Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+				Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINAU13">
 			<nom>SPORT</nom>
 			<identifiant>ENSINAU13</identifiant>
 			<nombreCredit>3</nombreCredit>
-			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU41">
@@ -1700,140 +1706,149 @@
 	</enseignements>
 	<blocks>
 		<block idBlock="M1_S1_OBLI" titre="TRONC COMMUN" etat="Obligatoire">
-			<ref-enseignement ref="ENSINAU1"/>
-			<ref-enseignement ref="ENSINAU2"/>
-			<ref-enseignement ref="ENSINAU3"/>
-			<ref-enseignement ref="ENSINAU4"/>
-			<ref-enseignement ref="ENSINAU12"/>
+			<ref-enseignement ref="ENSINAU1" />
+			<ref-enseignement ref="ENSINAU2" />
+			<ref-enseignement ref="ENSINAU3" />
+			<ref-enseignement ref="ENSINAU4" />
+			<ref-enseignement ref="ENSINAU12" />
 		</block>
 		<block idBlock="M1_S1_FALC" titre="Falcultatif" etat="Falcultatif">
-			<ref-enseignement ref="ENSINAU6"/>
-			<ref-enseignement ref="ENSINAU7"/>
-			<ref-enseignement ref="ENSINAU8"/>
-			<ref-enseignement ref="ENSINAU9"/>
-			<ref-enseignement ref="ENSINAU10"/>
-			<ref-enseignement ref="ENSINAU13"/>
+			<ref-enseignement ref="ENSINAU6" />
+			<ref-enseignement ref="ENSINAU7" />
+			<ref-enseignement ref="ENSINAU8" />
+			<ref-enseignement ref="ENSINAU9" />
+			<ref-enseignement ref="ENSINAU10" />
+			<ref-enseignement ref="ENSINAU13" />
 		</block>
 		<block idBlock="M1_S2_OBLI" titre="TRONC COMMUN" etat="Obligatoire">
-			<ref-enseignement ref="ENSINBU1"/>
-			<ref-enseignement ref="ENSINBU2"/>
-			<ref-enseignement ref="ENSINBU4"/>
-			<ref-enseignement ref="ENSINBU5"/>
-			<ref-enseignement ref="ENSINBU15"/>
+			<ref-enseignement ref="ENSINBU1" />
+			<ref-enseignement ref="ENSINBU2" />
+			<ref-enseignement ref="ENSINBU4" />
+			<ref-enseignement ref="ENSINBU5" />
+			<ref-enseignement ref="ENSINBU15" />
 		</block>
 		<block idBlock="M1_S2_FALC" titre="FALCULTATIF" etat="Falcultatif">
-			<ref-enseignement ref="ENSINBU6"/>
-			<ref-enseignement ref="ENSINBU7"/>
-			<ref-enseignement ref="ENSINAU8"/>
-			<ref-enseignement ref="ENSINAU9"/>
-			<ref-enseignement ref="ENSINAU10"/>
-			<ref-enseignement ref="ENSINBU11"/>
-			<ref-enseignement ref="ENSINAU12"/>
-			<ref-enseignement ref="ENSINAU13"/>
-			<ref-enseignement ref="ENSINBU16"/>
+			<ref-enseignement ref="ENSINBU6" />
+			<ref-enseignement ref="ENSINBU7" />
+			<ref-enseignement ref="ENSINAU8" />
+			<ref-enseignement ref="ENSINAU9" />
+			<ref-enseignement ref="ENSINAU10" />
+			<ref-enseignement ref="ENSINBU11" />
+			<ref-enseignement ref="ENSINAU12" />
+			<ref-enseignement ref="ENSINAU13" />
+			<ref-enseignement ref="ENSINBU16" />
 		</block>
-		<block idBlock="TC_FSI_ISL" titre="TC des parcours FSI et ISL" etat="Obligatoire">
-			<ref-enseignement ref="ENSINCU27"/>
-			<ref-enseignement ref="ENSINCU28"/>
-			<ref-enseignement ref="ENSINCU29"/>
-			<ref-enseignement ref="ENSINCU30"/>
-			<ref-enseignement ref="ENSINCU31"/>
+		<block idBlock="TC_FSI_ISL" titre="TC des parcours FSI et ISL"
+			etat="Obligatoire">
+			<ref-enseignement ref="ENSINCU27" />
+			<ref-enseignement ref="ENSINCU28" />
+			<ref-enseignement ref="ENSINCU29" />
+			<ref-enseignement ref="ENSINCU30" />
+			<ref-enseignement ref="ENSINCU31" />
 		</block>
-		<block idBlock="SPE_S3_FSI_ISL_BONUS" titre="Unité d'enseignement à bonus" etat="Falcultatif">
-			<ref-enseignement ref="ENSINCU67"/>
+		<block idBlock="SPE_S3_FSI_ISL_BONUS" titre="Unité d'enseignement à bonus"
+			etat="Falcultatif">
+			<ref-enseignement ref="ENSINCU67" />
 		</block>
-		<block idBlock="SPE_S3_FSI_OBLI" titre="Unités obligatoires" etat="Obligatoire">
-			<ref-enseignement ref="ENSINCU32"/>
-			<ref-enseignement ref="ENSINCU33"/>
-			<ref-enseignement ref="ENSINCU34"/>
-			<ref-enseignement ref="ENSINCU35"/>
+		<block idBlock="SPE_S3_FSI_OBLI" titre="Unités obligatoires"
+			etat="Obligatoire">
+			<ref-enseignement ref="ENSINCU32" />
+			<ref-enseignement ref="ENSINCU33" />
+			<ref-enseignement ref="ENSINCU34" />
+			<ref-enseignement ref="ENSINCU35" />
 		</block>
-		<block idBlock="SPE_S4_FSI_OBLI" titre="Unités obligatoires" etat="Obligatoire">
-			<ref-enseignement ref="ENSINDU3"/>
-			<ref-enseignement ref="ENSINDU4"/>
+		<block idBlock="SPE_S4_FSI_OBLI" titre="Unités obligatoires"
+			etat="Obligatoire">
+			<ref-enseignement ref="ENSINDU3" />
+			<ref-enseignement ref="ENSINDU4" />
 		</block>
-		<block idBlock="SPE_S3_ISL_OBLI" titre="Unités obligatoires" etat="Obligatoire">
-			<ref-enseignement ref="ENSINCU36"/>
-			<ref-enseignement ref="ENSINCU37"/>
-			<ref-enseignement ref="ENSINCU38"/>
-			<ref-enseignement ref="ENSINCU39"/>
-			<ref-enseignement ref="ENSINCU40"/>
+		<block idBlock="SPE_S3_ISL_OBLI" titre="Unités obligatoires"
+			etat="Obligatoire">
+			<ref-enseignement ref="ENSINCU36" />
+			<ref-enseignement ref="ENSINCU37" />
+			<ref-enseignement ref="ENSINCU38" />
+			<ref-enseignement ref="ENSINCU39" />
+			<ref-enseignement ref="ENSINCU40" />
 		</block>
-		<block idBlock="SPE_S4_ISL_OBLI" titre="Unités obligatoires" etat="Obligatoire">
-			<ref-enseignement ref="ENSINDU3"/>
-			<ref-enseignement ref="ENSINDU4"/>
+		<block idBlock="SPE_S4_ISL_OBLI" titre="Unités obligatoires"
+			etat="Obligatoire">
+			<ref-enseignement ref="ENSINDU3" />
+			<ref-enseignement ref="ENSINDU4" />
 		</block>
-		<block idBlock="SPE_S3_IF_OBLI" titre="Unités obligatoires" etat="Obligatoire">
-			<ref-enseignement ref="ENSINCU1"/>
-			<ref-enseignement ref="ENSINCU2"/>
-			<ref-enseignement ref="ENSINCU3"/>
+		<block idBlock="SPE_S3_IF_OBLI" titre="Unités obligatoires"
+			etat="Obligatoire">
+			<ref-enseignement ref="ENSINCU1" />
+			<ref-enseignement ref="ENSINCU2" />
+			<ref-enseignement ref="ENSINCU3" />
 		</block>
-		<block idBlock="SPE_S3_IF_FALC" titre="15 crédits à choisir (validation requise)" etat="Falcultatif">
-			<ref-enseignement ref="ENSINCU4"/>
-			<ref-enseignement ref="ENSINCU5"/>
-			<ref-enseignement ref="ENSINCU6"/>
-			<ref-enseignement ref="ENSINCU7"/>
-			<ref-enseignement ref="ENSINCU8"/>
-			<ref-enseignement ref="ENSINCU9"/>
-			<ref-enseignement ref="ENSINCU10"/>
-			<ref-enseignement ref="ENSINCU11"/>
-			<ref-enseignement ref="ENSINCU12"/>
-			<ref-enseignement ref="ENSINCU13"/>
-			<ref-enseignement ref="ENSINCU14"/>
-			<ref-enseignement ref="ENSINCU15"/>
-			<ref-enseignement ref="ENSINCU16"/>
-			<ref-enseignement ref="ENSINCU17"/>
-			<ref-enseignement ref="ENSINCU18"/>
-			<ref-enseignement ref="ENSINCU19"/>
-			<ref-enseignement ref="ENSINCU20"/>
-			<ref-enseignement ref="ENSINCU21"/>
-			<ref-enseignement ref="ENSINCU22"/>
-			<ref-enseignement ref="ENSINCU23"/>
+		<block idBlock="SPE_S3_IF_FALC" titre="15 crédits à choisir (validation requise)"
+			etat="Falcultatif">
+			<ref-enseignement ref="ENSINCU4" />
+			<ref-enseignement ref="ENSINCU5" />
+			<ref-enseignement ref="ENSINCU6" />
+			<ref-enseignement ref="ENSINCU7" />
+			<ref-enseignement ref="ENSINCU8" />
+			<ref-enseignement ref="ENSINCU9" />
+			<ref-enseignement ref="ENSINCU10" />
+			<ref-enseignement ref="ENSINCU11" />
+			<ref-enseignement ref="ENSINCU12" />
+			<ref-enseignement ref="ENSINCU13" />
+			<ref-enseignement ref="ENSINCU14" />
+			<ref-enseignement ref="ENSINCU15" />
+			<ref-enseignement ref="ENSINCU16" />
+			<ref-enseignement ref="ENSINCU17" />
+			<ref-enseignement ref="ENSINCU18" />
+			<ref-enseignement ref="ENSINCU19" />
+			<ref-enseignement ref="ENSINCU20" />
+			<ref-enseignement ref="ENSINCU21" />
+			<ref-enseignement ref="ENSINCU22" />
+			<ref-enseignement ref="ENSINCU23" />
 		</block>
-		<block idBlock="SPE_S4_IF_OBLI" titre="Unités obligatoires" etat="Obligatoire">
-			<ref-enseignement ref="ENSINDU1"/>
-			<ref-enseignement ref="ENSINDU2"/>
+		<block idBlock="SPE_S4_IF_OBLI" titre="Unités obligatoires"
+			etat="Obligatoire">
+			<ref-enseignement ref="ENSINDU1" />
+			<ref-enseignement ref="ENSINDU2" />
 		</block>
 	</blocks>
 	<semestres>
 		<semestre idSemestre="M1_S1">
 			<titre>1</titre>
-			<ref-block ref="M1_S1_OBLI"/>
-			<ref-block ref="M1_S1_FALC"/>
+			<ref-block ref="M1_S1_OBLI" />
+			<ref-block ref="M1_S1_FALC" />
 		</semestre>
 		<semestre idSemestre="M1_S2">
 			<titre>2</titre>
-			<ref-block ref="M1_S2_OBLI"/>
-			<ref-block ref="M1_S2_FALC"/>
+			<ref-block ref="M1_S2_OBLI" />
+			<ref-block ref="M1_S2_FALC" />
 		</semestre>
 		<semestre idSemestre="M2_S3_FSIL_ISL">
 			<titre>3</titre>
-			<ref-block ref="TC_FSI_ISL"/>
-			<ref-block ref="SPE_S3_FSI_ISL_BONUS"/>
-			<ref-block ref="SPE_S3_ISL_OBLI"/>
+			<ref-block ref="TC_FSI_ISL" />
+			<ref-block ref="SPE_S3_FSI_ISL_BONUS" />
+			<ref-block ref="SPE_S3_ISL_OBLI" />
 		</semestre>
 		<semestre idSemestre="M2_S4_FSIL_ISL">
 			<titre>4</titre>
-			<ref-block ref="SPE_S4_ISL_OBLI"/>
+			<ref-block ref="SPE_S4_ISL_OBLI" />
 		</semestre>
 		<semestre idSemestre="M2_S3_FSIL_FSI">
 			<titre>3</titre>
-			<ref-block ref="TC_FSI_ISL"/>
-			<ref-block ref="SPE_S3_FSI_ISL_BONUS"/>
-			<ref-block ref="SPE_S3_FSI_OBLI"/>
+			<ref-block ref="TC_FSI_ISL" />
+			<ref-block ref="SPE_S3_FSI_ISL_BONUS" />
+			<ref-block ref="SPE_S3_FSI_OBLI" />
 		</semestre>
 		<semestre idSemestre="M2_S4_FSIL_FSI">
 			<titre>4</titre>
-			<ref-block ref="SPE_S4_FSI_OBLI"/>
+			<ref-block ref="SPE_S4_FSI_OBLI" />
 		</semestre>
 		<semestre idSemestre="M2_S3_FSIL_IF">
 			<titre>3</titre>
-			<ref-block ref="SPE_S3_IF_OBLI"/>
-			<ref-block ref="SPE_S3_IF_FALC"/>
+			<ref-block ref="SPE_S3_IF_OBLI" />
+			<ref-block ref="SPE_S3_IF_FALC" />
 		</semestre>
 		<semestre idSemestre="M2_S4_FSIL_IF">
 			<titre>4</titre>
-			<ref-block ref="SPE_S4_IF_OBLI"/>
+			<ref-block ref="SPE_S4_IF_OBLI" />
 		</semestre>
 	</semestres>
 
@@ -1842,9 +1857,10 @@
 			<nom>Master 1 - Premiere année de tronc commun</nom>
 			<identifiant>MASTER1</identifiant>
 			<code>MASTER1</code>
-			<etablissement>UFR SciencesUniversité d'Aix-MarseilleSt CharlesSt Jerome</etablissement>
-			<responsable>
-				<ref-intervenant ref="IN9224"/>
+			<etablissement>UFR SciencesUniversité d'Aix-MarseilleSt CharlesSt
+				Jerome</etablissement>
+			<responsable>			
+				<ref-intervenant ref="IN9224" />
 			</responsable>
 			<description>
 				<p>L'objectif de cette première année est de donner les bases
@@ -1865,8 +1881,8 @@
 					méthodes de conception.
 				</p>
 			</competences>
-			<ref-semestre ref="M1_S1"/>
-			<ref-semestre ref="M1_S2"/>
+			<ref-semestre ref="M1_S1" />
+			<ref-semestre ref="M1_S2" />
 			<politiqueDesStages>
 				<p>La formation par le biais des projets est largement encouragée :
 					un travail d'étude et de recherche réalisé en groupe de deux à
@@ -1913,9 +1929,9 @@
 			<finalite>Rech.</finalite>
 			<etablissement>UFR Sciences</etablissement>
 			<responsable>
-				<ref-intervenant ref="IN9941"/>
+				<ref-intervenant ref="IN9941" />
 			</responsable>
-			<description/>
+			<description />
 			<competences>En termes de compétences cette spécialité a pour but de
 				développer chez les étudiants leur capacité à raisonner et à for, et
 				de les initier à la recherche.
@@ -1938,12 +1954,12 @@
 				laboratoire d'informatique
 				fondamentale.
 			</connaissances>
-			<ref-semestre ref="M2_S3_FSIL_IF"/>
-			<ref-semestre ref="M2_S4_FSIL_IF"/>
-			<politiqueDesStages/>
-			<conditionAdmission/>
-			<debouches/>
-			<poursuitesEtudes/>
+			<ref-semestre ref="M2_S3_FSIL_IF" />
+			<ref-semestre ref="M2_S4_FSIL_IF" />
+			<politiqueDesStages />
+			<conditionAdmission />
+			<debouches />
+			<poursuitesEtudes />
 		</specialite>
 		<specialite idSpecialite="SPE_FSI">
 			<nom>Fiabilité et sécurité informatique (FSI)</nom>
@@ -1953,10 +1969,10 @@
 				Fiabilité, sécurité et intégration logicielle</finalite>
 			<etablissement>UFR Sciences</etablissement>
 			<responsable>
-				<ref-intervenant ref="IN9941"/>
+				<ref-intervenant ref="IN9941" />
 			</responsable>
 			<description>
-				<p>	La formation donne les principes et techniques liés à la
+				<p> La formation donne les principes et techniques liés à la
 					conception de systèmes informatiques surs dans un environnement
 					ouvert et hétérogène. Elle forme les étudiants aux principes et
 					méthodes de développement modernes qui reposent sur des outils de
@@ -2007,8 +2023,8 @@
 					les points forts de la formation.
 				</p>
 			</connaissances>
-			<ref-semestre ref="M2_S3_FSIL_FSI"/>
-			<ref-semestre ref="M2_S4_FSIL_FSI"/>
+			<ref-semestre ref="M2_S3_FSIL_FSI" />
+			<ref-semestre ref="M2_S4_FSIL_FSI" />
 			<politiqueDesStages>
 				<p>Les stages sont optionnels en première année (2
 					mois),
@@ -2121,7 +2137,7 @@
 				Fiabilité, sécurité et intégration logicielle</finalite>
 			<etablissement>UFR Sciences</etablissement>
 			<responsable>
-				<ref-intervenant ref="IN18"/>
+				<ref-intervenant ref="IN18" />
 			</responsable>
 			<description>
 				<p>Le développement de l'Internet/Intranet et des applications
@@ -2176,8 +2192,8 @@
 					la formation.
 				</p>
 			</connaissances>
-			<ref-semestre ref="M2_S3_FSIL_ISL"/>
-			<ref-semestre ref="M2_S4_FSIL_ISL"/>
+			<ref-semestre ref="M2_S3_FSIL_ISL" />
+			<ref-semestre ref="M2_S4_FSIL_ISL" />
 			<politiqueDesStages>
 				<p>
 					La formation par le biais des projets est largement encouragée :
@@ -2305,24 +2321,28 @@
 	<parcours>
 		<parcour idParcour="PARCOUR_MASTER_1">
 			<nom>Master 1</nom>
-			<ref-specialite ref="SPE_MASTER1"/>
+			<ref-specialite ref="SPE_MASTER1" />
 		</parcour>
 		<parcour idParcour="PARCOUR_FSIL">
 			<nom>FSIL</nom>
 			<description>
 				<p>Cette spécialité à finalité
-					professionnelle est une composante du Master Informatique. Elle est
-					déclinée en deux parcours qui partagent un tronc-commun au début de
-					la deuxième année (semestre 3). Consultez ces deux parcours pour
-					avoir une information plus précise :
+					professionnelle est une composante du
+					Master Informatique. Elle est
+					déclinée en deux parcours qui
+					partagent un tronc-commun au début de
+					la deuxième année (semestre
+					3). Consultez ces deux parcours pour
+					avoir une information plus
+					précise :
 				</p>
 			</description>
-			<ref-specialite ref="SPE_FSI"/>
-			<ref-specialite ref="SPE_ISL"/>
+			<ref-specialite ref="SPE_FSI" />
+			<ref-specialite ref="SPE_ISL" />
 		</parcour>
 		<parcour idParcour="PARCOUR_IF">
 			<nom>IF</nom>
-			<ref-specialite ref="SPE_IF"/>
+			<ref-specialite ref="SPE_IF" />
 		</parcour>
 	</parcours>
 	<description>

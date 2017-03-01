@@ -292,7 +292,8 @@
 			<professeurs>
 				<ref-intervenant ref="IN8007"/>
 			</professeurs>
-			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU6">
 			<nom>Projet</nom>
@@ -403,7 +404,8 @@
 			<identifiant>ENSINBU10</identifiant>
 			<nombreCredit>27</nombreCredit>
 			<resume>
-				Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+				Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINBU11">
 			<nom>Initiation à la fouille de données et à l'optimisation des SGBD</nom>
@@ -481,7 +483,8 @@
 			<nom>Introduction à l'apprentissage automatique</nom>
 			<identifiant>ENSINBU16</identifiant>
 			<nombreCredit>3</nombreCredit>
-			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINAU1">
 			<nom>Génie Logiciel</nom>
@@ -678,7 +681,8 @@
 			<identifiant>ENSINAU8</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<resume>
-				Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+				Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINAU9">
@@ -729,13 +733,15 @@
 			<identifiant>ENSINAU12</identifiant>
 			<nombreCredit>3</nombreCredit>
 			<resume>
-				Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+				Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 		<enseignement idEnseignement="ENSINAU13">
 			<nom>SPORT</nom>
 			<identifiant>ENSINAU13</identifiant>
 			<nombreCredit>3</nombreCredit>
-			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé. </resume>
+			<resume>Nous sommes désolé, mais nous n'avons pas encore de résumé.
+			</resume>
 		</enseignement>
 
 		<enseignement idEnseignement="ENSINCU41">
@@ -1842,8 +1848,9 @@
 			<nom>Master 1 - Premiere année de tronc commun</nom>
 			<identifiant>MASTER1</identifiant>
 			<code>MASTER1</code>
-			<etablissement>UFR SciencesUniversité d'Aix-MarseilleSt CharlesSt Jerome</etablissement>
-			<responsable>
+			<etablissement>UFR SciencesUniversité d'Aix-MarseilleSt CharlesSt
+				Jerome</etablissement>
+			<responsable>			
 				<ref-intervenant ref="IN9224"/>
 			</responsable>
 			<description>
@@ -1956,7 +1963,7 @@
 				<ref-intervenant ref="IN9941"/>
 			</responsable>
 			<description>
-				<p>	La formation donne les principes et techniques liés à la
+				<p> La formation donne les principes et techniques liés à la
 					conception de systèmes informatiques surs dans un environnement
 					ouvert et hétérogène. Elle forme les étudiants aux principes et
 					méthodes de développement modernes qui reposent sur des outils de
@@ -2311,10 +2318,14 @@
 			<nom>FSIL</nom>
 			<description>
 				<p>Cette spécialité à finalité
-					professionnelle est une composante du Master Informatique. Elle est
-					déclinée en deux parcours qui partagent un tronc-commun au début de
-					la deuxième année (semestre 3). Consultez ces deux parcours pour
-					avoir une information plus précise :
+					professionnelle est une composante du
+					Master Informatique. Elle est
+					déclinée en deux parcours qui
+					partagent un tronc-commun au début de
+					la deuxième année (semestre
+					3). Consultez ces deux parcours pour
+					avoir une information plus
+					précise :
 				</p>
 			</description>
 			<ref-specialite ref="SPE_FSI"/>

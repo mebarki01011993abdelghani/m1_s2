@@ -3,13 +3,7 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified">
-	
-	<xs:complexType name="objet" abstract="true">
-	    <xs:sequence>
-	        <xs:element ref="nom" />
-	    </xs:sequence>
-	</xs:complexType>
-	
+
 	<xs:element name="master">
 		<xs:complexType>
 			<xs:sequence>
@@ -22,6 +16,20 @@
 				<xs:element ref="description" />
 			</xs:sequence>
 		</xs:complexType>
+
+		<!-- INDEX SUR INTERVENANT -->
+		<xs:keyref name="ref.intervenant.idIntervenant" refer="intervenant.id">
+			<xs:selector xpath="specialites/specialite/responsable/ref-intervenant | enseignements/enseignement/professeurs/ref-intervenant" />
+			<xs:field xpath="@ref" />
+		</xs:keyref>
+		
+		
+		<!-- INDEX SUR ENSEIGNEMENT -->
+		<xs:keyref name="ref.enseignement" refer="enseignement.id">
+			<xs:selector xpath="blocks/block/ref-enseignement" />
+			<xs:field xpath="@ref" />
+		</xs:keyref>
+		
 	</xs:element>
 	<xs:element name="enseignement">
 		<xs:complexType>
@@ -41,6 +49,12 @@
 			</xs:sequence>
 			<xs:attribute name="idEnseignement" use="required" type="ID" />
 		</xs:complexType>
+		
+		<!-- définition d'un index -->
+		<xs:key name="enseignement.id">
+			<xs:selector xpath="." />    <!-- les éléments indexés -->
+			<xs:field xpath="@idEnseignement" />          <!-- la clef -->
+		</xs:key>
 	</xs:element>
 	<xs:element name="intervenant">
 		<xs:complexType>
@@ -57,12 +71,17 @@
 			</xs:sequence>
 			<xs:attribute name="idIntervenant" use="required" type="ID" />
 		</xs:complexType>
+		<!-- définition d'un index -->
+		<xs:key name="intervenant.id">
+			<xs:selector xpath="." />    <!-- les éléments indexés -->
+			<xs:field xpath="@idIntervenant" />          <!-- la clef -->
+		</xs:key>
 	</xs:element>
-	<xs:element name="specialite" >
-		<xs:complexType >
+	<xs:element name="specialite">
+		<xs:complexType>
 			<xs:sequence>
 				<xs:element ref="nom" />
-				<xs:element name="entifiant" type="ID" />
+				<xs:element name="identifiant" type="ID" />
 				<xs:element name="code" type="ID" />
 				<xs:element minOccurs="0" ref="finalite" />
 				<xs:element maxOccurs="unbounded" ref="etablissement" />
