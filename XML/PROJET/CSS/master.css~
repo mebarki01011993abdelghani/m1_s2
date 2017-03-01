@@ -87,7 +87,7 @@ padding: 11px;
 	color: #cde1fc;
 	font: 1em "Trebuchet MS", Arial, sans-serif;
 	text-align: center;
-
+border-left:1px;
 
 }
 
@@ -95,7 +95,6 @@ padding: 11px;
 	list-style-type: none;
 	font: 1em "Trebuchet MS", Arial, sans-serif;
 	text-align: center;
-border-left:1px;
 }
 
 .navigation li a {

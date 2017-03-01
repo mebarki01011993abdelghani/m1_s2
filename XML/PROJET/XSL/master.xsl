@@ -34,6 +34,7 @@
 						<div class="titre">
 							Les unites triees par code
 						</div>
+						<div class="contenu">
 						<xsl:for-each select="//enseignement">
 							<a href="../enseignements/{@idEnseignement}.html">
 								[
@@ -41,9 +42,11 @@
 								]
 							</a>
 						</xsl:for-each>
+					</div>
 						<div class="titre">
 							Les unites du master
 						</div>
+						<div class="contenu">
 						<table>
 							<tr>
 								<td>Code</td>
@@ -64,6 +67,7 @@
 								</tr>
 							</xsl:for-each>
 						</table>
+					</div>
 					</div>
 				</body>
 			</html>
@@ -92,6 +96,7 @@
 					</center>
 					<div class="body">
 						<div class="titre">Une première liste</div>
+						<div class="contenu">
 						<p>L'équipe pédagogique est en cours de constitution. Cette liste
 							sera complétée en mars et avril 2012.
 						</p>
@@ -122,6 +127,7 @@
 							</xsl:for-each>
 						</table>
 					</div>
+					</div>
 				</body>
 			</html>
 		</xsl:document>
@@ -144,9 +150,6 @@
 							<img src="../../CSS/CONTENTS/logo.png"></img>
 							<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 						</div>
-						<center>
-							<a href="#null" onclick="javascript:history.back();">Retour</a>
-						</center>
 						<xsl:apply-templates select="." />
 					</body>
 				</html>
@@ -200,12 +203,7 @@
 							<img src="../../CSS/CONTENTS/logo.png"></img>
 							<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 						</div>
-						<div class="body">
-							<center>
-								<a href="#null" onclick="javascript:history.back();">Retour</a>
-							</center>
 							<xsl:apply-templates select="." />
-						</div>
 					</body>
 				</html>
 			</xsl:document>
@@ -233,10 +231,11 @@
 							</xsl:call-template>
 						</div>
 						<div class="body">
-							<h1>
+							<div class="titre">
 								<xsl:value-of select="nom" />
-							</h1>
-							<h2>Responsables :</h2>
+							</div>
+							<div class="contenu">
+								Responsables :
 							<xsl:for-each select="ref-specialite">
 								<xsl:variable name="ref" select="@ref" />
 								<ul>
@@ -264,6 +263,7 @@
 									</xsl:for-each>
 								</ul>
 							</xsl:for-each>
+						</div>
 						</div>
 					</body>
 				</html>
@@ -418,12 +418,13 @@
 	<!-- NOEUD INTERVENANT -->
 	<xsl:template match="intervenant">
 		<div id="{@idIntervenant}">
-			<center>
-				<h2>
+
+
+			<div class="body">			
+					<div class="titre">
 					<xsl:value-of select="nom" />
-				</h2>
-			</center>
-			<div class="body">
+				</div>
+			<div class ="contenu">
 				<ul>
 					<li>
 						Identifiant :
@@ -441,19 +442,24 @@
 						Etablissement :
 						<xsl:value-of select="etablissement" />
 					</li>
-					<br />
-
 				</ul>
 			</div>
+			<br/>
+						<center>
+							<a href="#null" onclick="javascript:history.back();">Revenir à la liste</a>
+						</center>
 		</div>
+	</div>
 	</xsl:template>
 
 	<!-- NOEUD ENSEIGNEMENT -->
 	<xsl:template match="enseignement">
 		<div id="{@idEnseignement}">
-			<h2>
+			<div class="body">
+				<div class="titre">
 				<xsl:value-of select="nom" />
-			</h2>
+			</div>
+			<div class="contenu">
 			<ul>
 				<li>
 					Identifiant :
@@ -473,9 +479,16 @@
 						<xsl:value-of select="pre-requis" />
 					</li>
 				</xsl:if>
-				<br />
+
 
 			</ul>
+
+		</div>
+						<br/>
+						<center>
+							<a href="#null" onclick="javascript:history.back();">Revenir à la liste</a>
+						</center>
+		</div>
 		</div>
 	</xsl:template>
 
