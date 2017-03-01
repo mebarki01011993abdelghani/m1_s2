@@ -15,34 +15,32 @@
 						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 						<link rel="stylesheet" type="text/css" href="../CSS/master.css" />
 						<title>
-							<xsl:value-of select="nom" />
+							Liste Enseignements
 						</title>
 					</head>
 					<body>
-				<ul>
 					<h1>Les unites triees par code</h1>
 					<xsl:for-each select="//enseignement">
-					<ul>
-						<li>
-							<a><xsl:value-of select="@idEnseignement"/></a>
-						</li>
-					</ul>
+							<a>[ <xsl:value-of select="@idEnseignement"/> ] </a> 
 					</xsl:for-each>
 					<h1>Les unites du master</h1>
+					<table>
+						<tr>
+							<td>Code</td>
+							<td>Nom</td>
+						</tr>
 					<xsl:for-each select="//enseignement">
-					<ul>
-						<li>
-							Code : <xsl:value-of select="@idEnseignement"/>
-							Nom  : <a><xsl:value-of select="nom"/></a>
-						</li>
-					</ul>
+					<tr>
+							<td>Code : <xsl:value-of select="@idEnseignement"/></td>
+							<td>Nom  : <a><xsl:value-of select="nom"/></a></td>
+					</tr>
 					</xsl:for-each>
-				</ul>
-			</body>
+				</table>
+				</body>
 		</html>
 	</xsl:document>
 
-<!-- LISTE ENSEIGNEMENTS -->
+<!-- LISTE INTERVENANTS -->
 	<xsl:document href="www/listeIntervenants.html">
 				<html xmlns="http://www.w3.org/1999/xhtml">
 					<head>
@@ -52,16 +50,25 @@
 					</head>
 					<body>
 					<h1>Liste des Intervenants du master</h1>
+					<div id="block_titre">Une première liste</div>
+					<div id="contenu">L'équipe pédagogique est en cours de constitution. Cette liste sera complétée en mars et avril 2012.
+					<table>
+						<tr>
+							<td>Nom</td>
+							<td>Téléphone</td>
+							<td>Courriel</td>
+							<td>Etablissement</td>
+						</tr>
 					<xsl:for-each select="//intervenant">
-					<ul>
-						<li>
-							<a><xsl:value-of select="nom"/></a>
-							<xsl:value-of select="telephone"/>
-							<xsl:value-of select="mail"/>
-							<xsl:value-of select="etablissement"/>
-						</li>
-					</ul>
+					<tr>
+							<td><a><xsl:value-of select="nom"/></a></td>
+							<td><xsl:value-of select="telephone"/></td>
+							<td><xsl:value-of select="mail"/></td>
+							<td><xsl:value-of select="etablissement"/></td>
+					</tr>
 					</xsl:for-each>
+				</table>
+			</div>
 			</body>
 		</html>
 	</xsl:document>
