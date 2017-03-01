@@ -68,16 +68,16 @@
 		</xsl:document>
 
 		<!-- LISTE INTERVENANTS -->
-		<xsl:document href="www/listeIntervenants.html">
+		<xsl:document href="www/parcours/listeIntervenants.html">
 			<html xmlns="http://www.w3.org/1999/xhtml">
 				<head>
 					<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-					<link rel="stylesheet" type="text/css" href="../CSS/master.css" />
+					<link rel="stylesheet" type="text/css" href="../../CSS/master.css" />
 					<title>Liste des Intervenants						</title>
 				</head>
 				<body>
 					<div class="header">
-						<img src="../../../CSS/CONTENTS/logo.png"></img>
+						<img src="../../CSS/CONTENTS/logo.png"></img>
 						<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 					</div>
 					<div class="navigation">
