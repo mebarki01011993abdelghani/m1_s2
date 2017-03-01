@@ -38,6 +38,12 @@ p {
 	padding: 1px;
 	border-color: #ffffff;
 }
+
+.contenu {
+	width : 90%;
+	background: #87BFB7;
+
+}
 .body p {
 	font-size: 18px;
 }
