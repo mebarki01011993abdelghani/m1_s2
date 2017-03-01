@@ -32,5 +32,5 @@ path_xq:
 xq:
 	java -cp $HOME/saxon9/saxon9he.jar net.sf.saxon.Query "-q:XQ/requete.xq" > www/xq.xhtml
 
-java:
+javaNom:
 	cd JAVA && make all

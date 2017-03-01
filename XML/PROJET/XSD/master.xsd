@@ -464,6 +464,8 @@
 	<xs:element name="siteWeb">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
+				<!-- On supprime le blancs -->
+				<xs:whiteSpace value="collapse" />
 				<xs:pattern value="[hH][tT]{2}[pP]://[wW]{3}.*" />
 			</xs:restriction>
 		</xs:simpleType>
