@@ -483,8 +483,7 @@
 	<!-- Semestre -->
 	<xsl:template name="genererSemestre">
 		<xsl:param name="idSemestre" />
-		Programme du S
-		<xsl:value-of select="//semestre[@idSemestre = $idSemestre]/titre" />
+		Programme du S<xsl:value-of select="//semestre[@idSemestre = $idSemestre]/titre" />
 		<xsl:for-each select="//semestre[@idSemestre = $idSemestre]/ref-block">
 			<xsl:variable name="idBlock" select="@ref" />
 			<li>

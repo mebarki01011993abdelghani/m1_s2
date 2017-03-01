@@ -1964,7 +1964,7 @@
 				<ref-intervenant ref="IN9941"></ref-intervenant>
 			</responsable>
 			<description>
-				<p>	La formation donne les principes et techniques liés à la
+				<p> La formation donne les principes et techniques liés à la
 					conception de systèmes informatiques surs dans un environnement
 					ouvert et hétérogène. Elle forme les étudiants aux principes et
 					méthodes de développement modernes qui reposent sur des outils de
@@ -2319,10 +2319,14 @@
 			<nom>FSIL</nom>
 			<description>
 				<p>Cette spécialité à finalité
-					professionnelle est une composante du Master Informatique. Elle est
-					déclinée en deux parcours qui partagent un tronc-commun au début de
-					la deuxième année (semestre 3). Consultez ces deux parcours pour
-					avoir une information plus précise :
+					professionnelle est une composante du
+					Master Informatique. Elle est
+					déclinée en deux parcours qui
+					partagent un tronc-commun au début de
+					la deuxième année (semestre
+					3). Consultez ces deux parcours pour
+					avoir une information plus
+					précise :
 				</p>
 			</description>
 			<ref-specialite ref="SPE_FSI"></ref-specialite>
@@ -2331,6 +2335,16 @@
 		<parcour idParcour="PARCOUR_IF">
 			<nom>IF</nom>
 			<ref-specialite ref="SPE_IF"></ref-specialite>
+		</parcour>
+		<parcour idParcour="PARCOUR_TEST">
+			<nom>Tout en un</nom>
+			<description>
+				<p>Spécialité tout en un ! Master 1 plus master 2
+				</p>
+			</description>
+			<ref-specialite ref="SPE_FSI"></ref-specialite>
+			<ref-specialite ref="SPE_ISL"></ref-specialite>
+			<ref-specialite ref="SPE_MASTER1"></ref-specialite>
 		</parcour>
 	</parcours>
 	<description>
