@@ -82,9 +82,7 @@
 					</div>
 					<div class="navigation">
 						<xsl:call-template name="menu">
-							<xsl:with-param name="link">
-								/
-							</xsl:with-param>
+							<xsl:with-param name="link">/</xsl:with-param>
 						</xsl:call-template>
 					</div>
 					<center>
@@ -146,9 +144,7 @@
 						</div>
 						<div class="navigation">
 							<xsl:call-template name="menu">
-								<xsl:with-param name="link">
-									../
-								</xsl:with-param>
+								<xsl:with-param name="link">../</xsl:with-param>
 							</xsl:call-template>
 						</div>
 						<xsl:apply-templates select="." />
@@ -175,9 +171,7 @@
 						</div>
 						<div class="navigation">
 							<xsl:call-template name="menu">
-								<xsl:with-param name="link">
-									../
-								</xsl:with-param>
+								<xsl:with-param name="link">../</xsl:with-param>
 							</xsl:call-template>
 						</div>
 						<div class="body">
@@ -205,9 +199,7 @@
 						</div>
 						<div class="navigation">
 							<xsl:call-template name="menu">
-								<xsl:with-param name="link">
-									../
-								</xsl:with-param>
+								<xsl:with-param name="link">../</xsl:with-param>
 							</xsl:call-template>
 							<xsl:apply-templates select="." />
 						</div>
@@ -288,9 +280,7 @@
 				</div>
 				<div class="navigation">
 					<xsl:call-template name="menu">
-						<xsl:with-param name="link">
-							parcours/
-						</xsl:with-param>
+						<xsl:with-param name="link">parcours/</xsl:with-param>
 					</xsl:call-template>
 				</div>
 				<div class="body">
@@ -533,48 +523,43 @@
 				<xsl:value-of select="nom" />
 			</div>
 		</xsl:if>
-
 		<xsl:variable name="ref" select="responsable/ref-intervenant/@ref" />
-		<xsl:if test="//intervenant[@idIntervenant = $ref]/nom != ''">
-			<div class="titre">
-				Responsable
-			</div>
-		</xsl:if>
+		<div class="titre">
+			Responsable
+		</div>
 		<div class="contenu">
 			<xsl:value-of select="//intervenant[@idIntervenant = $ref]/nom" />
 		</div>
 		<xsl:if test="etablissement != ''">
 			<div class="titre">
 				Lieu d'enseignement</div>
+			<div class="contenu">
+				<xsl:value-of select="etablissement" />
+			</div>
 		</xsl:if>
-		<div class="contenu">
-			<xsl:value-of select="etablissement" />
-		</div>
-		<xsl:if test="nom != ''">
+		<xsl:if test="description != ''">
 			<div class="titre">
 				Description
 			</div>
+			<div class="contenu">
+				<xsl:copy-of select="description" />
+			</div>
 		</xsl:if>
-		<div class="contenu">
-			<xsl:copy-of select="description" />
-		</div>
 		<xsl:if test="competences != ''">
 			<div class="titre">
 				Compétences à acquérir</div>
+			<div class="contenu">
+				<xsl:copy-of select="competences" />
+			</div>
 		</xsl:if>
-		<div class="contenu">
-			<xsl:copy-of select="competences" />
-		</div>
 		<xsl:if test="connaissances != ''">
 			<div class="titre">
 				Connaissances à acquérir</div>
+			<div class="contenu">
+				<xsl:copy-of select="connaissances" />
+			</div>
 		</xsl:if>
-		<div class="contenu">
-			<xsl:copy-of select="connaissances" />
-		</div>
-		<div class="titre">
-			Programme et enseignements
-		</div>
+		<div class="titre">Programme et enseignements </div>
 		<div class="contenu">
 			<xsl:for-each select="ref-semestre">
 				<xsl:variable name="idSemestre" select="@ref" />
@@ -589,50 +574,50 @@
 			<div class="titre">
 				Politique des stages
 			</div>
+			<div class="contenu">
+				<xsl:copy-of select="politiqueDesStages" />
+			</div>
 		</xsl:if>
-		<div class="contenu">
-			<xsl:copy-of select="politiqueDesStages" />
-		</div>
 		<xsl:if test="aspects != ''">
 			<div class="titre">
 				Aspects formation et recherche
 			</div>
+			<div class="contenu">
+				<xsl:copy-of select="aspects" />
+			</div>
 		</xsl:if>
-		<div class="contenu">
-			<xsl:copy-of select="aspects" />
-		</div>
 		<xsl:if test="modalites != ''">
 			<div class="titre">
 				Modalité et recherche
 			</div>
+			<div class="contenu">
+				<xsl:copy-of select="modalites" />
+			</div>
 		</xsl:if>
-		<div class="contenu">
-			<xsl:copy-of select="modalites" />
-		</div>
 		<xsl:if test="conditionAdmission != ''">
 			<div class="titre">
 				Condition d'admission et pré-requis
 			</div>
+			<div class="contenu">
+				<xsl:copy-of select="conditionAdmission" />
+			</div>
 		</xsl:if>
-		<div class="contenu">
-			<xsl:copy-of select="conditionAdmission" />
-		</div>
 		<xsl:if test="debouches != ''">
 			<div class="titre">
 				Débouchés
 			</div>
+			<div class="contenu">
+				<xsl:copy-of select="debouches" />
+			</div>
 		</xsl:if>
-		<div class="contenu">
-			<xsl:copy-of select="debouches" />
-		</div>
 		<xsl:if test="poursuitesEtudes != ''">
 			<div class="titre">
 				Poursuites d'études
 			</div>
+			<div class="contenu">
+				<xsl:copy-of select="poursuitesEtudes" />
+			</div>
 		</xsl:if>
-		<div class="contenu">
-			<xsl:copy-of select="poursuitesEtudes" />
-		</div>
 		<div class="contenu">
 			<xsl:copy-of select="autre" />
 		</div>
