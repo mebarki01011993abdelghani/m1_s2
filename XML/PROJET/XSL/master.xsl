@@ -35,7 +35,7 @@
 							Les unites triees par code
 						</div>
 						<xsl:for-each select="//enseignement">
-							<a>
+							<a href="../enseignements/{@idEnseignement}.html">
 								[
 								<xsl:value-of select="@idEnseignement" />
 								]
@@ -52,7 +52,7 @@
 							<xsl:for-each select="//enseignement">
 								<tr>
 									<td>
-										<xsl:value-of select="@idEnseignement" />
+										<a href="../enseignements/{@idEnseignement}.html"><xsl:value-of select="@idEnseignement" /></a>
 									</td>
 									<td>
 										<a>
@@ -103,7 +103,7 @@
 							<xsl:for-each select="//intervenant">
 								<tr>
 									<td>
-										<a>
+										<a href="../intervenants/{@idIntervenant}.html">
 											<xsl:value-of select="nom" />
 										</a>
 									</td>
@@ -142,11 +142,7 @@
 							<img src="../../CSS/CONTENTS/logo.png"></img>
 							<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 						</div>
-						<div class="navigation">
-							<xsl:call-template name="menu">
-								<xsl:with-param name="link">../</xsl:with-param>
-							</xsl:call-template>
-						</div>
+							<center><a href="#null" onclick="javascript:history.back();">Retour</a></center>
 						<xsl:apply-templates select="." />
 					</body>
 				</html>
@@ -187,6 +183,7 @@
 			<xsl:document href="www/enseignements/{@idEnseignement}.html">
 				<html xmlns="http://www.w3.org/1999/xhtml">
 					<head>
+												<link rel="stylesheet" type="text/css" href="../../CSS/master.css" />
 						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 						<title>
 							<xsl:value-of select="nom" />
@@ -194,13 +191,11 @@
 					</head>
 					<body>
 						<div class="header">
-							<img src="../../../CSS/CONTENTS/logo.png"></img>
+							<img src="/../../CSS/CONTENTS/logo.png"></img>
 							<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
 						</div>
-						<div class="navigation">
-							<xsl:call-template name="menu">
-								<xsl:with-param name="link">../</xsl:with-param>
-							</xsl:call-template>
+						<div class ="body">
+								<center><a href="#null" onclick="javascript:history.back();">Retour</a></center>
 							<xsl:apply-templates select="." />
 						</div>
 					</body>
