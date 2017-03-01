@@ -8,7 +8,66 @@
 	<!-- NOEUD MASTER -->
 	<xsl:template match="master">
 
-		
+	<!-- LISTE ENSEIGNEMENTS -->
+	<xsl:document href="www/listeEnseignements.html">
+				<html xmlns="http://www.w3.org/1999/xhtml">
+					<head>
+						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+						<link rel="stylesheet" type="text/css" href="../CSS/master.css" />
+						<title>
+							<xsl:value-of select="nom" />
+						</title>
+					</head>
+					<body>
+				<ul>
+					<h1>Les unites triees par code</h1>
+					<xsl:for-each select="//enseignement">
+					<ul>
+						<li>
+							<a><xsl:value-of select="@idEnseignement"/></a>
+						</li>
+					</ul>
+					</xsl:for-each>
+					<h1>Les unites du master</h1>
+					<xsl:for-each select="//enseignement">
+					<ul>
+						<li>
+							Code : <xsl:value-of select="@idEnseignement"/>
+							Nom  : <a><xsl:value-of select="nom"/></a>
+						</li>
+					</ul>
+					</xsl:for-each>
+				</ul>
+			</body>
+		</html>
+	</xsl:document>
+
+<!-- LISTE ENSEIGNEMENTS -->
+	<xsl:document href="www/listeIntervenants.html">
+				<html xmlns="http://www.w3.org/1999/xhtml">
+					<head>
+						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+						<link rel="stylesheet" type="text/css" href="../CSS/master.css" />
+						<title>Liste des Intervenants						</title>
+					</head>
+					<body>
+					<h1>Liste des Intervenants du master</h1>
+					<xsl:for-each select="//intervenant">
+					<ul>
+						<li>
+							<a><xsl:value-of select="nom"/></a>
+							<xsl:value-of select="telephone"/>
+							<xsl:value-of select="mail"/>
+							<xsl:value-of select="etablissement"/>
+						</li>
+					</ul>
+					</xsl:for-each>
+			</body>
+		</html>
+	</xsl:document>
+
+
+
 		<!-- Génération intervenants HTML -->
 		<xsl:for-each select="//intervenant">
 			<xsl:document href="www/intervenants/{@idIntervenant}.html">
@@ -28,22 +87,33 @@
 				</html>
 			</xsl:document>
 		</xsl:for-each>
-		
+
 		<!-- Génération Page spécialité -->
 		<xsl:for-each select="//specialite">
 			<xsl:document href="www/parcours/specialites/{@idSpecialite}.html">
 				<html xmlns="http://www.w3.org/1999/xhtml">
 					<head>
 						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-						<link rel="stylesheet" type="text/css" href="../CSS/master.css" />
+						<link rel="stylesheet" type="text/css" href="../../../CSS/master.css" />
 						<title>
 							<xsl:value-of select="nom" />
 						</title>
 					</head>
 					<body>
-						<a href="../../index.html">Index</a>
-						<br />
-						<xsl:apply-templates select="." />
+						<div class="header">
+							<img src="../../../CSS/CONTENTS/logo.png"></img>
+							<h1>MASTER INFORMATIQUE DE MARSELLE</h1>
+						</div>
+						<div class="navigation">
+							<xsl:call-template name="menu">
+								<xsl:with-param name="link">
+									../
+								</xsl:with-param>
+							</xsl:call-template>
+						</div>
+						<div class="body">
+							<xsl:apply-templates select="." />
+						</div>
 					</body>
 				</html>
 			</xsl:document>
@@ -160,9 +230,7 @@
 				</div>
 				<div class="navigation">
 					<xsl:call-template name="menu">
-						<xsl:with-param name="link">
-							parcours/
-						</xsl:with-param>
+						<xsl:with-param name="link">parcours/</xsl:with-param>
 					</xsl:call-template>
 				</div>
 				<div class="body">
@@ -202,7 +270,9 @@
 
 
 
+
 	<!-- NOEUD PARCOURS -->
+	<!-- Generation du menu -->
 	<xsl:template name="menu">
 		<xsl:param name="link" />
 		<ul>
@@ -212,6 +282,7 @@
 
 			<xsl:for-each select="//parcour">
 				<!-- Plus d'une specialité -->
+
 				<xsl:if test="count(ref-specialite) > 1 ">
 					<li>
 						<a href="{$link}{@idParcour}.html">
@@ -219,13 +290,22 @@
 								<xsl:value-of select="nom" />
 							</strong>
 						</a>
-						<xsl:apply-templates select="ref-specialite" />
+						<xsl:for-each select="ref-specialite">
+							<xsl:call-template name="genererSpecialite">
+								<xsl:with-param name="link">
+									<xsl:value-of select="$link" />
+								</xsl:with-param>
+								<xsl:with-param name="ref">
+									<xsl:value-of select="@ref" />
+								</xsl:with-param>
+							</xsl:call-template>
+						</xsl:for-each>
 					</li>
 				</xsl:if>
-				<!-- Une seule specialité-->
+				<!-- Une seule specialité -->
 				<xsl:if test="count(ref-specialite) = 1 ">
 					<li>
-						<a href="{$link}specialites/{@idSpecialite}.html">
+						<a href="{$link}specialites/{ref-specialite/@ref}.html">
 							<strong>
 								<xsl:value-of select="nom" />
 							</strong>
@@ -236,19 +316,16 @@
 		</ul>
 	</xsl:template>
 
-	<!-- NOEUD REF SEPCIALITE -->
-	<xsl:template match="ref-specialite">
-		<xsl:variable name="ref" select="@ref" />
+	<!-- Générer spécialités -->
+	<xsl:template name="genererSpecialite">
+		<xsl:param name="link" />
+		<xsl:param name="ref" />		
 		<ul>
-			<xsl:for-each select="//specialite">
-				<xsl:if test="$ref = @idSpecialite">
-					<li>
-						<a href="/{$ref}.html">
-							<xsl:value-of select="nom" />
-						</a>
-					</li>
-				</xsl:if>
-			</xsl:for-each>
+			<li>
+				<a href="{$link}specialites/{$ref}.html">
+					<xsl:value-of select="//specialite[@idSpecialite = $ref]/nom" />
+				</a>
+			</li>
 		</ul>
 	</xsl:template>
 
@@ -388,57 +465,85 @@
 	</xsl:template>
 
 	<!-- Semestre -->
-		<xsl:template name="genererSemestre">
-				<xsl:param name="idSemestre" />
-				Programme du S<xsl:value-of select="//semestre[@idSemestre = $idSemestre]/titre" />
-				<xsl:for-each select="//semestre[@idSemestre = $idSemestre]/ref-block">
-					<xsl:variable name="idBlock" select="@ref" />
-					<li><xsl:value-of select="//block[$idBlock = @idBlock]/@titre" /></li>
-					<xsl:for-each select="//block[$idBlock = @idBlock]">
-							<xsl:for-each select="ref-enseignement">
-								<xsl:variable name="idEnse" select="@ref" />
-								<xsl:call-template name="afficherNomEnseignement">
-								<xsl:with-param name="idEnseignement"><xsl:value-of select="$idEnse"/></xsl:with-param>
-								</xsl:call-template>
-						</xsl:for-each>
-					</xsl:for-each>
+	<xsl:template name="genererSemestre">
+		<xsl:param name="idSemestre" />
+		Programme du S
+		<xsl:value-of select="//semestre[@idSemestre = $idSemestre]/titre" />
+		<xsl:for-each select="//semestre[@idSemestre = $idSemestre]/ref-block">
+			<xsl:variable name="idBlock" select="@ref" />
+			<li>
+				<xsl:value-of select="//block[$idBlock = @idBlock]/@titre" />
+			</li>
+			<xsl:for-each select="//block[$idBlock = @idBlock]">
+				<xsl:for-each select="ref-enseignement">
+					<xsl:variable name="idEnse" select="@ref" />
+					<xsl:call-template name="afficherNomEnseignement">
+						<xsl:with-param name="idEnseignement">
+							<xsl:value-of select="$idEnse" />
+						</xsl:with-param>
+					</xsl:call-template>
 				</xsl:for-each>
-		</xsl:template>
+			</xsl:for-each>
+		</xsl:for-each>
+	</xsl:template>
 
 	<!-- Afficher nom enseignement -->
-		<xsl:template name="afficherNomEnseignement">
-			<xsl:param name="idEnseignement" />
-			<li><a href="../../enseignements/{$idEnseignement}.html"><xsl:value-of select="//enseignement[@idEnseignement = $idEnseignement]/nom" />(<xsl:value-of select="//enseignement[@idEnseignement = $idEnseignement]/nombreCredit"/> crédits)</a></li>
-		</xsl:template>
 
+	<xsl:template name="afficherNomEnseignement">
+		<xsl:param name="idEnseignement" />
+		<li>
+			<a href="../../enseignements/{$idEnseignement}.html">
+				<xsl:value-of
+					select="//enseignement[@idEnseignement = $idEnseignement]/nom" />
+				(
+				<xsl:value-of
+					select="//enseignement[@idEnseignement = $idEnseignement]/nombreCredit" />
+				crédits)
+			</a>
+		</li>
+	</xsl:template>
 	<!-- PAGE SPECIALITE -->
 	<xsl:template match="specialite">
-			<h2>
-				<xsl:if test="nom != ''">
-					Nom : <xsl:value-of select="nom" />
-				</xsl:if>
-				<xsl:variable name="ref" select="responsable/ref-intervenant/@ref" />
-				Responsable :<xsl:value-of select="//intervenant[@idIntervenant = $ref]/nom" />
-				Lieu d'enseignement :<xsl:value-of select="etablissement" />
-				Description :<xsl:copy-of select="description" />
-				Compétences à acquérir : <xsl:copy-of select="competences"/>
-				Connaissances à acquérir : <xsl:copy-of select="connaissances"/>
-				Programme et enseignements : 
-				<xsl:for-each select="ref-semestre" >
-					<xsl:variable name="idSemestre" select="@ref" />
-							<xsl:call-template name="genererSemestre">
-								<xsl:with-param name="idSemestre"><xsl:value-of select="$idSemestre"/></xsl:with-param>
-							</xsl:call-template>
-				</xsl:for-each>
-				Politique des stages : <xsl:copy-of select="politiqueDesStages" />
-				Aspects formation et recherche : <xsl:copy-of select="aspects" />
-				Modalité et recherche : <xsl:copy-of select="modalites" />
-				Condition d'admission et pré-requis : <xsl:copy-of select="conditionAdmission" />
-				Débouchés : <xsl:copy-of select="debouches" />
-				Poursuites d'études : <xsl:copy-of select="poursuitesEtudes" />
-				<xsl:copy-of select="autre" />
-			</h2>
+
+		<h2>
+			<xsl:if test="nom != ''">
+				Nom :
+				<xsl:value-of select="nom" />
+			</xsl:if>
+			<xsl:variable name="ref" select="responsable/ref-intervenant/@ref" />			
+			Responsable :
+			<xsl:value-of select="//intervenant[@idIntervenant = $ref]/nom" />
+			Lieu d'enseignement :
+			<xsl:value-of select="etablissement" />
+			Description :
+			<xsl:copy-of select="description" />
+			Compétences à acquérir :
+			<xsl:copy-of select="competences" />
+			Connaissances à acquérir :
+			<xsl:copy-of select="connaissances" />
+			Programme et enseignements :
+			<xsl:for-each select="ref-semestre">
+				<xsl:variable name="idSemestre" select="@ref" />
+				<xsl:call-template name="genererSemestre">
+					<xsl:with-param name="idSemestre">
+						<xsl:value-of select="$idSemestre" />
+					</xsl:with-param>
+				</xsl:call-template>
+			</xsl:for-each>
+			Politique des stages :
+			<xsl:copy-of select="politiqueDesStages" />
+			Aspects formation et recherche :
+			<xsl:copy-of select="aspects" />
+			Modalité et recherche :
+			<xsl:copy-of select="modalites" />
+			Condition d'admission et pré-requis :
+			<xsl:copy-of select="conditionAdmission" />
+			Débouchés :
+			<xsl:copy-of select="debouches" />
+			Poursuites d'études :
+			<xsl:copy-of select="poursuitesEtudes" />
+			<xsl:copy-of select="autre" />
+		</h2>
 	</xsl:template>
 
 </xsl:stylesheet>
-
