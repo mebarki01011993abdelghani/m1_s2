@@ -63,8 +63,8 @@ public class JavaNomEnseignement {
             findEnseignement = false;
             findNom = false;
             Element nom = doc.createElement("nom");
-	    //On supprime les blancs de début et fin de chaine
-	    n.setNodeValue(n.getNodeValue().trim());
+		    //On supprime les blancs de début et fin de chaine
+		    n.setNodeValue(n.getNodeValue().trim());
             nom.appendChild(doc.createTextNode(n.getNodeValue()));
             racine.appendChild(nom);
         } else if (n instanceof Comment) {

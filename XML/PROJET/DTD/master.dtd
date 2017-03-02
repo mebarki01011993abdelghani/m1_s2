@@ -19,7 +19,7 @@
 <!ELEMENT master					(intervenants,enseignements,blocks,semestres,specialites,parcours,description)>
 <!ELEMENT enseignement    			(nom,identifiant,nombreCredit,professeurs?,resume,pre-requis?,plan?,etablissement*,ref-intervenant*,adresse*,autre?)>
 <!ELEMENT intervenant				(identifiant,nom,mail*,siteWeb?,telephone*,adresse?,etablissement,autre?)>
-<!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement+,responsable,description,competences,connaissances?,ref-semestre+,politiqueDesStages,aspects?,modalites?,conditionAdmission,debouches?,poursuitesEtudes?)>							 
+<!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement,responsable,description,competences,connaissances?,ref-semestre+,politiqueDesStages,aspects?,modalites?,conditionAdmission,debouches?,poursuitesEtudes?)>							 
 <!ELEMENT parcour					(nom,description?,ref-specialite+,autre*)>
 <!ELEMENT block 					(ref-enseignement+)>		
 <!ELEMENT blocks 					(block+)>						
@@ -55,6 +55,7 @@
 <!ELEMENT ref-enseignement   			(#PCDATA)>
 <!ELEMENT ref-specialite	   			(#PCDATA)>
 <!ELEMENT ref-semestre   				(#PCDATA)>
+<!ELEMENT ref-block						(#PCDATA)>
 <!ELEMENT connaissances      			(#PCDATA | p)*>
 <!ELEMENT competences        			(#PCDATA | p)*>
 <!ELEMENT telephone        				(#PCDATA)>
@@ -73,7 +74,6 @@
 <!ELEMENT table						(tr+)>
 <!ELEMENT tr						(th+|d+)>
 <!ELEMENT th						(#PCDATA)>
-<!ELEMENT ref-block					(#PCDATA)>
 
 <!--ATTRIBUTS-->
 <!ATTLIST enseignement  idEnseignement  ID  #REQUIRED>

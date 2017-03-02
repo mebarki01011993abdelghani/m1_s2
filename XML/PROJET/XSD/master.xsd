@@ -37,13 +37,13 @@
 			<xs:field xpath="@ref" />
 		</xs:keyref>
 
-		<!-- INDEX SUR SEMESTRES -->
+		<!-- INDEX SUR SEMESTRE -->
 		<xs:keyref name="ref.semestre" refer="semestre.id">
 			<xs:selector xpath="specialites/specialite/ref-semestre" />
 			<xs:field xpath="@ref" />
 		</xs:keyref>
 		
-		<!-- INDEX SUR BLOCKS DE COURS -->
+		<!-- INDEX SUR BLOCK DE COURS -->
 		<xs:keyref name="ref.block" refer="block.id">
 			<xs:selector xpath="semestres/semestre/ref-block" />
 			<xs:field xpath="@ref" />
@@ -72,7 +72,7 @@
 		<!-- définition d'un index -->
 		<xs:key name="enseignement.id">
 			<xs:selector xpath="." />    <!-- les éléments indexés -->
-			<xs:field xpath="@idEnseignement" />          <!-- la clef -->
+			<xs:field xpath="@idEnseignement" /> <!-- la clef -->
 		</xs:key>
 	</xs:element>
 	<xs:element name="intervenant">
