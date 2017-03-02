@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../CSS/master.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Master Luminy</title>
+</head>
+<body>
+<div class="header">
+<img src="../CSS/CONTENTS/logo.png"><h1>MASTER INFORMATIQUE DE MARSELLE</h1>
+</div>
+<div class="navigation"><ul>
+<li><strong>PARCOURS</strong></li>
+<li><a href="parcours/%0A%09%09%09%09%09%09specialites/SPE_MASTER1.html"><strong>Master 1</strong></a></li>
+<li>
+<a href="parcours/%0A%09%09%09%09%09%09PARCOUR_FSIL.html"><strong>FSIL</strong></a><ul><li><a href="parcours/%0A%09%09%09%09%09%09specialites/SPE_FSI.html">Fiabilité et sécurité informatique (FSI)</a></li></ul>
+<ul><li><a href="parcours/%0A%09%09%09%09%09%09specialites/SPE_ISL.html">Intégration de systèmes logiciels (ISL)</a></li></ul>
+</li>
+<li><a href="parcours/%0A%09%09%09%09%09%09specialites/SPE_IF.html"><strong>IF</strong></a></li>
+<li>
+<a href="parcours/%0A%09%09%09%09%09%09PARCOUR_TEST.html"><strong>Tout en un</strong></a><ul><li><a href="parcours/%0A%09%09%09%09%09%09specialites/SPE_FSI.html">Fiabilité et sécurité informatique (FSI)</a></li></ul>
+<ul><li><a href="parcours/%0A%09%09%09%09%09%09specialites/SPE_ISL.html">Intégration de systèmes logiciels (ISL)</a></li></ul>
+<ul><li><a href="parcours/%0A%09%09%09%09%09%09specialites/SPE_MASTER1.html">Master 1 - Premiere année de tronc commun</a></li></ul>
+</li>
+<li><a href="parcours/%0A%09%09%09%09%09%09listeEnseignements.html"><strong>
+						Unités
+					</strong></a></li>
+<li><a href="parcours/%0A%09%09%09%09%09%09listeIntervenants.html"><strong>
+						Intervenants
+					</strong></a></li>
+</ul></div>
+<div class="body"><description>
+		<p>
+			Le master « informatique » a pour vocation la formation de
+			professionnels de l'informatique au niveau bac+5. L'objectif est
+			d'offrir aux étudiants une large palette de compétences et de savoirs
+			afin de rendre accessible des emplois de haut niveau dans le monde de
+			la recherche, dans celui de l'entreprise ou dans d'autres
+			organisations. Notre ambition est de former des étudiants dont les
+			compétences sont tout à fait comparables à celles acquises dans les
+			meilleurs écoles d'ingénieurs.
+		</p>
+		<p>
+			Le Master informatique repose sur plus de 25 ans d'expérience
+			d'enseignement d'informatique sur l'Université d'Aix-Marseille
+			(maîtrise, DEA et DESS en informatique) et s'est structuré lors du
+			passage au LMD. Si vous n'êtes pas familier des formations organisées
+			suivant le schéma Licence/Master/Doctorat, nous vous conseillons de
+			lire cette petite introduction.
+		</p>
+	</description></div>
+</body>
+</html>

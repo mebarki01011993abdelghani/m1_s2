@@ -22,7 +22,7 @@ web:
 	xsltproc XSL/master.xsl XML/master.xml > www/index.html
 
 tidy:
-	./TIDY/verif.sh > traceExecutions/traceTidy.txt
+	./TIDY/verif.sh
 
 path_xq:
 	wget http://tinyurl.com/jlmassat/ens/xml/ress/SaxonHE9-7-0-15J.zip &
