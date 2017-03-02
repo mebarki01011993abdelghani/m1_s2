@@ -1,3 +1,4 @@
+r
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
@@ -78,6 +79,7 @@ formations organisees suivant le schema Licence/Master/Doctorat,
 nous vous conseillons de lire cette petite introduction.</div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -112,6 +114,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -146,6 +149,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -180,6 +184,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -214,6 +219,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -248,6 +254,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -282,6 +289,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -316,6 +324,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -350,6 +359,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -384,6 +394,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -418,6 +429,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -452,6 +464,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -486,6 +499,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -520,6 +534,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -554,6 +569,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -588,6 +604,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -622,6 +639,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -656,6 +674,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -690,6 +709,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -724,6 +744,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -758,6 +779,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -792,6 +814,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -826,6 +849,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -860,6 +884,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -894,6 +919,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -928,6 +954,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -962,6 +989,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -996,6 +1024,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -1030,6 +1059,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -1100,6 +1130,7 @@ BECHET</a></li>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -1344,6 +1375,7 @@ DEMONGODIN</a></td>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -1430,6 +1462,7 @@ annee de tronc commun</a></li>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -1867,6 +1900,7 @@ entiers</a></td>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -2056,6 +2090,7 @@ informatique.</div>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -2265,6 +2300,7 @@ portefeuille de competences.</div>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -2419,6 +2455,7 @@ recherche ( 27 credits)</a></li>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -2606,6 +2643,8 @@ portefeuille de competences.</div>
 </div>
 </body>
 </html>
+r
+r
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -2688,6 +2727,7 @@ logiciels (ISL)</a></li>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -2758,6 +2798,7 @@ annee de tronc commun</a></li>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -2803,6 +2844,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -2839,6 +2881,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -2873,6 +2916,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -2908,6 +2952,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -2942,6 +2987,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -2980,6 +3026,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3015,6 +3062,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3094,6 +3142,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3129,6 +3178,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3162,6 +3212,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3206,6 +3257,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3256,6 +3308,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3291,6 +3344,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3329,6 +3383,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3362,6 +3417,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3400,6 +3456,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3450,6 +3507,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3485,6 +3543,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3521,6 +3580,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3557,6 +3617,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3591,6 +3652,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3624,6 +3686,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3660,6 +3723,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3698,6 +3762,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3736,6 +3801,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3772,6 +3838,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3808,6 +3875,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3844,6 +3912,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3878,6 +3947,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3913,6 +3983,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3953,6 +4024,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -3987,6 +4059,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4021,6 +4094,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4065,6 +4139,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4103,6 +4178,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4138,6 +4214,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4174,6 +4251,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4208,6 +4286,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4243,6 +4322,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4281,6 +4361,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4319,6 +4400,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4353,6 +4435,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4395,6 +4478,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4437,6 +4521,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4472,6 +4557,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4520,6 +4606,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4555,6 +4642,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4593,6 +4681,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4630,6 +4719,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4665,6 +4755,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4698,6 +4789,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4732,6 +4824,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4766,6 +4859,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4803,6 +4897,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4840,6 +4935,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4879,6 +4975,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4915,6 +5012,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4949,6 +5047,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -4983,6 +5082,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5018,6 +5118,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5059,6 +5160,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5094,6 +5196,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5138,6 +5241,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5173,6 +5277,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5209,6 +5314,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5243,6 +5349,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5277,6 +5384,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5315,6 +5423,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5349,6 +5458,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5383,6 +5493,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5421,6 +5532,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5472,6 +5584,7 @@ la liste</a></center>
 </div>
 </body>
 </html>
+r
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
