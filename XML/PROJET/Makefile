@@ -3,35 +3,43 @@ CFLAGS= -Wall -ansi -pedantic -std=c99
 LDFLAGS=
 EXEC=decoupe
 
-all: mkdir_web mkdir_traces
+all: clean mkdir_web mkdir_traces dtd noEnt xsd web tidy xq  javaNom
 
+clean:
+	rm -R traceExecutions www
+	@echo "-----[ CLEAN TRACE OK ]-----"
 mkdir_traces:
 	mkdir -p traceExecutions
+	@echo "-----[ MKDIR TRACE OK ]-----"
 
 mkdir_web:
 	mkdir -p www
+	@echo "-----[ MKDIR WWW OK ]-----"
+	
 dtd:
+	@echo "-----[ DTD OK ]-----"
 	xmllint --valid XML/master.xml > traceExecutions/traceDTD.txt
+	
 noEnt:
+	@echo "-----[ noENT OK ]-----"
 	xmllint --valid --noent XML/master.xml > XML/masterNoEnt.xml 
 
 xsd:
 	xmllint -valid -schema XSD/master.xsd XML/masterNoEnt.xml > traceExecutions/traceXSD.txt
+	@echo "-----[ XSD OK ]-----"
 
 web:
 	xsltproc XSL/master.xsl XML/master.xml > www/index.html
+	@echo "-----[ WEB OK ]-----"
 
 tidy:
 	cd TIDY && ./verif.sh > ../traceExecutions/traceTidy.txt
-
-path_xq:
-	wget http://tinyurl.com/jlmassat/ens/xml/ress/SaxonHE9-7-0-15J.zip &
-	mkdir $HOME/saxon9 &
-	unzip -d $HOME/saxon9 SaxonHE9-7-0-15J.zip &
-	alias saxon="java -jar $HOME/saxon9/saxon9he.jar"
+	@echo "-----[ TIDY OK ]-----"
 
 xq:
-	java -cp $HOME/saxon9/saxon9he.jar net.sf.saxon.Query "-q:XQ/requete.xq" > www/xq.xhtml
+	cd XQ && make all
+	@echo "-----[ XQ OK ]-----"
 
 javaNom:
 	cd JAVA && make all
+	@echo "-----[ JAVA OK ]-----"

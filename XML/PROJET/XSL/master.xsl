@@ -27,8 +27,7 @@
 					<div class="navigation">
 						<xsl:call-template name="menu">
 							<!-- Nous sommes a la racine -->
-							<xsl:with-param name="link">
-							</xsl:with-param>
+							<xsl:with-param name="link" />
 						</xsl:call-template>
 					</div>
 					<div class="body">
@@ -90,7 +89,7 @@
 					</div>
 					<div class="navigation">
 						<xsl:call-template name="menu">
-							<xsl:with-param name="link"></xsl:with-param>
+							<xsl:with-param name="link" />
 						</xsl:call-template> 
 					</div>
 					<center>
@@ -178,9 +177,7 @@
 						</div>
 						<div class="navigation">
 							<xsl:call-template name="menu">
-								<xsl:with-param name="link">
-									../
-								</xsl:with-param>
+								<xsl:with-param name="link">../</xsl:with-param>
 							</xsl:call-template>
 						</div>
 						<div class="body">
@@ -233,7 +230,7 @@
 						</div>
 						<div class="navigation">
 							<xsl:call-template name="menu">
-								<xsl:with-param name="link"></xsl:with-param>
+								<xsl:with-param name="link" />
 							</xsl:call-template>
 						</div>
 						<div class="body">
@@ -291,9 +288,7 @@
 				</div>
 				<div class="navigation">
 					<xsl:call-template name="menu">
-						<xsl:with-param name="link">
-							parcours/
-						</xsl:with-param>
+						<xsl:with-param name="link">parcours/</xsl:with-param>
 					</xsl:call-template>
 				</div>
 				<div class="body">

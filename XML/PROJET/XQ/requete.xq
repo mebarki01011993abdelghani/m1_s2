@@ -18,35 +18,38 @@ declare option saxon:output "indent=yes";
     <title>Liste des Enseignants</title>
   </head>
 	<body>
+	
 	<h1>Liste des Enseignants</h1>
 {
+(: On cherche tous les noms des intervenants :)  
     for
         $nomIntervenants in doc("../XML/master.xml")//intervenant/nom
-	order by $nomIntervenants
-    return
+				order by $nomIntervenants
+    		return
         <ul>
             <li>{$nomIntervenants}
-				{
+						{
+								(: On cherche tous les identifiants des intervenants :)  
 				        for $idInter in fn:distinct-values($nomIntervenants/../identifiant)
 				        order by $idInter
 				        return 
 				            <ul>
 											Matieres enseignées :
 								{
+									(: On affiche les matieres enseignees :)  
 									for $matiere in doc("../XML/master.xml")//enseignement
 									let $idRef := string($matiere/professeurs/ref-intervenant[@ref = $idInter]/../../nom)
 									order by $idRef	
 									return
 										if (fn:compare($idInter,($matiere/professeurs/ref-intervenant[@ref = $idInter])) > 0) then
-											<li>{$idRef}</li>
+												<li>{$idRef}</li>
 										else
 											""
 								}
 				            </ul>
-				 	}
+				 			}
 						</li>
-          </ul>
-        
+          </ul>       
 }
 </body>
 </html>
