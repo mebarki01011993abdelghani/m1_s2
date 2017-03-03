@@ -7,10 +7,12 @@ package tp4;
 
 import static java.lang.Thread.sleep;
 import java.util.ArrayList;
+import java.util.concurrent.CompletionService;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import static tp4.Mandelbrot.taille;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -27,6 +29,7 @@ public class LineExecutorLoquet implements Runnable {
     static CountDownLatch latch;
     static final int nbThreads = 4; // nombre de threads
     static ExecutorService executorService;
+    static CompletionService<Long> ecs;
 
     private LineExecutorLoquet(CountDownLatch latch) {
         this.indiceY = Mandelbrot.taille;
@@ -36,6 +39,7 @@ public class LineExecutorLoquet implements Runnable {
     private LineExecutorLoquet(int indiceX, CountDownLatch latch) {
         this.indiceX = indiceX;
         this.indiceY = Mandelbrot.taille;
+        this.latch = latch;
     }
 
     private int getIndiceX() {
@@ -89,7 +93,7 @@ public class LineExecutorLoquet implements Runnable {
      }*/
     private void calculerLigne(LineExecutorLoquet ligne) {
         for (int i = 0; i < ligne.getIndiceY(); i++) {
-            System.out.println( ligne.getIndiceX() + " " + Thread.currentThread().getName());
+            System.out.println(ligne.getIndiceX() + " " + Thread.currentThread().getName());
             Mandelbrot.colorierPixel(ligne.getIndiceX(), i);
         }
     }
@@ -108,12 +112,14 @@ public class LineExecutorLoquet implements Runnable {
     //Construit le réservoir de threads
     private static void buildExecutor() {
         executorService = Executors.newFixedThreadPool(nbThreads);
+        ecs = new ExecutorCompletionService<Long>(executorService);
         latch = new CountDownLatch(Mandelbrot.taille);
-        for (int i = 0; i < 4; i++) {
-            executorService.execute(new LineExecutorLoquet(latch));
+        LineExecutorLoquet[] taches = new LineExecutorLoquet[nbThreads];
+        for (int i = 0; i < nbThreads; i++) {
+            taches[i] = new LineExecutorLoquet(latch);
+            executorService.submit(taches[i]);
         }
         executorService.shutdown(); // on termine notre exector
-
     }
 
 }
