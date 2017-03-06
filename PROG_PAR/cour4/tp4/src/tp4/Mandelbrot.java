@@ -1,8 +1,9 @@
 package tp4;
 
 import java.awt.Color;
+import java.util.concurrent.Callable;
 
-public class Mandelbrot {
+public class Mandelbrot implements Callable<Integer> {
 
     final static Color noir = new Color(0, 0, 0);
     final static Color blanc = new Color(255, 255, 255);
@@ -25,11 +26,12 @@ public class Mandelbrot {
         final long startTime = System.nanoTime();
         final long endTime;
         /*Calculer ligne avec la classe ligne*/
-        LineExecutorLoquet.calculerLignes();
+        LineExecutorCompletion.calculerLignes();
         endTime = System.nanoTime();
         final long duree = (endTime - startTime) / 1_000_000;
         System.out.println("Durée = " + (long) duree + " ms.");
         image.show();
+        
     }
 
     // La fonction colormierPixel(i,j) colorie le pixel (i,j) de l'image
@@ -58,6 +60,11 @@ public class Mandelbrot {
             y = ny;
         }
         return true; // Le point (a,b) est noir
+    }
+
+    @Override
+    public Integer call() throws Exception {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
 
