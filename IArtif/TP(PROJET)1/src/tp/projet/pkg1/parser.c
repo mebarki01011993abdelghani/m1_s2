@@ -1,156 +1,140 @@
-# include <stdio.h>
-# include <string.h>
-# define MAX 20
-void infixtoprefix(char infix[20],char prefix[20]);
-char * reverse(char array[30]);
-char pop();
-void push(char symbol);
-int isOperator(char symbol);
-int prcd(char symbol);
-int top=-1;
-char stack[MAX];
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<string.h>
 
-int main() 
+int pop();
+int precedence(char symbol);
+int isEmpty();
+void infix_to_prefix();
+int checker(char symbol);
+void push(long int symbol);
+void negative();
+
+char prefix_string[20], infix_string[20], postfix_string[20];
+int top;
+long int stack[20];
+
+int main()
 {
-		char infix[20],prefix[20];
-		printf("Enter infix operation: ");
-		gets(infix);
-		infixtoprefix(infix,prefix);
-		reverse(prefix);
-		puts((prefix));
+	int count, length;
+	char temp;
+	top = -1;
+	printf("\nEnter an Expression in Infix format:\t");
+	scanf("%[^\n]s", infix_string);
+	infix_to_prefix();
+	printf("\nExpression in Postfix Format: \t%s\n", postfix_string);
+	length = strlen(postfix_string) - 1;
+	strncpy(prefix_string, postfix_string, 20);
+	for(count = 0; count < length; count++, length--)
+	{
+		temp = prefix_string[count];
+		prefix_string[count] = prefix_string[length];
+		prefix_string[length] = temp;
+	}
+	printf("\nExpression in Prefix Format: \t%s\n", prefix_string);
 	return 0;
 }
-//--------------------------------------------------------
-void infixtoprefix(char infix[20],char prefix[20]) {
-	int i,j=0;
-	char symbol;
-	stack[++top]='#';
-	reverse(infix);
-	for (i=0;i<strlen(infix);i++) {
-		symbol=infix[i];
-		if (isOperator(symbol)==0) {
-			prefix[j]=symbol;
-			j++;
-		} else {
-			if (symbol==')') {
-				push(symbol);
-			} else if(symbol == '(') {
-				while (stack[top]!=')') {
-					prefix[j]=pop();
-					j++;
-				}
-				pop();
-			} else {
-				if (prcd(stack[top])<=prcd(symbol)) {
-					push(symbol);
-				} else {
-					while(prcd(stack[top])>=prcd(symbol)) {
-						prefix[j]=pop();
-						j++;
-					}
-					push(symbol);
-				}
-				//end for else
+
+void infix_to_prefix()
+{
+	unsigned int count, temp = 0;
+	char next;
+	char symbol;	
+	for(count = 0; count < strlen(infix_string); count++)
+	{
+		symbol = infix_string[count];
+		if(!checker(symbol))
+		{
+			switch(symbol)
+			{
+				case '(': push(symbol);
+					  break;
+				case ')':
+					  while((next = pop()) != '(')
+					  {
+						postfix_string[temp++] = next;
+					  }
+					  break;
+				case '&':
+				case '|':
+				case '-':
+					  while(!isEmpty() && precedence(stack[top]) >= precedence(symbol))
+					  postfix_string[temp++] = pop();
+				          push(symbol);
+					  break;
+				default: 
+			     		  postfix_string[temp++] = symbol;
 			}
 		}
-		//end for else
 	}
-	//end for for
-	while (stack[top]!='#') {
-		prefix[j]=pop();
-		j++;
+	while(!isEmpty()) 
+	{
+		postfix_string[temp++] = pop();
 	}
-	prefix[j]='\0';
-}
-////--------------------------------------------------------
-char * reverse(char array[30]) // for reverse of the given expression 
-{
-	int i,j;
-	char temp[100];
-	for (i=strlen(array)-1,j=0;i+1!=0;--i,++j) {
-		temp[j]=array[i];
-	}
-	temp[j]='\0';
-	strcpy(array,temp);
-	return array;
-}
-//--------------------------------
-char pop() {
-	char a;
-	a=stack[top];
-	top--;
-	return a;
-}
-//----------------------------------
-void push(char symbol) {
-	top++;
-	stack[top]=symbol;
-}
-//------------------------------------------
-int prcd(char symbol) // returns the value that helps in the precedence 
-{
-	switch(symbol) {
-	
-		 case '&':
-                case '|':
-                return 2;
-        break;
-        case '-':
-			case 'M':
-				case 'L':
-				return 3;
-        break;        
-        case '#':
-                case '(':
-				case ')':
-					return 1;
-	}
-}
-//-------------------------------------------------
-int isOperator(char symbol) 
-{
-	switch(symbol) {
-		case '-': /* NON */
-		case 'M': /* LOSANGE */
-		case 'L': /* CARRE */
-		case '|': /* OU */
-		case '&': 
-		case '(':
-		case ')':
-		return 1;
-		break;
-		default:
-		        return 0;
-		// returns 0 if the symbol is other than given above
-	}
-}
-char* negation(char array[30])
-{
-	int i;
-	for (i=0; i<strlen(array), carac != "";i++)
-		char carac = array[i];
-		array[i] = getNegativ(carac);
-	}
-	return array;
+	postfix_string[temp] = '\0';
 }
 
-char getNegativ(char carac){
-	switch(carac[i]) {
+int precedence(char symbol)
+{
+	switch(symbol)
+	{
+		case '(': return 0;
+	
 		case '&':
-			return '|';
-		case '|': 
-			return '&';
-		case 'L': 
-			return '-L';
-		case 'M': 
-			return '-M';
+		case '|':
+
+			  return 2;
 		case '-':
-			return '';
-		case '(':
-			return '(';
-		case ')':
-			return ')';
-		break;
+			  return 3;
 		default:
-			return carac = '-'+carac;
+			 return 0;
+	}
 }
+
+int checker(char symbol)
+{
+	if(symbol == '\t' || symbol == ' ')
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+void push(long int symbol)
+{
+	if(top > 20)
+	{
+		printf("Stack Overflow\n");
+		exit(1);
+	}
+	top = top + 1;
+	stack[top] = symbol;
+}
+
+int isEmpty()
+{
+	if(top == -1)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+int pop()
+{
+	if(isEmpty())
+	{
+		printf("Stack is Empty\n");
+		exit(1);
+	}
+	return(stack[top--]);
+}
+
+
