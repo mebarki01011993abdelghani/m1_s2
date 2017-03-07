@@ -11,10 +11,7 @@ public class Demonstrateur {
         String test = "(f    -> c)&r";
  
 
-        System.out.println("Please type your arithmethic expression:");
-        Parser p = new Parser(new scanner());
-        p.parse();
-    
+       
 }
 
 }
