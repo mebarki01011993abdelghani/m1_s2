@@ -10,6 +10,7 @@ typedef struct {
 } Data;
 
 
+
 void skipLine(FILE *fp);
 Data* load_instance(char* filename);
 void free_data(Data* data);
