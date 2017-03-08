@@ -1,6 +1,7 @@
 package tp4;
 
 // -*- coding: utf-8 -*-
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletionService;
@@ -8,18 +9,19 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import static tp4.LineExecutorCompletion.ecs;
 import static tp4.LineExecutorCompletion.executorService;
 
-public class TriRapide implements Callable<int[]> {
+public class TriRapide implements Callable<TriRapide> {
 
     static final int taille = 1_000_000;                   // Longueur du tableau à trier
     static final int[] tableau = new int[taille];         // Le tableau d'entiers à trier 
     static final int borne = 10 * taille;                  // Valeur maximale dans le tableau
     static ExecutorService executorService;
-    static CompletionService<int[]> ecs;
+    static ArrayList<Future<TriRapide>> listSort;
 
     private int[] tableauATrier;
     private int debut;
@@ -75,28 +77,20 @@ public class TriRapide implements Callable<int[]> {
     }
 
     private static void trierRapidement(int[] t, int début, int fin) {
-        if (début < fin) {                             // S'il y a un seul élément, il n'y a rien à faire!
+        if (début < fin) {
+            // S'il y a un seul élément, il n'y a rien à faire!
             int p = partitionner(t, début, fin);
             int unCentieme = taille / 100;              // un centieme de la taille du tableau
-            if (t.length > 1000 && t.length > unCentieme) {
-                try {
-                    // si supérieur à un centieme et taille du tableau courant est plus gros que 1000
-                    ecs.submit(new TriRapide(t, p, p - 1));
-                    int[]a = ecs.take().get();
+            int tailleTabGauche = début + p - 1;
+            int tailleTabDroite = p + 1 + fin;
 
-                    ecs.submit(new TriRapide(t, p + 1, fin));
-                    t = ecs.take().get();
-                    
-
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(TriRapide.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (ExecutionException ex) {
-                    Logger.getLogger(TriRapide.class.getName()).log(Level.SEVERE, null, ex);
-                }
-
-            } else {
-                trierRapidement(t, début, p - 1);
-                trierRapidement(t, p + 1, fin);
+            if (tailleTabGauche > 1000 && tailleTabGauche > unCentieme) {
+                Future<TriRapide> objet = executorService.submit(new TriRapide(t, début, p - 1));
+                listSort.add(objet);
+            }
+            if (tailleTabDroite > 1000 && tailleTabDroite > unCentieme) {
+                Future<TriRapide> objet = executorService.submit(new TriRapide(t, p + 1, fin));
+                listSort.add(objet);
             }
         }
     }
@@ -118,7 +112,7 @@ public class TriRapide implements Callable<int[]> {
          Initialisation du Pool de threads
          */
         executorService = Executors.newFixedThreadPool(4);
-        ecs = new ExecutorCompletionService<int[]>(executorService);
+        listSort = new ArrayList<Future<TriRapide>>();
 
         Random alea = new Random(System.currentTimeMillis());
         for (int i = 0; i < taille; i++) {                          // Remplissage aléatoire du tableau
@@ -141,15 +135,37 @@ public class TriRapide implements Callable<int[]> {
 
         System.out.print("Tableau trié : ");
         afficher(tableauATrier, 0, taille - 1);                   // Affiche le tableau obtenu
-        System.out.println("obtenu en " + durée + " millisecondes.");
         executorService.shutdown();
+
+        for (int i = 0; i < listSort.size(); i++) {
+            Future<TriRapide> object = listSort.get(i);
+            try {
+                tidy(object.get(), tableauATrier);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(TriRapide.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ExecutionException ex) {
+                Logger.getLogger(TriRapide.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        }
+
+        System.out.println("obtenu en " + durée + " millisecondes.");
 
     }
 
     @Override
-    public int[] call() throws Exception {
+    public TriRapide call() throws Exception {
         trierRapidement(this.getTableauATrier(), this.debut, this.fin);             // Tri du tableau
-        return this.getTableauATrier(); // on retourne la taille du tableau
+        return this; // on retourne la taille du tableau
+    }
+
+    private static int[] tidy(TriRapide objet,int tableauATrier[]) {
+        int k = 0;
+        for (int i = objet.debut; i <= objet.fin; i++) {
+            tableauATrier[i] = objet.tableauATrier[k];
+            k++;
+        }
+        return tableauATrier;
     }
 }
 

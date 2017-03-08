@@ -10,8 +10,9 @@ void infix_to_prefix();
 int checker(char symbol);
 void push(long int symbol);
 void negative();
+char* getRules(int index);
 
-char prefix_string[20], infix_string[20], postfix_string[20];
+char prefix_string[20], infix_string[20], postfix_string[20] ,negative_prefix_string[20], string_form[20];
 int top;
 long int stack[20];
 
@@ -33,6 +34,8 @@ int main()
 		prefix_string[length] = temp;
 	}
 	printf("\nExpression in Prefix Format: \t%s\n", prefix_string);
+	negative();
+	printf("\nExpression in Negative Prefix Format: \t%s\n", negative_prefix_string);
 	return 0;
 }
 
@@ -59,6 +62,9 @@ void infix_to_prefix()
 				case '&':
 				case '|':
 				case '-':
+				case '>':
+				case 'M':
+				case 'L':
 					  while(!isEmpty() && precedence(stack[top]) >= precedence(symbol))
 					  postfix_string[temp++] = pop();
 				          push(symbol);
@@ -79,14 +85,16 @@ int precedence(char symbol)
 {
 	switch(symbol)
 	{
-		case '(': return 0;
-	
+		case '(':
+			 return 0;	
 		case '&':
 		case '|':
-
-			  return 2;
+		case '>':
+			 return 2;
 		case '-':
-			  return 3;
+		case 'M':
+		case 'L':
+			 return 3;
 		default:
 			 return 0;
 	}
@@ -136,5 +144,35 @@ int pop()
 	}
 	return(stack[top--]);
 }
+
+void negative(){
+	negative_prefix_string[0] = '-';
+	strcat(negative_prefix_string,prefix_string);
+}
+
+char* getRules(int index){
+	switch(index)
+	{
+		case '1':	// --A
+			return "A";
+		case '2':	// &AB
+			return "A X:B";
+		case '3':	// -|AB
+			return "X:-A X:-B";
+		case '4':	// ->AB
+			return	"X:A X:-B";
+		
+		default: 
+	     		  return "No rules";
+	}
+}
+
+
+
+
+
+
+
+
 
 
