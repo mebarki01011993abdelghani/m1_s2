@@ -2,6 +2,7 @@ package tp4;
 
 // -*- coding: utf-8 -*-
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletionService;
@@ -17,7 +18,7 @@ import static tp4.LineExecutorCompletion.executorService;
 
 public class TriRapide implements Callable<TriRapide> {
 
-    static final int taille = 1_000_000;                   // Longueur du tableau à trier
+    static final int taille = 1_0;                   // Longueur du tableau à trier
     static final int[] tableau = new int[taille];         // Le tableau d'entiers à trier 
     static final int borne = 10 * taille;                  // Valeur maximale dans le tableau
     static ExecutorService executorService;
@@ -83,15 +84,26 @@ public class TriRapide implements Callable<TriRapide> {
             int unCentieme = taille / 100;              // un centieme de la taille du tableau
             int tailleTabGauche = début + p - 1;
             int tailleTabDroite = p + 1 + fin;
-
-            if (tailleTabGauche > 1000 && tailleTabGauche > unCentieme) {
-                Future<TriRapide> objet = executorService.submit(new TriRapide(t, début, p - 1));
-                listSort.add(objet);
+             Future<TriRapide> tabATrier = null;
+            if (tailleTabGauche > 1 && tailleTabGauche > 0) {
+                tabATrier = executorService.submit(new TriRapide(t, début, p - 1));
+                listSort.add(tabATrier);
+            } else {
+                trierRapidement(t, début, p - 1);
             }
-            if (tailleTabDroite > 1000 && tailleTabDroite > unCentieme) {
-                Future<TriRapide> objet = executorService.submit(new TriRapide(t, p + 1, fin));
-                listSort.add(objet);
+            if (tailleTabDroite > 1 && tailleTabDroite > 0) {
+                tabATrier = executorService.submit(new TriRapide(t, p + 1, fin));
+                listSort.add(tabATrier);
+            } else {
+                trierRapidement(t, p + 1, fin);
             }
+            try {
+                  tabATrier.get();
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(TriRapide.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ExecutionException ex) {
+                    Logger.getLogger(TriRapide.class.getName()).log(Level.SEVERE, null, ex);
+                }
         }
     }
 
@@ -135,19 +147,10 @@ public class TriRapide implements Callable<TriRapide> {
 
         System.out.print("Tableau trié : ");
         afficher(tableauATrier, 0, taille - 1);                   // Affiche le tableau obtenu
+        System.out.println(Arrays.toString(tableauATrier));
+
+        
         executorService.shutdown();
-
-        for (int i = 0; i < listSort.size(); i++) {
-            Future<TriRapide> object = listSort.get(i);
-            try {
-                tidy(object.get(), tableauATrier);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(TriRapide.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (ExecutionException ex) {
-                Logger.getLogger(TriRapide.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-        }
 
         System.out.println("obtenu en " + durée + " millisecondes.");
 
@@ -159,14 +162,7 @@ public class TriRapide implements Callable<TriRapide> {
         return this; // on retourne la taille du tableau
     }
 
-    private static int[] tidy(TriRapide objet,int tableauATrier[]) {
-        int k = 0;
-        for (int i = objet.debut; i <= objet.fin; i++) {
-            tableauATrier[i] = objet.tableauATrier[k];
-            k++;
-        }
-        return tableauATrier;
-    }
+
 }
 
 
