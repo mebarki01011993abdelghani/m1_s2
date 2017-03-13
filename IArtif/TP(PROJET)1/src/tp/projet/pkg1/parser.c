@@ -3,6 +3,11 @@
 #include<math.h>
 #include<string.h>
 
+
+typedef struct arbre Arbre;
+typedef struct list List;
+
+
 int pop();
 int precedence(char symbol);
 int isEmpty();
@@ -11,10 +16,35 @@ int checker(char symbol);
 void push(long int symbol);
 void negative();
 char* getRules(int index);
+List* cons(Arbre *arbre, List *liste);
+void analyzeNode(char* elements);
 
 char prefix_string[20], infix_string[20], postfix_string[20] ,negative_prefix_string[20], string_form[20];
 int top;
 long int stack[20];
+
+
+struct arbre
+{
+    char* elements;
+    List *enfants;
+};
+
+struct list
+{
+    Arbre *node;
+    List *next;
+};
+
+List *cons(Arbre *arbre, List *liste)
+{
+    List *elem;
+    if ((elem = malloc(sizeof *elem)) == NULL)
+        return NULL;
+    elem->node = arbre;
+    elem->next = liste;
+    return elem;
+}
 
 int main()
 {
@@ -36,6 +66,13 @@ int main()
 	printf("\nExpression in Prefix Format: \t%s\n", prefix_string);
 	negative();
 	printf("\nExpression in Negative Prefix Format: \t%s\n", negative_prefix_string);
+
+	// BUILD TREE
+	// Construire racine 
+	Arbre RACINE = {negative_prefix_string,NULL};
+	printf("\nExpression root: \t%s\n", RACINE.elements);
+	
+
 	return 0;
 }
 
@@ -156,7 +193,7 @@ char* getRules(int index){
 		case '1':	// --A
 			return "A";
 		case '2':	// &AB
-			return "A X:B";
+			return "X:A X:B";
 		case '3':	// -|AB
 			return "X:-A X:-B";
 		case '4':	// ->AB
@@ -165,6 +202,10 @@ char* getRules(int index){
 		default: 
 	     		  return "No rules";
 	}
+}
+
+void analyzeNode(char* elements){
+
 }
 
 
