@@ -13,23 +13,25 @@ import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import static tp4.LineExecutorCompletion.ecs;
 import static tp4.LineExecutorCompletion.executorService;
 
-public class TriRapide implements Callable<Boolean> {
+public class TriRapideCompletion implements Callable<Boolean> {
 
     static final int taille = 1_000_000;                   // Longueur du tableau à trier
     static final int[] tableau = new int[taille];         // Le tableau d'entiers à trier 
     static final int borne = 10 * taille;                  // Valeur maximale dans le tableau
     static ExecutorService executorService;
-    static Vector<Future<Boolean>> listSort;
+    static AtomicInteger i = new AtomicInteger();
     private int[] tableauATrier;
     private int debut;
     private int fin;
+    static CompletionService<Integer> completion;
 
-    public TriRapide(int[] tableauATrier, int debut, int fin) {
+    public TriRapideCompletion(int[] tableauATrier, int debut, int fin) {
         this.tableauATrier = tableauATrier;
         this.debut = debut;
         this.fin = fin;
@@ -87,14 +89,23 @@ public class TriRapide implements Callable<Boolean> {
             int tailleTabDroite = p + 1 + fin;
             Future<Boolean> bool = null;
             if (tailleTabGauche > 1000 && tailleTabGauche > unCentieme) {
-                bool = executorService.submit(new TriRapide(t, début, p - 1));
-                listSort.add(bool);
+                bool = executorService.submit(new TriRapideCompletion(t, début, p - 1));
+                Integer courant = 0;
+                do {
+                    courant = i.get();
+
+                } while (!i.compareAndSet(courant, courant + 1));
+
             } else {
                 trierRapidement(t, début, p - 1);
             }
             if (tailleTabDroite > 1000 && tailleTabDroite > unCentieme) {
-                bool = executorService.submit(new TriRapide(t, p + 1, fin));
-                listSort.add(bool);
+                bool = executorService.submit(new TriRapideCompletion(t, p + 1, fin));
+                Integer courant = 0;
+                do {
+                    courant = i.get();
+
+                } while (!i.compareAndSet(courant, courant + 1));
             } else {
                 trierRapidement(t, p + 1, fin);
             }
@@ -118,8 +129,7 @@ public class TriRapide implements Callable<Boolean> {
          Initialisation du Pool de threads
          */
         executorService = Executors.newFixedThreadPool(4);
-        listSort = new Vector<Future<Boolean>>();
-
+        completion = new ExecutorCompletionService<Integer>(executorService);
         Random alea = new Random(System.currentTimeMillis());
         for (int i = 0; i < taille; i++) {                          // Remplissage aléatoire du tableau
             tableau[i] = alea.nextInt(2 * borne) - borne;
@@ -135,16 +145,7 @@ public class TriRapide implements Callable<Boolean> {
 
         long démarrage = System.nanoTime();
         trierRapidement(tableauATrier, 0, taille - 1);             // Tri du tableau
-
-        for (int i = 0; i < listSort.size(); i++) {
-            try {
-                listSort.get(i).get();
-            } catch (InterruptedException ex) {
-                Logger.getLogger(TriRapide.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (ExecutionException ex) {
-                Logger.getLogger(TriRapide.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
+       
         executorService.shutdown();
 
         long terminaison = System.nanoTime();
