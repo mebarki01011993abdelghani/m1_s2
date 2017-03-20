@@ -2,10 +2,16 @@
 #include<stdlib.h>
 #include<math.h>
 #include<string.h>
+#include<stdbool.h>
 
 
-typedef struct arbre Arbre;
-typedef struct list List;
+typedef struct node
+{
+	char charactere;
+	struct node *left;
+	struct node *right;
+} node ;
+
 
 
 int pop();
@@ -15,36 +21,77 @@ void infix_to_prefix();
 int checker(char symbol);
 void push(long int symbol);
 void negative();
-char* getRules(int index);
-List* cons(Arbre *arbre, List *liste);
-void analyzeNode(char* elements);
-
+char* get_rules_K(int index);
 char prefix_string[20], infix_string[20], postfix_string[20] ,negative_prefix_string[20], string_form[20];
 int top;
 long int stack[20];
+node* addNode(node **tree, char charactere,bool direction);
+void printTree(node *tree);
+void printReverseTree(node *tree);
+void clearTree(node **tree);
+    
 
-
-struct arbre
+// si direction faux alors noed de droite
+node* addNode(node **tree, char charactere,bool direction )
 {
-    char* elements;
-    List *enfants;
-};
+    node *tmpNode;
+    node *tmpTree = *tree;
 
-struct list
-{
-    Arbre *node;
-    List *next;
-};
+    node *elem = malloc(sizeof(node));
+    elem->charactere = charactere;
+    elem->left = NULL;
+    elem->right = NULL;
 
-List *cons(Arbre *arbre, List *liste)
-{
-    List *elem;
-    if ((elem = malloc(sizeof *elem)) == NULL)
-        return NULL;
-    elem->node = arbre;
-    elem->next = liste;
-    return elem;
+    if(tmpTree)
+    do
+    {
+        tmpNode = tmpTree;
+        if(direction == false )
+        {
+            tmpTree = tmpTree->right;
+            if(!tmpTree) tmpNode->right = elem;
+        }
+        else
+        {
+            tmpTree = tmpTree->left;
+            if(!tmpTree) tmpNode->left = elem;
+        }
+    }
+    while(tmpTree);
+    else  *tree = elem;
 }
+
+/***************************************************************************/
+
+void printTree(node *tree)
+{
+    if(!tree) return;
+
+    if(tree->left)  printTree(tree->left);
+
+    printf("Cle = %c\n", tree->charactere);
+
+    if(tree->right) printTree(tree->right);
+}
+
+/***************************************************************************/
+
+void clearTree(node **tree)
+{
+    node *tmpTree = *tree;
+
+    if(!tree) return;
+
+    if(tmpTree->left)  clearTree(&tmpTree->left);
+
+    if(tmpTree->right) clearTree(&tmpTree->right);
+        
+    free(tmpTree);
+
+    *tree = NULL;
+}
+
+
 
 int main()
 {
@@ -69,12 +116,47 @@ int main()
 
 	// BUILD TREE
 	// Construire racine 
-	Arbre RACINE = {negative_prefix_string,NULL};
-	printf("\nExpression root: \t%s\n", RACINE.elements);
 	
 
+
+    addNode(&Arbre, 'a',false);
+    addNode(&Arbre, 'b',false);    
+    addNode(&Arbre, 'c',true);
+
+
+    puts("-------------------------------");
+
+    printTree(Arbre);
 	return 0;
 }
+
+void build_tree(char * form){
+
+    	node *Arbre = NULL;
+    	node *nodeLeft = NULL;
+    	node *nodeRight = NULL;
+	for(int i =0 ; i< strlen(form * sizeof(int));i++){
+		// si c'est un "non" (-) , nous avons un fils
+		if(form[i] == '-'){
+		/* tu verifie que c'est le premier noeud */
+			nodeLeft = addNode(&Arbre, form[i],true);
+			i++;
+			nodeLeft = addNode(&nodeLeft, form[i],true);
+		/* si c'est */
+		}else if((form =='&') || (form =='|') || (form =='>') || (form =='L') || (form =='M'))// si c'est un &,|,>,M,L
+			/*
+			Si from[i+i] est un carac, alors tu met form[i+1] a gauche et form[i+2] a droite
+			Si c'est un autre ou/et/... tu fais 1 fils a gauche
+			*/
+		}else{ // si c'est une variable
+			addNode();
+		}
+	
+	}
+
+
+}
+
 
 void infix_to_prefix()
 {
@@ -187,7 +269,7 @@ void negative(){
 	strcat(negative_prefix_string,prefix_string);
 }
 
-char* getRules(int index){
+char* get_rules_K(int index){
 	switch(index)
 	{
 		case '1':	// --A
@@ -204,7 +286,13 @@ char* getRules(int index){
 	}
 }
 
-void analyzeNode(char* elements){
+int find_rules(char* form){
+
+	
+
+}
+
+void analyze_node(char* elements){
 
 }
 
