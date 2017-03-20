@@ -4,10 +4,11 @@
 #include<string.h>
 #include<stdbool.h>
 
+#define MAX 30
 
 typedef struct node
 {
-	char charactere;
+	char charactere[2];
 	struct node *left;
 	struct node *right;
 } node ;
@@ -25,20 +26,24 @@ char* get_rules_K(int index);
 char prefix_string[20], infix_string[20], postfix_string[20] ,negative_prefix_string[20], string_form[20];
 int top;
 long int stack[20];
-node* addNode(node **tree, char charactere,bool direction);
+node* build_tree(char * form);
+node* addNode(node **tree, char *charactere,bool direction);
 void printTree(node *tree);
 void printReverseTree(node *tree);
 void clearTree(node **tree);
-    
+void insert_node(node * list[MAX],node *node);
+void delete_node(node * list[MAX]);  
+node* get_node(node *list[MAX]);
+
 
 // si direction faux alors noed de droite
-node* addNode(node **tree, char charactere,bool direction )
+node* addNode(node **tree, char *charactere,bool direction )
 {
     node *tmpNode;
     node *tmpTree = *tree;
 
     node *elem = malloc(sizeof(node));
-    elem->charactere = charactere;
+    strcpy(elem->charactere,charactere);
     elem->left = NULL;
     elem->right = NULL;
 
@@ -59,6 +64,8 @@ node* addNode(node **tree, char charactere,bool direction )
     }
     while(tmpTree);
     else  *tree = elem;
+   
+    return elem;
 }
 
 /***************************************************************************/
@@ -67,11 +74,12 @@ void printTree(node *tree)
 {
     if(!tree) return;
 
-    if(tree->left)  printTree(tree->left);
+    printf(" Elem = \t%s\n", tree->charactere);
 
-    printf("Cle = %c\n", tree->charactere);
+    if(tree->left)   printf("Left"); printTree(tree->left);
 
-    if(tree->right) printTree(tree->right);
+
+    if(tree->right) printf("Right"); printTree(tree->right);
 }
 
 /***************************************************************************/
@@ -116,47 +124,76 @@ int main()
 
 	// BUILD TREE
 	// Construire racine 
-	
 
-
-    addNode(&Arbre, 'a',false);
-    addNode(&Arbre, 'b',false);    
-    addNode(&Arbre, 'c',true);
-
-
-    puts("-------------------------------");
-
-    printTree(Arbre);
+	node *Arbre = build_tree(negative_prefix_string);
+	printTree(Arbre);
 	return 0;
 }
 
-void build_tree(char * form){
+node* build_tree(char * form){
+	node *listNodes[MAX]; // nodes de sauvegardes
+	node *Arbre = NULL;
+    	node *node = addNode(&Arbre,form,true);
+	insert_node(listNodes,node);
 
-    	node *Arbre = NULL;
-    	node *nodeLeft = NULL;
-    	node *nodeRight = NULL;
-	for(int i =0 ; i< strlen(form * sizeof(int));i++){
-		// si c'est un "non" (-) , nous avons un fils
+	for(int i = 0 ; i < strlen(form); i++){
+		node = get_node(listNodes);
+		char build[2];
 		if(form[i] == '-'){
-		/* tu verifie que c'est le premier noeud */
-			nodeLeft = addNode(&Arbre, form[i],true);
+			build[0] = '-';
 			i++;
-			nodeLeft = addNode(&nodeLeft, form[i],true);
-		/* si c'est */
-		}else if((form =='&') || (form =='|') || (form =='>') || (form =='L') || (form =='M'))// si c'est un &,|,>,M,L
-			/*
-			Si from[i+i] est un carac, alors tu met form[i+1] a gauche et form[i+2] a droite
-			Si c'est un autre ou/et/... tu fais 1 fils a gauche
-			*/
-		}else{ // si c'est une variable
-			addNode();
+			build[1] = form[i];
+		}else{
+			char build_2[2] = { form[i],'\0'};
+			strcpy(build,build_2);			
 		}
-	
+		if(!node->left){
+			if( form[i] =='&'|| form[i] =='|' || form[i] =='>' || form[i] =='L' || form[i] =='M' ){// si c'est un &,|,>,M,L
+				node = addNode(&node,build,true);
+				insert_node(listNodes,node);					
+			}else{
+				addNode(&node,build,true);
+			}
+		}else{
+			if( form[i] =='&'|| form[i] =='|' || form[i] =='>' || form[i] =='L' || form[i] =='M' ){// si c'est un &,|,>,M,L
+				delete_node(listNodes);				
+				node = addNode(&node,build,false);
+				insert_node(listNodes,node);					
+			}else{
+				delete_node(listNodes);				
+				addNode(&node,build,false);
+			}
+		}
 	}
-
-
+	return Arbre;
 }
 
+void insert_node(node * list[MAX],node *node){
+	int i = 0;	
+	while(list[i] != NULL){
+		i++;
+	}
+	list[i] = node;
+}
+
+void delete_node(node *list[MAX]){
+	int i = 0;
+	while(list[i] != NULL){
+		i++;
+	}
+	i--;
+	if(list[i] != NULL) list[i] = NULL;		
+}
+
+node* get_node(node *list[MAX]){
+	int i = 0;
+
+	while(list[i] != NULL){
+		i++;
+	}
+	i--;
+	return list[i];
+}
 
 void infix_to_prefix()
 {

@@ -108,7 +108,6 @@ public class LineExecutorCompletion implements Callable<Integer> {
             Integer resultat;
             try {
                 resultat = ecs.take().get();
-                System.out.println("resultat = " + resultat);
             } catch (InterruptedException ex) {
                 Logger.getLogger(LineExecutorCompletion.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ExecutionException ex) {
@@ -125,7 +124,6 @@ public class LineExecutorCompletion implements Callable<Integer> {
 
     @Override
     public Integer call() throws Exception {
-        System.out.println(Thread.currentThread().getName());
         calculerLigne(this);
         return this.indiceX;
     }
