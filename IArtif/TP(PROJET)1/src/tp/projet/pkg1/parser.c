@@ -27,17 +27,16 @@ char prefix_string[20], infix_string[20], postfix_string[20] ,negative_prefix_st
 int top;
 long int stack[20];
 node* build_tree(char * form);
-node* addNode(node **tree, char *charactere,bool direction);
-void printTree(node *tree);
-void printReverseTree(node *tree);
-void clearTree(node **tree);
+node* add_node(node **tree, char *charactere,bool direction);
+void print_tree(node *tree);
+void print_reverseTree(node *tree);
 void insert_node(node * list[MAX],node *node);
 void delete_node(node * list[MAX]);  
 node* get_node(node *list[MAX]);
-
-
+void simplify_negative(char* form);
+void remove_all_chars(char* str, char c);
 // si direction faux alors noed de droite
-node* addNode(node **tree, char *charactere,bool direction )
+node* add_node(node **tree, char *charactere,bool direction )
 {
     node *tmpNode;
     node *tmpTree = *tree;
@@ -70,35 +69,17 @@ node* addNode(node **tree, char *charactere,bool direction )
 
 /***************************************************************************/
 
-void printTree(node *tree)
+void print_tree(node *tree)
 {
     if(!tree) return;
 
-    printf(" Elem = \t%s\n", tree->charactere);
+    printf("Elem = \t%s\n", tree->charactere);
 
-    if(tree->left)   printf("Left"); printTree(tree->left);
+    if(tree->left)   printf("Left "); print_tree(tree->left);
 
 
-    if(tree->right) printf("Right"); printTree(tree->right);
+    if(tree->right) printf("Right "); print_tree(tree->right);
 }
-
-/***************************************************************************/
-
-void clearTree(node **tree)
-{
-    node *tmpTree = *tree;
-
-    if(!tree) return;
-
-    if(tmpTree->left)  clearTree(&tmpTree->left);
-
-    if(tmpTree->right) clearTree(&tmpTree->right);
-        
-    free(tmpTree);
-
-    *tree = NULL;
-}
-
 
 
 int main()
@@ -108,6 +89,7 @@ int main()
 	top = -1;
 	printf("\nEnter an Expression in Infix format:\t");
 	scanf("%[^\n]s", infix_string);
+	remove_all_chars(infix_string, '-');
 	infix_to_prefix();
 	printf("\nExpression in Postfix Format: \t%s\n", postfix_string);
 	length = strlen(postfix_string) - 1;
@@ -123,21 +105,24 @@ int main()
 	printf("\nExpression in Negative Prefix Format: \t%s\n", negative_prefix_string);
 
 	// BUILD TREE
-	// Construire racine 
 
+	remove_all_chars(negative_prefix_string, '-');
 	node *Arbre = build_tree(negative_prefix_string);
-	printTree(Arbre);
+	print_tree(Arbre);
+
+
 	return 0;
 }
 
 node* build_tree(char * form){
 	node *listNodes[MAX]; // nodes de sauvegardes
 	node *Arbre = NULL;
-    	node *node = addNode(&Arbre,form,true);
+    	node *node = add_node(&Arbre,"RACINE",true);
 	insert_node(listNodes,node);
 
 	for(int i = 0 ; i < strlen(form); i++){
 		node = get_node(listNodes);
+
 		char build[2];
 		if(form[i] == '-'){
 			build[0] = '-';
@@ -147,21 +132,21 @@ node* build_tree(char * form){
 			char build_2[2] = { form[i],'\0'};
 			strcpy(build,build_2);			
 		}
+
 		if(!node->left){
 			if( form[i] =='&'|| form[i] =='|' || form[i] =='>' || form[i] =='L' || form[i] =='M' ){// si c'est un &,|,>,M,L
-				node = addNode(&node,build,true);
+				node = add_node(&node,build,true);
 				insert_node(listNodes,node);					
 			}else{
-				addNode(&node,build,true);
+				add_node(&node,build,true);
 			}
 		}else{
-			if( form[i] =='&'|| form[i] =='|' || form[i] =='>' || form[i] =='L' || form[i] =='M' ){// si c'est un &,|,>,M,L
 				delete_node(listNodes);				
-				node = addNode(&node,build,false);
+			if( form[i] =='&'|| form[i] =='|' || form[i] =='>' || form[i] =='L' || form[i] =='M' ){// si c'est un &,|,>,M,L
+				node = add_node(&node,build,false);
 				insert_node(listNodes,node);					
 			}else{
-				delete_node(listNodes);				
-				addNode(&node,build,false);
+				add_node(&node,build,false);
 			}
 		}
 	}
@@ -317,7 +302,6 @@ char* get_rules_K(int index){
 			return "X:-A X:-B";
 		case '4':	// ->AB
 			return	"X:A X:-B";
-		
 		default: 
 	     		  return "No rules";
 	}
@@ -333,8 +317,41 @@ void analyze_node(char* elements){
 
 }
 
+void simplify_negative(char* form){
+	int cmpt = 0;
+	int first = 0;
+	for(int i = 0 ; *form != '\0'; i++){
+	
 
+	}
+}
 
+void remove_all_chars(char* str, char c) {
+    char *pr = str, *pw = str;
+    bool find = false;
+    int cmpt = 0;
+    while (*pr ) {
+        *pw = *pr++;
+	if(*pw != c){
+
+		if(find == true){
+			if(cmpt%2 != 0){
+				*pw = *pr --;				
+				*pw ='-';
+			}
+			find = false;
+			cmpt = 0;
+		}
+	        pw +=1;
+		
+	}else{
+		find = true;
+		cmpt ++;
+	}
+			
+    }
+    *pw = '\0';
+}
 
 
 
