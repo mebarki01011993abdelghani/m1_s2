@@ -5,6 +5,7 @@ import random
 import math
 from sklearn.datasets import make_classification
 from sklearn.cross_validation import train_test_split
+from sklearn.metrics import *
 from sklearn.metrics import confusion_matrix
 X = digits.data
 Y = digits.target

@@ -1,0 +1,8 @@
+def contruireNouveauGraph(data,w):
+	####
+	##TODO
+	## calculer un nouveau graph tel que :
+	## xs = un point dans une grille prédéfinie avec un pas de 0.5 ( changeable )
+	## ys = le même point que ys
+	## ws = le produit scalaire entre xs et ys
+	####
