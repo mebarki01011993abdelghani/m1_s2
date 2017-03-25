@@ -14,7 +14,6 @@ typedef struct node
 } node ;
 
 
-
 int pop();
 int precedence(char symbol);
 int isEmpty();
@@ -31,10 +30,10 @@ node* add_node(node **tree, char *charactere,bool direction);
 void print_tree(node *tree);
 void print_reverseTree(node *tree);
 void insert_node(node * list[MAX],node *node);
-void delete_node(node * list[MAX]);  
+void delete_node(node * list[MAX]);
 node* get_node(node *list[MAX]);
-void simplify_negative(char* form);
 void remove_all_chars(char* str, char c);
+
 // si direction faux alors noed de droite
 node* add_node(node **tree, char *charactere,bool direction )
 {
@@ -63,7 +62,7 @@ node* add_node(node **tree, char *charactere,bool direction )
     }
     while(tmpTree);
     else  *tree = elem;
-   
+
     return elem;
 }
 
@@ -109,13 +108,11 @@ int main()
 
 	node *Arbre = build_tree(negative_prefix_string);
 	print_tree(Arbre);
-
-
 	return 0;
 }
 
 node* build_tree(char * form){
-	node *listNodes[MAX]; // nodes de sauvegardes
+	node *listNodes[MAX] ={}; // nodes de sauvegardes
 	node *Arbre = NULL;
 
 	char first[2] = {form[0],'\0'};
@@ -127,18 +124,18 @@ node* build_tree(char * form){
 		node = get_node(listNodes);
 
 		char build[2] = {};
-		if(form[i] == '-'){
-			build[0] = '-';
+		if(form[i] == '-' || form[i] =='L' || form[i] =='M'){
+			build[0] = form[i];
 			i++;
 			build[1] = form[i];
 		}else{
 			char build_2[2] = { form[i],'\0'};
-			strcpy(build,build_2);			
+			strcpy(build,build_2);
 		}
 
-		if(node->left== NULL){		
-			if( form[i] =='&'|| form[i] =='|' || form[i] =='>' || form[i] =='L' || form[i] =='M' ){// si c'est un &,|,>,M,L
-		
+		if(node->left== NULL){
+			if( form[i] =='&'|| form[i] =='|' || form[i] =='>'){// si c'est un &,|,>,M,L
+
 				node = add_node(&node,build,true);
 				insert_node(listNodes,node);
 
@@ -148,10 +145,10 @@ node* build_tree(char * form){
 			}
 		}else{
 
-			delete_node(listNodes);				
-			if( form[i] =='&'|| form[i] =='|' || form[i] =='>' || form[i] =='L' || form[i] =='M' ){// si c'est un &,|,>,M,L
+			delete_node(listNodes);
+			if( form[i] =='&'|| form[i] =='|' || form[i] =='>){// si c'est un &,|,>,M,L
 				node = add_node(&node,build,false);
-				insert_node(listNodes,node);					
+				insert_node(listNodes,node);
 			}else{
 				add_node(&node,build,false);
 			}
@@ -162,7 +159,7 @@ node* build_tree(char * form){
 }
 
 void insert_node(node * list[MAX],node *node){
-	int i = 0;	
+	int i = 0;
 	while(list[i] != NULL){
 		i++;
 	}
@@ -175,7 +172,7 @@ void delete_node(node *list[MAX]){
 		i++;
 	}
 	i--;
-	if(list[i] != NULL) list[i] = NULL;		
+	if(list[i] != NULL) list[i] = NULL;
 }
 
 node* get_node(node *list[MAX]){
@@ -192,7 +189,7 @@ void infix_to_prefix()
 {
 	unsigned int count, temp = 0;
 	char next;
-	char symbol;	
+	char symbol;
 	for(count = 0; count < strlen(infix_string); count++)
 	{
 		symbol = infix_string[count];
@@ -218,12 +215,12 @@ void infix_to_prefix()
 					  postfix_string[temp++] = pop();
 				          push(symbol);
 					  break;
-				default: 
+				default:
 			     		  postfix_string[temp++] = symbol;
 			}
 		}
 	}
-	while(!isEmpty()) 
+	while(!isEmpty())
 	{
 		postfix_string[temp++] = pop();
 	}
@@ -235,7 +232,7 @@ int precedence(char symbol)
 	switch(symbol)
 	{
 		case '(':
-			 return 0;	
+			 return 0;
 		case '&':
 		case '|':
 		case '>':
@@ -303,21 +300,21 @@ char* get_rules_K(int index){
 	switch(index)
 	{
 		case '1':	// --A
-			return "A";
+			return "X:A X:B";
 		case '2':	// &AB
 			return "X:A X:B";
 		case '3':	// -|AB
 			return "X:-A X:-B";
 		case '4':	// ->AB
 			return	"X:A X:-B";
-		default: 
+		default:
 	     		  return "No rules";
 	}
 }
 
 int find_rules(char* form){
 
-	
+
 
 }
 
@@ -325,14 +322,6 @@ void analyze_node(char* elements){
 
 }
 
-void simplify_negative(char* form){
-	int cmpt = 0;
-	int first = 0;
-	for(int i = 0 ; *form != '\0'; i++){
-	
-
-	}
-}
 
 void remove_all_chars(char* str, char c) {
     char *pr = str, *pw = str;
@@ -344,23 +333,22 @@ void remove_all_chars(char* str, char c) {
 
 		if(find == true){
 			if(cmpt%2 != 0){
-				*pw = *pr --;				
+				*pw = *pr --;
 				*pw ='-';
 			}
 			find = false;
 			cmpt = 0;
 		}
 	        pw +=1;
-		
+
 	}else{
 		find = true;
 		cmpt ++;
 	}
-			
+
     }
     *pw = '\0';
 }
-
 
 
 

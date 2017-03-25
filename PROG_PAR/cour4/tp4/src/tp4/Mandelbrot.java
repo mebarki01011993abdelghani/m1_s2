@@ -26,7 +26,7 @@ public class Mandelbrot implements Callable<Integer> {
         final long startTime = System.nanoTime();
         final long endTime;
         /*Calculer ligne avec la classe ligne*/
-        LineCompletion.calculerLignes();
+        LineExecutorCompletion.calculerLignes();
         endTime = System.nanoTime();
         final long duree = (endTime - startTime) / 1_000_000;
         System.out.println("Durée = " + (long) duree + " ms.");

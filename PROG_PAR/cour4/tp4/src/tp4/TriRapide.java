@@ -8,6 +8,7 @@ import java.util.Random;
 import java.util.Vector;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletionService;
+import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
@@ -24,7 +25,9 @@ public class TriRapide implements Callable<Boolean> {
     static final int[] tableau = new int[taille];         // Le tableau d'entiers à trier 
     static final int borne = 10 * taille;                  // Valeur maximale dans le tableau
     static ExecutorService executorService;
+    //static ConcurrentLinkedDeque<Future<Boolean>> listSort;
     static Vector<Future<Boolean>> listSort;
+
     private int[] tableauATrier;
     private int debut;
     private int fin;
@@ -102,11 +105,11 @@ public class TriRapide implements Callable<Boolean> {
     }
 
     private static void afficher(int[] t, int début, int fin) {
-        for (int i = début; i <= début + 3; i++) {
+        for (int i = début; i <= début + 10; i++) {
             System.out.print(" " + t[i]);
         }
         System.out.print("...");
-        for (int i = fin - 3; i <= fin; i++) {
+        for (int i = fin - 10; i <= fin; i++) {
             System.out.print(" " + t[i]);
         }
         System.out.print("\n");
@@ -137,6 +140,7 @@ public class TriRapide implements Callable<Boolean> {
         trierRapidement(tableauATrier, 0, taille - 1);             // Tri du tableau
 
         for (int i = 0; i < listSort.size(); i++) {
+
             try {
                 listSort.get(i).get();
             } catch (InterruptedException ex) {

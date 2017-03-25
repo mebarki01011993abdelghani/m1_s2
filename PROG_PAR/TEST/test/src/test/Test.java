@@ -5,51 +5,31 @@
  */
 package test;
 
-import java.util.concurrent.BrokenBarrierException;
-import java.util.concurrent.Semaphore;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.concurrent.locks.*;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.CyclicBarrier;
+import com.sun.corba.se.impl.orbutil.graph.Node;
+import java.util.Set;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicReference;
 
 /**
  *
  * @author scra
  */
-public class Test extends Thread {
+public class Test  implements Node{
+    AtomicReference<Node> ref = new AtomicReference<Node>();
 
-    static int compteur = 10;
-    private static final CyclicBarrier cmpt = new CyclicBarrier(compteur);
-    private static final Thread[] ths = new Thread[10];
-
-    public static void main(String[] args) throws InterruptedException {
-        for (int i = 0; i < 10; i++) {
-            ths[i] = new Test();
-            ths[i] .start();
-        }
-        for (int i = 0; i < 10; i++) {
-            ths[i].join();
-        }
-
-        System.out.println("DEVRAIT AFFCIHER 0 => " + cmpt.getNumberWaiting());
+    
+    public void push(Integer value){
+        Node o = new Node(value);
+        Node actuel;
+        do{
+            actuelHaut = haut.get();
+            nouveauHaut.suivant = actuelHaut;
+        }while(!haut.compareAndSet(actuelHaut,nouveauHaut));
+        
     }
 
-    public void run() {
-        try {
-            System.out.println(cmpt.getNumberWaiting() + " " + currentThread().getName());
-            System.out.println("JE MENDORS");
-            cmpt.await();
-            sleep(20);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (BrokenBarrierException ex) {
-            Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        System.out.println("REVEILLER");
-
-        System.out.println("Terminer " + currentThread().getName());
-    }
+    
 
 }

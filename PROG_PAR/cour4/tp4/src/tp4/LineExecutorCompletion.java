@@ -60,29 +60,7 @@ public class LineExecutorCompletion implements Callable<Integer> {
         this.indiceY = indiceY;
     }
 
-    /*public CountDownLatch getLatch() {
-     return latch;
-     }
 
-     public void setLatch(CountDownLatch latch) {
-     this.latch = latch;
-     }*/
-    /* public int getIndiceLigne() {
-     indiceLock.lock();
-     try {
-     indiceL++;
-     return indiceL;
-     } finally {
-     indiceLock.unlock();
-     }
-     }*/
-    /*
-     public int getIndiceLigne() {
-     synchronized (lock) {
-     indiceL++;
-     return indiceL;
-     }
-     }*/
     private void calculerLigne(LineExecutorCompletion ligne) {
         for (int i = 0; i < ligne.getIndiceY(); i++) {
             Mandelbrot.colorierPixel(ligne.getIndiceX(), i);
@@ -104,13 +82,14 @@ public class LineExecutorCompletion implements Callable<Integer> {
         for (int i = 0; i < Mandelbrot.taille; i++) {
             ecs.submit(new LineExecutorCompletion(i));
         }
+        
+        executorService.shutdown();
+
         for (int i = 0; i < Mandelbrot.taille; i++) {
             Integer resultat;
             try {
-                resultat = ecs.take().get();
+                ecs.take();
             } catch (InterruptedException ex) {
-                Logger.getLogger(LineExecutorCompletion.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (ExecutionException ex) {
                 Logger.getLogger(LineExecutorCompletion.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
@@ -119,7 +98,6 @@ public class LineExecutorCompletion implements Callable<Integer> {
          est pas invoquée alors la JVM continuera indéfiniment de s'exécuter même si 
          les traitements du thread principal sont terminés.
          */
-        executorService.shutdown();
     }
 
     @Override
