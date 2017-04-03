@@ -1,0 +1,92 @@
+<!--ENTITY-->
+<!ENTITY  site1  "UFR Sciences" 		        >
+<!ENTITY  site2  "Université d'Aix-Marseille"	>
+<!ENTITY  site3  "St Charles" 			        >
+<!ENTITY  site4  "St Jerome" 			        >
+<!ENTITY  adresseSitePerso      ".perso.luminy.univ-amu.fr/" >
+<!ENTITY  http					"http://www."				 >
+<!ENTITY  dom.amu				"univ-amu.fr"				 >
+<!ENTITY  dom.lif				"lif.univ-mrs.fr"			 >
+<!ENTITY  dom.luminy  			"univ-mrs.fr" 				 >
+<!ENTITY  dom.dil     			"dil.&dom.luminy;" 			 >
+<!ENTITY  obli     				"Obligatoire" 			     >
+<!ENTITY  falc     				"Falcultatif" 			     >
+<!ENTITY  cred3     			"3" 			     		 >
+<!ENTITY  cred6     			"6" 			     		 >
+<!ENTITY  noResume				"Nous sommes désolé, mais nous n'avons pas encore de résumé.">
+
+<!--RELATIONS ELEMENTS-->
+<!ELEMENT master					(intervenants,enseignements,blocks,semestres,specialites,parcours,description)>
+<!ELEMENT enseignement    			(nom,identifiant,nombreCredit,professeurs?,resume,pre-requis?,plan?,etablissement*,ref-intervenant*,adresse*,autre?)>
+<!ELEMENT intervenant				(identifiant,nom,mail*,siteWeb?,telephone*,adresse?,etablissement,autre?)>
+<!ELEMENT specialite				(nom,identifiant,code,finalite?,etablissement,responsable,description,competences,connaissances?,ref-semestre+,politiqueDesStages,aspects?,modalites?,conditionAdmission,debouches?,poursuitesEtudes?)>							 
+<!ELEMENT parcour					(nom,description?,ref-specialite+,autre*)>
+<!ELEMENT block 					(ref-enseignement+)>		
+<!ELEMENT blocks 					(block+)>						
+<!ELEMENT semestre					(titre,ref-block+)>	
+<!ELEMENT responsable 				(ref-intervenant+)>
+<!ELEMENT parcours 					(parcour*)>
+<!ELEMENT semestres					(semestre*)>
+<!ELEMENT intervenants        		(intervenant)*>
+<!ELEMENT enseignements        		(enseignement)*>
+<!ELEMENT specialites        		(specialite)*>
+<!ELEMENT professeurs        		(ref-intervenant+)>
+
+<!--ELEMENTS-->
+<!ELEMENT pre-requis					(#PCDATA | p)*>
+<!ELEMENT aspects						(#PCDATA | p)*>
+<!ELEMENT modalites						(#PCDATA | p)*>
+<!ELEMENT politiqueDesStages			(#PCDATA | p)*>
+<!ELEMENT conditionAdmission 			(#PCDATA | p)*>
+<!ELEMENT poursuitesEtudes				(#PCDATA | p)*>
+<!ELEMENT nom 						    (#PCDATA)>
+<!ELEMENT debouches					    (#PCDATA | p)*>
+<!ELEMENT description 					(#PCDATA | p)*>
+<!ELEMENT etablissement 				(#PCDATA)>
+<!ELEMENT code 						    (#PCDATA)>
+<!ELEMENT finalite 					    (#PCDATA)>
+<!ELEMENT plan 						    (#PCDATA)>
+<!ELEMENT resume 					    (#PCDATA | p)*>
+<!ELEMENT nombreCredit 					(#PCDATA)>
+<!ELEMENT identifiant 					(#PCDATA)>
+<!ELEMENT mail 						    (#PCDATA)>
+<!ELEMENT siteWeb 					    (#PCDATA)>
+<!ELEMENT ref-intervenant    			(#PCDATA)>
+<!ELEMENT ref-enseignement   			(#PCDATA)>
+<!ELEMENT ref-specialite	   			(#PCDATA)>
+<!ELEMENT ref-semestre   				(#PCDATA)>
+<!ELEMENT ref-block						(#PCDATA)>
+<!ELEMENT connaissances      			(#PCDATA | p)*>
+<!ELEMENT competences        			(#PCDATA | p)*>
+<!ELEMENT telephone        				(#PCDATA)>
+<!ELEMENT adresse        				(#PCDATA)>
+<!ELEMENT titre        					(#PCDATA)*>
+
+<!-- Permet de créer un element adapter à son besoin -->
+<!ELEMENT autre        					(titre, p, ANY*)>
+
+<!--HTML BALISE -->
+<!ELEMENT p							(#PCDATA| em | ul | strong | table | p)*  >				
+<!ELEMENT strong					(#PCDATA|p)*>				
+<!ELEMENT em						(#PCDATA)>
+<!ELEMENT ul						(li+ | p)*>
+<!ELEMENT li						(#PCDATA|p|ul|table)*>
+<!ELEMENT table						(tr+)>
+<!ELEMENT tr						(th+|d+)>
+<!ELEMENT th						(#PCDATA)>
+
+<!--ATTRIBUTS-->
+<!ATTLIST enseignement  idEnseignement  ID  #REQUIRED>
+<!ATTLIST intervenant  idIntervenant  ID  #REQUIRED>
+<!ATTLIST specialite  idSpecialite  ID  #REQUIRED>
+<!ATTLIST parcour  idParcour  ID  #REQUIRED>
+<!ATTLIST semestre  idSemestre  ID  #REQUIRED>
+<!ATTLIST block  idBlock  ID  #REQUIRED>
+<!ATTLIST ref-intervenant  ref IDREF  #REQUIRED>
+<!ATTLIST ref-enseignement  ref IDREF  #REQUIRED>
+<!ATTLIST ref-specialite  ref IDREF  #REQUIRED>
+<!ATTLIST ref-semestre  ref IDREF  #REQUIRED>
+<!ATTLIST ref-block  ref IDREF  #REQUIRED>
+<!ATTLIST block  etat  (Obligatoire|Falcultatif)  #REQUIRED>
+<!ATTLIST block  titre CDATA   #REQUIRED>
+
