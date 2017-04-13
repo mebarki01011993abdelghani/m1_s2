@@ -1,19 +1,17 @@
 package ia_1;
 
-import java.util.ArrayList;
+import java.util.Stack;
 
 public class PostFixConverter {
-
-    static int top = -1;
-    static ArrayList<Character> stack = new ArrayList<Character>();
 
     public static Boolean checker(char c) {
         return c == '\t' || c == ' ';
     }
 
     public static String negative(String str) {
-        String prefix = "-(";
-        String suffixe = ")";
+        String prefix;
+        prefix = "-";
+        String suffixe = "";
         return prefix + str + suffixe;
     }
 
@@ -34,45 +32,26 @@ public class PostFixConverter {
         }
     }
 
-    public static void push(char symbol) {
-        top++;
-        stack.add(top, symbol);
-
-    }
-
-    public static char pop() throws Exception {
-        if (isEmpty()) {
-            System.err.println("Stack is Empty");
-            throw new Exception();
-        }
-        return stack.get(top--);
-    }
-
-    public static Boolean isEmpty() {
-        if (top == -1) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
     public static String infix2prefix(String str) throws Exception {
+        Stack stack = new Stack();
+
         String postfix = "";
         char symbol;
-        char next;
+        Object next;
         for (int i = 0; i < str.length(); i++) {
             symbol = str.charAt(i);
             if (!checker(symbol)) {
                 switch (symbol) {
                     case '(':
-                        push(symbol);
+                        stack.push(symbol);
                         break;
                     case ')':
-                        next = pop();
-                        while (next != '(') {
-                            postfix = postfix + next;
-                            next = pop();
-                        }
+
+                        do {
+                            next = stack.pop();
+                            postfix = postfix + (Character) next;
+
+                        } while (next.equals('('));
                         break;
                     case '&':
                     case '|':
@@ -80,21 +59,20 @@ public class PostFixConverter {
                     case '>':
                     case 'M':
                     case 'L':
-                        while (!isEmpty() && precedence(stack.get(top)) >= precedence(symbol)) {
-                            postfix = postfix + pop();
+                        while (!stack.isEmpty() && precedence((Character) stack.pop()) >= precedence(symbol)) {
+                            postfix = postfix + (Character) stack.pop();
+                            System.err.println(postfix);
                         }
-                        push(symbol);
+                        stack.push(symbol);
                         break;
                     default:
-                        postfix = postfix + symbol;
+                        postfix = postfix + (Character) symbol;
                 }
             }
         }
-
-        while (!isEmpty()) {
-            postfix = postfix + pop();
+        while (!stack.isEmpty()) {
+            postfix = postfix + (stack.pop().toString());
         }
-
         return new StringBuilder(postfix).reverse().toString();
     }
 }
