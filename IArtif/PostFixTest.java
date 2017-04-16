@@ -19,9 +19,12 @@ public class PostFixTest {
         System.out.println("Postfix is : " + postfix);
         String negative = PostFixConverter.negative(postfix);
         System.out.println("Negation is : " + negative);
-        theTree = BinaryTree.buildTree(negative);
+        String simplify = PostFixConverter.simplifyNegative(negative);
+        System.out.println("Simplify formula : " + simplify);
+        theTree = BinaryTree.buildTree(simplify);
         BinaryTree.inOrderTraverseTree(theTree);
 
     }
 
 }
+

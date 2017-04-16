@@ -16,30 +16,37 @@ public class BinaryTree {
 
         ArrayList<Node> focusNodes = new ArrayList<Node>();
 
-        String root = formule.substring(0, 2);
+        int a = 1;
+        //Initialisation
+        String root = formule.substring(0, 1);
+        if (root.equals("-")) {
+            root = formule.substring(0, 2);
+            a++;
+        }
+        
         Node nodeRoot = new Node(root);
         Node focusNode = nodeRoot;
         focusNodes.add(focusNode);
-        for (int i = 2; i < formule.length(); i++) {
+        for (int i = a; i < formule.length(); i++) {
             String chars = formule.substring(i, i + 1);
             if (chars.equals("-") || chars.equals("M") || chars.equals("L")) {
-                chars = formule.substring(i , i + 2);
+                chars = formule.substring(i, i + 2);
                 i++;
             }
 
             if (focusNode.getLeftChild() == null) {
-                if (chars.substring(0,1).equals("&") || chars.substring(0,1).equals("|") || chars.substring(0,1).equals(">")) {
-                    
+                if (chars.substring(0, 1).equals("&") || chars.substring(0, 1).equals("|") || chars.substring(0, 1).equals(">")) {
+
                     focusNode = focusNode.addNode(chars, true);
                     focusNodes.add(focusNode);
 
                 } else {
-                  
+
                     focusNode.addNode(chars, true);
                 }
             } else {
-                if (chars.substring(0,1).equals("&") || chars.substring(0,1).equals("|") || chars.substring(0,1).equals(">")) {
-                    
+                if (chars.substring(0, 1).equals("&") || chars.substring(0, 1).equals("|") || chars.substring(0, 1).equals(">")) {
+
                     focusNode = focusNode.addNode(chars, false);
                     if (focusNodes.size() > 0) {
                         focusNodes.remove(focusNodes.size() - 1);
@@ -47,7 +54,7 @@ public class BinaryTree {
                     focusNodes.add(focusNode);
 
                 } else {
-                    
+
                     focusNode.addNode(chars, false);
                     if (focusNodes.size() > 0) {
                         focusNodes.remove(focusNodes.size() - 1);
