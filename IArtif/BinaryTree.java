@@ -12,6 +12,63 @@ public class BinaryTree {
         }
     }
 
+    /* On parcours tous les noeuds, en fonction on applique une regle
+Idée du case ?
+Recursif ?
+Faut-il commencer par le haut ?
+     */
+    public static void treeExplorer(Node focusNode) {
+        if (focusNode != null && focusNode.isSymbol()) {
+            switch (focusNode.getName()) {
+                case "&":
+                    System.out.println("");
+                    Rules.AND(focusNode);
+                    break;
+                case "-&":
+                    System.out.println("");
+                    Rules.NAND(focusNode);
+                    break;
+                case "|":
+                    System.out.println("");
+                    Rules.OR(focusNode);
+                    break;
+                case "-|":
+                    System.out.println("");
+                    Rules.NOR(focusNode);
+                    break;
+                case ">":
+                    System.out.println("");
+                    Rules.IMPLY(focusNode);
+                    break;
+                case "->":
+                    System.out.println("");
+                    Rules.Nimply(focusNode);
+                    break;
+                case "M":
+                    System.out.println("");
+                    Rules.Maybe(focusNode);
+                    break;
+                case "-M":
+                    System.out.println("");
+                    Rules.Nmaybe(focusNode);
+                    break;
+                case "L":
+                    System.out.println("");
+                    Rules.Losange(focusNode);
+                    break;
+                case "-L":
+                    System.out.println("");
+                    Rules.Nlosange(focusNode);
+                    break;
+
+                default:
+                    System.out.println("No rules");
+            }
+            treeExplorer(focusNode.leftChild);
+            treeExplorer(focusNode.rightChild);
+        }
+    }
+
     public static Node buildTree(String formule) {
 
         ArrayList<Node> focusNodes = new ArrayList<Node>();
@@ -23,7 +80,7 @@ public class BinaryTree {
             root = formule.substring(0, 2);
             a++;
         }
-        
+
         Node nodeRoot = new Node(root);
         Node focusNode = nodeRoot;
         focusNodes.add(focusNode);
@@ -68,4 +125,3 @@ public class BinaryTree {
         return nodeRoot;
     }
 }
-
