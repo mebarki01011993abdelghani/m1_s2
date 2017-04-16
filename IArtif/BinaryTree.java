@@ -20,36 +20,26 @@ public class BinaryTree {
         Node nodeRoot = new Node(root);
         Node focusNode = nodeRoot;
         focusNodes.add(focusNode);
-        Boolean find = false;
         for (int i = 2; i < formule.length(); i++) {
             String chars = formule.substring(i, i + 1);
             if (chars.equals("-") || chars.equals("M") || chars.equals("L")) {
-                chars = formule.substring(i + 1, i + 2);
-                find = true;
+                chars = formule.substring(i , i + 2);
+                i++;
             }
 
             if (focusNode.getLeftChild() == null) {
-                if (chars.equals("&") || chars.equals("|") || chars.equals(">")) {
-                    if (find) {
-                        chars = formule.substring(i, i + 2);
-                        i++;
-                    }
+                if (chars.substring(0,1).equals("&") || chars.substring(0,1).equals("|") || chars.substring(0,1).equals(">")) {
+                    
                     focusNode = focusNode.addNode(chars, true);
                     focusNodes.add(focusNode);
 
                 } else {
-                    if (find) {
-                        chars = formule.substring(i, i + 2);
-                        i++;
-                    }
+                  
                     focusNode.addNode(chars, true);
                 }
             } else {
-                if (chars.equals("&") || chars.equals("|") || chars.equals(">")) {
-                    if (find) {
-                        chars = formule.substring(i, i + 2);
-                        i++;
-                    }
+                if (chars.substring(0,1).equals("&") || chars.substring(0,1).equals("|") || chars.substring(0,1).equals(">")) {
+                    
                     focusNode = focusNode.addNode(chars, false);
                     if (focusNodes.size() > 0) {
                         focusNodes.remove(focusNodes.size() - 1);
@@ -57,10 +47,7 @@ public class BinaryTree {
                     focusNodes.add(focusNode);
 
                 } else {
-                    if (find) {
-                        chars = formule.substring(i, i + 2);
-                        i++;
-                    }
+                    
                     focusNode.addNode(chars, false);
                     if (focusNodes.size() > 0) {
                         focusNodes.remove(focusNodes.size() - 1);
@@ -70,8 +57,8 @@ public class BinaryTree {
                     }
                 }
             }
-            find = false;
         }
         return nodeRoot;
     }
 }
+
