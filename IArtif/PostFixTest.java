@@ -1,8 +1,5 @@
 package ia_1;
 
-import static ia_1.PostFixConverter.infix2prefix;
-import static ia_1.PostFixConverter.negative;
-
 import java.util.Scanner;
 
 public class PostFixTest {
@@ -14,12 +11,17 @@ public class PostFixTest {
      */
     public static void main(String args[]) throws Exception {
         Scanner input = new Scanner(System.in);
-        BinaryTree theTree = new BinaryTree();
+        Node theTree;
         System.out.println("Enter the expression that you want to convert to prefix.");
         String infix = input.next();
         System.out.println("Your expression is : " + infix);
-        System.out.println("Prefix is : " + infix2prefix(infix));
-        System.out.println("Negation is : " + negative(infix2prefix(infix)));
+        String postfix = PostFixConverter.infix2prefix(infix);
+        System.out.println("Postfix is : " + postfix);
+        String negative = PostFixConverter.negative(postfix);
+        System.out.println("Negation is : " + negative);
+        theTree = BinaryTree.buildTree(negative);
+        BinaryTree.inOrderTraverseTree(theTree);
+
     }
 
 }

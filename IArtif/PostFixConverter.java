@@ -1,8 +1,11 @@
 package ia_1;
 
-import java.util.Stack;
+import java.util.ArrayList;
 
 public class PostFixConverter {
+
+    static int top = -1;
+    static ArrayList<Character> stack = new ArrayList<Character>();
 
     public static Boolean checker(char c) {
         return c == '\t' || c == ' ';
@@ -13,6 +16,62 @@ public class PostFixConverter {
         prefix = "-";
         String suffixe = "";
         return prefix + str + suffixe;
+    }
+
+    public static void push(char symbol) {
+        top++;
+        stack.add(top, symbol);
+    }
+
+    public static char pop() throws Exception {
+        if (isEmpty()) {
+            System.err.println("Stack is Empty");
+            throw new Exception();
+        }
+        return stack.get(top--);
+    }
+
+    public static Boolean isEmpty() {
+        if (top == -1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static String simplifyNegative(String formula) {
+
+        for (int i = 0; i < formula.length(); i++) {
+            char negative = formula.charAt(i);
+            if (negative == '-') {
+                int count = 1;
+                int a = i;
+                negative = formula.charAt(a + 1);
+                while (negative == '-') {
+                    count++;
+                    negative= formula.charAt(a+count);
+                }
+
+                int modulo = count % 2;
+                if (modulo == 0) {
+                    formula = rewriteString(formula, a, a + count, true);
+                } else {
+                    formula = rewriteString(formula, a, a + count, false);
+                }
+            }
+        }
+
+        return formula;
+    }
+
+    public static String rewriteString(String formula, int x, int y, boolean negative) {
+        String newFormula = null;
+        newFormula = formula.substring(0, x );
+        if (negative == false) {
+            newFormula = newFormula + "-";
+        }
+        newFormula = newFormula + formula.substring(y , formula.length());
+        return newFormula;
     }
 
     public static int precedence(char c) {
@@ -33,25 +92,23 @@ public class PostFixConverter {
     }
 
     public static String infix2prefix(String str) throws Exception {
-        Stack stack = new Stack();
 
         String postfix = "";
         char symbol;
-        Object next;
+        char next;
         for (int i = 0; i < str.length(); i++) {
             symbol = str.charAt(i);
             if (!checker(symbol)) {
                 switch (symbol) {
                     case '(':
-                        stack.push(symbol);
+                        push(symbol);
                         break;
                     case ')':
-
-                        do {
-                            next = stack.pop();
-                            postfix = postfix + (Character) next;
-
-                        } while (next.equals('('));
+                        next = pop();
+                        while (next != '(') {
+                            postfix = postfix + next;
+                            next = pop();
+                        }
                         break;
                     case '&':
                     case '|':
@@ -59,20 +116,20 @@ public class PostFixConverter {
                     case '>':
                     case 'M':
                     case 'L':
-                        while (!stack.isEmpty() && precedence((Character) stack.pop()) >= precedence(symbol)) {
-                            postfix = postfix + (Character) stack.pop();
-                            System.err.println(postfix);
+                        while (!isEmpty() && precedence(stack.get(top)) >= precedence(symbol)) {
+                            postfix = postfix + pop();
                         }
-                        stack.push(symbol);
+                        push(symbol);
                         break;
                     default:
-                        postfix = postfix + (Character) symbol;
+                        postfix = postfix + symbol;
                 }
             }
         }
-        while (!stack.isEmpty()) {
-            postfix = postfix + (stack.pop().toString());
+        while (!isEmpty()) {
+            postfix = postfix + pop();
         }
         return new StringBuilder(postfix).reverse().toString();
     }
+
 }

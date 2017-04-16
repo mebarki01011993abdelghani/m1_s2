@@ -1,158 +1,77 @@
 package ia_1;
 
+import java.util.ArrayList;
+
 public class BinaryTree {
 
-    Node root;
+    public static void inOrderTraverseTree(Node focusNode) {
+        if (focusNode != null) {
+            inOrderTraverseTree(focusNode.leftChild);
+            System.out.println(focusNode.getName());
+            inOrderTraverseTree(focusNode.rightChild);
+        }
+    }
 
-    public void addNode(int key, String name) {
+    public static Node buildTree(String formule) {
 
-        // Create a new Node and initialize it
-        Node newNode = new Node(key, name);
-        // If there is no root this becomes root
-        if (root == null) {
-            root = newNode;
-        } else {
-            // Set root as the Node we will start
-            // with as we traverse the tree
-            Node focusNode = root;
+        ArrayList<Node> focusNodes = new ArrayList<Node>();
 
-            // Future parent for our new Node
-            Node parent;
+        String root = formule.substring(0, 2);
+        Node nodeRoot = new Node(root);
+        Node focusNode = nodeRoot;
+        focusNodes.add(focusNode);
+        Boolean find = false;
+        for (int i = 2; i < formule.length(); i++) {
+            String chars = formule.substring(i, i + 1);
+            if (chars.equals("-") || chars.equals("M") || chars.equals("L")) {
+                chars = formule.substring(i + 1, i + 2);
+                find = true;
+            }
 
-            while (true) {
-                // root is the top parent so we start
-                // there
-                parent = focusNode;
-
-                // Check if the new node should go on
-                // the left side of the parent node
-                if (key < focusNode.key) {
-                    // Switch focus to the left child
-                    focusNode = focusNode.leftChild;
-
-                    // If the left child has no children
-                    if (focusNode == null) {
-                        // then place the new node on the left of it
-                        parent.leftChild = newNode;
-                        return; // All Done
+            if (focusNode.getLeftChild() == null) {
+                if (chars.equals("&") || chars.equals("|") || chars.equals(">")) {
+                    if (find) {
+                        chars = formule.substring(i, i + 2);
+                        i++;
                     }
+                    focusNode = focusNode.addNode(chars, true);
+                    focusNodes.add(focusNode);
 
-                } else { // If we get here put the node on the right
-                    focusNode = focusNode.rightChild;
-                    // If the right child has no children
-                    if (focusNode == null) {
-                        // then place the new node on the right of it
-                        parent.rightChild = newNode;
-                        return; // All Done
+                } else {
+                    if (find) {
+                        chars = formule.substring(i, i + 2);
+                        i++;
+                    }
+                    focusNode.addNode(chars, true);
+                }
+            } else {
+                if (chars.equals("&") || chars.equals("|") || chars.equals(">")) {
+                    if (find) {
+                        chars = formule.substring(i, i + 2);
+                        i++;
+                    }
+                    focusNode = focusNode.addNode(chars, false);
+                    if (focusNodes.size() > 0) {
+                        focusNodes.remove(focusNodes.size() - 1);
+                    }
+                    focusNodes.add(focusNode);
+
+                } else {
+                    if (find) {
+                        chars = formule.substring(i, i + 2);
+                        i++;
+                    }
+                    focusNode.addNode(chars, false);
+                    if (focusNodes.size() > 0) {
+                        focusNodes.remove(focusNodes.size() - 1);
+                        if (focusNodes.size() > 0) {
+                            focusNode = focusNodes.get(focusNodes.size() - 1);
+                        }
                     }
                 }
             }
+            find = false;
         }
+        return nodeRoot;
     }
-
-    // All nodes are visited in ascending order
-    // Recursion is used to go to one node and
-    // then go to its child nodes and so forth
-    public void inOrderTraverseTree(Node focusNode) {
-
-        if (focusNode != null) {
-
-            // Traverse the left node
-            inOrderTraverseTree(focusNode.leftChild);
-
-            // Visit the currently focused on node
-            System.out.println(focusNode);
-
-            // Traverse the right node
-            inOrderTraverseTree(focusNode.rightChild);
-
-        }
-
-    }
-
-    public void preorderTraverseTree(Node focusNode) {
-
-        if (focusNode != null) {
-
-            System.out.println(focusNode);
-
-            preorderTraverseTree(focusNode.leftChild);
-            preorderTraverseTree(focusNode.rightChild);
-
-        }
-
-    }
-
-    public void postOrderTraverseTree(Node focusNode) {
-
-        if (focusNode != null) {
-
-            postOrderTraverseTree(focusNode.leftChild);
-            postOrderTraverseTree(focusNode.rightChild);
-
-            System.out.println(focusNode);
-
-        }
-
-    }
-
-    public Node findNode(int key) {
-
-        // Start at the top of the tree
-        Node focusNode = root;
-
-        // While we haven't found the Node
-        // keep looking
-        while (focusNode.key != key) {
-
-            // If we should search to the left
-            if (key < focusNode.key) {
-
-                // Shift the focus Node to the left child
-                focusNode = focusNode.leftChild;
-
-            } else {
-
-                // Shift the focus Node to the right child
-                focusNode = focusNode.rightChild;
-
-            }
-
-            // The node wasn't found
-            if (focusNode == null) {
-                return null;
-            }
-
-        }
-
-        return focusNode;
-
-    }
-
-}
-
-class Node {
-
-    int key;
-    String name;
-
-    Node leftChild;
-    Node rightChild;
-
-    Node(int key, String name) {
-
-        this.key = key;
-        this.name = name;
-
-    }
-
-    public String toString() {
-
-        return name + " has the key " + key;
-        /*
-		 * return name + " has the key " + key + "\nLeft Child: " + leftChild +
-		 * "\nRight Child: " + rightChild + "\n";
-         */
-    }
-
 }
