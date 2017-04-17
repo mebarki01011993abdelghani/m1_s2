@@ -12,66 +12,41 @@ public class BinaryTree {
         }
     }
 
-    /* On parcours tous les noeuds, en fonction on applique une regle
-Idée du case ?
-Recursif ?
-Faut-il commencer par le haut ?
-     */
-    public static void treeExplorer(Node focusNode) {
-        if (focusNode != null && focusNode.isSymbol()) {
-            switch (focusNode.getName()) {
-                case "&":
-                    System.out.println("");
-                    Rules.AND(focusNode);
-                    break;
-                case "-&":
-                    System.out.println("");
-                    Rules.NAND(focusNode);
-                    break;
-                case "|":
-                    System.out.println("");
-                    Rules.OR(focusNode);
-                    break;
-                case "-|":
-                    System.out.println("");
-                    Rules.NOR(focusNode);
-                    break;
-                case ">":
-                    System.out.println("");
-                    Rules.IMPLY(focusNode);
-                    break;
-                case "->":
-                    System.out.println("");
-                    Rules.Nimply(focusNode);
-                    break;
-                case "M":
-                    System.out.println("");
-                    Rules.Maybe(focusNode);
-                    break;
-                case "-M":
-                    System.out.println("");
-                    Rules.Nmaybe(focusNode);
-                    break;
-                case "L":
-                    System.out.println("");
-                    Rules.Losange(focusNode);
-                    break;
-                case "-L":
-                    System.out.println("");
-                    Rules.Nlosange(focusNode);
-                    break;
-
-                default:
-                    System.out.println("No rules");
-            }
-            treeExplorer(focusNode.leftChild);
-            treeExplorer(focusNode.rightChild);
+    public static Rules findRules(Node focusNode) {
+        switch (focusNode.getName()) {
+            case "&":
+                System.out.println("");
+                return Rules.AND(focusNode);
+            case "-&":
+                System.out.println("");
+                return Rules.NAND(focusNode);
+            case "|":
+                System.out.println("");
+                return Rules.OR(focusNode);
+            case "-|":
+                System.out.println("");
+                return Rules.NOR(focusNode);
+            case ">":
+                System.out.println("");
+                return Rules.IMPLY(focusNode);
+            case "->":
+                System.out.println("");
+                return Rules.Nimply(focusNode);
+            case "-L":
+                System.out.println("");
+                return Rules.Ncertitude(focusNode);
+            case "L":
+                System.err.println("No rules but keep it");
+                return new Rules();
+            default:
+                System.out.println("No rules");
+                return null;
         }
     }
 
     public static Node buildTree(String formule) {
 
-        ArrayList<Node> focusNodes = new ArrayList<Node>();
+        ArrayList<Node> focusNodes = new ArrayList<>();
 
         int a = 1;
         //Initialisation
