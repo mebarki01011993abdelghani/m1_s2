@@ -1,26 +1,20 @@
-package ia_a;
+package ia_1;
 
 import java.util.ArrayList;
 
 public class NodeAlgorithm {
 
-
     String litteral;
-    ArrayList<ArrayList<NodeAlgorithm>> nodes;
+    Branch left;
+    Branch right;
     String world;
-    boolean check;
 
-    public NodeAlgorithm(String formula) {
-        this.litteral = formula;
-        this.nodes = new ArrayList<>();
-        this.world = null;
-        this.check = false;
+    public NodeAlgorithm(String litteral, Branch left, Branch right, String world) {
+        this.litteral = litteral;
+        this.left = left;
+        this.right = right;
+        this.world = world;
     }
-
-    
-    
-
-    
 
     public String getLitteral() {
         return litteral;
@@ -30,12 +24,20 @@ public class NodeAlgorithm {
         this.litteral = litteral;
     }
 
-    public ArrayList<ArrayList<NodeAlgorithm>> getNodes() {
-        return nodes;
+    public Branch getLeft() {
+        return left;
     }
 
-    public void setNodes(ArrayList<ArrayList<NodeAlgorithm>> nodes) {
-        this.nodes = nodes;
+    public void setLeft(Branch left) {
+        this.left = left;
+    }
+
+    public Branch getRight() {
+        return right;
+    }
+
+    public void setRight(Branch right) {
+        this.right = right;
     }
 
     public String getWorld() {
@@ -46,14 +48,6 @@ public class NodeAlgorithm {
         this.world = world;
     }
 
-    public boolean isCheck() {
-        return check;
-    }
-
-    public void setCheck(boolean check) {
-        this.check = check;
-    }
+   
 
 }
-
-

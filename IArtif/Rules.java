@@ -8,7 +8,7 @@ public class Rules {
     boolean newWorld;
 
     public Rules(){
-        
+       
     }
     public Rules(Node left, Node right, boolean newBranch, boolean newWorld) {
         this.left = left;
@@ -16,15 +16,6 @@ public class Rules {
         this.newBranch = newBranch; // True => new branch False => keep branch
         this.newWorld = newWorld;
     }
-
-    /* Prendre en argument 1 node,
-    changer ses fils gauches et droits en fonctions des règles
-    
-    Probleme : comment faire les monde ?
-    Idée : arraylist ?
-    
-    
-     */
     
     public static Rules OR(Node element) {
 
@@ -88,5 +79,38 @@ public class Rules {
 
         return rule;
     }
+    
+     public static Rules findRules(Node focusNode) {
+        switch (focusNode.getName()) {
+            case "&":
+                System.out.println("");
+                return Rules.AND(focusNode);
+            case "-&":
+                System.out.println("");
+                return Rules.NAND(focusNode);
+            case "|":
+                System.out.println("");
+                return Rules.OR(focusNode);
+            case "-|":
+                System.out.println("");
+                return Rules.NOR(focusNode);
+            case ">":
+                System.out.println("");
+                return Rules.IMPLY(focusNode);
+            case "->":
+                System.out.println("");
+                return Rules.Nimply(focusNode);
+            case "-L":
+                System.out.println("");
+                return Rules.Ncertitude(focusNode);
+            case "L":
+                System.err.println("No rules but keep it");
+                return new Rules();
+            default:
+                System.out.println("No rules");
+                return null;
+        }
+    }
+     
 
 }

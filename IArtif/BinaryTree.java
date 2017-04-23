@@ -44,6 +44,43 @@ public class BinaryTree {
         }
     }
 
+    public static Boolean isSymbol(char chars) {
+        switch (chars) {
+            case '&':
+            case '|':
+            case 'L':
+            case 'M':
+            case '-':
+                return true;
+            default:
+                return false;
+        }
+
+    }
+
+    /*
+    L((-LA|LB)|(-LA|LB))
+    -L|
+    |
+    LB
+    -LA
+        |
+        LB
+        -LA
+    */
+    public static String getNextNodeName(String formula) {
+        String name = "";
+        int i = 0;
+        while ((formula.charAt(i) != 'M') || (formula.charAt(i) !='L') || (formula.charAt(i) != '-') ) {
+            i++;
+        }
+        char caraSuivant = formula.charAt(i+1);
+        if( caraSuivant != 'L' || caraSuivant != 'M'){
+            
+        }
+        return name;
+    }
+
     public static Node buildTree(String formule) {
 
         ArrayList<Node> focusNodes = new ArrayList<>();
