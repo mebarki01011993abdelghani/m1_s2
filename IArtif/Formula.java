@@ -52,27 +52,29 @@ public class Formula {
      * @return
      */
     public static String simplifyNegative(String formula) {
+        try {
+            for (int i = 0; i < formula.length(); i++) {
+                char negative = formula.charAt(i);
+                if (negative == '-') {
+                    int count = 1;
+                    int a = i;
+                    negative = formula.charAt(a + 1);
+                    while (negative == '-') {
+                        count++;
+                        negative = formula.charAt(a + count);
+                    }
 
-        for (int i = 0; i < formula.length(); i++) {
-            char negative = formula.charAt(i);
-            if (negative == '-') {
-                int count = 1;
-                int a = i;
-                negative = formula.charAt(a + 1);
-                while (negative == '-') {
-                    count++;
-                    negative = formula.charAt(a + count);
-                }
-
-                int modulo = count % 2;
-                if (modulo == 0) {
-                    formula = rewriteString(formula, a, a + count, true);
-                } else {
-                    formula = rewriteString(formula, a, a + count, false);
+                    int modulo = count % 2;
+                    if (modulo == 0) {
+                        formula = rewriteString(formula, a, a + count, true);
+                    } else {
+                        formula = rewriteString(formula, a, a + count, false);
+                    }
                 }
             }
+        } catch (Exception E) {
+            System.out.println("Formle simplifier");
         }
-
         return formula;
     }
 
@@ -110,10 +112,10 @@ public class Formula {
             case '>':
                 return 2;
             case '-':
-                return 3;
+                return 4;
             case 'M':
             case 'L':
-                return 4;
+                return 3;
             default:
                 return 0;
         }
@@ -157,7 +159,7 @@ public class Formula {
                         push(symbol);
                         break;
                     default:
-                        postfix = postfix + symbol;
+                        postfix += /*postfix + */symbol;
                 }
             }
         }
@@ -165,7 +167,7 @@ public class Formula {
             postfix = postfix + pop();
         }
         return new StringBuilder(postfix).reverse().toString();
-    }
+    }/*new StringBuilder(postfix).reverse().toString()*/
 
     /**
      * Factorise une formule
@@ -173,86 +175,119 @@ public class Formula {
      * @param formula
      * @return
      */
-    public static String[] developedFormula(String formula) {
+    public static String[] getNextNodeName(String formula) {
         int i = 0;
         int x = 0;
         int y = 0;
 
         String newFormula = "";
         String[] result = new String[2];
-        char lit = formula.charAt(i);
-        while (lit != '&' && lit != '>' && lit != '|') {
-            i++;
-            lit = formula.charAt(i);
-        }
+        try {
 
-        lit = formula.charAt(i + 1);
+            char lit = formula.charAt(i);
+            if (!isSymbol(lit)) {
+                throw new StringIndexOutOfBoundsException();
+            }
+            while (lit != '&' && lit != '>' && lit != '|') {
+                i++;
+                lit = formula.charAt(i);
+            }
 
-        if (lit == '-') {
-            lit = formula.charAt(i + 2);
-            if (lit == 'L' || lit == 'M') {
-                if ('-' == formula.charAt(i + 3)) {
+            lit = formula.charAt(i + 1);
+
+            if (lit == '-') {
+                lit = formula.charAt(i + 2);
+                if (lit == 'L' || lit == 'M') {
+                    if ('-' == formula.charAt(i + 3)) {
+                        x = 1;
+                    }
+
+                    if (i + 6 + x < formula.length()) {
+                        if (formula.charAt(i + 6 + x) == '-') {
+                            y = 1;
+                        }
+                    }
+
+                    if (lit == formula.charAt(i + 5 + x)) {
+                        newFormula = formula.substring(0, i);
+                        newFormula += "-" + lit;
+                        newFormula += formula.charAt(i);
+                        newFormula += formula.substring(i + 3, i + 3 + x + 1);
+                        newFormula += formula.substring(i + 6 + x, i + 6 + x + y + 1);
+                        newFormula += formula.substring(i + 6 + x + y + 1, formula.length());
+                        result[1] = newFormula;
+                        result = getNextNodeName(result[1]);
+                    } else {
+                        result[1] = formula.substring(i + 1, formula.length());
+                        newFormula = formula.substring(0, i + 1);
+                        result[0] = newFormula;
+                    }
+                } else {
+                    result[1] = formula.substring(i + 1, formula.length());
+                    newFormula = formula.substring(0, i + 1);
+                    result[0] = newFormula;
+                }
+            } else if (lit == 'L' || lit == 'M') {
+                if ('-' == formula.charAt(i + 2)) {
                     x = 1;
                 }
-
-                if (i + 6 + x < formula.length()) {
-                    if (formula.charAt(i + 6 + x) == '-') {
+                if (i + 4 + x < formula.length()) {
+                    if (formula.charAt(i + 4 + x) == '-') {
                         y = 1;
                     }
                 }
-
-                if (lit == formula.charAt(i + 5 + x)) {
+                if (lit == formula.charAt(i + 3 + x)) {
                     newFormula = formula.substring(0, i);
-                    newFormula += "-" + lit;
-                    newFormula += formula.charAt(i);
-                    newFormula += formula.substring(i + 3, i + 3 + x + 1);
-                    newFormula += formula.substring(i + 6 + x, i + 6 + x + y + 1);
-                    result[1] = formula.substring(i + 6 + x + y + 1, formula.length());
-                    newFormula = developedFormula(result[1])[0];
-                    result[0] = newFormula;
-
+                    newFormula += lit; //L
+                    newFormula += formula.charAt(i);// L&
+                    newFormula += formula.substring(i + 2, i + 2 + x + 1);
+                    newFormula += formula.substring(i + 4 + x, i + 4 + x + y + 1);
+                    newFormula += formula.substring(i + 4 + x + y + 1, formula.length());
+                    result[1] = newFormula;
+                    result = getNextNodeName(result[1]);
                 } else {
                     result[1] = formula.substring(i + 1, formula.length());
                     newFormula = formula.substring(0, i + 1);
                     result[0] = newFormula;
                 }
             } else {
+
                 result[1] = formula.substring(i + 1, formula.length());
                 newFormula = formula.substring(0, i + 1);
                 result[0] = newFormula;
             }
-        } else if (lit == 'L' || lit == 'M') {
-            if ('-' == formula.charAt(i + 2)) {
-                x = 1;
-            }
-            if (i + 4 + x < formula.length()) {
-                if (formula.charAt(i + 4 + x) == '-') {
-                    y = 1;
+        } catch (StringIndexOutOfBoundsException e) {
+            i = 0;
+            boolean findLit = false;
+            while (!findLit) {
+                if (isSymbol(formula.charAt(i))) {
+                    i++;
+                } else {
+                    findLit = true;
                 }
             }
-            if (lit == formula.charAt(i + 3 + x)) {
-                newFormula = formula.substring(0, i);
-                newFormula += lit;
-                newFormula += formula.charAt(i);
-                newFormula += formula.substring(i + 2, i + 2 + x + 1);
-                newFormula += formula.substring(i + 4 + x, i + 4 + x + y + 1);
-                result[1] = formula.substring(i + 4 + x + y + 1, formula.length());
-                newFormula = developedFormula(result[1])[0];
-                result[0] = newFormula;
-            } else {
-                result[1] = formula.substring(i + 1, formula.length());
-                newFormula = formula.substring(0, i + 1);
-                result[0] = newFormula;
-            }
-        } else {
+            result[0] = formula.substring(0, i + 1);
             result[1] = formula.substring(i + 1, formula.length());
-            newFormula = formula.substring(0, i + 1);
-            result[0] = newFormula;
-        }
+        } finally {
+            result[0] = Formula.simplifyNegative(result[0]);
+            result[1] = Formula.simplifyNegative(result[1]);
 
-        result[0] = Formula.simplifyNegative(result[0]);
-        result[1] = Formula.simplifyNegative(result[1]);
+        }
         return result;
+
+    }
+
+    public static Boolean isSymbol(char chars) {
+        switch (chars) {
+            case '&':
+            case '|':
+            case 'L':
+            case 'M':
+            case '-':
+                return true;
+            default:
+                return false;
+        }
 
     }
 

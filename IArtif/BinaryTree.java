@@ -44,96 +44,49 @@ public class BinaryTree {
         }
     }
 
-    public static Boolean isSymbol(char chars) {
-        switch (chars) {
-            case '&':
-            case '|':
-            case 'L':
-            case 'M':
-            case '-':
-                return true;
-            default:
-                return false;
-        }
-
-    }
-
-    /*
-    L((-LA|LB)|(-LA|LB))
-    -L|
-    |
-    LB
-    -LA
-        |
-        LB
-        -LA
-    */
-    public static String getNextNodeName(String formula) {
-        String name = "";
-        int i = 0;
-        while ((formula.charAt(i) != 'M') || (formula.charAt(i) !='L') || (formula.charAt(i) != '-') ) {
-            i++;
-        }
-        char caraSuivant = formula.charAt(i+1);
-        if( caraSuivant != 'L' || caraSuivant != 'M'){
-            
-        }
-        return name;
-    }
-
-    public static Node buildTree(String formule) {
-
-        ArrayList<Node> focusNodes = new ArrayList<>();
-
-        int a = 1;
-        //Initialisation
-        String root = formule.substring(0, 1);
-        if (root.equals("-")) {
-            root = formule.substring(0, 2);
-            a++;
-        }
-
-        Node nodeRoot = new Node(root);
-        Node focusNode = nodeRoot;
-        focusNodes.add(focusNode);
-        for (int i = a; i < formule.length(); i++) {
-            String chars = formule.substring(i, i + 1);
-            if (chars.equals("-") || chars.equals("M") || chars.equals("L")) {
-                chars = formule.substring(i, i + 2);
-                i++;
-            }
-
-            if (focusNode.getLeftChild() == null) {
-                if (chars.substring(0, 1).equals("&") || chars.substring(0, 1).equals("|") || chars.substring(0, 1).equals(">")) {
-
-                    focusNode = focusNode.addNode(chars, true);
-                    focusNodes.add(focusNode);
-
-                } else {
-
-                    focusNode.addNode(chars, true);
-                }
-            } else {
-                if (chars.substring(0, 1).equals("&") || chars.substring(0, 1).equals("|") || chars.substring(0, 1).equals(">")) {
-
-                    focusNode = focusNode.addNode(chars, false);
-                    if (focusNodes.size() > 0) {
-                        focusNodes.remove(focusNodes.size() - 1);
-                    }
-                    focusNodes.add(focusNode);
-
-                } else {
-
-                    focusNode.addNode(chars, false);
-                    if (focusNodes.size() > 0) {
-                        focusNodes.remove(focusNodes.size() - 1);
-                        if (focusNodes.size() > 0) {
-                            focusNode = focusNodes.get(focusNodes.size() - 1);
-                        }
-                    }
-                }
-            }
-        }
+    public static Node initTree(String formula) {
+        Node nodeRoot = new Node("");
+        buildTree(formula, nodeRoot);
         return nodeRoot;
     }
+
+    public static String buildTree(String formule, Node focusNode) {
+        String[] result;
+        result = Formula.getNextNodeName(formule);
+        String nameNode = result[0];
+        formule = result[1];
+
+        if (nameNode.endsWith("&") || nameNode.endsWith("|") || nameNode.endsWith(">")) {
+
+            focusNode.setName(nameNode);
+
+            result = Formula.getNextNodeName(formule);
+
+            focusNode.setLeftChild(new Node(result[0]));
+            if (result[0].endsWith("&") || result[0].endsWith("|") || result[0].endsWith(">")) {
+
+                formule = buildTree(result[1], focusNode.getLeftChild());
+            } else {
+                formule = result[1];
+
+            }
+            result = Formula.getNextNodeName(formule);
+            focusNode.setRightChild(new Node(result[0]));
+
+            if (result[0].endsWith("&") || result[0].endsWith("|") || result[0].endsWith(">")) {
+                formule = buildTree(result[1], focusNode.getRightChild());
+            } else {
+                formule = result[1];
+            }
+            formule = result[1];
+
+        } else {
+            focusNode.setLeftChild(new Node(nameNode));//B
+            result = Formula.getNextNodeName(formule);
+            focusNode.setRightChild(new Node(result[0]));
+            formule = result[1];
+        }
+        return formule;
+    }
+
 }
