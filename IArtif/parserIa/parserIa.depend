@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1490131780 source:/home/scra/Documents/TRAVAUX/m1_s2/IArtif/parserIa/main.c
-	<stdio.h>
-	<stdlib.h>
-	<math.h>
-	<string.h>
-	<stdbool.h>
-
